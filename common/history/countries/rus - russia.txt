@@ -35,9 +35,7 @@
 			is_decaying = yes
 		}
 
-		add_modifier = {
-			name = modifier_nicholas_i_rule
-		}
+
 
 		add_company = company_type:company_russian_american_company
 		company:company_russian_american_company = {

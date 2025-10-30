@@ -1,14 +1,7 @@
 ﻿CHARACTERS = {
 	c:RUS ?= {
 		# Royals
-		create_character = {
-			template = RUS_nicholas_i
-			on_created = {
-				owner = {
-					add_journal_entry = { type = je_age_of_nicholas_i }
-				}
-			}
-		}	
+
 		
 		create_character = {
 			template = RUS_alexander_ii

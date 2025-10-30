@@ -1640,25 +1640,7 @@ DAI_fascist = {
 		instance = { scale = { 1 1 } position = { 0.5 0.50 } }	
 	}		
 }
-DAI_subject_FRA = {		
-	# Conchinchine
-	pattern = "pattern_solid.tga"
-	color1 = "yellow"
-	
-	colored_emblem = {
-		texture = "ce_solid.dds"
-		color1 = "blue"
-		color2 = "blue"
-		instance = { scale = { 1.0 0.33 } position = { 0.5 0.5 } }	
-	}	
-	colored_emblem = {
-		texture = "ce_solid.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = { scale = { 1.0 @[third/5] } position = { 0.5 @[0.5-third/5] } }
-		instance = { scale = { 1.0 @[third/5] } position = { 0.5 @[0.5+third/5] } }		
-	}		
-}
+
 CHI = {
 	pattern = "pattern_border_outlined_thin.dds"
 	color1 = "white"

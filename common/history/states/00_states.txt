@@ -2757,10 +2757,10 @@ STATES = {
 			country = c:EGY
 			owned_provinces = { x0C6712 x93D215 xA05020 xB5969E x69BCDD x8E30B0 x06DF39 xD83883 x5713ED x87D6C4 x0D56B2 x8AC4E0 xB5420C x272AAD xE0D021 xBFC9C0 x25523D x20CF20 x53834E xF901CB x246457 x45DB44 x20D0A0 x252184 x3955E4 x05BD60 x48B0D1 x05FF42 x8A68C1 xBB2E89 xEC728B x3DCE56 xC1822C xA0ECF8 xC2176F x6EB0BA xEBB23F x80A9AC xDF5EBB x0EE79F xE68265 x908947 x7F64AC x98DFE2 xBE3AC5 xF942C3 x5E1EA3 }
 		}
-		
+
 		add_homeland = cu:misri
 		add_homeland = cu:bedouin
-		add_homeland = cu:berber			
+		add_homeland = cu:berber
 	}
 	s:STATE_SINAI = {
 		create_state = {
