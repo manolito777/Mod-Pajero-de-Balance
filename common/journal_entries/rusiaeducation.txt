@@ -1,0 +1,25 @@
+﻿je_modernizationrus = {
+	icon = "gfx/interface/icons/event_icons/innovation.dds"
+	
+	group = je_group_historical_content
+
+
+
+	complete = {
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_legado_ruso
+			years = 15
+			is_decaying = yes
+		}
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
