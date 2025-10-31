@@ -394,8 +394,9 @@ modifier_dictate_failed = {
 
 modifier_great_reforms_complete = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	state_education_access_add = 0.15
 	country_tech_research_speed_mult = 0.2
+	state_loyalists_from_political_movements_mult = 0.25
+
 }
 
 modifier_empress_of_india = {
