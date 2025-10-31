@@ -388,7 +388,7 @@
 					value = scope:quantity
 					divide = 1000
 					min = 0
-					max = 50
+					max = 0
 				}
 			}
 		}
