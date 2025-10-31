@@ -3,9 +3,6 @@
     
     group = je_group_internal_affairs
 
-    modifiers_while_active = {
-        modifier_peruano
-    }
 
     complete = {
         institution_investment_level = {

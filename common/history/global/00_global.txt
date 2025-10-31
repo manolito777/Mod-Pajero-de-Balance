@@ -64,12 +64,7 @@ GLOBAL = {
 	}
 
 
-	c:GBR ?= { 
-		add_treasury = {
-			value = gold_reserves_limit
-			multiply = -1.7
-		}
-	}
+
 
 
 	c:TUR ?= { # Historically had no foreign debt prior to 1854
