@@ -1043,6 +1043,7 @@ je_great_reforms_serfdom = {
         OR = {
             has_law = law_type:law_tenant_farmers
             has_law = law_type:law_commercialized_agriculture
+            has_law = law_type:law_homesteading
         }
         NOT = {
             has_law = law_type:law_traditionalism
@@ -1085,6 +1086,7 @@ je_great_reforms_military = {
     complete = {
         has_technology_researched = rifling
         has_law = law_type:law_mass_conscription
+        has_law = law_type:law_professional_army
         OR = {
             country_army_unit_type_fraction = {  
                 target = unit_type:combat_unit_type_skirmish_infantry  
