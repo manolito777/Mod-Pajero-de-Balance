@@ -1,0 +1,31 @@
+﻿gfx_military_mobilization_culture_is_german = {
+
+	any_primary_culture = { has_culture_graphics = gfx_german }
+
+}
+
+gfx_military_deploy_culture_is_german = {
+
+	scope:military_formation = {
+		any_combat_unit = {
+			culture = { has_culture_graphics = gfx_german }
+		}
+	}
+
+}
+
+gfx_military_mobilization_culture_is_south_german = {
+
+	any_primary_culture = { has_culture_graphics = gfx_south_german }
+
+}
+
+gfx_military_deploy_culture_is_south_german = {
+
+	scope:military_formation = {
+		any_combat_unit = {
+			culture = { has_culture_graphics = gfx_south_german }
+		}
+	}
+
+}
