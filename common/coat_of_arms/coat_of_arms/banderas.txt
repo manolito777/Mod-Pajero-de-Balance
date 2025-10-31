@@ -2772,7 +2772,7 @@ GBR_fascist = {
 		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
 	}
 }
-INC-Flag-Republic = {
+INC= {
 				pattern = "pattern_border_outlined_thin.dds"
 	color1 = "white"
     color2 = "white"
@@ -2782,36 +2782,6 @@ INC-Flag-Republic = {
 	}
 }
 
-INC-Flag-Council = {
-					pattern = "pattern_border_outlined_thin.dds"
-	color1 = "white"
-    color2 = "white"
-    textured_emblem = {
-		texture = "inccoa.dds"
-		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
-	}
-}
-
-INC-Flag-Theocracy = {
-					pattern = "pattern_border_outlined_thin.dds"
-	color1 = "white"
-    color2 = "white"
-    textured_emblem = {
-		texture = "inccoa.dds"
-		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
-	}
-}
-
-INC-Flag-Monarchy = {
-					pattern = "pattern_border_outlined_thin.dds"
-	color1 = "white"
-    color2 = "white"
-    textured_emblem = {
-		texture = "inccoa.dds"
-		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
-	}
-	
-}
 SPA = {
 	pattern = "pattern_border_outlined_thin.dds"
 	color1 = "white"
