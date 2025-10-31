@@ -1,0 +1,35 @@
+
+haussmanplan = {
+	is_shown = {
+		any_scope_state = {
+			state_region = s:STATE_ILE_DE_FRANCE
+			is_incorporated = yes
+			has_modifier = niggasinparis
+		}
+	}
+
+	possible = {
+		bureaucracy >= 300
+	    has_technology_researched = modern_sewerage
+
+	}
+	    when_taken = {
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ILE_DE_FRANCE
+			}
+			remove_modifier = niggasinparis
+			add_modifier = {
+				name = HaussmannParis
+			}	
+		}
+		add_modifier = {
+			name = HaussmannRenovation
+			years = 3
+		}
+	}
+	ai_chance = {
+		base = 3
+	}
+}
