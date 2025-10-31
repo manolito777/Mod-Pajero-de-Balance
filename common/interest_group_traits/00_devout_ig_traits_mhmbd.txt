@@ -32,3 +32,4 @@ ig_trait_divine_autocracy = {
 		country_legitimacy_headofstate_add = 15
 	}
 }
+### Persia

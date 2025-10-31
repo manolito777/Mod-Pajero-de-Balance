@@ -6,3 +6,12 @@
 		building_group_bg_subsistence_agriculture_mortality_mult = -0.075
 	}
 }
+ig_efcam_per = {
+	icon = "gfx/interface/icons/ig_trait_icons/farmers_markets.dds"
+	min_approval = loyal
+	
+	modifier = {
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+

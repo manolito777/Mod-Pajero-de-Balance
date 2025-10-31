@@ -55,7 +55,7 @@
 				}
 				set_ig_trait = ig_trait:ig_trait_noble_privileges
 				set_ig_trait = ig_trait:ig_trait_famine_reserves_per
-				set_ig_trait = ig_trait:ig_trait_profitable_estates
+				set_ig_trait = ig_trait:ig_efcam_per
 			}
 			else_if = {
 				limit = {

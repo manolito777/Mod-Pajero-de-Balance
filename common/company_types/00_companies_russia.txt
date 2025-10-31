@@ -11,6 +11,8 @@ company_vodka_monopoly = {
 
 	building_types = {
 		building_food_industry
+		building_vineyard_plantation
+		building_rye_farm
 	}
 
 	extension_building_types = {
@@ -39,7 +41,6 @@ company_vodka_monopoly = {
 	prosperity_modifier = {
 		state_radicals_from_political_movements_mult = -0.15
 		tax_consumption_add = 0.15
-		state_birth_rate_mult = 0.06
 	}
 
 	ai_will_do = {
@@ -211,7 +212,8 @@ company_branobel = {
 	}
 
 	prosperity_modifier = {
-		building_railway_throughput_add = 0.15
+		state_migration_pull_mult = 0.1
+		building_railway_throughput_add = 0.05
 	}
 
 	ai_will_do = {
@@ -454,9 +456,8 @@ company_john_hughes = {
 	}
 
 	prosperity_modifier = {
-		state_pop_qualifications_mult = 0.2
+		building_railway_throughput_add = 0.1
 		interest_group_ig_industrialists_approval_add = 2
-		building_construction_sector_throughput_add = 0.1
 	}
 
 	ai_will_do = {
