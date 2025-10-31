@@ -971,9 +971,9 @@ company_anglo_sicilian_sulphur_company = {
 	}
 
 	prosperity_modifier = {
-		building_munition_plants_throughput_add = 0.1
-		building_group_bg_plantations_throughput_add = 0.05
-		building_group_bg_agriculture_throughput_add = 0.05
+		building_sulfur_mine_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.1
+		building_group_bg_agriculture_throughput_add = 0.1
 	}
 
 	ai_will_do = {
