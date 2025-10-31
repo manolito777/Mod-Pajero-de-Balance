@@ -13,10 +13,9 @@
 	selectable = {
 		NOT = { has_variable = doctrine_of_lapse_ended }
 		OR = {
-			c:DLH ?= this
-			c:MRT ?= this
-			c:PEC ?= this
+			
 			c:EIC ?= this
+			
 		}
 	}
 
