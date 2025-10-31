@@ -1076,6 +1076,7 @@ STATE_MINAS_GERAIS = {
     capped_resources = {
         bg_gold_mining = 2
         bg_iron_mining = 88
+		bg_coal_mining = 12
         bg_lead_mining = 30
         bg_logging = 28
     }

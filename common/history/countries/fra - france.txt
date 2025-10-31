@@ -60,11 +60,6 @@
 			name = modifier_haitian_independence_payments_4
 		}
 
-		add_modifier = {
-			name = fra_napoleonic_wars_legacy_workforce
-			years = 15
-			is_decaying = yes
-		}
 
 		set_variable = {
 			name = orleanist_restoration_var

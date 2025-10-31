@@ -626,11 +626,7 @@ UNL = {
 		STATE_FRIESLAND
 		STATE_GELRE
 	}
-	possible = {
-		
-			has_technology_researched = nationalism
-						
-		}	
+
 	
 	
 	ai_will_do = { always = yes }

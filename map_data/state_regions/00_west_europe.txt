@@ -8,11 +8,12 @@
     farm = "xF48646"
     mine = "x6F40EC"
     wood = "x4C9918"
-    arable_land = 60
+    arable_land = 80
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_iron_mining = 72
         bg_lead_mining = 18
+		bg_coal_mining = 5
         bg_logging = 45
         bg_fishing = 18
     }
@@ -549,7 +550,7 @@ STATE_PROVENCE = {
     farm = "xB0C0E0"
     mine = "xB040E0"
     wood = "x3040E0"
-    arable_land = 60
+    arable_land = 70
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 7
@@ -632,6 +633,7 @@ STATE_FRENCH_LOW_COUNTRIES = {
         bg_coal_mining = 100
         bg_logging = 3
         bg_fishing = 6
+		bg_coal_mining = 7
     }
     naval_exit_id = 3028
 }
@@ -903,6 +905,7 @@ STATE_GELRE = {
     capped_resources = {
         bg_coal_mining = 40
         bg_logging = 9
+		 bg_iron_mining = 5
     }
 }
 
