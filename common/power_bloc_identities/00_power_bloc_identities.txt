@@ -296,7 +296,7 @@ identity_ideological_union = {
 	}
 
 	leader_modifier = {
-		country_law_enactment_time_mult = -0.3
+		country_law_enactment_time_mult = -0.35
 		country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool = yes
 		country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool = yes
 	}
@@ -306,7 +306,11 @@ identity_ideological_union = {
 	}
 
 	member_modifier = {
+		country_legitimacy_govt_size_add = 1
 		country_influence_mult = 0.5
+		country_radicals_from_legitimacy_mult = -0.4
+		country_loyalists_from_legitimacy_mult = 0.4
+
 	}
 
 	can_leave = {
@@ -334,7 +338,7 @@ identity_ideological_union = {
 
 	cohesion = {
 		add = {
-			add = 0.3
+			add = 0.7
 			multiply = define:NPowerBlocs|COHESION_TARGET_MAX
 			desc = POWER_BLOC_COHESION_BASE
 		}
