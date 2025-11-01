@@ -543,12 +543,12 @@ company_nhm = {
 		building_trade_center #18
 		building_port
 		building_opium_plantation
-		building_rubber_plantation
 		
 	}
 	
 	extension_building_types = {
 		building_sugar_plantation
+		building_rubber_plantation
 		building_coffee_plantation
 		building_cotton_plantation
 	}
@@ -676,23 +676,7 @@ company_peugeot = {
 	}
 }
 Società_Italiana_per_la_Fabbricazione_della_Dinamite_&_NFTs = {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-	icon = "gfx/interface/icons/company_icons/basic_fabrics.dds"
-=======
 	icon = "gfx/interface/icons/company_icons/sifd.dds"
->>>>>>> Stashed changes
-=======
-	icon = "gfx/interface/icons/company_icons/sifd.dds"
->>>>>>> Stashed changes
-=======
-	icon = "gfx/interface/icons/company_icons/sifd.dds"
->>>>>>> Stashed changes
-=======
-	icon = "gfx/interface/icons/company_icons/sifd.dds"
->>>>>>> Stashed changes
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
