@@ -609,8 +609,11 @@ company_peugeot = {
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	flavored_company = yes
-	
 	preferred_headquarters = { STATE_FRANCHE_COMTE }
+
+	possible_prestige_goods = {
+		prestige_good_peugeot_automobiles
+	}
 
 	building_types = {
 		building_motor_industry
@@ -621,10 +624,6 @@ company_peugeot = {
 		building_rubber_plantation
 	}
 
-	possible_prestige_goods = {
-		prestige_good_peugeot_automobiles
-	}
-	
 	potential = {
 		has_interest_marker_in_region = region_occitania
 	}
@@ -632,7 +631,7 @@ company_peugeot = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = STATE_FRANCHE_COMTE
+				state_region = s:STATE_FRANCHE_COMTE
 			}
 		}
 	}	
@@ -640,7 +639,7 @@ company_peugeot = {
 	possible = {
 		has_technology_researched = combustion_engine
 		any_scope_state = {
-			state_region = STATE_FRANCHE_COMTE
+			state_region = s:STATE_FRANCHE_COMTE
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_motor_industry
