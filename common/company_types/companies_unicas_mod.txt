@@ -605,7 +605,7 @@ company_nhm = {
 }
 
 company_peugeot = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/american_ford.dds"
+	icon = "gfx/interface/icons//company_icons/peugeot.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	flavored_company = yes
@@ -676,7 +676,11 @@ company_peugeot = {
 	}
 }
 Società_Italiana_per_la_Fabbricazione_della_Dinamite_&_NFTs = {
+<<<<<<< Updated upstream
 	icon = "gfx/interface/icons/company_icons/basic_fabrics.dds"
+=======
+	icon = "gfx/interface/icons/company_icons/sifd.dds"
+>>>>>>> Stashed changes
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes

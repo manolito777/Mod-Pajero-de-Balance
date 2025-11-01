@@ -627,6 +627,7 @@ infamy_reputable = {
 	
 	
 	country_influence_mult = 0.25
+	country_loan_interest_rate_mult = -0.05
 	
 }
 

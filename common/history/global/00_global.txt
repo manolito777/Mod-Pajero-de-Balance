@@ -577,13 +577,7 @@ GLOBAL = {
 		}
 	}
 
-	s:STATE_LAOS.region_state:DAI = {
-		add_modifier = {
-			name = recently_conquered_state
-			is_decaying = yes
-			months = 60
-		}
-	}
+
 
 	c:AUS ?= {
 		random_scope_state = {

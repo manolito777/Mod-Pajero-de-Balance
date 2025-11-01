@@ -451,4 +451,3 @@ company_lanificio_paoletti = {
 		value = 3 # Higher base value for flavored companies
 	}
 }
-Società Italiana per la Fabbricazione della Dinamite
