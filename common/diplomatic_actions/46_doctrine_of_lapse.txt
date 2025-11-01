@@ -1,4 +1,4 @@
-﻿invoke_doctrine_of_lapse = {
+﻿﻿invoke_doctrine_of_lapse = {
 	groups = {
 		overlord
 	}
@@ -13,9 +13,9 @@
 	selectable = {
 		NOT = { has_variable = doctrine_of_lapse_ended }
 		OR = {
-			
 			c:EIC ?= this
-			
+			c:BHT ?= this
+		
 		}
 	}
 
