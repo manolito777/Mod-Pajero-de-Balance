@@ -679,7 +679,11 @@ Società_Italiana_per_la_Fabbricazione_della_Dinamite_&_NFTs = {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	icon = "gfx/interface/icons/company_icons/basic_fabrics.dds"
+=======
+	icon = "gfx/interface/icons/company_icons/sifd.dds"
+>>>>>>> Stashed changes
 =======
 	icon = "gfx/interface/icons/company_icons/sifd.dds"
 >>>>>>> Stashed changes
