@@ -1,0 +1,48 @@
+
+berlinreform = {
+	is_shown = {
+		any_scope_state = {
+			state_region = s:STATE_BRANDENBURG
+			is_incorporated = yes
+			
+		}
+	}
+
+	possible = {
+		bureaucracy >= 300
+	    has_technology_researched = steel_frame_buildings
+		any_scope_state = {			
+		    state_region = s:STATE_BRANDENBURG
+			is_incorporated = yes
+		}
+
+	    
+		any_scope_state = {
+			state_region = s:STATE_BRANDENBURG
+		any_scope_building = {
+			is_incorporated = yes
+				is_building_type = building_urban_center
+				level >= 50
+	        }
+	    }
+	}
+	    when_taken = {
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_BRANDENBURG
+			}
+			
+			add_modifier = {
+				name = BerlinReformed
+			}	
+		}
+		add_modifier = {
+			name = BerlinRenovation
+			years = 3
+		}
+	}
+	ai_chance = {
+		base = 3
+	}
+}

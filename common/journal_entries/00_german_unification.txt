@@ -374,6 +374,7 @@ je_german_unification = {
 				root = c:NGF
 			}
 			change_tag = GER
+			
 		}
 		else = {
 			change_tag = SGF

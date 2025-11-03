@@ -1,0 +1,24 @@
+ideology_christian_democrat = { 
+	icon = "gfx/interface/icons/ideology_icons/christian_democrat.dds"
+
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = strongly_approve
+		law_total_separation = neutral
+		law_state_atheism = strongly_disapprove
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_oligarchy = disapprove
+		law_autocracy = strongly_disapprove
+		law_technocracy = disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_national_supremacy = neutral
+		law_racial_segregation = approve
+		law_cultural_exclusion = neutral
+		law_multicultural = strongly_disapprove	
+	}
+}

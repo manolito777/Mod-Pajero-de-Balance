@@ -22,7 +22,12 @@
 			custom_tooltip = trade_unions_less_corporatist_effect_tt
 		}
 	}
-
+	is_visible = {
+		NOR = {
+	        c:USA ?= this
+			
+		}
+	}
 	disallowing_laws = {
 		law_laissez_faire
 	}
