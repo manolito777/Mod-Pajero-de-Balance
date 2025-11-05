@@ -125,7 +125,12 @@ je_kulturkampf = {
 		ig:ig_devout = {
 			add_ideology = ideology_christian_democrat
 			remove_ideology = ideology_moralist
+
 		}
+		add_modifier = {
+		name = kulloss
+		}
+
 	}
 	
 	weight = 10000

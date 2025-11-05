@@ -70,6 +70,7 @@ law_protectionism = {
 		NOR = {
 	        c:GER ?= this
 			c:PRU ?= this
+			c:NGF ?= this
 		}
 	}
 	ai_enact_weight_modifier = { #Petitions
@@ -297,6 +298,7 @@ law_Industrieschutzgesetz = {
 		OR = {
 			c:PRU ?= this
 			c:GER ?= this
+			c:NGF ?= this
 			}
 		}
 

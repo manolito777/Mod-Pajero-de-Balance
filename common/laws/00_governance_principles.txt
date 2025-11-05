@@ -808,6 +808,7 @@ law_Kaiserliche_Monarchie = {
 		OR = {
 			c:GER ?= this
 			c:PRU ?= this
+			c:NGF ?= this
 
 		}
 	}
@@ -822,8 +823,8 @@ law_Kaiserliche_Monarchie = {
 	modifier = {
 		country_legitimacy_headofstate_add = 20
 		country_legitimacy_ideological_incoherence_mult = 0.2
-		country_aristocrats_pol_str_mult = 0.1
-		country_authority_add = 100
+		country_aristocrats_pol_str_mult = 0.25
+		country_authority_add = 150
 	}
 
 	ai_will_do = {

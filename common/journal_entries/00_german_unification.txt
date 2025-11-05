@@ -320,6 +320,11 @@ je_north_german_unification = {
 			}
 			text = je_north_german_minors_annexation
 		}
+		ig:ig_landowners = {
+		add_ideology = ideology_junker_paternalistic2
+		remove_ideology = ideology_junker_paternalistic
+
+		}
 		change_tag = NGF
 		root = {
 			add_journal_entry = {

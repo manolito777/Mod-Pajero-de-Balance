@@ -69,3 +69,10 @@ branmon_survey = {
 	country_bureaucracy_add = -500
 	country_expenses_add = 5000
 }
+kulloss = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+
+		interest_group_ig_devout_pol_str_mult = -0.8
+		interest_group_ig_landowners_pol_str_mult = -0.8
+
+}
