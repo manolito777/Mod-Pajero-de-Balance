@@ -64,6 +64,36 @@ building_angkor_wat = {
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
+building_branmon = {
+	building_group = bg_monuments
+	icon = "gfx/interface/icons/building_icons/angkor_wat.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "branmon_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_branmon_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 5
+	}
+	
+	production_method_groups = {
+		pmg_base_building_branmon
+	}
+	
+	potential = {
+		state_region = s:STATE_BRANDENBURG
+	}
+	
+	required_construction = construction_cost_monument
+
+	background = "gfx/interface/icons/building_icons/backgrounds/branmon.dds"
+}
 
 building_big_ben = {
 	building_group = bg_monuments

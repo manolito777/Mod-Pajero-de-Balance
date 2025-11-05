@@ -27,3 +27,12 @@ ig_trait_coffee_talks = {
 		country_society_tech_research_speed_mult = 0.1
 	}
 }
+ig_trait_culture_of_militarism = {
+	icon = "gfx/interface/icons/ig_trait_icons/culture_of_militarism.dds"
+	min_approval = happy
+	
+	modifier = {
+		country_infamy_decay_mult = 0.10
+		country_military_tech_research_speed_mult = 0.05
+	}
+}

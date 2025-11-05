@@ -231,6 +231,7 @@ german_unification.4 = {
 				months = 120
 				is_decaying = yes
 		}
+		activate_law = law_type:law_Kaiserliche_Monarchie
 		add_primary_culture = cu:south_german
 	}
 	option = {
@@ -249,6 +250,7 @@ german_unification.4 = {
 				months = 120
 				is_decaying = yes
 		}
+		activate_law = law_type:law_Kaiserliche_Monarchie
 		add_primary_culture = cu:south_german
 	}
 }
