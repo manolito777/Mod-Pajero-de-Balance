@@ -99,7 +99,7 @@ je_military_balance_era3_5_2 = {
 	}
 	
 	complete = {
-		has_technology_researched = ac_power
+		
 		has_technology_researched = human_rights
 	}
 	on_complete = {

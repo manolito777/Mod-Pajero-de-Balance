@@ -834,6 +834,4 @@ law_Kaiserliche_Monarchie = {
 		}
 	}
 
-	on_activate = {
-
-	}
+}

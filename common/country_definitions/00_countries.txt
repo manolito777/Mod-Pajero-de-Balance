@@ -13,7 +13,19 @@ GER = {
 	secondary_unit_color  = { 59 64 62 }
 	tertiary_unit_color = { 0 0 0 }
 }
-
+USA = {
+	color = { 66  94  193 }
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { yankee dixie }
+	capital = STATE_DISTRICT_OF_COLUMBIA
+	primary_unit_color = { 30 45 62 }
+	secondary_unit_color  = { 150 190 210 }
+	tertiary_unit_color = { 30 45 62 }
+}
 EIC = {
 	color = { 188  113  61 }
 	
@@ -22,10 +34,20 @@ EIC = {
 	tier = kingdom
 	social_hierarchy = british_indian_caste_system
 	
-	cultures = { patwarahi }
+	cultures = { hindu bengali rajput }
 	capital = STATE_WEST_BENGAL
 }
-
+PEC = {
+	color ={ 87 35 100 }
+	
+	country_type = colonial
+	
+	tier = principality
+	social_hierarchy = british_indian_caste_system
+	
+	cultures = { british }
+	capital = STATE_SINDH
+}
 GBR = {
 	color = { 153  0 0 }
 
@@ -2249,7 +2271,7 @@ NEN = {
 	tier = grand_principality
 	
 	cultures = { yankee }
-	capital = STATE_GREATER_MASSACHUSETTS
+	capital = STATE_MASSACHUSETTS
 }
 
 NEW = {
@@ -5241,4 +5263,14 @@ INC = {
 		lao
 	}
 	capital = STATE_TONKIN
+}
+YUG = {
+	color = { 50 60 100 }
+
+	country_type = recognized
+
+	tier = empire
+
+	capital = STATE_WESTERN_SERBIA
+	cultures = { serb croat slovene bosniak bulgarian }
 }

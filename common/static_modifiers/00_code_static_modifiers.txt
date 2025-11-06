@@ -7,58 +7,60 @@
 base_values = {
 	country_weekly_innovation_add = 50
 	country_weekly_innovation_max_add = 50
-	country_tech_spread_add = 35
-	
+	country_tech_spread_add = 25
+
 	country_loan_interest_rate_add = 0.2
-	
+
 	country_legitimacy_govt_size_add = 1
-	
+
 	country_bureaucracy_add = 100
 	country_authority_add = 100
 	country_influence_add = 100
 
 	country_secession_progress_add = 0.1
-	
+
 	country_law_enactment_max_setbacks_add = 3
-	
+
 	country_minting_add = 500
 	country_government_dividends_efficiency_add = 0.25
 
-	state_tax_capacity_add = 75
+	state_tax_capacity_add = 100
 	state_infrastructure_add = 3
 	state_infrastructure_from_automobiles_consumption_add = 0.25
-	
+
 	state_lower_strata_expected_sol_add = 5
 	state_middle_strata_expected_sol_add = 10
 	state_upper_strata_expected_sol_add = 15
 	state_expected_sol_from_literacy = 5
-	
-	state_machinists_investment_pool_contribution_add = 0.05
+
+	state_machinists_investment_pool_contribution_add = 0.10
 	state_farmers_investment_pool_contribution_add = 0.10
 	state_engineers_investment_pool_contribution_add = 0.15
-	state_bureaucrats_investment_pool_contribution_add = 0.05
-	state_shopkeepers_investment_pool_contribution_add = 0.15
-	state_clergymen_investment_pool_contribution_add = 0.15
-	state_aristocrats_investment_pool_contribution_add = 0.15
-	state_capitalists_investment_pool_contribution_add = 0.2
-	
-	
-		
+	state_bureaucrats_investment_pool_contribution_add = 0.15
+	state_shopkeepers_investment_pool_contribution_add = 0.20
+	state_clergymen_investment_pool_contribution_add = 0.20
+	state_aristocrats_investment_pool_contribution_add = 0.20
+	state_capitalists_investment_pool_contribution_add = 0.30
+
+	# To balance for unincorporated states not paying taxes
+	state_unincorporated_starting_wages_mult = -0.20
+	building_unincorporated_subsistence_output_mult = -0.20
+
 	country_construction_add = 15
-	
+
 	building_economy_of_scale_level_cap_add = 20
-	
+
 	state_market_access_price_impact = 0.75
-	
-	country_company_throughput_bonus_add = 0.05
-	country_company_construction_efficiency_bonus_add = 0.2
-	
+
+	country_company_throughput_bonus_add = 0.2
+	country_company_construction_efficiency_bonus_add = 0.5
+
 	country_max_weekly_construction_progress_add = 10
-	
+
 	military_formation_organization_gain_add = 0.5 # 200 days to get max organization
-	
+
 	state_urbanization_per_level_add = 100
-	
+
 	unit_experience_gain_add = 0.5
 
 	# To account for the power derived from bearing arms
@@ -67,7 +69,7 @@ base_values = {
 
 	country_support_separatism_strength_mult = 1.0
 	country_support_separatism_resistance_mult = 1.0
-	
+
 	state_trade_advantage_from_capacity_add = 0.0005
 	state_max_trade_advantage_from_capacity_add = 0.2
 	
@@ -77,15 +79,15 @@ base_values = {
 # Scales with a country's global prestige rank, so at 20/100 this is multiplied by 0.8x, 50/100 by 0.5x, etc
 # Not applied if the top_prestige_ranking modifier is applied instead
 prestige_ranking = {
-	country_company_throughput_bonus_add = 0.025
-	country_company_construction_efficiency_bonus_add = 0.05
+	country_company_throughput_bonus_add = 0.1
+	country_company_construction_efficiency_bonus_add = 0.1
 }
 
 # Scales with a country's prestige rank compared against TOP_PRESTIGE_RANK_BONUS_THRESHOLD
 # Multiplied by 1x if at TOP_PRESTIGE_RANK_BONUS_THRESHOLD, all the way up to TOP_PRESTIGE_RANK_BONUS_SCALE if at rank 1
 top_prestige_ranking = {
-	country_company_throughput_bonus_add = 0.025
-	country_company_construction_efficiency_bonus_add = 0.05
+	country_company_throughput_bonus_add = 0.1
+	country_company_construction_efficiency_bonus_add = 0.1
 }
 
 character_base_values = {
@@ -100,36 +102,36 @@ coastal_state = {
 
 working_conditions = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-	building_group_bg_mining_laborers_mortality_mult = 0.25
-	building_group_bg_mining_machinists_mortality_mult = 0.15
-	building_group_bg_mining_engineers_mortality_mult = 0.03
-	building_group_bg_mining_slaves_mortality_mult = 0.35
-	
+	building_group_bg_mining_laborers_mortality_mult = 0.1
+	building_group_bg_mining_machinists_mortality_mult = 0.05
+	building_group_bg_mining_engineers_mortality_mult = 0.02
+	building_group_bg_mining_slaves_mortality_mult = 0.2
+
 	building_group_bg_logging_laborers_mortality_mult = 0.1
 	building_group_bg_logging_machinists_mortality_mult = 0.05
 	building_group_bg_logging_engineers_mortality_mult = 0.02
 	building_group_bg_logging_slaves_mortality_mult = 0.2
-	
-	building_group_bg_oil_extraction_laborers_mortality_mult = 0.15
+
+	building_group_bg_oil_extraction_laborers_mortality_mult = 0.1
 	building_group_bg_oil_extraction_machinists_mortality_mult = 0.05
 	building_group_bg_oil_extraction_engineers_mortality_mult = 0.02
-	
+
 	building_group_bg_light_industry_laborers_mortality_mult = 0.05
-	building_group_bg_light_industry_machinists_mortality_mult = 0.05
-	
-	building_group_bg_heavy_industry_laborers_mortality_mult = 0.15
-	building_group_bg_heavy_industry_machinists_mortality_mult = 0.15
+	building_group_bg_light_industry_machinists_mortality_mult = 0.02
+
+	building_group_bg_heavy_industry_laborers_mortality_mult = 0.1
+	building_group_bg_heavy_industry_machinists_mortality_mult = 0.05
 	building_group_bg_heavy_industry_engineers_mortality_mult = 0.02
-	
-	building_group_bg_infrastructure_laborers_mortality_mult = 0.15
-	building_group_bg_infrastructure_machinists_mortality_mult = 0.1
+
+	building_group_bg_infrastructure_laborers_mortality_mult = 0.1
+	building_group_bg_infrastructure_machinists_mortality_mult = 0.05
 	building_group_bg_infrastructure_engineers_mortality_mult = 0.02
 
-	building_group_bg_whaling_laborers_mortality_mult = 0.15
+	building_group_bg_whaling_laborers_mortality_mult = 0.1
 	building_group_bg_whaling_machinists_mortality_mult = 0.05
 
-	building_group_bg_fishing_laborers_mortality_mult = 0.1
-	building_group_bg_fishing_machinists_mortality_mult = 0.05
+	building_group_bg_fishing_laborers_mortality_mult = 0.05
+	building_group_bg_fishing_machinists_mortality_mult = 0.02
 	building_group_bg_fishing_engineers_mortality_mult = 0.02
 }
 
@@ -155,12 +157,12 @@ severe_starvation_penalty = {
 
 commander_battle_end_victory = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
-	character_popularity_add = 10	# scaled by a positive define
+	character_popularity_add = 1	# scaled by a positive define
 }
 
 commander_battle_end_loss = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
-	character_popularity_add = 10	# scaled by a negative define
+	character_popularity_add = 1	# scaled by a negative define
 }
 
 opposition_agitator_popularity = {
@@ -170,9 +172,8 @@ opposition_agitator_popularity = {
 in_default = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	building_throughput_add = -0.5
-	unit_offense_mult = -0.95
-	unit_defense_mult = -0.95
-	country_loan_interest_rate_mult = 1
+	unit_offense_mult = -0.5
+	unit_defense_mult = -0.5
 }
 
 declared_bankruptcy = {
@@ -180,8 +181,8 @@ declared_bankruptcy = {
 	country_prestige_mult = -0.75
 	country_leverage_generation_mult = -0.75
 	country_loan_interest_rate_mult = 0.5
-	unit_offense_mult = -0.95
-	unit_defense_mult = -0.95
+	unit_offense_mult = -0.75
+	unit_defense_mult = -0.75
 	state_migration_pull_mult = -0.75
 	state_welfare_payments_mult = -1
 	state_market_access_price_impact = -0.1
@@ -194,9 +195,6 @@ incorporated_state = {
 
 unincorporated_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-	# To balance for unincorporated states not paying taxes
-	state_unincorporated_starting_wages_mult = -0.20
-	building_unincorporated_subsistence_output_mult = -0.20
 	state_infrastructure_mult = -0.25
 	state_conscription_rate_mult = -0.5
 	state_expected_sol_mult = -0.33
@@ -214,7 +212,7 @@ unincorporated_state = {
 
 treaty_port_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	state_migration_pull_mult = 0.75
+	state_migration_pull_mult = 0.5
 }
 
 recently_conquered_state = {
@@ -242,7 +240,6 @@ capital_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	state_pop_pol_str_mult = 0.25
 	state_tax_capacity_mult = 0.25
-	state_migration_pull_mult = 0.25
 	state_infrastructure_from_population_max_add = 20
 	state_infrastructure_from_population_mult = 0.1
 }
@@ -262,43 +259,43 @@ moved_market_capital_recently = {
 tax_modifier_very_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_legitimacy_base_add = 10
-	state_radicals_from_political_movements_mult = -0.3
-	state_lower_strata_expected_sol_add = -2
-	state_middle_strata_expected_sol_add = -3
-	state_upper_strata_expected_sol_add = -4
+	state_radicals_from_political_movements_mult = -0.2
+	state_lower_strata_expected_sol_add = -1
+	state_middle_strata_expected_sol_add = -2
+	state_upper_strata_expected_sol_add = -3
 }
 
 tax_modifier_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_legitimacy_base_add = 5
-	state_radicals_from_political_movements_mult = -0.15
-	state_lower_strata_expected_sol_add = -1
-	state_middle_strata_expected_sol_add = -1.5
-	state_upper_strata_expected_sol_add = -2
-}	
+	state_radicals_from_political_movements_mult = -0.1
+	state_lower_strata_expected_sol_add = -0.5
+	state_middle_strata_expected_sol_add = -1
+	state_upper_strata_expected_sol_add = -1.5
+}
 
 tax_modifier_medium = {
-}	
+}
 
 tax_modifier_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	country_legitimacy_base_add = -10
 	state_radicals_from_political_movements_mult = 0.5
-	interest_group_in_government_attraction_mult = -0.15
+	interest_group_in_government_attraction_mult = -0.1
 	state_lower_strata_expected_sol_add = 1.5
 	state_middle_strata_expected_sol_add = 2.5
 	state_upper_strata_expected_sol_add = 3.5
-}	
+}
 
 tax_modifier_very_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	country_legitimacy_base_add = -20
 	state_radicals_from_political_movements_mult = 1.0
-	interest_group_in_government_attraction_mult = -0.3
+	interest_group_in_government_attraction_mult = -0.2
 	state_lower_strata_expected_sol_add = 3
 	state_middle_strata_expected_sol_add = 5
 	state_upper_strata_expected_sol_add = 7
-}		
+}
 
 government_wages_very_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
@@ -321,7 +318,7 @@ government_wages_medium = {
 
 government_wages_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_government_wages_mult = 0.125
+    country_government_wages_mult = 0.125
 	interest_group_ig_intelligentsia_approval_add = 2	
 	interest_group_ig_petty_bourgeoisie_approval_add = 2
 	country_bureaucracy_mult = 0.1
@@ -380,7 +377,7 @@ prestige_goods_supply_army = {
 prestige_goods_supply_navy = {
 	unit_navy_offense_mult = 0.15
 	unit_navy_defense_mult = 0.15
-	unit_morale_recovery_mult = 0.15
+	unit_morale_recovery_mult = 0.25
 }
 
 insurrectionary_ig = {
@@ -393,26 +390,32 @@ ruler_left_interest_group = {
 	interest_group_approval_add = -5
 }
 
+# Unscaled modifier applied to all insurrectionary countries
+uprising = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	building_training_rate_mult = 2.0
+}
+
+# Scaled modifier for insurrectionary country conscription rate, based on CIVIL_WAR_CONSCRIPTION_RATE defines
 uprising_conscription = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	state_conscription_rate_add = 1.0
-	building_training_rate_mult = 0.20
-	building_training_rate_add = 1000
 }
 
+# Below modifiers generate sell orders of military goods in insurrectionary capitals, based on pre-civil war market conditions
 uprising_arms_cache_small_arms = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
-	state_sell_orders_small_arms_add = 15
+	state_sell_orders_small_arms_add = 1
 }
 
 uprising_arms_cache_ammunition = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
-	state_sell_orders_ammunition_add = 15
+	state_sell_orders_ammunition_add = 1
 }
 
 uprising_arms_cache_artillery = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
-	state_sell_orders_artillery_add = 15
+	state_sell_orders_artillery_add = 1
 }
 
 revolution_lost_ig = {
@@ -473,7 +476,6 @@ insufficient_convoys = {
 efficient_bureaucracy = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	state_construction_mult = 0.10
-	country_institution_size_change_speed_mult = 0.5
 }
 
 # Insufficient BUR reduces tax & government dividends collected by 100% at 2x usage to production
@@ -486,24 +488,21 @@ administrative_overburden = {
 # Excess AUT reduces enactment time by -25% at 2x production to usage
 legislative_efficiency = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	country_law_enactment_time_mult = -0.35
-	state_radicals_from_political_movements_mult = -0.35
+	country_law_enactment_time_mult = -0.25
 }
 
 # Insufficent AUT reduces opposition Interest Groups' Approval by -10 at 2x usage to production
 political_dysfunction = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_opposition_ig_approval_add = -15
-	country_influence_mult = -0.35
-	state_radicals_from_political_movements_mult = 0.35
-	state_loyalists_from_political_movements_mult = -0.35
+	country_opposition_ig_approval_add = -10
+	state_radicals_from_political_movements_mult = 0.20
 }
 
 # Excess DIP increases Infamy decay by up to 25% at 2x production to usage
 diplomatic_mitigation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	country_leverage_generation_mult = 0.35
-	country_infamy_decay_mult = 0.35
+	country_leverage_generation_mult = 0.25
+	country_infamy_decay_mult = 0.25
 }
 
 # Scales with country population / COUNTRY_POPULATION_LEVERAGE_RESISTANCE_MODIFIER_DIVISOR
@@ -602,12 +601,7 @@ battle_unit_experience = {
 # Scales with how much population is under low pop threshold
 low_pop_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	state_birth_rate_mult = 0.75
-}
-
-high_pop_state = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_birth_rate_mult = -0.35
+	state_birth_rate_mult = 0.5
 }
 
 # Multiplies unemployment rate in state by this
@@ -619,17 +613,14 @@ unemployment_birth_penalty_state = {
 # if this bonus changes need code support
 country_rivalry = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_influence_add = 250
+	country_influence_add = 200
 }
 
 # Infamy modifiers, applied from current infamy level
-infamy_reputable = {
-	
-	
-	country_influence_mult = 0.25
+infamy_reputable = {	
+    country_influence_mult = 0.25
 	country_loan_interest_rate_mult = -0.05
-	
-}
+	}
 
 infamy_infamous = {
 	country_radicals_from_conquest_mult = 0.5
@@ -647,15 +638,14 @@ infamy_pariah = {
 	country_radicals_from_conquest_mult = 1
 	country_influence_mult = -0.35
 	country_loan_interest_rate_mult = 0.2
-
 }
 
 # Scales with devastation level
 state_region_devastation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_infrastructure_mult = -1.0
-	state_mortality_mult = 1.5
-	state_migration_pull_mult = -3.0
+	state_mortality_mult = 1.0
+	state_migration_pull_mult = -2.0
 	state_construction_mult = -0.5
 	building_throughput_add = -0.25
 }
@@ -746,15 +736,14 @@ country_navy_power_projection = {
 # Scales with country literacy rate
 country_literacy_rate = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_weekly_innovation_max_add = 165
-	country_tech_spread_add = 105
+	country_weekly_innovation_max_add = 150
+	country_tech_spread_add = 75
 }
 
 # Scales with number of excess innovation points
 excess_innovation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_tech_spread_add = 0.18
-	country_tech_spread_mult = -0.00034
+	country_tech_spread_add = 0.2
 }
 
 # Scales with admiral convoy raiding strength
@@ -772,13 +761,13 @@ battle_naval_invasion_beachhead_penalty = {
 # a naval invasion force without Landing Craft gives a flat penalty in land combat
 battle_naval_invasion_landing_penalty = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
-	unit_offense_mult = -0.35
+	unit_offense_mult = -0.25
 }
 
 country_humiliated = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	country_prestige_mult = -0.25
-	country_leverage_generation_mult = -0.50
+	country_leverage_generation_mult = -0.25
 }
 
 country_cut_down_to_size = {
@@ -812,7 +801,6 @@ low_organization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
 	unit_offense_mult = -0.75
 	unit_defense_mult = -0.75
-	military_formation_attrition_risk_mult = 0.5
 	unit_morale_recovery_mult = -1
 	unit_recovery_rate_add = -0.5
 	unit_blockade_mult = -0.75
@@ -842,7 +830,7 @@ repudiated_obligation = {
 }
 
 base_army_attrition = {
-	military_formation_attrition_risk_add = 0.25
+	military_formation_attrition_risk_add = 0.1
 }
 
 base_navy_attrition = {
@@ -850,7 +838,7 @@ base_navy_attrition = {
 }
 
 formation_attrition_at_home_hq = {
-	military_formation_attrition_risk_mult = -0.75
+	military_formation_attrition_risk_mult = -0.5
 }
 
 # This is multiplied with country_authority_per_subject_add and the number of direct subjects of the country
@@ -877,11 +865,8 @@ retired_commander_interest_group_impact = {
 forced_regime_change = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	interest_group_in_government_approval_add = 5
-	interest_group_in_opposition_approval_add = -10
-	country_prestige_mult = -0.5
-	country_influence_mult = -0.5
-	country_legitimacy_base_add = -50
-
+	country_legitimacy_base_add = 25
+	country_prestige_mult = -0.25
 }
 
 weak_power_bloc = {

@@ -31,9 +31,7 @@
 		add_taxed_goods = g:opium
 		add_taxed_goods = g:tobacco
 
-		trigger_event = {
-			id = patwarahi.1
-		}
+		
 
 		add_company = company_type:company_east_india_company
 		company:company_east_india_company = {

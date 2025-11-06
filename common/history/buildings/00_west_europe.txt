@@ -4631,10 +4631,7 @@
 				reserves=1
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
 			}
-			create_building={
-				building="building_dutch_polders"
-				level=1
-			}
+		
 			create_building={
 				building="building_construction_sector"
 				add_ownership={
@@ -4832,10 +4829,7 @@
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
-			create_building={
-				building="building_dutch_polders"
-				level=1
-			}
+		
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
@@ -5234,10 +5228,7 @@
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
-			create_building={
-				building="building_palais_royal_de_bruxelles"
-				level=1
-			}
+		
 			create_building={
 				building="building_construction_sector"
 				add_ownership={

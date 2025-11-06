@@ -10,9 +10,18 @@ harsh_ai_behavior_trigger = {
 
 ai_strongly_desires_target_state = {
 	OR = {
-		has_secret_goal = { # AI wants to conquer the state owner
-			who = scope:target_state.owner
-			secret_goal = conquer
+		AND = {
+			has_secret_goal = { # AI wants to conquer the state owner
+				who = scope:target_state.owner
+				secret_goal = conquer
+			}
+			OR = {
+				has_strategic_land_adjacency = scope:target_state # Will limit its ambitions to land borders
+				AND = {
+					scope:target_state.region ?= capital.region # Will try to annex states in its capital region regardless of whether they border it or not
+					can_reach_target_state = yes
+				}
+			}
 		}
 		scope:target_state = { has_claim_by = root } # AI always wants claims
 	}
@@ -38,7 +47,13 @@ ai_desires_target_state = {
 				has_strategy = ai_strategy_world_revolution
 				has_strategy = ai_strategy_territorial_expansion
 			}
-			has_strategic_adjacency = scope:target_state
+			OR = {
+				has_strategic_land_adjacency = scope:target_state # Will limit its ambitions to land borders
+				AND = {
+					scope:target_state.region ?= capital.region # Will try to annex states in its capital region regardless of whether they border it or not
+					can_reach_target_state = yes
+				}
+			}
 		}
 		AND = { # Colonialist AI wants colonies
 			OR = {
@@ -46,7 +61,7 @@ ai_desires_target_state = {
 				has_strategy = ai_strategy_colonial_expansion
 			}
 			scope:target_state.owner = { is_country_type = unrecognized }
-			can_reach_target_state = yes
+			can_reach_target_state = yes  # Willing to go overseas to acquire territories
 		}
 		AND = { # AI wants nearby states if gifted them by overlord
 			has_strategic_adjacency = scope:target_state
@@ -125,6 +140,22 @@ has_je_conquest_reason = {
 		}
 
 		AND = {
+			has_journal_entry = je_opium_wars
+			$TARGET$ = {
+				has_variable = opium_wars_target
+			}
+		}
+
+		AND = {
+			has_journal_entry = je_boxer_rebellion
+			$TARGET$ = {
+				any_scope_state = {
+					state_region = { is_homeland = cu:han }
+				}
+			}
+		}
+
+		AND = {
 			has_journal_entry = je_greek_nationalism
 			$TARGET$ = {
 				any_scope_state = {
@@ -134,6 +165,34 @@ has_je_conquest_reason = {
 			}
 		}
 
+		AND = {
+			
+			$TARGET$ = {
+				is_country_type = unrecognized
+				target_is_our_or_fellow_subject = no
+				any_scope_state = {
+					OR = {
+						region = sr:region_punjab
+						region = sr:region_bombay
+						region = sr:region_central_india
+						region = sr:region_madras
+						region = sr:region_bengal
+						# himalayas intentionally excluded to make BIC less aggressive against Tibet etc
+						state_region = s:STATE_MANDALAY
+						state_region = s:STATE_KACHIN
+						state_region = s:STATE_SHAN_STATES
+						state_region = s:STATE_PEGU
+					}
+				}
+			}
+		}
+
+		AND = {
+			has_strategy = ai_strategy_unify_china
+			$TARGET$ = {
+				has_journal_entry = je_reunify_china
+			}
+		}
 
 		AND = {
 			has_journal_entry = je_age_of_princes
@@ -189,7 +248,7 @@ has_je_conquest_reason = {
 
 		AND = {
 			country_has_primary_culture = cu:russian
-			has_law = law_type:law_national_supremacy
+			has_law_or_variant = law_type:law_national_supremacy
 			$TARGET$ = {
 				any_scope_state = {
 					OR = {
@@ -363,6 +422,12 @@ has_je_subjugation_reason = {
 				}
 			}
 		}
+		AND = {
+			has_journal_entry = je_danubian_federation
+			$TARGET$ = {
+				has_variable = danubian_federation_opposed
+			}
+		}
 	}
 }
 
@@ -426,6 +491,13 @@ has_je_befriend_reason = {
 			scope:target_country = {
 				country_has_primary_culture = cu:korean
 				is_revolutionary = yes
+			}
+		}
+
+		AND = {
+			has_journal_entry = je_danubian_federation
+			$TARGET$ = {
+				has_variable = danubian_federation_receptive
 			}
 		}
 	}

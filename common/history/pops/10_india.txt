@@ -16,11 +16,7 @@ POPS = {
 				religion = sunni
 				size = 1442941
 			}
-			create_pop = {
-				culture = patwarahi
-				religion = protestant
-				size = 244441
-			}
+	
 			create_pop = {
 				culture = bihari
 				religion = theravada
@@ -46,16 +42,8 @@ POPS = {
 				religion = hindu
 				size = 11621021
 			}
-			create_pop = {
-				culture = patwarahi
-				religion = protestant
-				size = 804853
-			}
-			create_pop = {
-				culture = patwarahi
-				religion = hindu
-				size = 104821
-			}
+	
+	
 			create_pop = {
 				culture = french
 				religion = catholic
@@ -312,11 +300,7 @@ POPS = {
 				religion = hindu
 				size = 355557
 			}
-			create_pop = {
-				culture = patwarahi
-				religion = hindu
-				size = 355557
-			}
+	
 			create_pop = {
 				culture = panjabi
 				religion = hindu
@@ -383,16 +367,8 @@ POPS = {
 				religion = hindu
 				size = 1221251
 			}
-			create_pop = {
-				culture = patwarahi
-				religion = hindu
-				size = 355557
-			}
-			create_pop = {
-				culture = patwarahi
-				religion = protestant
-				size = 255557
-			}
+
+	
 			create_pop = {
 				culture = bihari
 				religion = sunni
@@ -1148,7 +1124,7 @@ POPS = {
 		}
 	}
 	s:STATE_RAJPUTANA = {
-		region_state:PEC = {
+		region_state:EIC = {
 			create_pop = {
 				culture = rajput
 				size = 22349
@@ -1537,11 +1513,7 @@ POPS = {
 				culture = oriya
 				size = 869092
 			}
-			create_pop = {
-				culture = patwarahi
-				religion = hindu
-				size = 45557
-			}
+			
 		}
 		region_state:NET = {
 			create_pop = {
@@ -1596,11 +1568,7 @@ POPS = {
 				culture = telegu
 				size = 2295020
 			}
-			create_pop = {
-				culture = patwarahi
-				religion = protestant
-				size = 215557
-			}
+			
 			create_pop = {
 				culture = tamil
 				size = 270201
@@ -1848,11 +1816,7 @@ POPS = {
 				culture = tamil
 				size = 7168370
 			}
-			create_pop = {
-				culture = patwarahi
-				religion = hindu
-				size = 355557
-			}
+			
 			create_pop = {
 				culture = tamil
 				religion = protestant
@@ -2267,16 +2231,8 @@ POPS = {
 				religion = shiite
 				size = 158858
 			}
-			create_pop = {
-				culture = patwarahi
-				religion = protestant
-				size = 186868
-			}
-			create_pop = {
-				culture = patwarahi
-				religion = hindu
-				size = 48022
-			}
+	
+		
 			create_pop = {
 				culture = pathan
 				religion = sunni

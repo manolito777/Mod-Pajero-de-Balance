@@ -1822,7 +1822,7 @@
 				activate_production_methods = { "pm_handsewn_clothes"  "pm_traditional_looms" "pm_craftsman_sewing" }
 			}
 		}
-		region_state:PEC = {
+		region_state:EIC = {
 		}
 		region_state:JAI = {
 		}

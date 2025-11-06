@@ -39,7 +39,7 @@ berlinreform = {
 		}
 		add_modifier = {
 			name = BerlinRenovation
-			years = 3
+			years = 2
 		}
 	}
 	ai_chance = {
