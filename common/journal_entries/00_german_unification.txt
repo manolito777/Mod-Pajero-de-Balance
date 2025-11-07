@@ -330,6 +330,7 @@ je_north_german_unification = {
 			add_journal_entry = {
 				type = je_german_unification
 			}
+		
 		}
 		c:AUS = {
 			add_journal_entry = {

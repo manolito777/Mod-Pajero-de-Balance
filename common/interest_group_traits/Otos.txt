@@ -1,0 +1,13 @@
+### Otomanos
+
+
+ig_trait_unwavering_loyalty = { # Happy
+	icon = "gfx/interface/icons/ig_trait_icons/veteran_consultation.dds"
+	min_approval = happy
+
+	modifier = {
+		state_radicals_from_political_movements_mult = -0.2
+		country_bureaucracy_mult = 0.1
+		state_education_access_add = 0.1
+	}
+}
