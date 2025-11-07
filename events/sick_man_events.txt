@@ -100,7 +100,32 @@ sick_man.2 = {
 		trigger = {
 			has_variable = completed_sick_man_army_je
 		}
-
+		add_modifier = {
+			name = ottoman_army_reform
+			days = normal_modifier_time
+		}
+		add_modifier = {
+			name = major_explosion_demografica
+			years = 20
+			is_decaying = yes
+		}
+	}
+	option = {
+		name = sick_man.2.b
+		trigger = {
+			OR = {
+				has_variable = completed_syria_je
+				has_variable = completed_separatism_sick_man_je
+			}
+			NAND = {
+				owns_entire_state_region = STATE_ATTICA
+				owns_entire_state_region = STATE_PELOPONNESE
+				owns_entire_state_region = STATE_CRETE
+				owns_entire_state_region = STATE_WESTERN_SERBIA
+				owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
+				owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+			}
+		}
 		s:STATE_ATTICA = {
 			add_claim = ROOT
 		}
@@ -119,22 +144,55 @@ sick_man.2 = {
 		s:STATE_NORTHERN_TRANSYLVANIA = {
 			add_claim = ROOT
 		}
-
 		add_modifier = {
-			name = ottoman_army_reform
-			days = normal_modifier_time
+			name = major_explosion_demografica
+			years = 20
+			is_decaying = yes
+		}
+	}
+	option = {
+		name = sick_man.2.c
+		trigger = {
+			has_variable = completed_sick_man_economy_je
 		}
 		add_modifier = {
 			name = ottoman_urbanization
 			days = normal_modifier_time
 		}
 		add_modifier = {
+			name = major_explosion_demografica
+			years = 20
+			is_decaying = yes
+		}
+	}
+	option = {
+		name = sick_man.2.d
+		trigger = {
+			has_variable = completed_sick_man_education_je
+		}
+		add_modifier = {
 			name = ottoman_education
 			days = normal_modifier_time
 		}
 		add_modifier = {
+			name = major_explosion_demografica
+			years = 20
+			is_decaying = yes
+		}
+	}
+	option = {
+		name = sick_man.2.e
+		trigger = {
+			has_variable = completed_sick_man_bureaucracy_je
+		}
+		add_modifier = {
 			name = ottoman_bureaucracy
 			days = normal_modifier_time
+		}
+		add_modifier = {
+			name = major_explosion_demografica
+			years = 20
+			is_decaying = yes
 		}
 	}
 }
