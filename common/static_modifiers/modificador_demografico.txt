@@ -37,20 +37,31 @@ eth_explosion_demografica = {
 	country_tech_spread_mult = 1
 	state_construction_mult = 0.15
 }
+
 plt_explosion_demografica = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
 
 	state_birth_rate_mult = 0.10
 }
+
 unt_explosion_demografica = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
-
 	state_birth_rate_mult = 0.05
 }
 
 mex_explosion_demografica = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
-
 	state_birth_rate_mult = 0.1
 	state_migration_pull_mult = 0.25
 }
+
+ibe_explosion_demografica = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
+	state_birth_rate_mult = 0.05
+}
+
+ibe_siesta_abolition = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
+	state_working_adult_ratio_add = 0.1
+}
+
