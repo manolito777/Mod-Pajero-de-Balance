@@ -21,7 +21,7 @@ ger_explosion_demografica = {
 sca_explosion_demografica = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
 
-	state_birth_rate_mult = 0.15
+	state_birth_rate_mult = 0.25
 }
 
 ita_explosion_demografica = {
@@ -46,7 +46,12 @@ plt_explosion_demografica = {
 
 unt_explosion_demografica = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
-	state_birth_rate_mult = 0.05
+	state_birth_rate_mult = 0.1
+}
+
+Belgians_pledge_loyalty = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
+	state_working_adult_ratio_add = 0.05
 }
 
 mex_explosion_demografica = {
