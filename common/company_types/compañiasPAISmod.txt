@@ -128,7 +128,7 @@ Società_Italiana_per_la_Fabbricazione_della_Dinamite_&_NFTs = {
 	}
 }
 ##############################AMERICA#############################3
-# Companhia Agrícola Fazenda Dumont (codeado por amarisha)
+# Companhia Agrícola Fazenda Dumont Codeado por Amarisha, Brasil.
 company_CAFD = {
 	icon = "gfx/interface/icons/company_icons/fazenda.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
@@ -196,6 +196,93 @@ company_CAFD = {
 			}
 		}
 	}
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+    }
+}
+# Fábrica Brasileira de Alpargatas e Calçados / Alpargatas S.A. Codeado por Amarisha, Brasil.
+company_Alpargatas = {
+	icon = "gfx/interface/icons/company_icons/alpargatas.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	preferred_headquarters = { STATE_SAO_PAULO }
+	
+
+	
+	building_types = {  #26
+        building_cotton_plantation
+		building_logging_camp
+	}
+	
+	extension_building_types = {
+		building_rubber_plantation
+	}
+	
+	potential = {
+	    OR = {
+		has_interest_marker_in_region = region_brazil
+		has_interest_marker_in_region = region_la_plata
+		}
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+			    OR = {
+				state_region = s:STATE_SAO_PAULO
+				state_region = s:STATE_BUENOS_AIRES
+				state_region = s:STATE_URUGUAY
+				}
+			}
+		}
+	}		
+
+	possible = {
+		any_scope_state = {
+			OR = {
+			state_region = s:STATE_SAO_PAULO
+			state_region = s:STATE_BUENOS_AIRES
+			state_region = s:STATE_URUGUAY
+			}
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mills
+				level >= 4
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_group_bg_coffee_plantations_throughput_add = 0.3 #16
+
+	}
+	
+
+	ai_will_do = {
+		any_scope_state = {
+			OR = {
+			state_region = s:STATE_SAO_PAULO
+			state_region = s:STATE_BUENOS_AIRES
+			state_region = s:STATE_URUGUAY
+			}
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_textile_mills = {
+			level = 4
+			state_trigger = {
+				OR = {
+			    state_region = s:STATE_SAO_PAULO
+			    state_region = s:STATE_BUENOS_AIRES
+			    state_region = s:STATE_URUGUAY
+			    }
+			}
+		}
+	}
+	
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
     }
