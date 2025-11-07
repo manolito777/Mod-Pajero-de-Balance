@@ -27,15 +27,13 @@ ideology_junker_paternalistic2 = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = approve
-		law_Kaiserliche_Monarchie = strongly_approve
 		law_theocracy = neutral
 		law_presidential_republic = neutral
 		law_parliamentary_republic = neutral
 		law_corporate_state = neutral
 		law_council_republic = strongly_disapprove
 	}
-    lawgroup_economic_system = {
-		law_Staatskapitalismus = strongly_approve
+
 	lawgroup_distribution_of_power = {
 		law_single_party_state = neutral
 		law_landed_voting = strongly_approve
