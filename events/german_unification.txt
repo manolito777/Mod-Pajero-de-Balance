@@ -305,12 +305,6 @@ german_unification.5 = {
 			add_journal_entry = {
 				type = je_north_german_unification
 			}
-		}
-		else_if = {
-			limit = { country_has_primary_culture = cu:south_german }
-			add_journal_entry = {
-				type = je_south_german_unification
-			}
-		}		
+		}	
 	}
 }

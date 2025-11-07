@@ -58,7 +58,14 @@ law_protectionism = {
 	unlocking_technologies = {
 		stock_exchange
 	}
-
+	is_visible = {
+		NOR = {
+	        c:NGF ?= this
+			c:PRU ?= this
+			c:GER ?= this
+				
+		}
+	}
 	modifier = {
 		state_tariff_import_add = 0.50
 		state_tariff_export_add = 0.50
