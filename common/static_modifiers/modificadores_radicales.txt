@@ -1,0 +1,5 @@
+﻿radicales1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
+
+		state_radicals_from_political_movements_mult = 0.25
+}
