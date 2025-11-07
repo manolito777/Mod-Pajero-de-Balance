@@ -19,7 +19,7 @@ siesta_abolition = {
 			}
 	}
 	ai_chance = {
-		base = 3
+		base = 1
 	}
   }
 }
