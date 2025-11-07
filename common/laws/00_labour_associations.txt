@@ -27,6 +27,7 @@
 	        c:USA ?= this
 			c:PRU ?= this
 			c:GER ?= this
+				c:NGF ?= this
 		}
 	}
 	disallowing_laws = {

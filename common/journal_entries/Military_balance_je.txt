@@ -39,9 +39,7 @@ je_military_balance_era3_2 = {
 	
 	group = je_group_technology
 	
-	is_shown_when_active = {
-		is_player = yes 
-	}
+
 	complete = {
 		has_technology_researched = dynamite
 		has_technology_researched = joint_stock_companies
@@ -94,10 +92,7 @@ je_military_balance_era3_5_2 = {
 	
 	group = je_group_technology
 	
-	is_shown_when_active = {
-		is_player = yes
-	}
-	
+
 	complete = {
 		
 		has_technology_researched = human_rights
@@ -147,9 +142,7 @@ je_military_balance_era4_2 = {
 	
 	group = je_group_technology
 	
-	is_shown_when_active = {
-		is_player = yes
-	}
+
 	
 	complete = {
 		has_technology_researched = radio
@@ -193,9 +186,7 @@ je_military_balance_era4_5_2 = {
 	
 	group = je_group_technology
 	
-	is_shown_when_active = {
-		is_player = yes
-	}
+
 	complete = {
 		has_technology_researched = combustion_engine
 		has_technology_researched = malaria_prevention
@@ -241,9 +232,7 @@ je_military_balance_era5_2 = {
 	
 	group = je_group_technology
 	
-	is_shown_when_active = {
-		is_player = yes
-	}
+
 	
 	complete = {
 			has_technology_researched = plastics
@@ -294,9 +283,7 @@ je_military_balance_era5_5_2 = {
 	
 	group = je_group_technology
 	
-	is_shown_when_active = {
-		is_player = yes
-	}
+
 	complete = { 
 		has_technology_researched = compression_ignition
 		OR = {
