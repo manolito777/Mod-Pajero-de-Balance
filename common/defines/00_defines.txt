@@ -1661,10 +1661,10 @@ NCharacters = {
 	MAX_TRAITS_CONDITION = 2						# The max amount of Condition Traits a character can develop normally (note: not adhered to by add_trait effect)
 
 	TRAIT_GAIN_DIVISOR = 100.0						# Final trait gain is always divided by this so we don't have to use all the decimals
-	DEFAULT_TRAIT_GAIN = 0.25						# Every character's Expected Traits meter increases by this much per week by default
+	DEFAULT_TRAIT_GAIN = 0.5						# Every character's Expected Traits meter increases by this much per week by default
 	TRAIT_GAIN_POLITICIAN_POWERFUL = 0.1			# Powerful Politicians Expected Traits meter increases by this much *extra* each week
 	TRAIT_GAIN_RULER = 0.1							# Rulers Expected Traits meter increases by this much *extra* each week
-	TRAIT_GAIN_COMMANDER_RECRUITABLE = 0.05			# Recruitable offer commanders Expected Traits meter increases by this much per week, overrides all other factors
+	TRAIT_GAIN_COMMANDER_RECRUITABLE = 0.25			# Recruitable offer commanders Expected Traits meter increases by this much per week, overrides all other factors
 	TRAIT_GAIN_IN_EXILE_POOL = 0.1					# Characters in the exile pool Expected Traits meter increases by this much per week, overrides all other factors
 	TRAIT_GAIN_VOIDED = 0.0							# Voided characters Expected Traits meter increases by this much per week, overrides all other factors
 
@@ -1760,13 +1760,13 @@ NWar = {
 	NAVAL_INVASION_MAX_LAND_BATTLE_DEFEATS_AT_ZERO_OCCUPATION = 3 		# At this number of land defeats with zero occupation you fail the naval invasion
 	NAVAL_INVASION_MIN_POWER_PROJECTION_RATIO_TO_BLOCK_LANDING = 0.25 	# How powerful a fleet must be to be considered as "blocking" a naval invading fleet
 
-	STATE_CONQUEST_HOMELAND_AND_CLAIM_RADICALIZATION = 0.1
-	STATE_CONQUEST_HOMELAND_AND_CLAIM_DEMILITARIZATION = 0.25
-	STATE_CONQUEST_HOMELAND_OR_CLAIM_RADICALIZATION = 0.3
+	STATE_CONQUEST_HOMELAND_AND_CLAIM_RADICALIZATION = 0.01
+	STATE_CONQUEST_HOMELAND_AND_CLAIM_DEMILITARIZATION = 0.9
+	STATE_CONQUEST_HOMELAND_OR_CLAIM_RADICALIZATION = 0.05
 	STATE_CONQUEST_HOMELAND_OR_CLAIM_DEMILITARIZATION = 0.5
-	STATE_CONQUEST_DEFAULT_RADICALIZATION = 0.5
+	STATE_CONQUEST_DEFAULT_RADICALIZATION = 0.1
 	STATE_CONQUEST_DEFAULT_DEMILITARIZATION = 0.75
-	STATE_PEACEFUL_ANNEXATION_RADICALIZATION_FACTOR = 0.25	# If the state was annexed due to an accepted diplomatic demand by the overlord, multiply by this
+	STATE_PEACEFUL_ANNEXATION_RADICALIZATION_FACTOR = 0.1	# If the state was annexed due to an accepted diplomatic demand by the overlord, multiply by this
 	STATE_CONQUEST_KEEP_ALL = 0.0
 
 	NUM_PROVINCES_FOR_ADVANCEMENT_SELECTION = 5		# After having computed weights for possible advancement provinces using front_battle_province_weight, filter out all but the X top weighted provinces. This is done to prevent randomly selecting an element that had a low weight.
