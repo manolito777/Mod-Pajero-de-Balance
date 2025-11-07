@@ -13,8 +13,8 @@
     capped_resources = {
         bg_iron_mining = 72
         bg_lead_mining = 18
-		bg_coal_mining = 5
-        bg_logging = 45
+		bg_coal_mining = 20
+        bg_logging = 30
         bg_fishing = 18
     }
     naval_exit_id = 3000
@@ -54,7 +54,7 @@ STATE_SCANIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 8
-        bg_logging = 10
+        bg_logging = 15
         bg_fishing = 16
     }
     naval_exit_id = 3019
@@ -532,7 +532,7 @@ STATE_ILE_DE_FRANCE = {
     farm = "x12462D"
     mine = "x906000"
     wood = "x7080DF"
-    arable_land = 40
+    arable_land = 65
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 4
@@ -631,8 +631,8 @@ STATE_FRENCH_LOW_COUNTRIES = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 100
-        bg_logging = 3
-        bg_fishing = 6
+        bg_logging = 12
+        bg_fishing = 8
 		bg_coal_mining = 7
     }
     naval_exit_id = 3028
@@ -688,7 +688,7 @@ STATE_POITOU = {
     arable_land = 90
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_logging = 5
+        bg_logging = 11
         bg_fishing = 6
     }
     naval_exit_id = 3029
@@ -705,7 +705,7 @@ STATE_GUYENNE = {
     arable_land = 90
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_logging = 9
+        bg_logging = 14
     }
 }
 
@@ -721,9 +721,8 @@ STATE_AUVERGNE_LIMOUSIN = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_coal_mining = 56
-        bg_iron_mining = 27
+        bg_iron_mining = 15
         bg_logging = 14
-		bg_lead_mining = 2
     }
 }
 
@@ -788,7 +787,7 @@ STATE_FRANCHE_COMTE = {
     farm = "xB000E0"
     mine = "xF00060"
     wood = "xCF46D1"
-    arable_land = 50
+    arable_land = 55
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_iron_mining = 20
@@ -845,7 +844,7 @@ STATE_ORLEANS = {
     arable_land = 70
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_logging = 7
+        bg_logging = 11
     }
 }
 
@@ -905,7 +904,6 @@ STATE_GELRE = {
     capped_resources = {
         bg_coal_mining = 40
         bg_logging = 9
-		 bg_iron_mining = 5
     }
 }
 
