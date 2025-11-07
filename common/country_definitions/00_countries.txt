@@ -34,7 +34,7 @@ EIC = {
 	tier = kingdom
 	social_hierarchy = british_indian_caste_system
 	
-	cultures = { hindu bengali rajput }
+	cultures = { bengali rajput }
 	capital = STATE_WEST_BENGAL
 }
 PEC = {
