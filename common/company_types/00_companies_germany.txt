@@ -479,8 +479,8 @@ company_basf = {
 	}
 
 	prosperity_modifier = {
-		country_weekly_innovation_mult = 0.2
-		building_group_bg_oil_extraction_throughput_add = 0.2
+		country_weekly_innovation_mult = 0.1
+		building_group_bg_oil_extraction_throughput_add = 0.05
 		state_birth_rate_mult = 0.05
 	}
 
