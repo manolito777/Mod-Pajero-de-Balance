@@ -1,4 +1,3 @@
-﻿################################EUROPABROS########################################
 #Peugeot, francia.
 company_peugeot = {
 	icon = "gfx/interface/icons//company_icons/peugeot.dds"
@@ -127,7 +126,6 @@ Società_Italiana_per_la_Fabbricazione_della_Dinamite_&_NFTs = {
 		value = 3 # Higher base value for flavored companies
 	}
 }
-##############################AMERICA#############################3
 # Companhia Agrícola Fazenda Dumont Codeado por Amarisha, Brasil.
 company_CAFD = {
 	icon = "gfx/interface/icons/company_icons/fazenda.dds"
@@ -289,7 +287,7 @@ company_Alpargatas = {
 }
 #Nederlandsche Handel-Maatschappij (compañia codeada por Amarisha, holanda)
 company_nhm = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/nhm.dds"
+	icon = "gfx/interface/icons/company_icons/nhm.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 	
 	flavored_company = yes
@@ -313,9 +311,7 @@ company_nhm = {
 		building_cotton_plantation
 	}
 	potential = {
-		country_has_primary_culture = cu:dutch
 		country_has_primary_culture = cu:wallonian
-		country_has_primary_culture = cu:flemish
 	}
 	
 	attainable = {
@@ -339,7 +335,7 @@ company_nhm = {
 	}
 	
 	prosperity_modifier = {
-		building_trade_center_throughput_add = 0.15
+		building_trade_center_throughput_add = 0.25
 		state_trade_advantage_mult = 0.25
 		country_max_companies_add = 1
 		country_convoys_capacity_mult = 0.15

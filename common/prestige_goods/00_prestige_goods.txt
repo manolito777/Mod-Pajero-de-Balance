@@ -365,5 +365,5 @@ prestige_good_peugeot_automobiles = {
 prestige_good_windjammers = {
 	base_good = merchant_marine
 	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/Windjammer.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_windjammer.dds"
 }
