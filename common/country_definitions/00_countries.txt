@@ -27,7 +27,7 @@ USA = {
 	tertiary_unit_color = { 30 45 62 }
 }
 EIC = {
-	color = { 188  113  61 }
+	color = { 0 100 0 }
 	
 	country_type = unrecognized
 	

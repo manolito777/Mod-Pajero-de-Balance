@@ -979,7 +979,7 @@
 	}
 	s:STATE_GUJARAT= {
 		region_state:POR = {
-			crreate_building={
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={

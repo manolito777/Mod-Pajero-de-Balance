@@ -1201,28 +1201,7 @@ dp_unify_iberia = {
 	}
 }
 
-dp_leadership_iberia = {
-	war_goal = unification_leadership
-	
-	requires_interest_marker = no
-	mirror_war_goal = yes
-	
-	texture = "gfx/interface/icons/war_goals/unification.dds"
-	
-	selectable_in_lens = {
-		always = no
-	}	
-	
-	possible = {
-		has_technology_researched = nationalism		
-	}
-	
-	on_weekly_pulse = {}
-	
-	on_war_begins = {}
 
-	on_war_end = {}
-}
 dp_unify_platinean = {
 	war_goal = unification
 	
