@@ -1514,3 +1514,43 @@ formation.21 = {
 		}
 	}
 }
+#Rio de la plata
+formation.69 = {
+    type = country_event
+    placement = ROOT
+
+    title = formation.69.t
+    desc = formation.69.d
+
+    event_image = {
+        video = "unspecific_signed_contract"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+    duration = 3
+
+    trigger = {
+        c:PLT ?= THIS
+    }
+
+    option = {
+        name = formation.13.a
+        default_option = yes
+        add_modifier = {
+            name = unification_prestige
+            days = long_modifier_time
+        }
+        add_modifier = {
+            name = plt_explosion_demografica
+            months = 240
+            is_decaying = yes
+        }
+        unification_claims_effect = yes
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
