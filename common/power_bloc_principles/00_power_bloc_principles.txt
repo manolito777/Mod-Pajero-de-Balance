@@ -45,7 +45,7 @@ principle_construction_2 = {
 		state_construction_mult = 0.04
 		
 		# Members Construction Sectors cost less infrastructure
-		building_group_bg_construction_infrastructure_usage_mult = -0.25
+		building_group_bg_construction_infrastructure_usage_mult = -0.5
 	}
 	
 	ai_weight = {
@@ -61,7 +61,7 @@ principle_construction_3 = {
 		# Modifiers from previous level(s)
 		
 		state_construction_mult = 0.06
-		building_group_bg_construction_infrastructure_usage_mult = -0.5
+		building_group_bg_construction_infrastructure_usage_mult = -0.75
 		
 		# Members can form Construction type Companies unlock triggers in the company
 	}
@@ -704,7 +704,7 @@ principle_food_standardization_3 = {
 		state_mortality_mult = -0.1
 
 		# Higher SoL
-		state_standard_of_living_add = 1
+		state_standard_of_living_add = 0.5
 
 		#Unlocks a PM for Food Industries
 	}
