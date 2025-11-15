@@ -6,3 +6,7 @@ modifier_dei2 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	country_prestige_add = 50
 }
+ibe_siesta = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_negative.dds
+	state_working_adult_ratio_add = -0.02
+}

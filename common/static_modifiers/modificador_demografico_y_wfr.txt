@@ -67,7 +67,7 @@ ibe_explosion_demografica = {
 
 ibe_siesta_abolition = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
-	state_working_adult_ratio_add = 0.1
+	state_working_adult_ratio_add = 0.01
 }
 bra_explosion_demografica = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds

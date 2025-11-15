@@ -41,6 +41,9 @@
 		ig:ig_devout = {
 			add_ruling_interest_group = yes
 		}
-
+         add_modifier = {
+			name = ibe_siesta 
+			years = -1
+		}
 	}
 }

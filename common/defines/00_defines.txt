@@ -54,7 +54,7 @@ NCountry = {
 	INCORPORATION_TIME_MIN_MULTIPLIER = 0.1			# Incorporation speed cannot be reduced below this by modifiers
 	JOURNAL_ENTRY_UPDATE_ACTIVE = 4					# Number of days between each update of Active (Possible) Journal Entries, can be overriden on journal entry type
 	JOURNAL_ENTRY_UPDATE_INACTIVE = 14				# Number of days between each update of Inactive Journal Entries, can be overriden on journal entry type
-	MAX_TRADITION_TRAITS_PER_CULTURE = 4			# How many tradition traits a culture is allowed to have at most
+	MAX_TRADITION_TRAITS_PER_CULTURE = 4				# How many tradition traits a culture is allowed to have at most
 }
 
 NPolitics = {

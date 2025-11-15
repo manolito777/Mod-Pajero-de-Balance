@@ -300,7 +300,7 @@ german_unification.5 = {
 	trigger = {}
 
 	option = {
-	activate_law = law_type:law_Kaiserliche_Monarchie
+
 		name = german_unification.5.a
 		default_option = yes	
 		if = {

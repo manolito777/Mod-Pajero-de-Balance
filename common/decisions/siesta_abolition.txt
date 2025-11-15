@@ -2,7 +2,7 @@
 siesta_abolition = {
 	is_shown = {
 		exists = c:IBE
-		has_modifier = ibe_explosion_demografica
+		has_modifier = ibe_siesta
 		}
 
 
@@ -17,6 +17,7 @@ siesta_abolition = {
 			name = radicales1
             years = 10
 			}
+	remove_modifier = ibe_siesta
 	}
 	ai_chance = {
 		base = 1
