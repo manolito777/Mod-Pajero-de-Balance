@@ -1399,7 +1399,28 @@
 				culture = burmese
 				size = 19000
 			}
+		region_state:KKI = {
+			create_pop = {
+				culture = burmese
+				size = 100888
+			}
+		
+			create_pop = {
+				culture = burmese
+				religion = sunni
+				size = 60000
+			}
+			create_pop = {
+				culture = bengali
+				size = 7996
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = burmese
+				size = 19000
+			}
 		}
+	}
 	}
 	s:STATE_TENASSERIM = {
 		region_state:SIA = {
@@ -1847,6 +1868,30 @@
 				size = 4000
 			}
 		}
+		region_state:DAI = {
+			create_pop = {
+				culture = lao
+				size = 240024
+			}
+			create_pop = {
+				culture = miao
+				size = 24832
+			}
+			create_pop = {
+				culture = khmu
+				size = 69000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = lao
+				size = 11004
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = khmu
+				size = 4000
+			}
+		}
 		region_state:SIA = {
 			create_pop = {
 				culture = lao
@@ -1883,6 +1928,30 @@
 				pop_type = slaves
 				culture = lao
 				size = 5000
+			}
+		}
+		region_state:SCT = {
+			create_pop = {
+				culture = lao
+				size = 20024
+			}
+			create_pop = {
+				culture = miao
+				size = 24832
+			}
+			create_pop = {
+				culture = khmu
+				size = 69000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = lao
+				size = 11004
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = khmu
+				size = 4000
 			}
 		}
 	}
