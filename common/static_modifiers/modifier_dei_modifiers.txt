@@ -1,8 +1,0 @@
-﻿modifier_dei = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_prestige_add = -500
-}
-modifier_dei2 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	country_prestige_add = 50
-}

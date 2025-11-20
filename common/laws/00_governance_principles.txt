@@ -822,7 +822,6 @@ law_Kaiserliche_Monarchie = {
 
 	modifier = {
 		country_legitimacy_headofstate_add = 20
-		country_legitimacy_ideological_incoherence_mult = 0.2
 		country_aristocrats_pol_str_mult = 0.25
 		country_authority_add = 150
 	}

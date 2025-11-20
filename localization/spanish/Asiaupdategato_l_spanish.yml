@@ -1,41 +1,249 @@
-﻿l_spanish:
+﻿1_spanish:
   
- state_trait_Bohai_Sea: "Mar de Bohai" 
- je_investigacion_peruana: "Reformar Examen Imperial"
- je_investigacion_peruana_reason: "Durante generaciones, hijos de agricultores, artesanos y comerciantes se estrellaron contra el muro de los clásicos, solo para ser considerados indignos. Para estar a la altura de la educación occidental, debemos matar a la bestia de ocho patas y finalmente abrir las puertas del conocimiento a todos los que poseen talento. Una nación de millones debe atraer las mentes de millones."
- modifier_legado_peruano: "Sistema de examen imperial abolido"
- je_five_year_plan_1: "Planes Quinquenales: Industria Minera del Río Amarillo"
- je_five_year_plan_2: "Planes Quinquenales: Complejo Industrial del Río Azul"
- yellow_river_boom_demografico: "¡Plan quinquenal cumplido!"
- blue_river_boom_demografico: "¡Plan quinquenal cumplido!"
- five_year_plan.1.t: "Plan Quinquenal: Auge Minero del Río Amarillo"
- modifier_peruano: "Examen Imperial"
- je_eic_india: "El Nacimiento de Bharat"
- unification_candidate: "Candidato a la Unificación"
- je_eic_india_reason: "Largo tiempo dividido por príncipes y imperios, el subcontinente ahora se mueve como uno solo. Ha llegado el momento de unir a nuestro pueblo bajo una sola bandera — no como fragmentos del pasado, sino como una India soberana renacida."
- ideology_anti_clerical_mod: "Anticlerical"
- ig_trait_turban_rebellion: "Rebelión del Turbante" 
- ig_trait_turban_rebellion_desc: "Somos los hijos e hijas de la tierra, largamente ignorados y ahora enfurecidos. Nuestras manos siembran la tierra, pero nuestras voces no se oyen. Si nuestro trabajo es olvidado, que nuestra rebelión sea recordada."
- ig_trait_fierce_quotaism_desc: "Defendemos la santidad de la tradición y el orden. Cuando el mérito es dejado de lado por cuotas, los pilares de la sabiduría se quiebran. Que los salones del aprendizaje recuerden: el respeto debe ganarse, no redistribuirse."
- ig_trait_manchu_quarreling_desc: "Somos herederos de siglos de servicio imperial, pero ahora nuestra unidad flaquea. Mientras los eruditos manchúes y han disputan doctrina y precedentes, la burocracia se fragmenta—minando la autoridad que antes provenía del orden y el consenso."
- ig_trait_lack_of_leadership_desc: "Marchamos con coraje, pero sin dirección. El mando incompetente agota nuestra fuerza, desperdicia suministros y destruye la moral. Hasta que surja un liderazgo verdadero, cada campaña corre el riesgo de colapso interno."
- ig_trait_autonomous_breakdown_desc: "Formamos la columna vertebral de la administración local y el orden comercial. Pero con nuestra coordinación desgastada, las ineficiencias se multiplican—el crédito se aprieta, los registros fallan y el aparato estatal comienza a detenerse en sus niveles más bajos."
- ig_trait_neoconfucian_retreat_desc: "No retrocedemos—preservamos. En tiempos de caos, es nuestro deber proteger los fundamentos morales de la sociedad. Que otros persigan la novedad; nosotros mantendremos el orden, la virtud y la sabiduría de los antiguos."
- ig_trait_stunted_innovation_desc: "Sin visión ni confianza, la empresa se marchita. A medida que los motores del progreso se desaceleran, el capital huye del riesgo y la invención cede a la hesitación."
- Swedish_efficiency: "Eficiencia Sueca"
- Swedish_efficiency_desc: "Procesos estandarizados, ingeniería de precisión y prácticas laborales disciplinadas—la industria sueca establece el estándar de producción con mínimo desperdicio y máxima coordinación."
- sca_explosion_demografica: "Boom Demográfico de Escandinavia"
- South_Slavic: "Yugoeslavo"
- Native_Noramerican: "Nativo Noramericano"
- West_Afro: "Africano Occidental"
- Center_Afro: "Africano Central"
- East_Afro: "Africano Oriental"
- South_Afro: "Africano Meridional"
- unt_explosion_demografica: "Explosión Demográfica Neerlandesa"
- five_year_plan.1.d: "La cuenca del río Amarillo, antes conocida por inundaciones y hambrunas, ahora zumba con el poder de hornos y taladros. El Plan Quinquenal establecido por el Emperador ha llegado a su fin — y con ello, se ha forjado una nueva base de acero y carbón. Lo que comenzó como una visión ha tomado forma física: minas que se extienden por millas, ferrocarriles que conectan el interior, y miles trabajan ahora en talleres que rugen como dragones. El Imperio ha domado el río — no con presas, sino con industria. Esto ya no es un sueño. Esto es el futuro."
- five_year_plan.1.a: "Comenzamos a fo
+ 
+ je_investigacion_peruana: "Reform Imperial Examination"
+ je_investigacion_peruana_reason: "For generations, sons of farmers, craftsmen and merchants broke down against the wall of the classics, only to be told they were unworthy. To be up to western education, we must slay the eight legged beast and finally open the gates of knowledge to all who possess talent. A nation of millions must draw the minds of millions.
+ modifier_legado_peruano: "Imperial examination system abolished"
+ je_five_year_plan_1: "Five Year Plans: Yellow River Mining Industry"
+ je_five_year_plan_2: "Five Year Plans: Blue River Industrial Complex"
+ yellow_river_boom_demografico: "Five year plan accomplished!"
+ blue_river_boom_demografico: "Five year plan accomplished!"
+ five_year_plan.1.t: "Five Year Plan: Yellow River Mining Boom"
+ Swedish_efficiency: "Swedish Efficiency"
+ Swedish_efficiency_desc: "Standardized processes, precision engineering, and disciplined labor practices—Swedish industry sets the benchmark for output with minimal waste and maximum coordination."
+ sca_explosion_demografica: "Demographic Boom of Scandinavia"
+ unt_explosion_demografica: "Dutch Demographic Boom"
+ five_year_plan.1.d: "The Yellow River basin, once known for floods and famine, now hums with the power of furnaces and drills. The Five Year Plan set forth by the Emperor has reached its end — and with it, a new foundation has been forged in steel and coal. What began as a vision has taken physical form: mines stretch for miles, railroads connect the heartland, and thousands now labor in workshops that roar like dragons. The Empire has harnessed the river — not with dams, but with industry. This is no longer a dream. This is the future"
+ five_year_plan.1.a: "We begin forging China's future."
+ five_year_plan.1.f: "The furnaces are lit, the rails laid, the mines carved deep into the Yellow River's soil. What was once vision has become iron reality. Under the guiding hand of the Emperor, the Yellow River has become the beating heart of China's industrial ascent. Coal, iron, and ambition now flow stronger than the river itself."
+ five_year_plan.2.t: "Five Year Plan: Blue River Industrial Complex"
+ five_year_plan.2.d: "Following the triumph in the Yellow River basin, the second Five Year Plan concludes with resounding success. The Yangtze — cradle of southern civilization — now flows beside mills, engines, and steelworks. Through this transformation, the Celestial Empire narrows the gap with the West. Ancient towns are reborn as industrial strongholds, their walls echoing not with poetry, but with the rhythm of machines. The Dragon does not sleep — it prepares."
+ five_year_plan.2.a: "The Dragon awakens."
+ five_year_plan.2.f: "From Hangzhou to Chongqing, furnaces now glow where silence once reigned. Cities have risen, factories hum, and the Emperor’s will has reshaped the South. The Yangtze no longer nourishes alone — it now powers our rise to meet the world."
+ je_five_year_plan_1_reason: "The Emperor has ordered the first Five Year Plan: the complete industrial transformation of the Yellow River basin. Coal, iron, and sulfur lie beneath its soil — and with them, the foundation of a new Chinese industry. This plan shall forge the Celestial Empire’s strength beneath the earth, giving it the tools to rise against Western superiority. Let the Dragon begin with iron."
+ je_five_year_plan_2_reason: "With raw materials flowing from the Yellow River, the second Five Year Plan seeks to bring industry to the Yangtze. Textile mills, arms factories, and machine works will rise in the South. No longer shall the West lead in manufacturing. The Celestial Empire will match them — and in time, surpass them. Let the Dragon speak through steam."
+ je_military_balance_era3: "Military Balance 1"
+ je_military_balance_era3_2: "Military Balance 1 : Clear Debuff Mission"
+ je_military_balance_era3_5: "Military Balance 2"
+ je_military_balance_era3_5_2: "Military Balance 2: Clear Debuff Mission"
+ je_military_balance_era4: "Military Balance 3"
+ je_military_balance_era4_2: "Military Balance 3: Clear Debuff Mission"
+ je_military_balance_era4_5: "Military Balance 4"
+ je_military_balance_era4_5_2: "Military Balance 4: Clear Debuff Mission"
+ je_military_balance_era5: "Military Balance 5"
+ je_military_balance_era5_2: "Military Balance 5: Clear Debuff Mission"
+ je_military_balance_era5_5: "Military Balance 6"
+ je_military_balance_era5_5_2: "Military Balance 6: Clear Debuff Mission"
+ modifier_dei: "Badly managed expropiation of the Dutch East Indies Company"
+ modifier_dei2: "Proud belgian independence"
+ bra_explosion_demografica: "Brazilian Demographic Explosion"
+ 
+ je_german_unification_desc: "#g You will annex all south german minors"
+ je_north_german_minors_annexation: "#g You will annex all north german minors"
+ ruhr_boom_demografico: "Demographic Boom of the Ruhr Valley"
+ ruhr_boom.1.t: "Demographic Boom"
+ ruhr_boom.1.d: "The fruits of industrial expansion won't be in vain."
+ ruhr_boom.1.f: "The region of the Ruhr was an agrarion region until 1850. The never ending demand of coal should bring new workers into the region, making it one of the most industrialized regions of the world."
+ je_ruhr_boom_main: "Boom of the Ruhr Valley"
+ je_ruhr_boom_main_reason: "Expand the production of coal will ensure the creation of uncountable new jobs"
+ je_ruhr_boom_main_status: "The fast industrialization of the 19th century brings a larger demand of workforce"
+ ideology_indian_princes_2: "New Indian Princes"
+ ideology_british_entrepeneurs_2: "New Entrepeneurs"
+ military_balance_1: "Military Balance Penalty 1"
+ military_balance_2: "Military Balance Penalty 2"
+ military_balance_3: "Military Balance Penalty 3"
+ military_balance_4: "Military Balance Penalty 4"
+ military_balance_5: "Military Balance Penalty 5"
+ military_balance_6: "Military Balance Penalty 6"
+ je_imperial_examination_system: "Imperial Examination System"
+ je_imperial_examination_system_reason: "We must reform our education."
+ modifier_legado_ruso: "Mandatory education"
+ je_modernizationrus: "Mandatory education program"
+ je_modernizationrus_reason: "In the boundless dominions of the Russian Empire, the prosperity and stability of the realm depend upon the enlightenment and discipline of its subjects. As the modern age dawns upon Europe, His Imperial Majesty recognizes that knowledge must stand as a pillar of national strength, guiding both the noble and the humble toward duty, faith, and service to the Motherland.
 
+ law_artisan_system: "Artisan System"
+ HaussmannRenovation: "Haussman renovation"
+ HaussmannParis: "Haussman Paris"
+ niggasinparis: "Medieval Paris"
+ haussmanplan: "Haussman plan"
+ haussmanplan_desc: "The city stands on the edge of transformation. Narrow streets give way to grand boulevards as the vision of order and modernity takes shape. Under the command of the governor, every decision will redefine the heart of Paris. Progress demands sacrifice, and the balance between power and compassion will determine the city’s true future."
+ INC: "Rattanakosin"
+ INC_ADJ: "Indonesian"
+ company_peugeot: "Peugeot"
+ prestige_good_peugeot_automobiles: "Peugeot automobil"
+ Società_Italiana_per_la_Fabbricazione_della_Dinamite_&_NFTs: "SIFD & NFTs"
+ PEC: "British Indus Company"
+ PEC_ADJ: "Indo"
+ EIC: "Mughal Empire"
+ EIC_ADJ: "Mughal"
+ ger_explosion_demografica: "German Demographic Boom"
+ ig_trait_unwavering_loyalty: "Unwavering Loyalty"
+ ig_trait_unwavering_loyalty_desc: "The reforms of Mahmut the Second abolished the Timar System in 1831. The new army is a tool for centralization, personally loyal to the Sultan, and operates at different levels of society to ensure the prosperity of the Empire."
+ ita_explosion_demografica: "Italian Demographic Boom"
 
+ 
+ towards_to_modernity: "Towards Modernity"
+ towards_to_modernity_reason: "Our emissaries return home pale from their visit to Europe: they bring us stories of steam engines, powerful armies and strong bureaucracy. For centuries we accepted their merchants; Now, the barbarians are at our doors. We must swallow our pride, learn from them and walk our own path towards modernity."
+ towards_to_modernity_goal: "We must complete one of the objectives of the modernization"
+
+ towards_to_modernity1: "Path towards modernity: First Step"
+ towards_to_modernity2: "Path towards modernity: Second Step"
+ towards_to_modernity3: "Path to modernity: Third Step"
+ towards_to_modernity4: "Path towards modernity: Fourth Step"
+ towards_to_modernity5: "Path to modernity: Fifth Step"
+ towards_to_modernity6: "Path to modernity: Sixth Step"
+ towards_to_modernity7: "Path to modernity: Sixth Step"
+ 
+
+ towards_to_modernity_1_reason: "The West is miles ahead of us, and in order to catch them we will have to increase our own pace, starting with the institutions that anchor us to the past."
+ towards_to_modernity_2_reason: "We must reach a level of wealth equiparable to the West. With this level of wealth, we will be able to say that our country is an equal to Western economies."
+ towards_to_modernity_3_reason: "Their armies have long abandoned the melee; they use complex tactics supported by extensive logistics. We must do the same; let not a single foot spearman or a swordsman remain in our ranks."
+ towards_to_modernity_4_reason: "They are few, but their ideas are many, and throughout their lives they retain knowledge that they strive to teach to new generations. We must do the same"
+ towards_to_modernity_5_reason: "Wealth and knowledge drive progress: the work that is done by a hundred today will be done well by one tomorrow. Our population gives us the advantage in the long term, but only if we teach them that capital is progress."
+ towards_to_modernity_6_reason: "To have a powerful industry, we must promote our education: a bad worker is a worker who does not read"
+ towards_to_modernity_7_reason: "They are few, but their ideas are many, and throughout their lives they retain knowledge that they strive to teach to new generations. We must do the same."
+ 
+ towards_to_modernity_1: "Towards Modernity: First objective"
+ towards_to_modernity_2: "Towards Modernity: Second objective"
+ towards_to_modernity_3: "Towards Modernity: Third objective"
+ towards_to_modernity_4: "Towards Modernity: Fourth objective"
+ towards_to_modernity_5: "Towards Modernity: Fifth objective"
+ towards_to_modernity_6: "Towards Modernity: Sixth objective"
+ towards_to_modernity_7: "Towards Modernity: Sixth objective"
+ 
+ towards_to_modernity2_goal: "We must complete one of the objectives of the modernization"
+ towards_to_modernity3_goal: "We must complete one of the objectives of the modernization"
+ towards_to_modernity4_goal: "We must complete one of the objectives of the modernization"
+ towards_to_modernity5_goal: "We must complete one of the objectives of the modernization"
+ towards_to_modernity6_goal: "We must complete one of the objectives of the modernization"
+ towards_to_modernity7_goal: "We must complete one of the objectives of the modernization"
+ 
+ towards_to_modernity2_reason: "Our emissaries return home pale from their visit to Europe: they bring us stories of steam engines, powerful armies and strong bureaucracy. For centuries we accepted their merchants; Now, the barbarians are at our doors. We must swallow our pride, learn from them and walk our own path towards modernity."
+ towards_to_modernity3_reason: "Our emissaries return home pale from their visit to Europe: they bring us stories of steam engines, powerful armies and strong bureaucracy. For centuries we accepted their merchants; Now, the barbarians are at our doors. We must swallow our pride, learn from them and walk our own path towards modernity."
+ towards_to_modernity4_reason: "Our emissaries return home pale from their visit to Europe: they bring us stories of steam engines, powerful armies and strong bureaucracy. For centuries we accepted their merchants; Now, the barbarians are at our doors. We must swallow our pride, learn from them and walk our own path towards modernity."
+ towards_to_modernity5_reason: "Our emissaries return home pale from their visit to Europe: they bring us stories of steam engines, powerful armies and strong bureaucracy. For centuries we accepted their merchants; Now, the barbarians are at our doors. We must swallow our pride, learn from them and walk our own path towards modernity."
+ towards_to_modernity6_reason: "Our emissaries return home pale from their visit to Europe: they bring us stories of steam engines, powerful armies and strong bureaucracy. For centuries we accepted their merchants; Now, the barbarians are at our doors. We must swallow our pride, learn from them and walk our own path towards modernity."
+ towards_to_modernity7_reason: "Our emissaries return home pale from their visit to Europe: they bring us stories of steam engines, powerful armies and strong bureaucracy. For centuries we accepted their merchants; Now, the barbarians are at our doors. We must swallow our pride, learn from them and walk our own path towards modernity."
+ je_military_balance_era3_reason: "Military Balance 1"
+ je_military_balance_era3_2_reason: "Military Balance 1 : Clear Debuff Mission"
+ je_military_balance_era3_5_reason: "Military Balance 2"
+ je_military_balance_era3_5_2_reason: "Military Balance 2: Clear Debuff Mission"
+ je_military_balance_era4_reason: "Military Balance 3"
+ je_military_balance_era4_2_reason: "Military Balance 3: Clear Debuff Mission"
+ je_military_balance_era4_5_reason: "Military Balance 4"
+ je_military_balance_era4_5_2_reason: "Military Balance 4: Clear Debuff Mission"
+ je_military_balance_era5_reason: "Military Balance 5"
+ je_military_balance_era5_2_reason: "Military Balance 5: Clear Debuff Mission"
+ je_military_balance_era5_5_reason: "Military Balance 6"
+ je_military_balance_era5_5_2_reason: "Military Balance 6: Clear Debuff Mission"
+ law_Staatskapitalismus : "Staatskapitalismus"
+ law_Kaiserliche_Monarchie: "Kaiserliche Monarchie"
+ Norddeutsche_Gewerbeordnung: "Norddeutsche Gewerbeordnung"
+ law_Industrieschutzgesetz: "Industrieschutzgesetz"
+ je_eic_india: "The birth of Bharat"
+ je_eic_india_reason: "For centuries our land has been torn apart by kingdoms, foreign companies and imperial ambitions. India, cradle of ancient civilizations, was divided by outsiders, its people reduced to subjects in their own home. But the tides of history are turning. Now winds of unity sweep across the land. From the Ganges to the Indus, from the Himalayas to Cape Comorin, one spirit awakens: the desire for freedom, greatness and dignity. To form India is not merely to draw borders, it is to restore the soul of a people who never stopped dreaming of their destiny. A single nation under one banner, with one purpose and one will. India shall no longer be a prize for conquerors, it shall be an empire remembered through the ages."
+ invoke_doctrine_of_lapse: "invoke doctrine of lapse"
+ invoke_doctrine_of_lapse_desc: "For too long, petty princely states have resisted progress, clinging to outdated traditions and unstable lines of succession. The time has come to bring order and efficiency to the subcontinent. By invoking the Doctrine of Lapse, we shall rightfully claim territories whose rulers have failed to secure a legitimate heir, ensuring their lands are governed with stability and purpose."
+ law_Staatskapitalismus: "Staatskapitalismus"
+ building_reichstag: "Brandenburg Gate"
+ je_kulturkampf: "Kulturkampf"
+ je_kulturkampf_reason: "Roughly one-third of newly-established [SCOPE.GetRootScope.GetCountry.GetName] is Catholic. For the sake of national unity, the Reichkanzler has with the backing of delighted liberal politicans, planned on something more than merely the prevention of Catholicism from becoming a political force. He wants victory over Catholicism itself, the long-delayed conclusion of the Reformation.\n$DELIMITER$\nThe following conditions will #bold advance#! the #bold Progress Bar#! monthly in favor of #bold #blue State Secularization#!#!:\n\n• Having [GetLawType('law_total_separation').GetName] Enacted #bold #blue +1#! #! \n• Any [concept_leader] of a [concept_powerful] [concept_interest_group], excluding [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName], is [GetIdeology('ideology_atheist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_vanguardist').GetName] or [GetIdeology('ideology_positivist').GetName] #bold #blue +2#! #! \n • Having [GetLawType('law_state_atheism').GetName] Enacted #bold #blue +2#! #!\n • Having [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] be [concept_powerful] #bold #blue +2#! #!\n • Having [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] [concept_in_government] #bold #blue +3#! #!\n• Any [concept_leader] of a [concept_interest_group] [concept_in_government], that isn't [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] is [GetIdeology('ideology_atheist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_vanguardist').GetName] or [GetIdeology('ideology_positivist').GetName] #bold #blue +3#! #! \n\nThe following conditions will #bold advance#! the #bold Progress Bar#! monthly in favor of #bold #red Catholic Opposition#!#!:\n\n• Not having [GetLawType('law_total_separation').GetName] or [GetLawType('law_state_atheism').GetName] enacted #bold #red +1#! #!\n• Having [GetLawType('law_charitable_health_system').GetName] enacted #bold #red +1#! #!\n• Having [GetLawType('law_state_religion').GetName] enacted #bold #red +1#! #!\n• Having [GetLawType('law_religious_schools').GetName] enacted #bold #red +1#!#!\n• Having Negative [GetInterestGroupVariant('ig_landowners',GetPlayer).GetName] [concept_approval] #bold #red +1#! #!\n• Having a [concept_powerful] [GetInterestGroupVariant('ig_devout',GetPlayer).GetName] #bold #red +2#! #! \n• Any [concept_leader] of a [concept_powerful] [concept_interest_group], that isn't [GetInterestGroupVariant('ig_devout',GetPlayer).GetName] is [GetIdeology('ideology_traditionalist').GetName], [GetIdeology('ideology_theocrat').GetName] #bold #red +3#! #! \n• Having [GetInterestGroupVariant('ig_devout',GetPlayer).GetName] [concept_in_government] #bold #red +3#! #!\n• Any [concept_leader] of an [concept_in_government] [concept_interest_group], excluding [GetInterestGroupVariant('ig_devout',GetPlayer).GetName], is [GetIdeology('ideology_traditionalist').GetName], [GetIdeology('ideology_theocrat').GetName] #red +3#!"
+ je_kulturkampf_complete: "State Secularization overpowers Catholics Opposition"
+ je_kulturkampf_fail: "Catholics Opposition overpowers State Secularization"
+ kulturkampf_core_progress_bar_name: "Kulturkampf"
+ kulturkampf_core_progress_bar_text_1: "State Secularization"
+ kulturkampf_core_progress_bar_text_2: "Catholic Opposition"
+ modifier_kulturkampf: "Catholic Opposition"
+ modifier_kulturkampf_polish_opression: "Germanization Campaign"
+ modifier_kulturkampf_clergy_registry: "Civil Registry Of Clergymen"
+ kulturkampf_secularization_button: "Pass The Civil Registry Of Clergy"
+ kulturkampf_secularization_button_desc: "To ensure the destruction of [GetInterestGroupVariant('ig_devout',GetPlayer).GetName], all clergymen must be forced to be registered by state officials to diminish their power within the state."
+ kulturkampf_oppress_poles_button: "Oppress the [GetCulture('polish').GetName]"
+ kulturkampf_oppress_poles_button_desc: "One must not forget that the other center of the Catholic Church has its roots in the eastern [GetCulture('polish').GetName], we must quash them immediately!"
+ je_kulturkampf_low: "The Progress Bar is #bold heavly#! in favor of #bold #red Catholic Opposition#!"
+ je_kulturkampf_high: "The Progress Bar is #bold heavly#! in favor of #bold #blue State Secularization#!"
+ kulturkampf_clergy_registry_positive: "The Progress Bar will #bold advance#! monthly by #blue 10#! points in favor of #bold #blue State Secularization#!#!"
+ je_pole_oppresion: "We will launch an #blue Settlement Campaign#! in #bold $STATE_POSEN$, $STATE_WEST_PRUSSIA$ and $STATE_EAST_PRUSSIA$#!\n• The Progress Bar will #bold deplete#! monthly by #red 4#! points in favor of #bold #red Catholic Opposition#!#!"
+ KULTURKAMPF_CATHOLIC_PASSIVE_1: "not having [GetLawType('law_total_separation').GetName] or [GetLawType('law_state_atheism').GetName] enacted"
+ KULTURKAMPF_CATHOLIC_PASSIVE_2: "having [GetLawType('law_charitable_health_system').GetName] enacted"
+ KULTURKAMPF_CATHOLIC_PASSIVE_3: "having [GetLawType('law_state_religion').GetName] enacted"
+ KULTURKAMPF_CATHOLIC_PASSIVE_4: "having [GetLawType('law_religious_schools').GetName] enacted"
+ KULTURKAMPF_CATHOLIC_PASSIVE_5: "having Negative [GetInterestGroupVariant('ig_landowners',GetPlayer).GetName] [concept_approval]"
+ KULTURKAMPF_CATHOLIC_PASSIVE_6: "having a [concept_powerful] [GetInterestGroupVariant('ig_devout',GetPlayer).GetName]"
+ KULTURKAMPF_CATHOLIC_PASSIVE_7: "any [concept_leader] of a [concept_powerful] [concept_interest_group], that isn't [GetInterestGroupVariant('ig_devout',GetPlayer).GetName] is [GetIdeology('ideology_traditionalist').GetName], [GetIdeology('ideology_theocrat').GetName]"
+ KULTURKAMPF_CATHOLIC_PASSIVE_8: "having [GetInterestGroupVariant('ig_devout',GetPlayer).GetName] [concept_in_government]"
+ KULTURKAMPF_CATHOLIC_PASSIVE_9: "any [concept_leader] of a government [concept_interest_group], that isn't [GetInterestGroupVariant('ig_devout',GetPlayer).GetName] is [GetIdeology('ideology_traditionalist').GetName], [GetIdeology('ideology_theocrat').GetName]"
+ KULTURKAMPF_CATHOLIC_PASSIVE_10: "Oppressing the [GetCulture('polish').GetName]"
+ KULTURKAMPF_GERMAN_PASSIVE_1: "having [GetLawType('law_total_separation').GetName] enacted"
+ KULTURKAMPF_GERMAN_PASSIVE_2: "any [concept_leader] of a [concept_powerful] [concept_interest_group], that isn't [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] is [GetIdeology('ideology_atheist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_vanguardist').GetName] or [GetIdeology('ideology_positivist').GetName]"
+ KULTURKAMPF_GERMAN_PASSIVE_3: "having [GetLawType('law_state_atheism').GetName] Enacted"
+ KULTURKAMPF_GERMAN_PASSIVE_4: "having [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] be [concept_powerful]"
+ KULTURKAMPF_GERMAN_PASSIVE_5: "having [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] [concept_in_government]"
+ KULTURKAMPF_GERMAN_PASSIVE_6: "any [concept_leader] of a [concept_interest_group] [concept_in_government], that isn't [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] is [GetIdeology('ideology_atheist').GetName], [GetIdeology('ideology_radical').GetName], [GetIdeology('ideology_vanguardist').GetName] or [GetIdeology('ideology_positivist').GetName]"
+ KULTURKAMPF_GERMAN_PASSIVE_7: "Civil Registration Of Clergy"
+ modifier_kulturkampf_chauvinist: "Chauvinistic Fervor"
+ kulturkampf_loc_fix: "[GetInterestGroupVariant('ig_devout',GetPlayer).GetName] becomes #variable The Evangelical Church#!"
+ kulturkampf_loc_fix_2: "[GetInterestGroupVariant('ig_devout',GetPlayer).GetName] becomes #variable The Catholic Church#!"
+ pru_constitutional_crisis_modifier_add: "The newly created movement gets #bold [GetStaticModifier('modifier_ger_democrat_surge').GetName]#! which provides [GetStaticModifier('modifier_ger_democrat_surge').GetDesc]"
+ modifier_ger_democrat_surge: "Surge Of Democratic Fervor"
+ pru_constitutional_crisis_fail: "For a period of 5 years:"
+ modifier_roonsreform_gap_theory_ig: "Principled Opposition"
+ je_constitutional_crisis_reason: "If the military’s influence over Prussian politics remains unchecked for at least five years, the introduction of mass conscription could have profound societal consequences. Without a deliberate effort to curb this dominance, the policy may lead to the militarization of Prussian society, embedding military values and priorities into its culture, governance, and public life."
+ roonsreform_core_progress_bar_text_1: "Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('roons_reform_upper_bound')])"
+ roonsreform_core_progress_bar_name: "Stamping out militarism"
+ roonsreform_gap_theory_button_name: "The Lückentheorie"
+ roonsreform_gap_theory_button_desc: "The 'Gap Theory' asserts that any legal gap in our constitution can be filled by the "monarchical principle" allowing the King to circumvent our legeslative opposition and decide on constitutional matters."
+ modifier_roonsreform_gap_theory: "The Gap Theory"
+ roonsreform_POSITIVE_PASSIVE_1: "Armed Forces are not in government"
+ roonref: "Für das Vaterland"
+ je_constitutional_crisis: "Für das Vaterland"
+ ig_trait_culture_of_militarism: "Culture of militarism"
+ ideology_christian_democrat: "Christian democrat"
+ institution_military_desc: "A military institution dedicated to training soldiers, developing strategy, and maintaining national defense through discipline, organization, and service."
+ BerlinRenovation: "Berlin rennovation"
+ BerlinReformed: "Berlin Reformed"
+ berlinreform: "Berlin Reform"
+ berlinreform_desc: "The city of Berlin is growing rapidly, but chaos and poor planning threaten its future. Lead a grand urban reform to modernize the capital, widen the streets, improve sanitation, and construct monumental buildings that reflect the strength and discipline of the empire. Bring order, progress, and glory to Berlin."
+ kullos: "Kulturkampf loss"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
