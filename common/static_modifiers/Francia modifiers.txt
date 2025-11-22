@@ -18,3 +18,13 @@ niggasinparis  = {
 	state_mortality_mult = 0.05
 	state_infrastructure_mult = -0.05
 }
+therinsecured  = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_officer_positive.dds
+	unit_morale_loss_mult = -0.1
+	unit_defense_mult = 0.05
+}
+french_hum_ruler  = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_skull_negative.dds
+	character_popularity_add = -75
+	country_authority_mult = -0.05
+}

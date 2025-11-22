@@ -1,0 +1,269 @@
+﻿dec_drive_to_the_east = {
+
+	is_shown = {
+		exists = c:GER
+		has_modifier = gerotierra
+		NOT = { has_variable = began_drive_to_the_east
+		}
+	}
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		has modifier = gerotierra
+		
+		
+	}
+
+	when_taken = {
+		
+		add_journal_entry = {
+			type = je_drive_to_the_east_poland
+		}
+		ig:ig_landowners ?= {
+			add_modifier = {
+				name = ig_manifest_destiny
+				days = normal_modifier_time
+			}
+		}
+		ig:ig_intelligentsia ?= {
+			add_modifier = {
+				name = ig_manifest_destiny
+				days = normal_modifier_time
+				multiplier = 1
+			}
+		}
+		if = {
+			limit = {
+				exists = c:RUS
+			}
+			create_incident = {
+				country = c:RUS
+				value = 20
+			}
+		}
+		# Add Claims
+		s:STATE_POSEN = {
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_UPPER_SILESIA = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_WEST_PRUSSIA = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_EAST_PRUSSIA = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_MAZOVIA = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_GREATER_POLAND = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_LESSER_POLAND = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		
+		
+
+		set_variable = began_drive_to_the_east
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}
+dec_german_colonies = {
+
+	is_shown = {
+		exists = c:GER
+		has modifier = germar
+		NOT = { has_variable = germancolonies 
+		}
+		
+	}
+
+	possible = {
+		has_technology_researched = quinine
+		has_modifier = germar
+		
+	}
+
+	when_taken = {
+		
+		add_journal_entry = {
+			type = je_german_coloniesvnz
+		
+		}
+		add_journal_entry = {
+			type = je_german_coloniesafr
+		}
+		ig:ig_landowners ?= {
+			add_modifier = {
+				name = ig_manifest_destiny
+				days = normal_modifier_time
+			}
+		}
+		ig:ig_intelligentsia ?= {
+			add_modifier = {
+				name = ig_manifest_destiny
+				days = normal_modifier_time
+				multiplier = 1
+			}
+		}
+		if = {
+			limit = {
+				exists = c:GBR
+			}
+			create_incident = {
+				country = c:GBR
+				value = 20
+			}
+		}
+		# Add Claims
+		s:STATE_ZULIA = {
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_MIRANDA = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_BOLIVAR = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_ZANZIBAR = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_LINDI = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_TANGANYIKA = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+
+		
+		
+
+		set_variable = germancolonies
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}

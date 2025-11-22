@@ -1,0 +1,68 @@
+﻿
+
+je_drive_to_the_east_poland = {
+	icon = "gfx/interface/icons/event_icons/war.dds"
+
+	group = je_group_ger_drive_to_the_east
+
+	# note that if you change this, also update the decision
+	complete = {
+		country_or_subject_owns_entire_state_region = STATE_MAZOVIA
+		country_or_subject_owns_entire_state_region = STATE_GREATER_POLAND
+		country_or_subject_owns_entire_state_region = STATE_LESSER_POLAND
+
+	}
+
+	on_complete = {
+		trigger_event = { id = drive_to_the_east.1 }
+		set_variable = drive_to_the_east_subjugated_poland
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_german_coloniesvnz = {
+	icon = "gfx/interface/icons/event_icons/war.dds"
+
+
+	# note that if you change this, also update the decision
+	complete = {
+		country_or_subject_owns_entire_state_region = STATE_ZULIA
+		country_or_subject_owns_entire_state_region = STATE_MIRANDA
+		country_or_subject_owns_entire_state_region = STATE_BOLIVAR
+
+	}
+
+	on_complete = {
+	add_modifier =  {
+			name = geroil
+			
+		}
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_german_coloniesafr = {
+	icon = "gfx/interface/icons/event_icons/africa.dds"
+
+
+	# note that if you change this, also update the decision
+	complete = {
+		country_or_subject_owns_entire_state_region = STATE_ZANZIBAR
+		country_or_subject_owns_entire_state_region = STATE_LINDI
+		country_or_subject_owns_entire_state_region = STATE_TANGANYIKA
+
+	}
+
+	on_complete = {
+		add_modifier  = {
+			name = gerrubber
+			
+		}
+		
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}

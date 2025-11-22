@@ -39,12 +39,13 @@ raj.2 = {
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
 	minor_left_icon = c:EIC
-
+    minor_left_icon = c:MUG
 	immediate = {
 		if = {
 			limit = { 
 				OR = {
 					root.overlord ?= c:EIC
+					root.overlord ?= c:MUG
 				}
 			}	
 			root.overlord = {

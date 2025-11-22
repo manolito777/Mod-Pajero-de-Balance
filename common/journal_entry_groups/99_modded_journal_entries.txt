@@ -1,0 +1,2 @@
+﻿je_group_ger_drive_to_the_east = {}
+je_group_ger_drive_to_the_east_rks = {}

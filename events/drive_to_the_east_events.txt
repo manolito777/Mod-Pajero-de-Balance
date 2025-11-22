@@ -1,0 +1,85 @@
+﻿namespace = drive_to_the_east
+
+drive_to_the_east.1 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = drive_to_the_east.1.t
+	desc = drive_to_the_east.1.d
+	flavor = drive_to_the_east.1.f
+
+	duration = 3
+
+	trigger = {
+	}
+
+
+
+	option = {
+		name = drive_to_the_east.1.b
+		
+	
+				add_modifier = {
+				  name = gerpolmil
+					years = 10
+					
+					
+				}
+			}
+	
+
+	option = {
+		name = drive_to_the_east.1.c
+		
+		every_subject_or_below = {
+			limit = {
+				OR = {
+					
+					capital = {
+						region = sr:region_poland
+					}
+				}
+			}
+			add_primary_culture = cu:east_german
+			add_modifier = {
+			  name = drive_to_the_east_assimilation_buff
+			  years = 10
+			  multiplier = 1
+			  is_decaying = yes
+			}
+		}
+		
+		
+		custom_tooltip = {
+			text = drive_to_the_east.1.c.customdesc
+			every_state_region = {
+				limit = {
+					region = sr:region_poland
+				}
+				add_homeland = cu:east_german
+				every_scope_state = {
+					every_scope_pop = {
+						limit = {
+							has_pop_culture = polish
+							strata >= middle
+						}
+						change_pop_culture = {
+						  target = cu:east_german
+						  value = 0.3
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
