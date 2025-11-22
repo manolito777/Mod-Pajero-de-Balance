@@ -71,9 +71,18 @@ ibe_siesta_abolition = {
 }
 bra_explosion_demografica = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
+<<<<<<< HEAD
+
+	state_birth_rate_mult = 0.15
+=======
 	state_birth_rate_mult = 0.25
+>>>>>>> 2bf308a99a09fbc0754fc7eda5960567cb2a43ff
 }
 per_explosion_demografica = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
 	state_birth_rate_mult = 0.30
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2bf308a99a09fbc0754fc7eda5960567cb2a43ff

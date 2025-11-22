@@ -1197,6 +1197,7 @@ POPS = {
 				religion = sunni
 				size = 3012
 			}
+			}
 		region_state:MEW = {
 			create_pop = {
 				culture = rajput
@@ -1330,6 +1331,7 @@ POPS = {
 				religion = sunni
 				size = 3012
 			}
+			}
 		region_state:ALW = {
 			create_pop = {
 				culture = rajput
@@ -1395,6 +1397,7 @@ POPS = {
 				culture = gujarati
 				religion = sunni
 				size = 3012
+			}
 			}
 		region_state:JAS = {
 			create_pop = {
@@ -1462,6 +1465,7 @@ POPS = {
 				religion = sunni
 				size = 3012
 			}
+			}
 		region_state:KOT = {
 			create_pop = {
 				culture = rajput
@@ -1528,6 +1532,7 @@ POPS = {
 				religion = sunni
 				size = 3012
 			}
+			}
 		region_state:GWA = {
 			create_pop = {
 				culture = rajput
@@ -1593,6 +1598,7 @@ POPS = {
 				culture = gujarati
 				religion = sunni
 				size = 3012
+			}
 			}
 		region_state:IND = {
 			create_pop = {

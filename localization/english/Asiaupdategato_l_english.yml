@@ -205,20 +205,42 @@
  berlinreform: "Berlin Reform"
  berlinreform_desc: "The city of Berlin is growing rapidly, but chaos and poor planning threaten its future. Lead a grand urban reform to modernize the capital, widen the streets, improve sanitation, and construct monumental buildings that reflect the strength and discipline of the empire. Bring order, progress, and glory to Berlin."
  kullos: "Kulturkampf loss"
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ law_beamtenstaat: "Beamtenstaat"
+ drive_to_the_east.1.t:0 "The Poland Annexation"
+ drive_to_the_east.1.d:0 "We have wrested control of the polish plains from the Russian yoke. [ROOT.GetCountry.GetName] stands ready to strike out from poland, and to make use of her resources."
+ drive_to_the_east.1.f:0 ""Russian mismanagement was the main cause of the withered physical, mental, and political development of the poles. The polish are part of the western cultural sphere, and are a bulwark against the uncultured east." #italic -Hans von Beseler, general governor of Warschau from 1915-1918, paraphrased.#!"
+ drive_to_the_east.1.a:0 "We must ensure that the poles never rise up against us."
+ drive_to_the_east.1.a.customdesc:0 "Every state in the strategic region of #b $region_poland$#! that is not owned by [ROOT.GetCountry.GetName] will gain the modifier #b $state_drive_to_the_east_state_fervor_debuff$#! (subject to [concept_decay]), which grants:\n#R -20%#! [concept_education_access]\n#R -2#! Standard of Living for Polish pops.\nIn addition, #b 10%#! of [concept_middle_strata] and [concept_upper_strata] pops of the Polish culture in all states of the strategic region #b $region_poland$#! will become the $east_german$ culture."
+ drive_to_the_east.1.b:0 "We had to defend our land."
+ drive_to_the_east.1.c:0 "Poland has always been the natural next step in the expansion of German peoples."
+ drive_to_the_east.1.c.customdesc:0 "#b 30%#! of [concept_middle_strata] and [concept_upper_strata] pops of the Polish culture in all states of the strategic region #b $region_poland$#! will become the $east_german$ culture. In addition, every state in the strategic region #b $region_poland$#! will become a [concept_homeland] of the $east_german$ culture."
+ state_drive_to_the_east_state_fervor_debuff:0 "Systematic Oppression: Poland"
+ je_group_ger_drive_to_the_east:0 "Vorwärts nach Osten!"
+ je_drive_to_the_east_poland:0 "Die polnische Integration"
+ je_drive_to_the_east_poland_reason:0 "Poland remains politically unstable and incapable of safeguarding the region. By bringing these territories under German administration, we secure our eastern frontier, protect our compatriots, and extend orderly governance into lands historically marked by division. Such integration strengthens the Reich and ensures lasting stability in the East."
+ gerotierra: "Heeresreform"  
+ germar: "Flottenmodernisierung"
+ dec_drive_to_the_east: "Der Osten Ruft"
+ dec_drive_to_the_east_desc: "For centuries, the lands of the east have remained divided and vulnerable, a patchwork of weak authorities unable to guarantee stability. Our duty is to extend order, discipline, and the authority of the crown beyond our current borders. By asserting control over Poland, we secure strategic frontiers, protect our people, and bring the benefits of proper governance to a region long plagued by fragmentation. The march to the east is not conquest—it is the restoration of rightful influence and the realization of our destiny."
+ dec_german_colonies: "Kolonialprogramm des Kaiserreichs"
+ dec_german_colonies_desc: "The German Empire stands strong at home, yet our influence beyond Europe remains limited. To secure our future, we must claim our rightful place among the world’s great colonial powers. By expanding overseas, we gain access to vital resources, new markets, and strategic footholds that will strengthen the Reich for generations. The time has come to project German industry, discipline, and culture across the seas, forging an empire worthy of our ambition."
+ je_german_coloniesafr: "Deutsch-Ostafrika Ausbauplan"
+ je_german_coloniesvnz: "Klein-Venedig"
+ je_german_coloniesafr_reason: "The island of Zanzibar stands as a gateway to East Africa, rich in trade and resources. By bringing it under German protection, the Reich gains a vital naval base, strengthens its position in the Indian Ocean, and opens the door to greater influence on the continent. German discipline and administration will bring order and prosperity, establishing a cornerstone for our colonial empire."
+ je_german_coloniesvnz_reason: "Centuries ago, the banks of the Orinoco were entrusted to German settlers, yet the opportunity was lost to time. Now, the Reich seeks to reclaim its historic foothold in the Americas. Securing Klein-Venedig will provide valuable resources, strategic ports, and a chance to reassert German influence in the New World. The dream of a German presence across the Atlantic can begin here."
+ pmg_base_building_reichstag: "Brandenburg Gate"
+ geroil: "Rheinische Ölproduktion"
+ gerrubber: "Deutsch-Ostafrikanische Gummiplantage"
+ gerpolmil: "Ostgrenzen Verteidigung"
+ therinsecured: "Rhin Sécurisé par l’Alsace"
+ je_french_alsacia: "Rhin Sécurisé par l’Alsace"
+ je_french_alsacia_reason: "The rise of German nationalism and the formation of the North German Confederation have transformed our eastern frontier into a potential battleground. As Prussia grows in strength and ambition, France can no longer rely on outdated borders for its security. Securing the Rhine by fortifying and controlling Alsace is essential to protect our heartland, maintain strategic superiority, and prevent German expansionism from threatening the stability of Europe."
+ frenchhumiliation_modifier: "C'est Joever"
+ french_humiliation.1.t: "C'est Joever"
+ french_humiliation.1.d: "Despite our efforts, the Rhine remains exposed. The rise of German power has outpaced our preparations, and without firm control over Alsace, our eastern frontier is now vulnerable. This failure undermines France’s strategic position, weakens our influence in Europe, and leaves the heartland at risk should conflict arise. The opportunity to secure the Rhine has slipped from our grasp."
+ french_humiliation.1.f: "Enfin, c’est arrivé"
+ french_humiliation.1.a: "France has fallen, billions must die"
+ french_hum_ruler: "Héritage du Perdant d’Alsace"
  
  
  
