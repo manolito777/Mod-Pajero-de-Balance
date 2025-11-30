@@ -1,8 +1,6 @@
 ﻿COUNTRIES = {
-	c:EIC ?= {
-		ig:ig_industrialists = {
-			add_ruling_interest_group = yes
-		}
+	c:MUG ?= {
+		
 		effect_starting_technology_tier_3_tech = yes
 
 		add_technology_researched = atmospheric_engine
@@ -21,12 +19,12 @@
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_hindu_caste_codified
 
-		set_tax_level = high # EIC revenue was essentially based on tax farming
+		set_tax_level = high # MUG revenue was essentially based on tax farming
 
 		add_taxed_goods = g:opium
 		add_taxed_goods = g:tobacco
@@ -39,7 +37,7 @@
 			set_company_state_region = s:STATE_WEST_BENGAL
 		}
 
-		add_modifier = modifier_india_company_rule
+		
 
 		add_modifier = {
 				name = dutch_buyout

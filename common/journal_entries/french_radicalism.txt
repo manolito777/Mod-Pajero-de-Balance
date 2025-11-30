@@ -1,0 +1,44 @@
+﻿je_french_radicalism = {
+	icon = "gfx/interface/icons/event_icons/phrygian.dds"
+	
+	group = je_group_historical_content
+	
+	modifiers_while_active = {
+		modifier_frenchradicalism
+	}
+
+	is_shown_when_inactive = {
+		OR = {
+			c:FRA ?= THIS
+		}
+	}
+	
+	possible = {
+		c:FRA ?= THIS
+	}
+	
+	scripted_progress_bar = frenchrad_core_progress_bar
+	
+	scripted_button = use_police_button
+	scripted_button = use_police_button2
+	scripted_button = subsidies_button
+    scripted_button = propaganda_button
+	
+	
+	complete = {
+		custom_tooltip = {
+			text = je_kulturkampf_complete
+			scope:journal_entry = {
+                "scripted_bar_progress(frenchrad_core_progress_bar)" >= 200
+            }
+		}
+	}
+	
+	on_complete = {
+	trigger_event = { id = frenchrad.1 }
+	}
+	
+	weight = 10000
+	should_be_pinned_by_default = yes
+	can_revolution_inherit = yes
+}

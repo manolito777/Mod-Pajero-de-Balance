@@ -62,6 +62,7 @@
  je_modernizationrus_reason: "In the boundless dominions of the Russian Empire, the prosperity and stability of the realm depend upon the enlightenment and discipline of its subjects. As the modern age dawns upon Europe, His Imperial Majesty recognizes that knowledge must stand as a pillar of national strength, guiding both the noble and the humble toward duty, faith, and service to the Motherland.
 
  law_artisan_system: "Artisan System"
+ law_artisan_system_desc: "Artisanal production was organized in small workshops run by a master craftsman, who controlled every stage of the work. Under him were journeymen (skilled workers) and apprentices, who often lived with the master or spent most of their time in the workshop. Production was manual, highly skilled, and personalized, with no strict separation between design and execution. This created a close, almost domestic labor relationship and a local economy shaped by informal guild-like structures."
  HaussmannRenovation: "Haussman renovation"
  HaussmannParis: "Haussman Paris"
  niggasinparis: "Medieval Paris"
@@ -71,7 +72,7 @@
  INC_ADJ: "Indonesian"
  company_peugeot: "Peugeot"
  prestige_good_peugeot_automobiles: "Peugeot automobil"
- Società_Italiana_per_la_Fabbricazione_della_Dinamite_&_NFTs: "SIFD & NFTs"
+ Societa_Italiana_per_la_Fabbricazione_della_Dinamite_&_NFTs: "SIFD & NFTs"
  PEC: "British Indus Company"
  PEC_ADJ: "Indo"
  EIC: "Mughal Empire"
@@ -140,10 +141,8 @@
  law_Kaiserliche_Monarchie: "Kaiserliche Monarchie"
  Norddeutsche_Gewerbeordnung: "Norddeutsche Gewerbeordnung"
  law_Industrieschutzgesetz: "Industrieschutzgesetz"
- je_eic_india: "The birth of Bharat"
- je_eic_india_reason: "For centuries our land has been torn apart by kingdoms, foreign companies and imperial ambitions. India, cradle of ancient civilizations, was divided by outsiders, its people reduced to subjects in their own home. But the tides of history are turning. Now winds of unity sweep across the land. From the Ganges to the Indus, from the Himalayas to Cape Comorin, one spirit awakens: the desire for freedom, greatness and dignity. To form India is not merely to draw borders, it is to restore the soul of a people who never stopped dreaming of their destiny. A single nation under one banner, with one purpose and one will. India shall no longer be a prize for conquerors, it shall be an empire remembered through the ages."
- invoke_doctrine_of_lapse: "invoke doctrine of lapse"
- invoke_doctrine_of_lapse_desc: "For too long, petty princely states have resisted progress, clinging to outdated traditions and unstable lines of succession. The time has come to bring order and efficiency to the subcontinent. By invoking the Doctrine of Lapse, we shall rightfully claim territories whose rulers have failed to secure a legitimate heir, ensuring their lands are governed with stability and purpose."
+ je_eic_india: "The Mughal Reform"
+ je_eic_india_reason: "The Mughal Empire, once the unrivaled master of the subcontinent, now suffers from administrative decay, military rigidity, and a fragmented bureaucracy. Centuries of complacency and regional autonomy have weakened the authority of the throne. To restore imperial greatness, sweeping reforms are required—modernizing the army, centralizing taxation, and reestablishing direct control over the provinces. Only by reforging the state can the Mughals reclaim their legacy and stand once more as the dominant power of India."
  law_Staatskapitalismus: "Staatskapitalismus"
  building_reichstag: "Brandenburg Gate"
  je_kulturkampf: "Kulturkampf"
@@ -241,31 +240,109 @@
  french_humiliation.1.f: "Enfin, c’est arrivé"
  french_humiliation.1.a: "France has fallen, billions must die"
  french_hum_ruler: "Héritage du Perdant d’Alsace"
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ switzerland_pay_modifier: "Swiss Bankers"
+ switzerland_protection_je: "Banking Safe Haven"
+ switzerland_protection_je_reason: "For years, influential bankers have chosen to store their fortunes within our borders, trusting our stability and discretion above all others. This growing concentration of financial capital strengthens our reputation, enhances our influence abroad, and turns our nation into a central pillar of European security. By safeguarding their wealth, we reinforce our own prosperity and ensure that the flow of capital continues to favor our interests."
+ swissdebunked: "Swiss banks debunked"
+ ibe_siesta: "lazy andalusians"
+ algerian_conversion: "The new Algerians"
+ french_foreing_legion_established: "French foreing legion established"
+ french_foreign_legion_igmod: "French foreign legion"
+ je_the_algerian_departements: "Intégrer l’Algérie au Corps National"
+ je_the_algerian_departements_reason: "Algeria has remained under French administration, yet still stands apart from the métropole. As the empire grows, so too does the vision of transforming Algeria not into a distant colony, but into an integral part of France itself—equal to Paris, Brittany, or Corsica. By organizing its territory into full departments, encouraging settlement, and extending our institutions across the Mediterranean, we can finally complete the project of turning Algeria into an inseparable component of the French nation. The fate of Algeria is not colonial rule, but integration."
+ formation.69.d: "Through decisive military victories, our armies have subdued Chile and Uruguay, bringing the southern cone under a single banner. Yet conquest alone does not make a nation. To truly forge La Plata, we must unify these lands under a stable administration, integrate their populations, and establish Buenos Aires as the uncontested heart of the new state. The creation of La Plata marks not just expansion, but the birth of a continental power capable of shaping the destiny of South America."
+ formation.69.t: "Forjar la Gran La Plata"
+ ruhr_boom.1.a: "Ruhr boom"
+ formation.13.a: "Per l’Imperatore Alex Dreckus"
+ dutch_buyout: "Colonial concessions"
+ patwarahi_new_india_modifier: "Imperial Legitimacy Undermined"
+ BHT: "Sublime Mughal State"
+ BHT_ADJ: "Mughal"
+ plt_explosion_demografica: "Argentinian baby boom"
+ the_algerian_frenchification: "Algerian incorporation"
+ the_algerian_frenchification_state: "Algerian incorporation"
+ ig_trait_sacred_loans: "Sacred loans"
+ ig_trait_sacred_loans_desc: "The Church extends credit to the faithful and local merchants, providing loans for trade, agriculture, and infrastructure. Its financial influence allows it to shape local economies, promote economic activity, and maintain loyalty among communities, while also increasing dependence on its guidance and resources."
+ je_code_civil: "Promulguer le Code Civil"
+ je_code_civil_reason: "France stands at a crossroads. Centuries of local customs, conflicting regional laws, and feudal remnants have left our legal system divided and inefficient. To unify the nation, we must establish a single, coherent civil code—one that guarantees property rights, equality before the law, and the supremacy of the state. By promulgating the Civil Code, France sets the foundation for a modern society, strengthens central authority, and creates a legal framework that will endure for generations."
+ code_civil_event.1.t: "The Code is Enacted"
+ code_civil_event.1.d: "The Civil Code has been successfully established. France now stands united under a single, rational legal framework that replaces outdated customs and contradictions. Property, family, and individual rights are clearly defined, and the authority of the state has been firmly restored. This achievement marks a decisive step toward modernity, giving France a coherent legal identity that will guide the nation for generations to come."
+ code_civil_event.1.f: "France now stands united under one law."
+ code_civil_event.1.a: "Liberté, Égalité, Fraternité"
+ law_code_civil: "Code civil"
+ law_code_civil_desc: "France has unified its civil law under a single, coherent legal framework. Property rights are protected, contracts are recognized, and family and inheritance laws are standardized. Equality before the law is guaranteed, reducing local legal inconsistencies and strengthening the authority of the state. This reform modernizes the nation and provides a stable foundation for governance and economic growth."
+ je_french_colonial_empire: "Forging a French Maritime Empire"
+ je_french_colonial_empire_reason: "France’s future lies beyond the horizon. To compete with the great naval powers of the world, we must secure strategic ports, expand our fleet, and establish overseas colonies that project our influence across the seas. A maritime empire will grant France access to global trade routes, valuable resources, and the prestige worthy of a great power. By mastering the oceans, we ensure that French authority is felt on every shore."
+ french_navy_modifier: "Garde des Océans"
+ french_colonial_loss: "Legacy of a Fallen Empire"
+ je_french_colonial_empire2: "Preserve the Maritime Empire"
+ je_french_colonial_empire2_reason: "Our empire spans oceans and continents, but such dominion is never guaranteed. Rising rivals, distant rebellions, and the constant strain of maintaining global routes threaten the unity of our possessions. To preserve the Maritime Empire, France must strengthen its navy, secure key colonies, and assert firm authority across its overseas territories. Only through vigilance and strategic dominance can we ensure that the tricolor continues to fly proudly over the seas of the world."
+ french_colonial_empire.1: "The French Maritime Empire Established"
+ french_colonial_empire.1.t: "France Claims the Seas!"
+ french_colonial_empire.1.d: "From Africa to the Pacific, our flag now commands the sea-lanes of the world. Ports, colonies, and naval stations unite under French authority, forming an empire built upon oceanic strength and global reach. This moment marks the rise of France as a true maritime great power, capable of shaping the destiny of continents."
+ french_colonial_empire.1.f: "For the glory of the Empire!"
+ french_colonial_empire.1.a: "The oceans now speak French."
+ french_colonial_empire.2: "The Collapse of the Maritime Empire"
+ french_colonial_empire.2.t: "A Legacy Lost to the Waves"
+ french_colonial_empire.2.d: "Our once-proud maritime dominion has slipped through our fingers. Overseas ports have fallen, trade routes are broken, and the influence that once stretched across the seas now fades into memory. France must confront a new reality—and decide what path to take after the fall."
+ french_colonial_empire.2.f: "Empires rise with the tide… and fall with it just as swiftly."
+ french_colonial_empire.2.a: "Accept the Loss"
+ je_french_tunez: "Sulfur Wealth of Tunisia"
+ je_french_tunez_reason: "Tunisia’s sulfur deposits offer France a strategic resource vital for explosives, chemicals, and industrial growth. By developing these mines and securing reliable extraction, France can strengthen its military capabilities and fuel its expanding industrial ambitions."
+ french_tunez.1: "Promoting Sulfur Mining in Tunisia"
+ french_tunez.1.d: "French administrators and investors see great potential in the sulfur-rich deposits of Tunisia. By encouraging extraction, improving transport links, and securing labor, France can transform these reserves into a valuable industrial asset. Expanding sulfur mining will strengthen our chemical and military industries—if we are willing to commit the resources."
+ french_tunez.1.t: "A New Flame Beneath Tunisian Soil"
+ french_tunez.1.f: "Sulfur sparks industry—and power."
+ french_tunez.1.a: "Develop the Mines"
+ tunisian_mines_modifier: "Enhanced Tunisian Sulfur Mines"
+ FRARAD_PASSIVE_1: "not having [GetLawType('law_monarchy').GetName] or [GetLawType('law_theocracy').GetName] enacted"
+ FRARAD_PASSIVE_2: "having [GetLawType('law_right_of_assembly').GetName] or [GetLawType('law_protected_speech').GetName] enacted"
+ FRARAD_PASSIVE_3: "having [GetLawType('law_code_civil').GetName] enacted"
+ FRARAD_PASSIVE_4: "not having [GetLawType('law_state_religion').GetName] enacted"
+ FRARAD_PASSIVE_5: "having a [concept_powerful] [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]"
+ FRARAD_PASSIVE_6: "having a [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName][concept_in_government]"
+ FRARAD_PASSIVE_7: "Gendarmerie en Action"
+ FRARAD_PASSIVE_8: "Enhanced Municipal Relief Act"
+ FRARAD_PASSIVE_9: "having [GetLawType('law_no_womens_rights').GetName] enacted"
+ FRARAD_PASSIVE_10: "having [GetLawType('law_no_health_system').GetName] enacted"
+ FRARAD_PASSIVE_11: "Gendarmerie Crackdown"
+ FRARAD_PASSIVE_12: "Propagande Nationale"
+ frarad_core_progress_bar_name: "Consolidation de l’État"
+ frarad_core_progress_bar_text_1: "Apaisement Social"
+ je_french_radicalism: "Réduction du Radicalisme"
+ je_french_radicalism_reason: "[SCOPE.GetRootScope.GetCountry.GetName], fueled by political uncertainty, economic tension and an increasingly restless urban population. To restore civic harmony, the government has enacted a comprehensive program aimed at moderating public passions and channeling reformist energies into stable institutions. The following conditions will #bold advance#! the #bold Progress Bar#! monthly in favor of #bold #blue Reduced Radicalism#!#!: Having no [GetLawType('law_monarchy').GetName] or [GetLawType('law_theocracy').GetName] enacted #bold #blue +1#!#! Having both [GetLawType('law_right_of_assembly').GetName] and [GetLawType('law_protected_speech').GetName] enacted #bold #blue +1#!#!Having [GetLawType('law_code_civil').GetName] enacted #bold #blue +1#!#! Not having [GetLawType('law_state_religion').GetName] enacted #bold #blue +1#!#! Having a [concept_powerful] [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] #bold #blue +1#!#! Having [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] [concept_in_government] #bold #blue +1#!#! Having the modifier of the gendarmerie #bold #blue +1#!#! Having the modifier french subsidies #bold #blue +1#!#! Having the modifier gendarmerie crackdown #bold #blue +1#!#! The following conditions will #bold advance#! the #bold Progress Bar#! monthly in favor of #bold #red Rising Radicalism#!#!: Having [GetLawType('law_no_womens_rights').GetName] enacted #bold #red +1#!#! Having [GetLawType('law_no_health_system').GetName] enacted #bold #red +1#!#! Having the modifier french propaganda #bold #red -3#!#!"
+ use_police_button: "Deploy the Gendarmerie"
+ use_police_button_desc: "A firm presence of gendarmes will restore calm to the boulevards."
+ modifier_police_repression: "Gendarmerie en Action"
+ modifier_frenchradicalism: "Agitation Populaire"
+ subsidies_button_positive: "The Progress Bar will #bold advance#! monthly by #blue 1#! points in favor"
+ subsidies_button: "Enhanced Municipal Relief Act"
+ subsidies_button_desc: "Recognizing the growing challenges of urban poverty and social unrest, the government authorizes increased funding for municipal relief programs."
+ french_subsidies: "Enhanced Municipal Relief Act"
+ use_police_button2: "Gendarmerie Crackdown"
+ use_police_button2_desc: "A forceful deployment of gendarmes clamps down on unrest, suppressing radicals and restoring strict order to the streets."
+ modifier_police_repression2: "Gendarmerie Crackdown"
+ use_police_button2_positive: "The Progress Bar will #bold advance#! monthly by #blue 1#! points more in favor"
+ modifier_french_propaganda: "Propagande Nationale"
+ propaganda_button: "Propagande Nationale"
+ propaganda_button_desc: "A coordinated campaign spreads patriotic messages across cafés, ateliers and boulevards, shaping public opinion with disciplined efficiency."
+ propaganda_button_positive: "The Progress Bar will #bold advance#! monthly by #red -3#! points in favor"
+ use_police_button_positive: "The Progress Bar will #bold advance#! monthly by #blue 1#! points more in favor."
+ frenchrad.1: "La Fin du Tumulte"
+ frenchrad.1.t: "La Fin du Tumulte"
+ frenchrad.1.d: "After years marked by unrest, fiery speeches, and constant tension, France has finally found calm again. The political agitation that once filled cafés, boulevards, and public squares has faded, replaced by a renewed sense of moderation. Through careful reforms, firm oversight, and a steady hand in public affairs, the government has restored stability to the nation. With radicalism extinguished, the French people can once more trust in order, continuity, and the possibility of progress without upheaval."
+ frenchrad.1.f: "Les rues sont redevenues silencieuses."
+ frenchrad.1.a: "Let peace prevail."
+ modifier_french_radend: "Ordre Restauré"
+ swissbankevent.1: "Switzerland Annexed"
+ swissbankevent.1.t: "The Fall of the Alpine Vault"
+ swissbankevent.1.d: "With the annexation of Switzerland, the financial networks that once flowed through its discreet banking houses have evaporated overnight. Without the protection of a neutral Alpine haven, capital grows nervous, lenders demand greater guarantees, and foreign creditors tighten their grip. What was once a refuge of stability has become a burden of spiraling interest rates. Our treasury now feels the full weight of losing Europe's safest vault."
+ swissbankevent.1.a: "We will bear the cost"
+ swissbankevent.1.f: "The mountains stand, but the bankers are gone."
+ swissbankevent.2: "Switzerland Restored"
+ swissbankevent.2.t: "The Alpine Safeguard Reborn"
+ swissbankevent.2.d: "The re-establishment of Switzerland as an independent state has revived its unique financial ecosystem. With the return of its famed neutrality and trusted banking institutions, international capital once again seeks shelter within the Alpine republic. Lenders relax, markets regain their balance, and our government benefits from the restored stability of Europe’s most reliable vault."
+ swissbankevent.2.f: "Neutrality returns—and so does confidence."
+ swissbankevent.2.a: "Welcome back, stability."
+ switzerland_protection2_je: "Restore the Swiss Confederation"
+ switzerland_protection2_je_reason: "For centuries, Switzerland has served as Europe’s stabilizing anchor—its neutrality shielding diplomacy, its mountains guarding the continent’s most trusted financial institutions. With its independence broken, the flow of capital, confidence, and balance across Europe has faltered. Restoring the Swiss Confederation will help reestablish financial stability, secure Alpine trade routes, and reaffirm the political order upon which the continent relies."

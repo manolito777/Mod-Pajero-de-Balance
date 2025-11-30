@@ -1,0 +1,119 @@
+﻿
+
+je_french_colonial_empire = {
+	icon = "gfx/interface/icons/event_icons/africa.dds"
+
+	group = je_group_france_expansion
+    is_shown_in_lobby = {
+		OR = {
+			c:FRA = THIS
+			
+		}
+	}
+
+	is_shown_when_inactive = {
+		
+		OR = {
+		    has_technology_researched = ironclad_tech
+		}
+	}
+	possible = {
+	
+		OR = {
+			c:FRA = THIS
+
+
+		}
+	}
+	# note that if you change this, also update the decision
+	complete = {
+		country_or_subject_owns_entire_state_region = STATE_HAITI
+		country_or_subject_owns_entire_state_region = STATE_SANTO_DOMINGO
+		country_or_subject_owns_entire_state_region = STATE_TAHITI
+		AND = {
+		OR = {
+			country_or_subject_owns_entire_state_region = STATE_CAMBODIA
+			country_or_subject_owns_entire_state_region = STATE_FORMOSA
+			country_or_subject_owns_entire_state_region = STATE_CEYLON
+	     	}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = french_colonial_empire.1 }
+	
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_french_colonial_empire2 = {
+ icon = "gfx/interface/icons/event_icons/colony.dds"
+ group = je_group_france_expansion
+ modifiers_while_active = {
+		french_navy_modifier
+	}
+  complete = {		
+		 trigger_if = {
+				OR = {
+				s:STATE_HAITI = {
+					NOT = {
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+										NOR = {
+											country_has_primary_culture = cu:french
+											
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				s:STATE_SANTO_DOMINGO = {
+					NOT = {
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+										NOR = {
+											country_has_primary_culture = cu:french
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				s:STATE_TAHITI = {
+					NOT = {
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+										NOR = {
+											country_has_primary_culture = cu:french
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				NOR = {
+			country_or_subject_owns_entire_state_region = STATE_CAMBODIA
+			country_or_subject_owns_entire_state_region = STATE_FORMOSA
+			country_or_subject_owns_entire_state_region = STATE_CEYLON
+	     	}
+			}
+		}	
+		}
+		on_complete = {
+		trigger_event = { id = french_colonial_empire.2 }
+		
+	}
+    weight = 100
+    should_be_pinned_by_default = yes
+}

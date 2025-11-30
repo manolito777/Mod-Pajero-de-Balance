@@ -2956,13 +2956,13 @@
 		}
 	}
 	s:STATE_ARAKAN={
-		region_state:EIC={
+		region_state:MUG={
 			create_building={
 				building="building_opium_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:EIC"
+						country="c:MUG"
 						levels=1
 						region="STATE_WEST_BENGAL"
 					}

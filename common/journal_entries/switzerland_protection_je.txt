@@ -1,0 +1,100 @@
+﻿switzerland_protection_je = {
+    icon = "gfx/interface/icons/event_icons/money.dds"
+    
+    group = je_group_internal_affairs
+    group = je_group_internal_affairs
+
+
+	possible = {
+	
+		OR = {
+	
+			exists = c:SWI
+		}
+	}
+    modifiers_while_active = {
+		switzerland_pay_modifier
+	}
+    complete = {		
+		 trigger_if = {
+				OR = {
+				s:STATE_WEST_SWITZERLAND = {
+					NOT = {
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+										NOR = {
+											country_has_primary_culture = cu:alemannic
+											
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				s:STATE_EAST_SWITZERLAND = {
+					NOT = {
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+										NOR = {
+											country_has_primary_culture = cu:alemannic
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				c:SWI = {
+						is_subject = yes
+					}
+			}
+		}	
+		}
+		on_complete = {
+		
+		trigger_event = { id = swissbankevent.1 }
+	}
+    weight = 100
+    should_be_pinned_by_default = yes
+}
+switzerland_protection2_je = {
+    icon = "gfx/interface/icons/event_icons/flag.dds"
+    modifiers_while_active = {
+		swissdebunked
+	}
+    complete = {		
+		 trigger_if = {
+				s:STATE_WEST_SWITZERLAND = {
+						any_scope_state = {
+									owner = {
+											country_has_primary_culture = cu:alemannic
+								
+									}
+								}
+							}
+
+				s:STATE_EAST_SWITZERLAND = {
+						any_scope_state = {
+									owner = {
+											country_has_primary_culture = cu:alemannic
+										}
+									}
+								
+				c:SWI = {
+						is_subject = no
+					}
+			}
+		}	
+		}
+		on_complete = {
+		
+		trigger_event = { id = swissbankevent.2 }
+	}
+    weight = 100
+    should_be_pinned_by_default = yes
+}

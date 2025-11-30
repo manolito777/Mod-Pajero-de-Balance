@@ -23,7 +23,7 @@ je_drive_to_the_east_poland = {
 }
 je_german_coloniesvnz = {
 	icon = "gfx/interface/icons/event_icons/war.dds"
-
+	group = je_group_ger_drive_to_the_east
 
 	# note that if you change this, also update the decision
 	complete = {
@@ -45,7 +45,7 @@ je_german_coloniesvnz = {
 }
 je_german_coloniesafr = {
 	icon = "gfx/interface/icons/event_icons/africa.dds"
-
+    group = je_group_ger_drive_to_the_east
 
 	# note that if you change this, also update the decision
 	complete = {

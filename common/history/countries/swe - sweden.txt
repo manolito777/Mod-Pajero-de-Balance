@@ -27,7 +27,7 @@
 			institution = institution_schools
 			level = 3
 		}	
-
+        add_journal_entry = { type = switzerland_protection_je }
 		ig:ig_devout = {
 			add_ruling_interest_group = yes
 		}

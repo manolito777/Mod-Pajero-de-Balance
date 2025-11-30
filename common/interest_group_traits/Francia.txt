@@ -1,0 +1,9 @@
+# Alemania
+ig_trait_sacred_loans = {
+	icon = "gfx/interface/icons/ig_trait_icons/treasury_bonds.dds"
+	min_approval = loyal
+	
+	modifier = {
+		country_loan_interest_rate_mult = -0.05
+	}
+}

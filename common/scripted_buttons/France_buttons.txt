@@ -1,0 +1,77 @@
+﻿use_police_button = {
+	name = "use_police_button"
+	desc = "use_police_button_desc"
+
+	possible = {
+		NOT = { has_modifier = modifier_police_repression }
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = modifier_police_repression
+			months = 36
+			
+		}
+		custom_tooltip = {
+			text = use_police_button_positive
+		}
+	}
+}
+
+subsidies_button = {
+	name = "subsidies_button"
+	desc = "subsidies_button_desc"
+
+	possible = {
+		NOT = { has_modifier = french_subsidies }
+	}
+	effect = {
+		add_modifier = { 
+			name = french_subsidies
+			months = 36
+			
+		}
+		custom_tooltip = {
+			text = use_police_button_positive
+		}
+	}
+}
+use_police_button2 = {
+	name = "use_police_button2"
+	desc = "use_police_button2_desc"
+
+	possible = {
+	 has_modifier = modifier_police_repression 
+	 NOT = { has_modifier = modifier_police_repression2 }
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = modifier_police_repression2
+			months = 36
+			
+		}
+		custom_tooltip = {
+			text = use_police_button2_positive
+		}
+	}
+}
+propaganda_button = {
+	name = "propaganda_button"
+	desc = "propaganda_button_desc"
+
+	possible = { 
+	 NOT = { has_modifier = modifier_french_propaganda }
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = modifier_french_propaganda
+			months = 36
+			
+		}
+		custom_tooltip = {
+			text = propaganda_button_positive
+		}
+	}
+}

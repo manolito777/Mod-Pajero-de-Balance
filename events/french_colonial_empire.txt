@@ -1,0 +1,58 @@
+﻿namespace = french_colonial_empire
+
+french_colonial_empire.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = french_colonial_empire.1.t
+	desc = french_colonial_empire.1.d
+	flavor = french_colonial_empire.1.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	duration = 3
+	
+	option = {
+		name = french_colonial_empire.1.a
+		default_option = yes
+			add_journal_entry = {
+			type = je_french_colonial_empire2
+		}
+	}
+
+}
+french_colonial_empire.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = french_colonial_empire.2.t
+	desc = french_colonial_empire.2.d
+	flavor = french_colonial_empire.2.f
+
+	event_image = {
+		video = "unspecific_naval_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/whiteflag.dds"
+
+	duration = 3
+	
+	option = {
+		name = french_colonial_empire.2.a
+		default_option = yes
+			add_modifier = {
+			name = french_colonial_loss
+			months = 90
+				is_decaying = yes
+		}
+	}
+
+}

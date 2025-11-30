@@ -1,0 +1,48 @@
+﻿
+
+je_french_tunez = {
+	icon = "gfx/interface/icons/event_icons/industry.dds"
+
+	group = je_group_france_expansion
+    is_shown_in_lobby = {
+		OR = {
+			c:FRA = THIS
+			
+		}
+	}
+
+	is_shown_when_inactive = {
+			 c:FRA = {
+				OR = {
+					country_or_subject_owns_entire_state_region = STATE_TUNISIA
+				}
+			}
+		}
+	possible = {
+			c:FRA = THIS
+	}
+	# note that if you change this, also update the decision
+	complete = {
+		any_scope_state = {
+					state_region = s:STATE_TUNISIA
+				any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+	        
+					}
+					any_scope_building = {
+				is_building_type = building_sulfur_mine
+				level >= 30
+	        
+					}
+				}
+	}
+
+	on_complete = {
+		trigger_event = { id = french_tunez.1 }
+	
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}

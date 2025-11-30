@@ -71,6 +71,7 @@ ig_trait_haute_finance = {
 
 	modifier = {
 		country_loan_interest_rate_mult = -0.06
+		country_legitimacy_headofstate_add = 5
 	}
 }
 

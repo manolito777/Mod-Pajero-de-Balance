@@ -29,7 +29,4 @@ haussmanplan = {
 			years = 3
 		}
 	}
-	ai_chance = {
-		base = 3
-	}
 }

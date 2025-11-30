@@ -1,0 +1,66 @@
+﻿namespace = swissbankevent
+
+swissbankevent.1 = {
+	type = country_event
+	placement = ROOT
+	title = swissbankevent.1.t
+	desc = swissbankevent.1.d
+	flavor = swissbankevent.1.f
+
+	duration = 3
+
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/protest.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+	option = {
+		name = swissbankevent.1.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+            add_journal_entry = {
+			type = switzerland_protection2_je
+		}
+	}
+}
+swissbankevent.2 = {
+	type = country_event
+	placement = ROOT
+	title = swissbankevent.2.t
+	desc = swissbankevent.2.d
+	flavor = swissbankevent.2.f
+
+	duration = 3
+
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+	option = {
+		name = swissbankevent.2.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+            add_journal_entry = {
+			type = switzerland_protection_je
+		}
+	}
+}

@@ -1,12 +1,12 @@
 
 je_eic_india = {
-	icon = "gfx/interface/icons/achievements/achievement_our_words_are_backed.dds"
+	icon = "gfx/interface/icons/event_icons/diplo.dds"
 
 	group = je_group_internal_affairs
 	
 	is_shown_when_inactive = {
 		is_player = yes
-		root = c:EIC
+		root = c:MUG
 	}
 
 	complete = {
@@ -14,7 +14,6 @@ je_eic_india = {
 		has_law = law_type:law_slavery_banned 
 		has_law = law_type:law_affirmative_action
 		NOT = {
-			has_law = law_type:law_extraction_economy
 			has_law = law_type:law_serfdom
 		}
 	}

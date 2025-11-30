@@ -36,7 +36,7 @@
 		}
 
 
-
+        add_journal_entry = { type = switzerland_protection_je }
 		add_company = company_type:company_russian_american_company
 		company:company_russian_american_company = {
 			set_company_establishment_date = 1799.7.8

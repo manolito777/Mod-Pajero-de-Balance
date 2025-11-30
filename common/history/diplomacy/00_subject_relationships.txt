@@ -224,7 +224,7 @@
 			type = puppet
 		}
 	}
-	c:EIC ?= {
+	c:MUG ?= {
 
 		create_diplomatic_pact = {
 			country = c:BHO
@@ -594,7 +594,7 @@
 	}
 
 
-	c:EIC ?= {
+	c:MUG ?= {
 		every_subject_or_below = {
 			add_liberty_desire = -20
 		}

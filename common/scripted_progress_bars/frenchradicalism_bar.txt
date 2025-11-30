@@ -1,0 +1,126 @@
+﻿frenchrad_core_progress_bar = {
+ 	name = "frarad_core_progress_bar_name"
+	desc = "frarad_core_progress_bar_text_1" #This will be printed on the left side of the progress bar
+	
+
+
+ 	default = yes
+	start_value = 0
+	min_value = 0
+	max_value = 300
+	monthly_progress = {
+		
+		if = {
+			limit = {
+ 				NOT = { has_law_or_variant = law_type:law_monarchy }
+				NOT = { has_law_or_variant = law_type:law_theocracy }
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_1"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_right_of_assembly
+				has_law_or_variant = law_type:law_protected_speech
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_2"
+				value = 1
+			}
+		}
+ 		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_code_civil
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_3"
+				value = 1
+			}
+ 		}
+		if = {
+			limit = {
+ 				NOT = { has_law_or_variant = law_type:law_state_religion }
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_4"
+				value = 1
+			}
+ 		}
+		
+		if = {
+			limit = {
+ 				ig:ig_intelligentsia = { is_powerful = yes }
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_5"
+				value = 1
+			}
+ 		}
+
+		if = {
+			limit = {
+ 				ig:ig_intelligentsia = { is_in_government = yes }
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_6"
+				value = 1
+			}
+ 		}
+		if = {
+			limit = {
+ 				has_modifier = modifier_police_repression
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_7"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				has_modifier = french_subsidies
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_8"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_no_womens_rights
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_9"
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_no_health_system
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_10"
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+ 				has_modifier = modifier_police_repression2
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_11"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				has_modifier = modifier_french_propaganda
+ 			}
+			add = {
+				desc = "FRARAD_PASSIVE_12"
+				value = -3
+			}
+		}
+	}
+}

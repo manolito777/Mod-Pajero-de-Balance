@@ -19,8 +19,6 @@ siesta_abolition = {
 			}
 	remove_modifier = ibe_siesta
 	}
-	ai_chance = {
-		base = 1
-	}
+
   }
 }

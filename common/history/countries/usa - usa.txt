@@ -48,7 +48,7 @@
 		add_journal_entry = { type = je_texas_usa }
 		add_journal_entry = { type = je_acw_countdown }
 		add_journal_entry = { type = je_seminole_wars }
-
+        add_journal_entry = { type = switzerland_protection_je }
 		add_modifier = {
 			name = missouri_compromise
 			years = 50

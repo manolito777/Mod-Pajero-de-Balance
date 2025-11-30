@@ -1,0 +1,32 @@
+﻿
+je_code_civil = {
+	icon = "gfx/interface/icons/event_icons/diplo.dds"
+
+	group = je_group_internal_affairs
+	
+	is_shown_when_inactive = {
+		is_player = yes
+		root = c:FRA
+		
+	}
+
+	complete = {
+		OR = {
+		has_law = law_type:law_census_voting
+		
+		has_law = law_type:law_universal_suffrage
+		}
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+	}
+
+	on_complete = {
+		trigger_event = code_civil_event.1
+		
+	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}

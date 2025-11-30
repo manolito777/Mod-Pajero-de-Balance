@@ -12,15 +12,14 @@
 	is_shown_when_inactive = {
 		
 		OR = {
-			c:FRA = THIS
-			
+			exists = c:NGF
 		}
 	}
 	possible = {
 	
 		OR = {
 			c:FRA = THIS
-			exists = c:NGF
+			
 		}
 	}
     modifiers_while_active = {

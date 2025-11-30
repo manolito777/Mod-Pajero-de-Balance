@@ -1253,8 +1253,4 @@ persia_events.8 = {
 			base = 3
 		}
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 2bf308a99a09fbc0754fc7eda5960567cb2a43ff

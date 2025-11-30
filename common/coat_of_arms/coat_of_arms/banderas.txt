@@ -1,4 +1,30 @@
-
+BHT = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "mugbhtcoa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
+MUG = { # Mughal Empire
+	pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "hincoa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
+MUG_absolute_monarchy = {
+	pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "mugkindiccoa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
 EIC = {
 pattern = "pattern_border_outlined_thin.dds"
 	color1 = "white"
@@ -2641,38 +2667,6 @@ GBR_uk_coa_france = {
         parent = "sub_IRE_coa" 
         instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } } # bottom left
     } 
-}
-GBR_white_ensign  = {
-	# white ensign of the Royal Navy
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-	color2 = "red"
-
-	colored_emblem = {		
-		texture = "ce_cross_england.dds"
-		color1 = color2
-		color2 = color2
-	}
-    sub = {
-        parent = "sub_GBR" 
-        instance = { scale = { @canton_scale_cross_x @canton_scale_cross_y }  } # top left
-    }
-}
-GBR_uk_white_ensign  = {
-	# white ensign of the Royal Navy
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-	color2 = "red"
-
-	colored_emblem = {		
-		texture = "ce_cross_england.dds"
-		color1 = color2
-		color2 = color2
-	}
-    sub = {
-        parent = "sub_GBR_uk" 
-        instance = { scale = { @canton_scale_cross_x @canton_scale_cross_y }  } # top left
-    }
 }
 GBR_communist = {
 	pattern = "pattern_border_outlined_thin.dds"

@@ -19,8 +19,9 @@ berlinreform = {
 	    
 		any_scope_state = {
 			state_region = s:STATE_BRANDENBURG
-		any_scope_building = {
 			is_incorporated = yes
+		any_scope_building = {
+			
 				is_building_type = building_urban_center
 				level >= 50
 	        }
@@ -41,8 +42,5 @@ berlinreform = {
 			name = BerlinRenovation
 			years = 2
 		}
-	}
-	ai_chance = {
-		base = 3
 	}
 }

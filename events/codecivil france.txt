@@ -1,0 +1,35 @@
+﻿namespace = code_civil_event
+
+# Conquest of Algeira - Success event
+code_civil_event.1 = {
+	type = country_event
+	placement = ROOT
+	title = code_civil_event.1.t
+	desc = code_civil_event.1.d
+	flavor = code_civil_event.1.f
+
+	duration = 3
+
+	dlc = dlc004
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/phrygian.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+	option = { # Focus on migration
+		name = code_civil_event.1.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+	activate_law = law_type:law_code_civil
+		}
+	}
+

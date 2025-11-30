@@ -28,3 +28,67 @@ french_hum_ruler  = {
 	character_popularity_add = -75
 	country_authority_mult = -0.05
 }
+algerian_conversion = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_colonization_positive.dds
+	state_migration_pull_mult = 0.5
+	state_assimilation_mult = 0.4
+}
+french_foreign_legion_igmod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_mobilization_positive.dds
+	interest_group_pol_str_mult = 0.4
+	interest_group_approval_add = 2
+}
+the_algerian_frenchification = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_bureaucrat_positive.dds
+	interest_group_approval_add = 3
+}
+the_algerian_frenchification_state = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_bureaucrat_positive.dds
+	state_migration_pull_mult = 0.25
+	state_infrastructure_mult = 0.1
+	building_group_bg_mining_throughput_add = 0.15
+	state_pollution_reduction_health_mult = -0.05
+}
+french_navy_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_manowar_positive.dds
+	unit_navy_offense_mult = 0.05
+	unit_navy_defense_mult = 0.05
+}
+french_colonial_loss = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_capitulate_negative.dds
+	country_prestige_add = -200
+}
+tunisian_mines_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_prospecting_positive.dds
+	building_sulfur_mine_throughput_add = 0.15
+}
+modifier_frenchradicalism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_protest_negative.dds
+	state_mortality_mult = 0.15
+}
+modifier_police_repression = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_cop_negative.dds
+	state_mortality_turmoil_mult = 0.05
+	political_movement_radicalism_add = -0.1
+	country_authority_add = -40
+}
+french_subsidies = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_food_positive.dds
+	state_lower_strata_standard_of_living_add  = 0.3
+	country_expenses_add = 7500
+}
+modifier_police_repression2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_cop_negative.dds
+	state_mortality_turmoil_mult = 0.08
+	political_movement_radicalism_add = -0.2
+	country_authority_add = -65
+}
+modifier_french_propaganda = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_newspaper_positive.dds
+	state_radicals_and_loyalists_from_sol_change_mult = 0.2
+	country_legitimacy_base_add = 10
+}
+modifier_french_radend = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_protest_positive.dds
+	country_legitimacy_base_add = 10
+}
