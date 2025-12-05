@@ -1,0 +1,29 @@
+﻿taiwan_destruction_je = {
+    icon = "gfx/interface/icons/event_icons/money.dds"
+    
+    group = je_group_internal_affairs
+ 
+
+
+	possible = {
+	
+		OR = {
+	
+			exists = c:FRS
+		}
+	}
+    modifiers_while_active = {
+		taiwan_exists_modifier
+	}
+    complete = {		
+		 trigger_if = {
+				country_or_subject_owns_entire_state_region = STATE_FORMOSA
+		}	
+	}
+		on_complete = {
+		
+		trigger_event = { id = sigma_china_events.3 }
+	}
+    weight = 100
+    should_be_pinned_by_default = yes
+}

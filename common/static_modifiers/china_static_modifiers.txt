@@ -45,3 +45,18 @@ chinese_unification_static_modifier = {
     state_radicalism_increases_full_acceptance_mult = -0.75
 
 }
+taiwan_exists_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_map_negative.dds
+    country_legitimacy_base_add = -10
+
+}
+taiwan_castration = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_skull_negative.dds
+    state_birth_rate_mult = -1
+
+}
+taiwan_extermination = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_skull_negative.dds
+   state_mortality_mult = 1
+
+}

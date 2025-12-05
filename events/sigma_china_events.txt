@@ -1,0 +1,156 @@
+﻿namespace = sigma_china_events
+
+sigma_china_events.1 = { #Split china up into warlord states
+	type = country_event
+	placement = root
+	duration = 3
+
+	title = sigma_china_events.1.t
+	desc = sigma_china_events.1.d
+	flavor = sigma_china_events.1.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/five_races_flag.dds"
+
+	trigger = {
+		exists = c:CHI
+		this = c:CHI
+
+	}
+
+	immediate = {
+
+		if = {
+			limit = { exists = s:STATE_FORMOSA.region_state:CHI }
+			create_country = { 
+				tag = FRS
+				origin = this
+				state = s:STATE_FORMOSA.region_state:CHI
+				on_created = {
+						1 = {
+							set_strategy = ai_strategy_unify_china
+						}
+					}
+				}
+			}
+		}
+		option = {
+		name = sigma_china_events.1.a
+		add_modifier = {
+			name = modifier_century_of_triumph_technology
+			days = long_modifier_time
+		}
+		add_journal_entry = {
+			type = taiwan_destruction_je
+		}
+	}
+}
+sigma_china_events.2 = { #Fragile Unity Victory
+	type = country_event
+	placement = root
+	duration = 3
+
+	title = sigma_china_events.2.t
+	desc = sigma_china_events.2.d
+	flavor = sigma_china_events.2.f
+
+	event_image = {
+		video = "asia_farmers_market"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/china.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		default_option = yes
+		name = sigma_china_events.2.a
+		add_modifier = {
+			name = modifier_century_of_triumph_politics
+			days = long_modifier_time
+		}
+		add_loyalists = {
+			value = large_radicals
+		}
+	}
+
+	option = {
+		name = sigma_china_events.2.b
+		add_modifier = {
+			name = modifier_century_of_triumph_technology
+			days = long_modifier_time
+		}
+		add_loyalists = {
+			value = large_radicals
+		}
+	}
+}
+sigma_china_events.3 = { #Taiwan destruction
+	type = country_event
+	placement = root
+	duration = 3
+
+	title = sigma_china_events.3.t
+	desc = sigma_china_events.3.d
+	flavor = sigma_china_events.3.f
+
+	event_image = {
+		video = "asia_farmers_market"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/china.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		default_option = yes
+		name = sigma_china_events.3.a
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_FORMOSA
+				
+			}
+			add_modifier = {
+				name = taiwan_extermination
+				days = long_modifier_time
+			}
+			
+		}
+	}
+
+	option = {
+		name = sigma_china_events.3.b
+	    random_scope_state = {
+			limit = {
+				state_region = s:STATE_FORMOSA
+				
+			}
+			add_modifier = {
+				name = taiwan_castration
+				days = long_modifier_time
+			}
+			
+		}
+	}
+}

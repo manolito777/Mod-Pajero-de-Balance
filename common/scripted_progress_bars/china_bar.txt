@@ -1,0 +1,164 @@
+﻿china_bar = {
+ 	name = "china_bar_name"
+	desc = "china_bar_text_1" #This will be printed on the left side of the progress bar
+	second_desc = "china_bar_text_2" #This will be printed on the right side of the progress bar
+
+
+ 	double_sided_bad = yes
+	start_value = 0
+	min_value = 0
+	max_value = 1
+	monthly_progress = {
+		
+		
+		
+		
+		##########LIBERAL############
+		if = {
+			limit = {
+ 				NOT = { has_law_or_variant = law_type:law_monarchy }
+				NOT = { has_law_or_variant = law_type:law_theocracy }
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_1"
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_right_of_assembly
+				has_law_or_variant = law_type:law_protected_speech
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_2"
+				value = -1
+			}
+		}
+	    if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_national_militia
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_3"
+				value = -1
+			}
+		}
+        if = {
+			limit = {
+ 				ig:ig_intelligentsia = { is_in_government = yes }
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_4"
+				value = -1
+			}
+ 		}
+        if = {
+			limit = {
+ 				NOT = { has_law_or_variant = law_type:law_autocracy }
+				NOT = { has_law_or_variant = law_type:law_technocracy }
+				NOT = { has_law_or_variant = law_type:law_oligarchy }
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_5"
+				value = -1
+			}
+		}
+        if = {
+			limit = {
+ 				 has_law_or_variant = law_type:law_laissez_faire 
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_6"
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+ 				 has_law_or_variant = law_type:law_homesteading 
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_7"
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+ 				 has_law_or_variant = law_type:law_free_trade 
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_8"
+				value = -1
+			}
+		}
+
+        	##########MODERATE############
+	if = {
+			limit = {
+ 				NOT = { has_law_or_variant = law_type:law_state_religion }
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_9"
+				value = 1
+			}
+ 		}
+		
+		if = {
+			limit = {
+ 				ig:ig_landowners = { is_in_government = yes }
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_10"
+				value = 1
+			}
+ 		}
+
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_professional_army
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_11"
+				value = 1
+			}
+		}
+		 if = {
+			limit = {
+ 				 has_law_or_variant = law_type:law_autocracy 
+				has_law_or_variant = law_type:law_technocracy 
+				 has_law_or_variant = law_type:law_oligarchy 
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_12"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_interventionism
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_13"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_commercialized_agriculture
+				has_law_or_variant = law_type:law_tenant_farmers
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_14"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_protectionism
+ 			}
+			add = {
+				desc = "CHIREF_PASSIVE_15"
+				value = 1
+			}
+		}
+	}
+}

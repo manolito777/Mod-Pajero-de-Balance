@@ -1,0 +1,31 @@
+﻿namespace = towards_modernity_events
+
+towards_modernity_events.1 = {
+	type = country_event
+	placement = ROOT
+	title = towards_modernity_events.1.t
+	desc = towards_modernity_events.1.d
+	flavor = towards_modernity_events.1.f
+
+	duration = 3
+
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/chichud.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+	option = {
+		name = towards_modernity_events.1.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+	}
+}
