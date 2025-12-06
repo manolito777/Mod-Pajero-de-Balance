@@ -109,9 +109,9 @@ GGGG_mo_modern_uniform = {
     upkeep_modifier = {
         goods_input_clothes_add = 2
         goods_input_steel_add   = 0.5
-        goods_input_luxury_clothes_add = 1
+        goods_input_silk_add = 20
     }
-    
+
     unit_modifier = {
         unit_morale_loss_mult = -0.15
         unit_recovery_rate_add = 0.3
