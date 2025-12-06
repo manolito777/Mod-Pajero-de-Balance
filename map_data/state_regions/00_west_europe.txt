@@ -905,6 +905,7 @@ STATE_GELRE = {
     capped_resources = {
         bg_coal_mining = 40
         bg_logging = 9
+		bg_iron_mining = 10
     }
 }
 
@@ -921,7 +922,7 @@ STATE_WALLONIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 80
-        bg_iron_mining = 60
+        bg_iron_mining = 67
         bg_lead_mining = 30
         bg_sulfur_mining = 30
         bg_logging = 26

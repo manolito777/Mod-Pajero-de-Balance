@@ -27,7 +27,7 @@
 		custom_tooltip = {
 			text = chimodwin
 			scope:journal_entry = {
-                "scripted_bar_progress(china_bar)" >= 500
+                "scripted_bar_progress(china_bar)" >= 200
             }
 		}
 	}

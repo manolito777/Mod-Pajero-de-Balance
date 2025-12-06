@@ -1,5 +1,5 @@
 ﻿towards_to_modernity = {
-	icon = "gfx/interface/icons/event_icons/qing_breakup.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_internal_affairs
 	  modifiers_while_active = {
@@ -41,7 +41,7 @@
 }
 
 towards_to_modernity2 = {
-	icon = "gfx/interface/icons/event_icons/qing_breakup.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	  modifiers_while_active = {
 		modifier_towards_to_modernity2
 	}
@@ -75,7 +75,7 @@ towards_to_modernity2 = {
 	should_be_pinned_by_default = yes
 } 
 towards_to_modernity3 = {
-	icon = "gfx/interface/icons/event_icons/qing_breakup.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_internal_affairs	
 	
@@ -111,7 +111,7 @@ towards_to_modernity3 = {
 } 
 
 towards_to_modernity4 = {
-	icon = "gfx/interface/icons/event_icons/qing_breakup.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_internal_affairs	
 	  modifiers_while_active = {
@@ -146,7 +146,7 @@ towards_to_modernity4 = {
 	should_be_pinned_by_default = yes
 } 
 towards_to_modernity5 = {
-	icon = "gfx/interface/icons/event_icons/qing_breakup.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_internal_affairs	
 	  modifiers_while_active = {
@@ -181,7 +181,7 @@ towards_to_modernity5 = {
 	should_be_pinned_by_default = yes
 } 
 towards_to_modernity6 = {
-	icon = "gfx/interface/icons/event_icons/qing_breakup.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_internal_affairs	
 	  modifiers_while_active = {
@@ -362,7 +362,7 @@ towards_to_modernity_6 = {
 	
 	complete = {
 
-		literacy_rate >= 0.4
+		literacy_rate >= 0.38
 
 	}
 

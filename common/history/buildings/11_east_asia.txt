@@ -40,7 +40,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=8
+						levels=7
 					}
 				}
 				reserves=1
@@ -92,7 +92,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=6
+						levels=4
 					}
 				}
 				reserves=1
@@ -146,7 +146,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=9
+						levels=5
 					}
 				}
 				reserves=1
@@ -239,7 +239,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=6
+						levels=3
 					}
 				}
 				reserves=1
@@ -264,7 +264,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=8
+						levels=5
 						region="STATE_SHAOZHOU"
 					}
 				}
@@ -364,7 +364,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=7
+						levels=4
 					}
 				}
 				reserves=1
@@ -389,7 +389,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=7
+						levels=3
 						region="STATE_GUANGXI"
 					}
 				}
@@ -444,7 +444,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=16
+						levels=10
 					}
 				}
 				reserves=1
@@ -558,7 +558,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=4
+						levels=2
 					}
 				}
 				reserves=1
@@ -642,7 +642,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=6
+						levels=5
 					}
 				}
 				reserves=1
@@ -683,7 +683,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=4
+						levels=2
 					}
 				}
 				reserves=1
@@ -773,7 +773,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=9
+						levels=6
 					}
 				}
 				reserves=1
@@ -827,7 +827,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=9
+						levels=5
 					}
 				}
 				reserves=1
@@ -891,7 +891,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=8
+						levels=4
 						region="STATE_GUANGDONG"
 					}
 				}
@@ -1011,7 +1011,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=8
+						levels=5
 					}
 				}
 				reserves=1
@@ -1036,7 +1036,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=5
+						levels=3
 						region="STATE_FUJIAN"
 					}
 				}
@@ -1078,7 +1078,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=7
+						levels=6
 					}
 				}
 				reserves=1
@@ -1116,7 +1116,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=4
+						levels=2
 						region="STATE_ZHEJIANG"
 					}
 				}
@@ -1145,7 +1145,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=9
+						levels=6
 					}
 				}
 				reserves=1
@@ -1183,7 +1183,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=8
+						levels=5
 						region="STATE_JIANGSU"
 					}
 				}
@@ -1199,7 +1199,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=13
+						levels=6
 					}
 				}
 				reserves=1
@@ -1248,7 +1248,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=5
+						levels=2
 						region="STATE_NANJING"
 					}
 				}
@@ -1264,7 +1264,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=12
+						levels=9
 					}
 				}
 				reserves=1
@@ -1316,7 +1316,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=10
+						levels=8
 					}
 				}
 				reserves=1
@@ -1396,7 +1396,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=8
+						levels=6
 					}
 				}
 				reserves=1
@@ -1421,7 +1421,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=5
+						levels=3
 						region="STATE_JIANGXI"
 					}
 				}
@@ -1463,7 +1463,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=8
+						levels=6
 					}
 				}
 				reserves=1
@@ -1488,7 +1488,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=12
+						levels=7
 						region="STATE_SOUTHERN_ANHUI"
 					}
 				}
@@ -1530,7 +1530,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=7
+						levels=5
 					}
 				}
 				reserves=1
@@ -1542,7 +1542,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=6
+						levels=4
 						region="STATE_NORTHERN_ANHUI"
 					}
 				}
@@ -1609,7 +1609,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=6
+						levels=4
 						region="STATE_WESTERN_HUBEI"
 					}
 				}
@@ -1663,7 +1663,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=4
+						levels=3
 						region="STATE_EASTERN_HUBEI"
 					}
 				}
@@ -1743,7 +1743,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CHI"
-						levels=6
+						levels=3
 						region="STATE_HUNAN"
 					}
 				}
@@ -1917,7 +1917,7 @@
 				add_ownership={
 					country={
 						country="c:CHI"
-						levels=12
+						levels=8
 					}
 				}
 				reserves=1

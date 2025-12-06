@@ -1,0 +1,48 @@
+﻿china_militar_but = {
+	name = "china_militar_but_name"
+	desc = "china_militar_but_desc"
+
+	possible = {
+		NOT = { has_modifier = china_militar_study }
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = china_militar_study
+			months = 90
+			
+		}
+	}
+}
+
+china_society_but = {
+	name = "china_society_but_name"
+	desc = "china_society_but_desc"
+
+	possible = {
+		NOT = { has_modifier = china_society_study }
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = china_society_study
+			months = 90
+			
+		}
+	}
+}
+china_production_but = {
+	name = "china_production_but_name"
+	desc = "china_production_but_desc"
+
+	possible = {
+		NOT = { has_modifier = china_production_study }
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = china_production_study
+			months = 90
+		}
+	}
+}

@@ -60,3 +60,23 @@ taiwan_extermination = {
    state_mortality_mult = 1
 
 }
+china_radical_victory_mod = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag2_positive.dds
+    state_education_access_add = 0.04
+    country_tech_spread_mult = 0.03
+}
+china_society_study = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_academic_positive.dds
+    country_society_tech_spread_mult = 0.04
+	country_expenses_add = 30000
+}
+china_militar_study = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_academic_positive.dds
+    country_military_tech_spread_mult = 0.04
+	country_expenses_add = 30000
+}
+china_production_study = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_academic_positive.dds
+    country_production_tech_spread_mult = 0.04
+	country_expenses_add = 30000
+}

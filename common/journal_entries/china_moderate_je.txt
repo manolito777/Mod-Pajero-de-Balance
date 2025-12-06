@@ -1,0 +1,27 @@
+﻿je_china_nation_building = {
+	icon = "gfx/interface/icons/event_icons/innovation.dds"
+group = je_group_qing
+
+	is_shown_in_lobby = {
+        OR = {
+			country_has_primary_culture = cu:han
+			country_has_primary_culture = cu:manchu
+		}
+    }
+	scripted_button = china_militar_but
+	scripted_button = china_production_but
+	scripted_button = china_society_but
+
+    complete = {
+	GDP >= 350000000
+	}
+	fail = {
+		NOT = { has_law = law_type:law_laissez_faire }
+
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+    

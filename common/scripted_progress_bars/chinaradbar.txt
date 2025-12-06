@@ -1,0 +1,81 @@
+﻿chinaradbar = {
+ 	name = "chinaradbar"
+	desc = "chinaradbart1" #This will be printed on the left side of the progress bar
+
+
+
+ 	default_green = yes
+	start_value = 450
+	min_value = 0
+	max_value = 450
+	monthly_progress = {
+
+	if = {
+			limit = {
+ 				NOT = { has_law_or_variant = law_type:law_homesteading }
+ 			}
+			add = {
+				desc = "CHIRADBAR1"
+				value = -1
+			}
+ 		}
+		
+		if = {
+			limit = {
+ 				ig:ig_intelligentsia = { is_in_government = no }
+ 			}
+			add = {
+				desc = "CHIRADBAR2"
+				value = -1
+			}
+ 		}
+
+		 if = {
+			NOT = {
+ 				 average_sol >= 12
+ 			}
+			add = {
+				desc = "CHIRADBAR3"
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_monarchy
+ 			}
+			add = {
+				desc = "CHIRADBAR4"
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+			NOT = {
+ 				literacy_rate >= 0.4
+ 			}
+			add = {
+				desc = "CHIRADBAR5"
+				value = -1
+			}
+		}
+		if = {
+		NOT = {
+			country_or_subject_owns_entire_state_region = STATE_FORMOSA
+			}
+			add = {
+				desc = "CHIRADBAR6"
+				value = -1
+			}
+		}
+		if = {
+		NOT = {
+				is_country_type = recognized
+
+			}
+			add = {
+				desc = "CHIRADBAR7"
+				value = -1
+			}
+		}
+	}
+}

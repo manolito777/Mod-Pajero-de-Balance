@@ -63,7 +63,7 @@ sick_man.1 = {
 			add_modifier = {
 				name = outmoded_bureaucracy
 				months = -1
-			}
+			}    
 		}
 	}
 }

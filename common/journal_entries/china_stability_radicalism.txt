@@ -1,0 +1,47 @@
+﻿je_china_stability = {
+	icon = "gfx/interface/icons/event_icons/five_races_flag.dds"
+group = je_group_qing
+
+	is_shown_in_lobby = {
+        OR = {
+			country_has_primary_culture = cu:han
+			country_has_primary_culture = cu:manchu
+		}
+    }
+   scripted_progress_bar = chinaradbar
+
+
+    fail = {
+		custom_tooltip = {
+			text = chinaexploderad
+			scope:journal_entry = {
+                "scripted_bar_progress(chinaradbar)" <= 0
+            }
+		}
+	}
+	on_fail = {
+		trigger_event = { id = sigma_china_events.4 }
+	}
+    complete = {
+	NOT = {
+			has_law = law_type:law_monarchy
+		}
+			has_law = law_type:law_homesteading
+		literacy_rate >= 0.4
+		average_sol >= 12
+		trigger_if = {
+				country_or_subject_owns_entire_state_region = STATE_FORMOSA
+		}
+		is_country_type = recognized
+	}
+	on_complete = {
+		trigger_event = { id = sigma_china_events.5 }
+	
+	}
+	
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+    

@@ -5,15 +5,15 @@
 
 
  	double_sided_bad = yes
-	start_value = 0
+	start_value = 100
 	min_value = 0
-	max_value = 1
+	max_value = 200
 	monthly_progress = {
 		
 		
 		
 		
-		##########LIBERAL############
+		##########RADICAL############
 		if = {
 			limit = {
  				NOT = { has_law_or_variant = law_type:law_monarchy }
@@ -26,8 +26,7 @@
 		}
 		if = {
 			limit = {
- 				has_law_or_variant = law_type:law_right_of_assembly
-				has_law_or_variant = law_type:law_protected_speech
+ 				NOT = { has_law_or_variant = law_type:guild_system }
  			}
 			add = {
 				desc = "CHIREF_PASSIVE_2"
@@ -65,7 +64,8 @@
 		}
         if = {
 			limit = {
- 				 has_law_or_variant = law_type:law_laissez_faire 
+ 				 has_law_or_variant = law_type:law_interventionism
+				 
  			}
 			add = {
 				desc = "CHIREF_PASSIVE_6"
@@ -83,7 +83,8 @@
 		}
 		if = {
 			limit = {
- 				 has_law_or_variant = law_type:law_free_trade 
+
+				 has_law_or_variant = law_type:law_protectionism
  			}
 			add = {
 				desc = "CHIREF_PASSIVE_8"
@@ -92,15 +93,6 @@
 		}
 
         	##########MODERATE############
-	if = {
-			limit = {
- 				NOT = { has_law_or_variant = law_type:law_state_religion }
- 			}
-			add = {
-				desc = "CHIREF_PASSIVE_9"
-				value = 1
-			}
- 		}
 		
 		if = {
 			limit = {
@@ -134,7 +126,7 @@
 		}
 		if = {
 			limit = {
- 				has_law_or_variant = law_type:law_interventionism
+ 				has_law_or_variant = law_type:law_laissez_faire
  			}
 			add = {
 				desc = "CHIREF_PASSIVE_13"
@@ -153,7 +145,7 @@
 		}
 		if = {
 			limit = {
- 				has_law_or_variant = law_type:law_protectionism
+ 				 has_law_or_variant = law_type:law_free_trade 
  			}
 			add = {
 				desc = "CHIREF_PASSIVE_15"
