@@ -1,0 +1,61 @@
+﻿river_tigris = {
+	is_shown = {
+		owns_entire_state_region = STATE_BAGHDAD
+		owns_entire_state_region = STATE_DEIR_EZ_ZOR
+		owns_entire_state_region = STATE_MOSUL
+		owns_entire_state_region = STATE_BASRA
+		OR = {
+			NOT = { exists = global_var:river_tigris_reclamation_global }
+			AND = {
+				exists = global_var:river_tigris_reclamation_global
+				global_var:river_tigris_reclamation_global >= 10
+			}
+		}
+		NOT = { has_variable = turk_river_tigris_reclaimer }
+	}
+
+	possible = {
+		has_technology_researched = watertube_boiler
+		bureaucracy > 200
+	}
+
+	when_taken = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = river_tigris_reclamation_global }
+			}
+			set_global_variable = {
+				name = river_tigris_reclamation_global
+				value = 0
+			}
+		}
+		add_modifier = {
+			name = modifier_reclaiming_river
+			days = -1 # permanent until removed
+		}
+		add_journal_entry = { type = je_tigris_land_reclamation }
+		set_variable = turk_river_tigris_reclaimer
+		if = {
+			limit = {
+				NOT = { has_technology_researched = improved_fertilizer }
+			}
+			custom_tooltip = river_reclamation_no_tech
+		}
+		else = {
+			custom_tooltip = river_reclamation_tech
+		}
+	}
+
+	ai_chance = {
+		value = 5
+		if = {
+			limit = {
+				OR = {
+					is_diplomatic_play_committed_participant = yes
+					is_at_war = yes
+				}
+			}
+			multiply = 0
+		}
+	}
+}
