@@ -1,4 +1,4 @@
-# Alemania
+﻿# Alemania
 ig_trait_culture_of_militarism = {
 	icon = "gfx/interface/icons/ig_trait_icons/culture_of_militarism.dds"
 	min_approval = happy

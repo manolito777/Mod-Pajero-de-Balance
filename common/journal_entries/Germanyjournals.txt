@@ -217,7 +217,7 @@ je_constitutional_crisis = {
 			set_ig_trait = ig_trait:ig_trait_culture_of_militarism
 		}
 	}
-	
+	}
 	on_fail = {
 		if = {
 			limit = {
@@ -262,4 +262,4 @@ je_constitutional_crisis = {
 
 	weight = 5000
 	should_be_pinned_by_default = yes
-}
+    }

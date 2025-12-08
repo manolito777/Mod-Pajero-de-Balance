@@ -1,4 +1,4 @@
-﻿﻿invoke_doctrine_of_lapse = {
+﻿invoke_doctrine_of_lapse = {
 	groups = {
 		overlord
 	}
@@ -13,10 +13,9 @@
 	selectable = {
 		NOT = { has_variable = doctrine_of_lapse_ended }
 		OR = {
-			c:EIC ?= this
-			c:BHT ?= this
 			c:MUG ?= this
-		
+			c:BHT ?= this
+			c:PEC ?= this
 		}
 	}
 
@@ -30,17 +29,16 @@
 			is_subject_of = ROOT
 			custom_tooltip = {
 				text = is_princely_state_tt
-				
+				has_variable = princely_state
 			}
 			NOT = {
 				country_tier = empire
 			}
-			is_player = no
 		}
 	}
 
 	accept_effect = {
-		set_variable = { name = doctrine_of_lapse_cooldown years = 3 }
+		set_variable = { name = doctrine_of_lapse_cooldown years = 2 }
 		create_incident = {
 			country = scope:target_country
 			value = 20

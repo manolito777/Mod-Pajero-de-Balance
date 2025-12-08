@@ -24,7 +24,7 @@ drive_to_the_east.1 = {
 
 
 	option = {
-		name = drive_to_the_east.1.b
+		name = drive_to_the_east.1.a
 		
 	
 				add_modifier = {
@@ -38,7 +38,7 @@ drive_to_the_east.1 = {
 
 	option = {
 		name = drive_to_the_east.1.c
-		
+			default_option = yes
 		every_subject_or_below = {
 			limit = {
 				OR = {

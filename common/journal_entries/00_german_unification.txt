@@ -332,10 +332,12 @@ je_north_german_unification = {
 			}
 		}
 	}
-
 	weight = 1000
 	should_be_pinned_by_default = yes
+	
 }
+weight = 1000
+	should_be_pinned_by_default = yes
 }
 je_south_german_unification = {
 	icon = "gfx/interface/icons/event_icons/germany.dds"

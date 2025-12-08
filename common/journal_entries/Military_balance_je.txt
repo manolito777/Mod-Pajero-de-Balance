@@ -4,7 +4,7 @@
 
 je_military_balance_era3 = {
 
-    icon = "gfx/interface/icons/event_icons/milbal.png"
+    icon = "gfx/interface/icons/event_icons/milbal.dds"
 
 	group = je_group_technology
 	is_shown_when_inactive = {
@@ -35,7 +35,7 @@ je_military_balance_era3 = {
 }
 je_military_balance_era3_2 = {
 
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 	
 	group = je_group_technology
 	
@@ -49,14 +49,14 @@ je_military_balance_era3_2 = {
 		remove_modifier = military_balance_1
 	}
 	
-	Posi
+	
 	weight = 10000
 	should_be_pinned_by_default = no
 }
 #Journal Era 3.5, osea, techs militares entre el tier 3 y 4
 je_military_balance_era3_5 = {
 
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 
 	group = je_group_technology
 	
@@ -88,7 +88,7 @@ je_military_balance_era3_5 = {
 	should_be_pinned_by_default = no
 }
 je_military_balance_era3_5_2 = {
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 	
 	group = je_group_technology
 	
@@ -106,13 +106,10 @@ je_military_balance_era3_5_2 = {
 #Balanceo para techs militares tier 4
 
 je_military_balance_era4 = {
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 	
 	group = je_group_technology
 	
-	is_shown_when_inactive = {
-		is_player = yes
-	}
 	
 	complete = {
 		OR = {
@@ -138,7 +135,7 @@ je_military_balance_era4 = {
 	should_be_pinned_by_default = no
 }
 je_military_balance_era4_2 = {
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 	
 	group = je_group_technology
 	
@@ -154,7 +151,7 @@ je_military_balance_era4_2 = {
 	should_be_pinned_by_default = no
 }
 je_military_balance_era4_5 = {
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 	
 	group = je_group_technology
 	
@@ -182,7 +179,7 @@ je_military_balance_era4_5 = {
 	should_be_pinned_by_default = no
 }
 je_military_balance_era4_5_2 = {
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 	
 	group = je_group_technology
 	
@@ -198,7 +195,7 @@ je_military_balance_era4_5_2 = {
 	should_be_pinned_by_default = no
 }
 je_military_balance_era5 = {
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 	group = je_group_technology
 	
 	is_shown_when_inactive = {
@@ -228,7 +225,7 @@ je_military_balance_era5 = {
 	should_be_pinned_by_default = no
 }
 je_military_balance_era5_2 = {
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 	
 	group = je_group_technology
 	
@@ -250,7 +247,7 @@ je_military_balance_era5_2 = {
 	should_be_pinned_by_default = no
 }
 je_military_balance_era5_5 = {
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 	
 	group = je_group_technology
 	
@@ -279,7 +276,7 @@ je_military_balance_era5_5 = {
 	should_be_pinned_by_default = no
 }
 je_military_balance_era5_5_2 = {
-	icon = "gfx/interface/icons/event_icons/milbal.png"
+	icon = "gfx/interface/icons/event_icons/milbal.dds"
 	
 	group = je_group_technology
 	

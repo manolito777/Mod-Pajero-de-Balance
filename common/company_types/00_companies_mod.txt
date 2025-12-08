@@ -1,6 +1,6 @@
-#Peugeot, francia.
+﻿#Peugeot, francia.
 company_peugeot = {
-	icon = "gfx/interface/icons//company_icons/peugeot.dds"
+	icon = "gfx/interface/icons/company_icons/peugeot.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	flavored_company = yes
@@ -71,7 +71,7 @@ company_peugeot = {
 	}
 }
 #SIFDN, Italia.
-Società_Italiana_per_la_Fabbricazione_della_Dinamite_&_NFTs = {
+Societa_Italiana_per_la_Fabbricazione_della_Dinamite__NFTs = {
 	icon = "gfx/interface/icons/company_icons/sifd.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 

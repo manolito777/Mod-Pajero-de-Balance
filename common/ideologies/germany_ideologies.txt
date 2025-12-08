@@ -1,3 +1,4 @@
+﻿####CREATE
 ideology_christian_democrat = { 
 	icon = "gfx/interface/icons/ideology_icons/christian_democrat.dds"
 
@@ -22,6 +23,7 @@ ideology_christian_democrat = {
 		law_multicultural = strongly_disapprove	
 	}
 }
+####CREATE
 ideology_junker_paternalistic2 = {
 	icon = "gfx/interface/icons/ideology_icons/junker_paternalistic.dds"
 
@@ -73,6 +75,7 @@ ideology_junker_paternalistic2 = {
 		law_no_police = disapprove
 	}
 }
+######INJECT
 ideology_junker_paternalistic = {
 	icon = "gfx/interface/icons/ideology_icons/junker_paternalistic.dds"
 

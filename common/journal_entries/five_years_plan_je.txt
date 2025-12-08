@@ -130,7 +130,7 @@ je_five_year_plan_2 = {
 	group = je_group_internal_affairs
 	
 	is_shown_when_active = {
-		is_player = yes
+		
 		any_scope_state = {
 			state_region = s:STATE_SICHUAN
 			is_incorporated = yes

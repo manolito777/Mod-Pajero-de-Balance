@@ -1,0 +1,67 @@
+﻿
+crimea_war_decision = {
+	  is_shown = {
+		OR = {
+			c:RUS = THIS
+		}
+		NOT = { has_variable = crime_war_var
+		}
+	}
+    possible = {
+        has_technology_researched = nationalism
+        NAND = {
+            owns_entire_state_region = STATE_EASTERN_THRACE
+        }
+    }
+
+
+	    when_taken = {
+		if = {
+			limit = {
+				exists = c:TUR
+			}
+			create_incident = {
+				country = c:TUR
+				value = 10
+			}
+		}
+        c:TUR = {
+            trigger_event = { id = crimea_war_event.1 }
+			  add_journal_entry = { type = crimea_war_je2 }
+        }
+		c:GBR = {
+            trigger_event = { id = crimea_war_event.1 }
+        }
+		c:FRA = {
+            trigger_event = { id = crimea_war_event.1 }
+        }
+		c:AUS = {
+            trigger_event = { id = crimea_war_event.1 }
+        }
+    add_journal_entry = { type = crimea_war_je }
+    set_variable = crime_war_var
+  s:STATE_EASTERN_THRACE = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+	s:STATE_CHERSON = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = c:TUR 
+						}
+					}
+				}
+				add_claim = c:TUR 
+			}
+		}
+}

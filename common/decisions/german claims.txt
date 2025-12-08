@@ -9,7 +9,6 @@
 
 	possible = {
 		has_technology_researched = pan-nationalism
-		has modifier = gerotierra
 		
 		
 	}
@@ -140,15 +139,13 @@ dec_german_colonies = {
 
 	is_shown = {
 		exists = c:GER
-		has modifier = germar
+		has_modifier = germar
 		NOT = { has_variable = germancolonies 
 		}
-		
 	}
 
 	possible = {
 		has_technology_researched = quinine
-		has_modifier = germar
 		
 	}
 

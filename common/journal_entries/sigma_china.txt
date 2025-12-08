@@ -1,5 +1,5 @@
 ﻿je_sigma_china = {
-	icon = "gfx/interface/icons/event_icons/equality.dds"
+	icon = "gfx/interface/icons/event_icons/roc1.dds"
 
 	group = je_group_qing
 

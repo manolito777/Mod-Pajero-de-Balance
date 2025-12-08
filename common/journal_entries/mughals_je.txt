@@ -1,4 +1,4 @@
-
+﻿
 je_eic_india = {
 	icon = "gfx/interface/icons/event_icons/diplo.dds"
 

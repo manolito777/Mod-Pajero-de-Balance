@@ -158,13 +158,13 @@ FND = {
 		}
 	}
 }
+######INJECT
 IBE = {
 	use_culture_states = yes
 	
 	is_major_formation = yes
 	
 	unification_play = dp_unify_iberia
-	leadership_play = dp_leadership_Iberia
 	
 	required_states_fraction = 0.8
 	
@@ -322,6 +322,7 @@ YUG = {
 		}
 	}
 }
+#####CREATE
 INC = {
 	states = {
 		STATE_TONKIN STATE_CHIANG_MAI STATE_ANNAM STATE_MEKONG STATE_CAMBODIA STATE_LAOS STATE_NAKHON_RATCHASIMA STATE_MANDALAY STATE_TENASSERIM STATE_MALAYA STATE_BANGKOK STATE_PEGU STATE_KACHIN STATE_SHAN_STATES

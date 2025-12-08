@@ -1,0 +1,391 @@
+﻿namespace = crimea_war_event
+
+crimea_war_event.1 = { #####anuncio decision
+	type = country_event
+	placement = ROOT
+	title = crimea_war_event.1.t
+	desc = crimea_war_event.1.d
+	flavor = crimea_war_event.1.f
+
+	duration = 3
+
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/ottoman_breakup.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+	option = {
+		name = crimea_war_event.1.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+crimea_war_event.2 = { #######otomano gana
+	type = country_event
+	placement = ROOT
+	title = crimea_war_event.2.t
+	desc = crimea_war_event.2.d
+	flavor = crimea_war_event.2.f
+
+	duration = 3
+
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/ottoman_fed.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+	immediate = {
+	transfer_state = {
+				STATE = s:STATE_CRIMEA
+				GIVER = c:CRI
+				TAKER = c:TUR
+			}
+	transfer_state = {
+				STATE = s:STATE_DOBRUDJA
+				GIVER = c:RUS
+				TAKER = c:TUR
+			}
+		
+		transfer_state = {
+				STATE = s:STATE_CHERSON
+				GIVER = c:RUS
+				TAKER = c:TUR
+			}
+		transfer_state = {
+				STATE = s:STATE_BESSARABIA
+				GIVER = c:RUS
+				TAKER = c:TUR
+			}
+		transfer_state = {
+				STATE = s:STATE_TAURIDA
+				GIVER = c:RUS
+				TAKER = c:TUR
+			}
+		transfer_state = {
+				STATE = s:STATE_CRIMEA
+				GIVER = c:RUS
+				TAKER = c:TUR
+			}
+		if = {
+			limit = { exists = s:STATE_CRIMEA.region_state:TUR }
+			create_country = { #CRIMEA
+				tag = CRI
+				origin = this
+				state = s:STATE_CRIMEA.region_state:TUR
+			}
+			c:CRI = { save_scope_as = scope_CRI }
+		}
+		
+		
+		transfer_state = {
+				STATE = s:STATE_CHERSON
+				GIVER = c:TUR
+				TAKER = c:CRI
+			}
+		transfer_state = {
+				STATE = s:STATE_BESSARABIA
+				GIVER = c:TUR
+				TAKER = c:CRI
+			}
+		transfer_state = {
+				STATE = s:STATE_TAURIDA
+				GIVER = c:TUR
+				TAKER = c:CRI
+			}
+		transfer_state = {
+				STATE = s:STATE_CRIMEA
+				GIVER = c:TUR
+				TAKER = c:CRI
+			}
+	}
+	
+	option = {
+		name = crimea_war_event.2.a
+		default_option = yes
+		   create_diplomatic_pact = {
+					type = puppet
+					country = c:CRI
+				}
+		ai_chance = {
+			base = 1
+		}
+          
+	}
+}
+crimea_war_event.3 = { #######ruso gana
+	type = country_event
+	placement = ROOT
+	title = crimea_war_event.3.t
+	desc = crimea_war_event.3.d
+	flavor = crimea_war_event.3.f
+
+	duration = 3
+
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+	immediate = {
+        transfer_state = {
+				STATE = s:STATE_EASTERN_THRACE
+				GIVER = c:RUS
+				TAKER = c:TUR
+			}
+		transfer_state = {
+				STATE = s:STATE_DOBRUDJA
+				GIVER = c:TUR
+				TAKER = c:WAL
+			}
+		transfer_state = {
+				STATE = s:STATE_DOBRUDJA
+				GIVER = c:TUR
+				TAKER = c:ROM
+			}
+		transfer_state = {
+				STATE = s:STATE_EASTERN_SERBIA
+				GIVER = c:TUR
+				TAKER = c:SER
+			}
+		transfer_state = {
+				STATE = s:STATE_WESTERN_SERBIA
+				GIVER = c:TUR
+				TAKER = c:SER
+			}
+		transfer_state = {
+				STATE = s:STATE_PELOPONNESE
+				GIVER = c:TUR
+				TAKER = c:GRE
+			}
+		transfer_state = {
+				STATE = s:STATE_THESSALIA
+				GIVER = c:TUR
+				TAKER = c:GRE
+			}
+		transfer_state = {
+				STATE = s:STATE_ATTICA
+				GIVER = c:TUR
+				TAKER = c:GRE
+			}
+		transfer_state = {
+				STATE = s:STATE_MONTENEGRO
+				GIVER = c:TUR
+				TAKER = c:MON
+			}
+		transfer_state = {
+				STATE = s:STATE_WEST_AEGEAN_ISLANDS
+				GIVER = c:TUR
+				TAKER = c:GRE
+			}
+		transfer_state = {
+				STATE = s:STATE_MOLDAVIA
+				GIVER = c:MOL
+				TAKER = c:WAL
+			}
+		transfer_state = {
+				STATE = s:STATE_MOLDAVIA
+				GIVER = c:TUR
+				TAKER = c:WAL
+			}
+		if = {
+			limit = { exists = s:STATE_BULGARIA.region_state:TUR }
+			create_country = { #BULGARIA
+				tag = BUL
+				origin = this
+				state = s:STATE_BULGARIA.region_state:TUR
+			}
+			c:BUL = { save_scope_as = scope_BUL }
+		}
+		if = {
+			limit = { exists = s:STATE_BOSNIA.region_state:TUR }
+			create_country = { #BOSNIA
+				tag = BOS
+				origin = this
+				state = s:STATE_BOSNIA.region_state:TUR
+			}
+			c:BOS = { save_scope_as = scope_BOS }
+		}
+		if = {
+			limit = { exists = s:STATE_WALLACHIA.region_state:TUR }
+			create_country = { #WALLACHIA
+				tag = WAL
+				origin = this
+				state = s:STATE_WALLACHIA.region_state:TUR
+			}
+			c:WAL = { save_scope_as = scope_WAL }
+		}
+		if = {
+			limit = { exists = s:STATE_WEST_AEGEAN_ISLANDS.region_state:TUR }
+			create_country = { #GREECE
+				tag = GRE
+				origin = this
+				state = s:STATE_WEST_AEGEAN_ISLANDS.region_state:TUR
+			}
+			c:GRE = { save_scope_as = scope_GRE }
+		}
+		if = {
+			limit = { exists = s:STATE_WESTERN_SERBIA.region_state:TUR }
+			create_country = { #SERBIA
+				tag = SER
+				origin = this
+				state = s:STATE_WESTERN_SERBIA.region_state:TUR
+			}
+			c:SER = { save_scope_as = scope_SER }
+		}
+		if = {
+			limit = { exists = s:STATE_MONTENEGRO.region_state:TUR }
+			create_country = { #MONTENEGRO
+				tag = MON
+				origin = this
+				state = s:STATE_MONTENEGRO.region_state:TUR
+			}
+			c:MON = { save_scope_as = scope_MON }
+		}
+		if = {
+		c:MON = {
+				limit = {
+					is_subject_of = c:TUR
+				}
+				make_independent = yes
+			}
+		}
+		if = {
+		c:SER = {
+				limit = {
+					is_subject_of = c:TUR
+				}
+				make_independent = yes
+			}
+		}
+		if = {
+		c:MOL = {
+				limit = {
+					is_subject_of = c:TUR
+				}
+				make_independent = yes
+			}
+		}
+		if = {
+		c:WAL = {
+				limit = {
+					is_subject_of = c:TUR
+				}
+				make_independent = yes
+			}
+		}
+		if = {
+		c:GRE = {
+				limit = {
+					is_subject_of = c:TUR
+				}
+				make_independent = yes
+			}
+		}
+	
+		
+		
+			 transfer_state = {
+				STATE = s:STATE_EASTERN_THRACE
+				GIVER = c:RUS
+				TAKER = c:TUR
+			}
+			
+		transfer_state = {
+				STATE = s:STATE_DOBRUDJA
+				GIVER = c:TUR
+				TAKER = c:WAL
+			}
+		transfer_state = {
+				STATE = s:STATE_DOBRUDJA
+				GIVER = c:TUR
+				TAKER = c:ROM
+			}
+		transfer_state = {
+				STATE = s:STATE_EASTERN_SERBIA
+				GIVER = c:TUR
+				TAKER = c:SER
+			}
+		transfer_state = {
+				STATE = s:STATE_WESTERN_SERBIA
+				GIVER = c:TUR
+				TAKER = c:SER
+			}
+		transfer_state = {
+				STATE = s:STATE_PELOPONNESE
+				GIVER = c:TUR
+				TAKER = c:GRE
+			}
+		transfer_state = {
+				STATE = s:STATE_THESSALIA
+				GIVER = c:TUR
+				TAKER = c:GRE
+			}
+		transfer_state = {
+				STATE = s:STATE_MONTENEGRO
+				GIVER = c:TUR
+				TAKER = c:MON
+			}
+		transfer_state = {
+				STATE = s:STATE_MOLDAVIA
+				GIVER = c:MOL
+				TAKER = c:WAL
+			}
+		transfer_state = {
+				STATE = s:STATE_MOLDAVIA
+				GIVER = c:TUR
+				TAKER = c:WAL
+			}
+		transfer_state = {
+				STATE = s:STATE_ATTICA
+				GIVER = c:TUR
+				TAKER = c:GRE
+			}
+		every_scope_state = {
+				limit = {
+					state_region = s:STATE_EASTERN_THRACE
+				}
+				set_state_type = incorporated
+				
+			}
+		
+	}
+	option = {
+		name = crimea_war_event.3.a
+		default_option = yes
+		   create_diplomatic_pact = {
+					type = protectorate
+					country = c:WAL
+				}
+		create_diplomatic_pact = {
+					type = protectorate
+					country = c:ROM
+				}
+		ai_chance = {
+			base = 1
+		}
+          
+	}
+}

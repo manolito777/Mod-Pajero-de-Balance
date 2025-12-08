@@ -2,7 +2,7 @@
     icon = "gfx/interface/icons/event_icons/money.dds"
     
     group = je_group_internal_affairs
-    group = je_group_internal_affairs
+
 
 
 	possible = {
@@ -64,6 +64,7 @@
 }
 switzerland_protection2_je = {
     icon = "gfx/interface/icons/event_icons/flag.dds"
+	group = je_group_internal_affairs
     modifiers_while_active = {
 		swissdebunked
 	}

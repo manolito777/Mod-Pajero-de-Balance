@@ -2338,7 +2338,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:DAI"
-						levels=12
+						levels=11
 						region="STATE_TONKIN"
 					}
 				}

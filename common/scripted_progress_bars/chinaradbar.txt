@@ -31,9 +31,9 @@
  		}
 
 		 if = {
-			NOT = {
+
  				 average_sol >= 12
- 			}
+ 			
 			add = {
 				desc = "CHIRADBAR3"
 				value = -1
@@ -48,29 +48,24 @@
 				value = -1
 			}
 		}
+		
 		if = {
-			limit = {
-			NOT = {
- 				literacy_rate >= 0.4
- 			}
-			add = {
-				desc = "CHIRADBAR5"
-				value = -1
-			}
-		}
-		if = {
+		limit = {
+				c:CHI ?= this
+			
 		NOT = {
 			country_or_subject_owns_entire_state_region = STATE_FORMOSA
 			}
+		}
 			add = {
 				desc = "CHIRADBAR6"
 				value = -1
 			}
 		}
 		if = {
-		NOT = {
-				is_country_type = recognized
-
+                limit = {
+					is_country_type = recognized
+				
 			}
 			add = {
 				desc = "CHIRADBAR7"

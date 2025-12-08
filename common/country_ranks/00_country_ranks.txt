@@ -12,7 +12,7 @@
 ################
 ## RECOGNIZED ##
 ################
-
+#####INJECT
 great_power = {
 	rank_value = 7
 	icon_index = 4

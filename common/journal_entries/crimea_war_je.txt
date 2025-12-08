@@ -1,0 +1,48 @@
+﻿crimea_war_je = {
+    icon = "gfx/interface/icons/event_icons/ottoman_breakup.dds"
+
+	group = je_group_russia_expansion
+
+   
+    complete = {
+        owns_entire_state_region = STATE_EASTERN_THRACE
+    }
+    on_complete = {
+        trigger_event = { id = crimea_war_event.3 } 
+    }
+     fail = {
+		c:TUR ?= {
+			OR = {
+			        owns_entire_state_region = STATE_CHERSON
+		}
+	}
+}
+
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+crimea_war_je2 = {
+    icon = "gfx/interface/icons/event_icons/ottoman_fed.dds"
+
+	group = je_group_russia_expansion
+
+   
+    complete = {
+        owns_entire_state_region = STATE_CHERSON
+    }
+    on_complete = {
+        trigger_event = { id = crimea_war_event.2 }
+    }
+     fail = {
+      c:RUS ?= {
+			OR = {
+			        owns_entire_state_region = STATE_EASTERN_THRACE
+		}
+	}
+}
+	on_fail = {
+	}
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
