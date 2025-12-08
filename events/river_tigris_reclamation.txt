@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿namespace = river_tigris_reclamation
 
 river_tigris_reclamation.1 = {
@@ -162,4 +163,170 @@ river_tigris_reclamation.1 = {
 		}
 		
 	}
+=======
+﻿namespace = river_tigris_reclamation
+
+river_tigris_reclamation.1 = {
+	type = country_event
+	placement = scope:river_tigris_reclamation_state
+	
+	title = river_tigris_reclamation.1.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = river_tigris_reclamation.1.d
+				trigger = {
+					OR = {
+						AND = {
+							NOT = { has_technology_researched = improved_fertilizer }
+							global_var:river_tigris_reclamation_global >= 9
+						}
+						AND = {
+							has_technology_researched = improved_fertilizer
+							global_var:river_tigris_reclamation_global >= 8
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = river_tigris_reclamation.1.d2
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+	flavor = river_tigris_reclamation.1.f
+	
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	duration = 3
+	
+	trigger = {
+		# triggered by JE
+	}
+
+	immediate = {
+	}
+
+	option = { 
+		name = river_tigris_reclamation.1.a
+		default_option = yes
+		trigger = {
+			NOT = { has_technology_researched = improved_fertilizer }
+		}
+		if = {
+			limit = {
+				global_var:river_tigris_reclamation_global >= 9
+			}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_BAGHDAD
+					state_region = s:STATE_DEIR_EZ_ZOR
+					state_region = s:STATE_MOSUL
+					state_region = s:STATE_BASRA
+				}
+			}
+			add_modifier = {
+				name = modifier_reclamation_river
+				days = -1      # permanente
+			}
+		}
+		}
+		change_global_variable = {
+			name = river_tigris_reclamation_global
+			add = 1
+		}
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_BAGHDAD
+					state_region = s:STATE_DEIR_EZ_ZOR
+					state_region = s:STATE_MOSUL
+					state_region = s:STATE_BASRA
+				}
+			}
+			state_region = {
+				add_arable_land = 2
+			}
+		}
+	}
+
+	option = {
+		name = river_tigris_reclamation.1.b
+		default_option = yes
+		highlighted_option = yes
+		trigger = {
+			has_technology_researched = improved_fertilizer
+		}
+		if = {
+			limit = {
+				global_var:river_tigris_reclamation_global >= 8
+			}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_BAGHDAD
+					state_region = s:STATE_DEIR_EZ_ZOR
+					state_region = s:STATE_MOSUL
+					state_region = s:STATE_BASRA
+				}
+			}
+			add_modifier = {
+				name = modifier_reclamation_river
+				days = -1      # permanente
+			}
+		}
+		}
+		if = {
+			limit = {
+				global_var:river_tigris_reclamation_global <= 8
+			}
+			change_global_variable = {
+				name = river_tigris_reclamation_global
+				add = 2
+			}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_BAGHDAD
+					state_region = s:STATE_DEIR_EZ_ZOR
+					state_region = s:STATE_MOSUL
+					state_region = s:STATE_BASRA
+				}
+			}
+				state_region = {
+					add_arable_land = 5
+				}
+			}
+		}
+		else = {
+			change_global_variable = {
+				name = river_tigris_reclamation_global
+				add = 2
+			}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_BAGHDAD
+					state_region = s:STATE_DEIR_EZ_ZOR
+					state_region = s:STATE_MOSUL
+					state_region = s:STATE_BASRA
+				}
+			}
+				state_region = {
+					add_arable_land = 2
+				}
+			}
+		}
+		
+	}
+>>>>>>> 94b3ed82352c1c02ab08c5691fdef152550de693
 }

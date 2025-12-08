@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿je_tigris_land_reclamation = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
@@ -89,3 +90,96 @@
 	weight = 10
 	should_be_pinned_by_default = yes
 }
+=======
+﻿je_tigris_land_reclamation = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_in_lobby = {
+		OR = {
+			owns_entire_state_region = STATE_BAGHDAD
+			owns_entire_state_region = STATE_DEIR_EZ_ZOR
+			owns_entire_state_region = STATE_MOSUL
+			owns_entire_state_region = STATE_BASRA
+		}
+	}
+
+	on_yearly_pulse = {
+		random_events = {
+			4 = river_tigris_reclamation.1
+			1 = river_tigris_reclamation.1
+		}
+	}
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		remove_modifier = modifier_reclaiming_river
+		show_as_tooltip = {
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_BAGHDAD
+					state_region = s:STATE_DEIR_EZ_ZOR
+					state_region = s:STATE_MOSUL
+					state_region = s:STATE_BASRA
+				}
+			}
+			add_modifier = {
+				name = modifier_reclamation_river
+				days = -1      # permanente
+			}
+		}
+	}
+}
+
+	fail = {
+		OR = {
+			NOT = { owns_entire_state_region = STATE_BAGHDAD }
+			NOT = { owns_entire_state_region = STATE_DEIR_EZ_ZOR }
+			NOT = { owns_entire_state_region = STATE_MOSUL }
+			NOT = { owns_entire_state_region = STATE_BASRA }
+		}
+	}
+
+	on_fail = {
+		remove_modifier = modifier_reclaiming_river
+		remove_variable = turk_river_tigris_reclaimer
+	}
+
+	current_value = {
+		value = global_var:river_tigris_reclamation_global
+	}
+
+	goal_add_value = { # if you change this, update the thresholds in the event
+		add = 10
+	}
+
+	progressbar = yes
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = river_reclamation_no_tech
+				trigger = {
+					NOT = { has_technology_researched = improved_fertilizer }
+				}
+			}
+			triggered_desc = {
+				desc = river_reclamation_tech
+				trigger = {
+					has_technology_researched = improved_fertilizer
+				}
+			}
+		}
+	}
+
+	weight = 10
+	should_be_pinned_by_default = yes
+}
+>>>>>>> 94b3ed82352c1c02ab08c5691fdef152550de693

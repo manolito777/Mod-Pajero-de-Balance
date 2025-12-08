@@ -14,6 +14,7 @@
     
     unit_modifier = {
         unit_recovery_rate_add = -0.10
+
     }
     
     ai_weight = {
@@ -55,12 +56,13 @@ GGGG_mo_full_dress = {
     }
     
     upkeep_modifier = {
-        goods_input_clothes_add = 0.5
+        goods_input_clothes_add = 1
     }
     
     unit_modifier = {
-        unit_offense_add        = 5
-        unit_morale_damage_mult = 0.10
+        unit_recovery_rate_add = 0.1
+        unit_morale_loss_mult = -0.1
+        military_formation_attrition_risk_mult = -0.1
     }
     
     ai_weight = {
@@ -105,13 +107,15 @@ GGGG_mo_modern_uniform = {
     }
     
     upkeep_modifier = {
-        goods_input_clothes_add = 0.5
-        goods_input_steel_add   = 0.1
+        goods_input_clothes_add = 2
+        goods_input_steel_add   = 0.5
+        goods_input_silk_add = 20
     }
-    
+
     unit_modifier = {
-        unit_defense_add       = 10
-        unit_recovery_rate_add = 0.10
+        unit_morale_loss_mult = -0.15
+        unit_recovery_rate_add = 0.3
+        military_formation_attrition_risk_mult = -0.2
     }
     
     ai_weight = {
