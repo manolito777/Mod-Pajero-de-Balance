@@ -1,4 +1,4 @@
-﻿switzerland_protection_je = {
+﻿CREATE_OR_REPLACE:switzerland_protection_je = {
     icon = "gfx/interface/icons/event_icons/money.dds"
     
     group = je_group_internal_affairs

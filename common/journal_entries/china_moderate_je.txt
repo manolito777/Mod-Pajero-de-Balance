@@ -1,4 +1,4 @@
-﻿je_china_nation_building = {
+﻿CREATE_OR_REPLACE:je_china_nation_building = {
 	icon = "gfx/interface/icons/event_icons/innovation.dds"
 group = je_group_qing
 

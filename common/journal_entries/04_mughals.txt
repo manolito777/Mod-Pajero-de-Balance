@@ -1,1 +1,4 @@
 ﻿######es un jorunal vanilla, se quita por que no tiene sentido en el mod#######3
+REPLACE:je_mughal_hindustan = {
+ 
+}

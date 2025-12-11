@@ -1,5 +1,5 @@
 ﻿# Vinnaia Monopoliia
-company_vodka_monopoly = {
+REPLACE:company_vodka_monopoly = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/russian_vodka_monopoly.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_wheat.dds"
 
@@ -69,105 +69,7 @@ company_vodka_monopoly = {
 	}
 }
 
-# Society of Putilov Factories
-company_putilov_company = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/russian_putilov.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
-
-	flavored_company = yes
-
-	preferred_headquarters = { STATE_INGRIA }
-
-	building_types = {
-		building_motor_industry
-		building_military_shipyards
-		building_artillery_foundries
-	}
-
-	extension_building_types = {
-		building_munition_plants
-	}
-
-	possible_prestige_goods = {
-		prestige_good_generic_artillery
-	}
-
-	prestige_goods_trigger = {
-		custom_tooltip = {
-			text = je_prestige_goods_artillery_complete_tt
-			has_variable = prestige_good_generic_artillery_var
-		}
-	}
-
-	potential = {
-		has_interest_marker_in_region = region_russia
-	}
-
-	attainable = {
-		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-			any_scope_state = {
-				state_region = s:STATE_INGRIA
-			}
-		}
-	}
-
-	possible = {
-		has_technology_researched = railways
-		any_scope_state = {
-			state_region = s:STATE_INGRIA
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_motor_industry
-					is_building_type = building_military_shipyards
-					is_building_type = building_artillery_foundries
-				}
-				level >= 5
-			}
-		}
-	}
-
-	prosperity_modifier = {
-		building_railway_throughput_add = 0.1
-		state_infrastructure_mult = 0.05
-	}
-
-	ai_will_do = {
-		has_technology_researched = railways
-		any_scope_state = {
-			state_region = s:STATE_INGRIA
-			is_incorporated = yes
-		}
-	}
-
-	ai_construction_targets = {
-		building_military_shipyards = {
-			level = 5
-			state_trigger = {
-				state_region = s:STATE_INGRIA
-			}
-		}
-		building_artillery_foundries = {
-			level = 5
-			state_trigger = {
-				state_region = s:STATE_INGRIA
-			}
-		}
-		building_motor_industry = {
-			level = 5
-			state_trigger = {
-				state_region = s:STATE_INGRIA
-			}
-		}
-	}
-
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
-}
-
-# The Petroleum Production Company Nobel Brothers, Limited
-company_branobel = {
+REPLACE:company_branobel = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/russian_branobel.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
 
@@ -236,7 +138,7 @@ company_branobel = {
 }
 
 # Izhevsk Arms Plant
-company_izhevsk_arms_plant = {
+REPLACE:company_izhevsk_arms_plant = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/russian_izhevsk_arms_plant.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
@@ -316,88 +218,7 @@ company_izhevsk_arms_plant = {
 		value = 3 # Higher base value for flavored companies
 	}
 }
-
-# Savva Morozov & Sons Cotton Textile Mfg. Co.
-company_savva_morozov = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/russian_savva_morozov_and_sons.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
-
-	flavored_company = yes
-
-	preferred_headquarters = { STATE_MOSCOW }
-
-	building_types = {
-		building_textile_mills
-	}
-
-	extension_building_types = {
-		building_cotton_plantation
-	}
-
-	possible_prestige_goods = {
-		prestige_good_generic_clothes
-	}
-
-	prestige_goods_trigger = {
-		custom_tooltip = {
-			text = je_prestige_goods_clothes_complete_tt
-			has_variable = prestige_good_generic_clothes_var
-		}
-	}
-
-	potential = {
-		has_interest_marker_in_region = region_russia
-	}
-
-	attainable = {
-		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-			any_scope_state = {
-				state_region = s:STATE_MOSCOW
-			}
-		}
-	}
-
-	possible = {
-		has_technology_researched = joint_stock_companies
-		any_scope_state = {
-			state_region = s:STATE_MOSCOW
-			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_textile_mills
-				level >= 5
-			}
-		}
-	}
-
-	prosperity_modifier = {
-		country_prestige_mult = 0.1
-		interest_group_ig_industrialists_pop_attraction_mult = 0.1
-	}
-
-	ai_will_do = {
-		has_technology_researched = joint_stock_companies
-		any_scope_state = {
-			state_region = s:STATE_MOSCOW
-			is_incorporated = yes
-		}
-	}
-
-	ai_construction_targets = {
-		building_arms_industry = {
-			level = 5
-			state_trigger = {
-				state_region = s:STATE_MOSCOW
-			}
-		}
-	}
-
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
-}
-
-# New Russia Company Limited
-company_john_hughes = {
+REPLACE:company_john_hughes = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/russian_new_russia_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 

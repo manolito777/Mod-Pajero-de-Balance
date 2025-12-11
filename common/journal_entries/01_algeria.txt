@@ -1,4 +1,4 @@
-﻿je_conquest_of_algeria = {
+﻿REPLACE:je_conquest_of_algeria = {
 	icon = "gfx/interface/icons/event_icons/war.dds"
 
 	group = je_group_france_expansion
@@ -16,7 +16,7 @@
 			limit = {
 				exists = c:TUG
 			}
-			c:TUG = {
+			c:TUG ?= {
 				OR = {
 					is_country_alive = no
 					is_subject_of = root
@@ -69,7 +69,7 @@
 	weight = 5000
 }
 
-je_the_algerian_departements = {
+REPLACE:je_the_algerian_departements = {
 	icon = "gfx/interface/icons/event_icons/buro.dds"
 
 	group = je_group_france_expansion
@@ -195,7 +195,7 @@ je_the_algerian_departements = {
 	weight = 5000
 }
 
-je_reconquest_of_algeria = {
+REPLACE:je_reconquest_of_algeria = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	group = je_group_historical_content
@@ -204,7 +204,7 @@ je_reconquest_of_algeria = {
 		custom_tooltip = {
 			text = je_reconquest_of_algeria_tt
 			exists = c:ALD
-			this = c:ALD
+			c:ALD ?= THIS
 		}
 		owns_entire_state_region = STATE_ORAN
 		owns_entire_state_region = STATE_ALGIERS
@@ -234,7 +234,7 @@ je_reconquest_of_algeria = {
 	weight = 5000
 }
 
-je_french_foreign_legion = {
+REPLACE:je_french_foreign_legion = {
 	icon = "gfx/interface/icons/event_icons/ffl.dds"
 
 	group = je_group_france_expansion
@@ -243,7 +243,7 @@ je_french_foreign_legion = {
 		any_scope_state = {
 			region = sr:region_north_africa
 			any_scope_building = {
-				is_building_type = building_barracks
+				is_building_type = building_barrack
 				level >= 20
 				occupancy >= 0.5
 			}

@@ -1,0 +1,86 @@
+﻿close_universities = {
+	name = "close_universities_button"
+	desc = "close_universities_desc"
+
+	possible = {
+		NOT = { has_modifier = close_universities_modifier }
+		NOT = { has_modifier = finance_universities_modifier }
+        NOT = { has_modifier = supress_monarquist_modifier }
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = close_universities_modifier
+			months = 120
+ 
+		}
+		custom_tooltip = {
+			text = close_universities_text
+		}
+	}
+}
+
+finance_universities = {
+	name = "finance_universities_button"
+	desc = "finance_universities_desc"
+
+	possible = {
+		NOT = { has_modifier = close_universities_modifier }
+		NOT = { has_modifier = finance_universities_modifier } 
+        NOT = { has_modifier = promote_monarquist_modifier }
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = finance_universities_modifier
+			months = 120
+ 
+		}
+		custom_tooltip = {
+			text = finance_universities_text
+		}
+	}
+}
+
+promote_monarquist = {
+	name = "promote_monarquist_button"
+	desc = "promote_monarquist_desc"
+
+	possible = {
+		NOT = { has_modifier = promote_monarquist_modifier }
+        NOT = { has_modifier = supress_monarquist_modifier }
+		NOT = { has_modifier = finance_universities_modifier}
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = promote_monarquist_modifier
+			months = 120
+ 
+		}
+		custom_tooltip = {
+			text = promote_monarquist_text
+		}
+	}
+}
+supress_monarquist = {
+	name = "supress_monarquist_button"
+	desc = "supress_monarquist_desc"
+
+	possible = {
+		NOT = { has_modifier = promote_monarquist_modifier }
+        NOT = { has_modifier = supress_monarquist_modifier } 
+		NOT = { has_modifier = close_universities_modifier }
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = supress_monarquist_modifier
+			months = 120
+ 
+		}
+		custom_tooltip = {
+			text = supress_monarquist_text
+		}
+	}
+}

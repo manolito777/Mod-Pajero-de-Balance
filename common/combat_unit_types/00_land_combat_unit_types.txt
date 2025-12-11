@@ -1,0 +1,22 @@
+﻿
+
+INJECT:combat_unit_type_shrapnel_artillery = {
+    upgrades = {
+		combat_unit_type_heavy_tank
+    }
+}
+
+INJECT:combat_unit_type_siege_artillery = {
+    upgrades = {
+		combat_unit_type_heavy_tank
+    }
+ } 
+INJECT:combat_unit_type_lancers = {
+
+    upgrades = {
+        combat_unit_type_dragoons
+        combat_unit_type_lancers
+		combat_unit_type_light_tanks
+    }
+}
+

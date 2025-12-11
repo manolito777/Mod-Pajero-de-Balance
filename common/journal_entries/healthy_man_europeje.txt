@@ -1,0 +1,46 @@
+﻿CREATE_OR_REPLACE:je_healthy_man = {
+    icon = "gfx/interface/icons/event_icons/event_ottoman.dds"
+    
+    group = je_group_internal_affairs
+    
+	scripted_progress_bar = oto_bar
+	
+	scripted_button = close_universities
+	scripted_button = finance_universities
+	scripted_button = promote_monarquist
+    scripted_button = supress_monarquist
+	
+    modifiers_while_active = {
+			woc_modifier
+		}
+    on_yearly_pulse = {
+		random_events = {
+			1 = healthy_man_events.1
+		}
+	}
+    fail = {
+		custom_tooltip = {
+			text = chirefwin
+			scope:journal_entry = {
+                "scripted_bar_progress(oto_bar)" <= 0
+            }
+		}
+	}
+	on_fail = {
+		trigger_event = { id = sigma_china_events.1 }
+	}
+    complete = {
+		custom_tooltip = {
+			text = chimodwin
+			scope:journal_entry = {
+                "scripted_bar_progress(oto_bar)" >= 400
+            }
+		}
+	}
+	on_complete = {
+		trigger_event = { id = sigma_china_events.2 }
+	}
+
+    weight = 100
+    should_be_pinned_by_default = yes
+}

@@ -1,7 +1,5 @@
 ﻿### Otomanos
-
-
-ig_erringdesempleado = { # Happy
+CREATE_OR_REPLACE:ig_erringdesempleado = { # Happy
 	icon = "gfx/interface/icons/ig_trait_icons/veteran_consultation.dds"
 	min_approval = happy
 

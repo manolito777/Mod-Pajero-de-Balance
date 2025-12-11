@@ -1,0 +1,223 @@
+﻿oto_bar = {
+ 	name = "oto_bar_name"
+	desc = "oto_bar_text_1" #This will be printed on the left side of the progress bar
+	second_desc = "oto_bar_text_2" #This will be printed on the right side of the progress bar
+
+
+ 	double_sided_bad = yes
+	start_value = 200
+	min_value = 0
+	max_value = 400
+	monthly_progress = {
+		
+		
+		
+		
+		##########JOVENESTURCOS############
+		if = {
+			limit = {
+ 				NOT = { has_law_or_variant = law_type:law_monarchy }
+				NOT = { has_law_or_variant = law_type:law_theocracy }
+ 			}
+			add = {
+				desc = "OTOPASSIVE_1"
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+ 				NOT = { has_law_or_variant = law_type:law_autocracy }
+				NOT = { has_law_or_variant = law_type:law_technocracy }
+				NOT = { has_law_or_variant = law_type:law_oligarchy }
+ 			}
+			add = {
+				desc = "OTOPASSIVE_2"
+				value = -1
+			}
+		}
+	    if = {
+			limit = {
+ 			has_law_or_variant = law_type:law_national_supremacy 
+			has_law_or_variant = law_type:law_ethnostate 
+ 			}
+			add = {
+				desc = "OTOPASSIVE_3"
+				value = -1
+			}
+		}
+        if = {
+			limit = {
+ 				ig:ig_intelligentsia = { is_in_government = yes }
+ 			}
+			add = {
+				desc = "OTOPASSIVE_4"
+				value = -1
+			}
+ 		}
+        if = {
+			limit = {
+ 				NOT = { has_law_or_variant = law_type:law_autocracy }
+				NOT = { has_law_or_variant = law_type:law_technocracy }
+				NOT = { has_law_or_variant = law_type:law_oligarchy }
+ 			}
+			add = {
+				desc = "OTOPASSIVE_5"
+				value = -1
+			}
+		}
+        if = {
+			limit = {
+ 				 has_law_or_variant = law_type:law_state_religion
+				 
+ 			}
+			add = {
+				desc = "OTOPASSIVE_6"
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+ 				 has_law_or_variant = law_type:law_laissez_faire 
+ 			}
+			add = {
+				desc = "OTOPASSIVE_7"
+				value = -1
+			}
+		}
+		if = {
+			limit = {
+
+				 has_law_or_variant = law_type:law_free_trade
+ 			}
+			add = {
+				desc = "OTOPASSIVE_8"
+				value = -1
+			}
+		}
+			if = {
+			limit = {
+
+				 has_law_or_variant = law_type:law_dedicated_police
+ 			}
+			add = {
+				desc = "OTOPASSIVE_17"
+				value = -1
+			}
+		}
+			if = {
+			limit = {
+ 				has_modifier = finance_universities_modifier
+ 			}
+			add = {
+				desc = "OTOPASSIVE_19"
+				value = -2
+			}
+		}
+			if = {
+			limit = {
+ 				has_modifier = supress_monarquist_modifier
+ 			}
+			add = {
+				desc = "OTOPASSIVE_22"
+				value = -2
+			}
+		}
+        if = {
+            state_region = s:STATE_ERZURUM = {
+			has_modifier = state_opression_modifier
+ 			}
+			add = {
+				desc = "OTOPASSIVE_18"
+				value = -1
+			}
+		}
+        	##########MONARQUICOS############
+		
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_monarchy
+ 			}
+			add = {
+				desc = "OTOPASSIVE_10"
+				value = 1
+			}
+ 		}
+
+		if = {
+			limit = {
+				NOT = { has_law_or_variant = law_type:law_ethnostate }
+				NOT = { has_law_or_variant = law_type:law_national_supremacy }
+ 			}
+			add = {
+				desc = "OTOPASSIVE_11"
+				value = 1
+			}
+		}
+		 if = {
+			limit = {
+ 				 has_law_or_variant = law_type:law_autocracy 
+				has_law_or_variant = law_type:law_technocracy 
+				 has_law_or_variant = law_type:law_oligarchy 
+ 			}
+			add = {
+				desc = "OTOPASSIVE_12"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_freedom_of_conscience
+				has_law_or_variant = law_type:law_total_separation
+ 			}
+			add = {
+				desc = "OTOPASSIVE_13"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				has_law_or_variant = law_type:law_interventionism
+ 			}
+			add = {
+				desc = "OTOPASSIVE_14"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				 has_law_or_variant = law_type:law_protectionism 
+ 			}
+			add = {
+				desc = "OTOPASSIVE_15"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+ 				 has_law_or_variant = law_type:law_local_police 
+ 			}
+			add = {
+				desc = "OTOPASSIVE_16"
+				value = 1
+			}
+			if = {
+			limit = {
+ 				has_modifier = promote_monarquist_modifier
+ 			}
+			add = {
+				desc = "OTOPASSIVE_20"
+				value = 2
+			}
+		}
+			if = {
+			limit = {
+ 				has_modifier = close_universities_modifier
+ 			}
+			add = {
+				desc = "OTOPASSIVE_21"
+				value = 2
+			}
+		}
+		}
+	}	
+}	

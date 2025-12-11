@@ -1,0 +1,75 @@
+﻿namespace = healthy_man_events
+
+healthy_man_events.1 = { #####Tensions in the Sasun Highlands
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = healthy_man_events.1.t
+	desc = healthy_man_events.1.d
+	flavor = healthy_man_events.1.f
+
+	duration = 3
+	option = {
+	name = healthy_man_events.1.a
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ERZURUM
+				
+			}
+			add_modifier = {
+				name = state_opression_modifier
+				years = 4
+			}
+			
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_DIYARBAKIR
+			
+			}
+			add_modifier = {
+				name = state_opression_modifier
+				years = 4
+			}
+		}
+	}
+	
+	
+
+	option = {
+		name = healthy_man_events.1.b
+			default_option = yes
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ERZURUM
+				
+			}
+			add_modifier = {
+				name = state_kurdish_modifier
+				years = 4
+			}
+			
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_DIYARBAKIR
+			
+			}
+			add_modifier = {
+				name = state_kurdish_modifier
+				years = 4
+			}
+		}
+	}
+}
+
+
+

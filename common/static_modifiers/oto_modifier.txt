@@ -18,3 +18,36 @@ modifier_reclamation_polder = {
 	building_group_bg_agriculture_throughput_add = 0.15
 	state_migration_pull_mult = 0.25
 }
+state_opression_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_cop_negative.dds
+	state_mortality_turmoil_mult = 0.15
+	state_turmoil_effects_mult = -0.1
+}
+state_kurdish_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_capitulate_negative.dds
+	state_tax_collection_mult = -0.1
+}
+woc_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gavel_positive.dds
+	country_law_enactment_time_mult = -0.25
+}
+close_universities_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_academic_negative.dds
+	country_tech_spread_add = -0.03
+	country_expenses_add = 1200
+}
+finance_universities_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_academic_positive.dds
+	country_tech_spread_add = 0.03
+	country_expenses_add = 3000
+}
+promote_monarquist_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_aristocrat_positive.dds
+	country_authority_add = 100
+	country_expenses_add = 3000
+}
+supress_monarquist_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_aristocrat_negative.dds
+	country_authority_add = -100
+	country_expenses_add = 1200
+}

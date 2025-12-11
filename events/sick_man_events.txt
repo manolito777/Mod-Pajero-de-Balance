@@ -109,6 +109,9 @@ sick_man.2 = {
 			years = 20
 			is_decaying = yes
 		}
+		add_journal_entry = {
+				type = je_healthy_man
+			}
 	}
 	option = {
 		name = sick_man.2.b
@@ -149,6 +152,9 @@ sick_man.2 = {
 			years = 20
 			is_decaying = yes
 		}
+		add_journal_entry = {
+				type = je_healthy_man
+			}
 	}
 	option = {
 		name = sick_man.2.c
@@ -163,6 +169,9 @@ sick_man.2 = {
 			name = major_explosion_demografica
 			years = 20
 			is_decaying = yes
+			add_journal_entry = {
+				type = je_healthy_man
+			}
 		}
 	}
 	option = {
@@ -179,6 +188,9 @@ sick_man.2 = {
 			years = 20
 			is_decaying = yes
 		}
+		add_journal_entry = {
+				type = je_healthy_man
+			}
 	}
 	option = {
 		name = sick_man.2.e
@@ -194,6 +206,9 @@ sick_man.2 = {
 			years = 20
 			is_decaying = yes
 		}
+		add_journal_entry = {
+				type = je_healthy_man
+			}
 	}
 }
 

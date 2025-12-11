@@ -1,0 +1,7 @@
+﻿
+INJECT:law_protected_speech = {
+	modifier = {
+        country_tech_spread_add = 10
+		country_tech_spread_mult = -0.25										
+	}
+}

@@ -1,6 +1,6 @@
 ﻿
 
-je_drive_to_the_east_poland = {
+CREATE_OR_REPLACE:je_drive_to_the_east_poland = {
 	icon = "gfx/interface/icons/event_icons/war.dds"
 
 	group = je_group_ger_drive_to_the_east
@@ -43,7 +43,7 @@ je_german_coloniesvnz = {
 	weight = 100
 	should_be_pinned_by_default = yes
 }
-je_german_coloniesafr = {
+CREATE_OR_REPLACE:je_german_coloniesafr = {
 	icon = "gfx/interface/icons/event_icons/africa.dds"
     group = je_group_ger_drive_to_the_east
 

@@ -3,7 +3,7 @@
 #Aqui es donde se crea el journal.
 
 #RIO AMARILLO
-je_five_year_plan_1 = {
+CREATE_OR_REPLACE:je_five_year_plan_1 = {
 	icon = "gfx/interface/icons/event_icons/china.dds"
 	
 	group = je_group_internal_affairs
@@ -124,7 +124,7 @@ je_five_year_plan_1 = {
 }
 
 #RIO YANGTZE
-je_five_year_plan_2 = {
+CREATE_OR_REPLACE:je_five_year_plan_2 = {
 	icon = "gfx/interface/icons/event_icons/china.dds"
 	
 	group = je_group_internal_affairs

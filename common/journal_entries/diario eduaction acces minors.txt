@@ -1,4 +1,4 @@
-﻿je_investigacion_peruana = {
+﻿CREATE_OR_REPLACE:je_investigacion_peruana = {
     icon = "gfx/interface/icons/institution_icons/schools.dds"
     
     group = je_group_internal_affairs

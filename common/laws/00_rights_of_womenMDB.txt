@@ -1,0 +1,6 @@
+﻿
+INJECT:law_women_own_property = {
+	modifier = {
+		state_birth_rate_mult = 0.02
+	}
+}

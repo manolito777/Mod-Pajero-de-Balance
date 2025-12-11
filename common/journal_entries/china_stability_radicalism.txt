@@ -1,4 +1,4 @@
-﻿je_china_stability = {
+﻿CREATE_OR_REPLACE:je_china_stability = {
 	icon = "gfx/interface/icons/event_icons/five_races_flag.dds"
 group = je_group_qing
 

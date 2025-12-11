@@ -1,5 +1,5 @@
 ﻿# FRANCIA
-ig_trait_sacred_loans = {
+CREATE_OR_REPLACE:ig_trait_sacred_loans = {
 	icon = "gfx/interface/icons/ig_trait_icons/treasury_bonds.dds"
 	min_approval = loyal
 	

@@ -1,4 +1,4 @@
-﻿je_sick_man_main = {
+﻿REPLACE:je_sick_man_main = {
 	icon = "gfx/interface/icons/event_icons/ottoman_fed.dds"
 
 	group = je_group_tanzimat
@@ -93,7 +93,7 @@
 	should_be_pinned_by_default = yes
 }
 
-je_sick_man_syria = {
+REPLACE:je_sick_man_syria = {
 	icon = "gfx/interface/icons/event_icons/turwar.png"
 
 	group = je_group_tanzimat
@@ -180,7 +180,7 @@ je_sick_man_syria = {
 	should_be_pinned_by_default = yes
 }
 
-je_sick_man_egypt = {
+REPLACE:je_sick_man_egypt = {
 	icon = "gfx/interface/icons/event_icons/turwar.png"
 
 	group = je_group_tanzimat
@@ -224,7 +224,7 @@ je_sick_man_egypt = {
 	should_be_pinned_by_default = yes
 }
 
-je_sick_man_economy = {
+REPLACE:je_sick_man_economy = {
 	icon = "gfx/interface/icons/event_icons/tureco.png"
 
 	group = je_group_tanzimat
@@ -261,7 +261,7 @@ je_sick_man_economy = {
 }
 
 # Literacy and Universities
-je_sick_man_education = {
+REPLACE:je_sick_man_education = {
 	icon = "gfx/interface/icons/event_icons/turinn.png"
 
 	group = je_group_tanzimat
@@ -311,7 +311,7 @@ je_sick_man_education = {
 }
 
 # Nationalism
-je_sick_man_separatism = {
+REPLACE:je_sick_man_separatism = {
 	icon = "gfx/interface/icons/event_icons/turrad.png"
 
 	group = je_group_tanzimat
@@ -395,7 +395,7 @@ je_sick_man_separatism = {
 }
 
 # Army Reform
-je_sick_man_army = {
+REPLACE:je_sick_man_army = {
 	icon = "gfx/interface/icons/event_icons/turmil.png"
 
 	group = je_group_tanzimat
@@ -457,7 +457,7 @@ je_sick_man_army = {
 
 
 # Bureaucractic Reform
-je_sick_man_bureaucracy = {
+REPLACE:je_sick_man_bureaucracy = {
 	icon = "gfx/interface/icons/event_icons/turburo.png"
 
 	group = je_group_tanzimat

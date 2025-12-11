@@ -1,4 +1,4 @@
-﻿towards_to_modernity = {
+﻿CREATE_OR_REPLACE:towards_to_modernity = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_internal_affairs
@@ -40,7 +40,7 @@
 	should_be_pinned_by_default = yes
 }
 
-towards_to_modernity2 = {
+CREATE_OR_REPLACE:towards_to_modernity2 = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	  modifiers_while_active = {
 		modifier_towards_to_modernity2
@@ -74,7 +74,7 @@ towards_to_modernity2 = {
 	weight = 10000
 	should_be_pinned_by_default = yes
 } 
-towards_to_modernity3 = {
+CREATE_OR_REPLACE:towards_to_modernity3 = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_internal_affairs	
@@ -110,7 +110,7 @@ towards_to_modernity3 = {
 	should_be_pinned_by_default = yes
 } 
 
-towards_to_modernity4 = {
+CREATE_OR_REPLACE:towards_to_modernity4 = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_internal_affairs	
@@ -145,7 +145,7 @@ towards_to_modernity4 = {
 	weight = 10000
 	should_be_pinned_by_default = yes
 } 
-towards_to_modernity5 = {
+CREATE_OR_REPLACE:towards_to_modernity5 = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_internal_affairs	
@@ -180,7 +180,7 @@ towards_to_modernity5 = {
 	weight = 10000
 	should_be_pinned_by_default = yes
 } 
-towards_to_modernity6 = {
+CREATE_OR_REPLACE:towards_to_modernity6 = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_internal_affairs	
@@ -212,7 +212,7 @@ towards_to_modernity6 = {
 	should_be_pinned_by_default = yes
 } 
 
-towards_to_modernity_1 = {
+CREATE_OR_REPLACE:towards_to_modernity_1 = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_internal_affairs	
@@ -239,7 +239,7 @@ towards_to_modernity_1 = {
 	should_be_pinned_by_default = yes
 }
 
-towards_to_modernity_2 = {
+CREATE_OR_REPLACE:towards_to_modernity_2 = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_internal_affairs	
@@ -260,7 +260,7 @@ towards_to_modernity_2 = {
 	weight = 5000
 	should_be_pinned_by_default = yes
 }
-towards_to_modernity_3 = {
+CREATE_OR_REPLACE:towards_to_modernity_3 = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	group = je_group_internal_affairs	
@@ -304,7 +304,7 @@ towards_to_modernity_3 = {
 	weight = 5000
 	should_be_pinned_by_default = yes
 }
-towards_to_modernity_4 = {
+CREATE_OR_REPLACE:towards_to_modernity_4 = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
 	group = je_group_internal_affairs	
@@ -329,7 +329,7 @@ towards_to_modernity_4 = {
 	weight = 5000
 	should_be_pinned_by_default = yes
 }
-towards_to_modernity_5 = {
+CREATE_OR_REPLACE:towards_to_modernity_5 = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
 	group = je_group_internal_affairs	
@@ -355,7 +355,7 @@ towards_to_modernity_5 = {
 	weight = 5000
 	should_be_pinned_by_default = yes
 }
-towards_to_modernity_6 = {
+CREATE_OR_REPLACE:towards_to_modernity_6 = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
 	group = je_group_internal_affairs	
@@ -377,7 +377,7 @@ towards_to_modernity_6 = {
 	weight = 5000
 	should_be_pinned_by_default = yes
 }
-towards_to_modernity_7 = {
+CREATE_OR_REPLACE:towards_to_modernity_7 = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_internal_affairs

@@ -1,5 +1,5 @@
 ﻿#Peugeot, francia.
-company_peugeot = {
+REPLACE_OR_CREATE:company_peugeot = {
 	icon = "gfx/interface/icons/company_icons/peugeot.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
@@ -71,7 +71,7 @@ company_peugeot = {
 	}
 }
 #SIFDN, Italia.
-Societa_Italiana_per_la_Fabbricazione_della_Dinamite__NFTs = {
+REPLACE_OR_CREATE:Societa_Italiana_per_la_Fabbricazione_della_Dinamite__NFTs = {
 	icon = "gfx/interface/icons/company_icons/sifd.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -127,7 +127,7 @@ Societa_Italiana_per_la_Fabbricazione_della_Dinamite__NFTs = {
 	}
 }
 # Companhia Agrícola Fazenda Dumont Codeado por Amarisha, Brasil.
-company_CAFD = {
+REPLACE_OR_CREATE:company_CAFD = {
 	icon = "gfx/interface/icons/company_icons/fazenda.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 	
@@ -199,7 +199,7 @@ company_CAFD = {
     }
 }
 # Fábrica Brasileira de Alpargatas e Calçados / Alpargatas S.A. Codeado por Amarisha, Brasil.
-company_Alpargatas = {
+REPLACE_OR_CREATE:company_Alpargatas = {
 	icon = "gfx/interface/icons/company_icons/alpargatas.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
@@ -286,7 +286,7 @@ company_Alpargatas = {
     }
 }
 #Nederlandsche Handel-Maatschappij (compañia codeada por Amarisha, holanda)
-company_nhm = {
+REPLACE_OR_CREATE:company_nhm = {
 	icon = "gfx/interface/icons/company_icons/nhm.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 	
