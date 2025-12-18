@@ -1,0 +1,17 @@
+REPLACE_OR_CREATE:pm_default_building_kierbedź_bridge = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	state_modifiers = {
+		workforce_scaled = { 
+			state_migration_pull_add = 20
+			state_loyalists_from_sol_change_mult = 0.05
+            state_infrastructure_add = 20
+		}
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 1000
+		}
+	}
+}
