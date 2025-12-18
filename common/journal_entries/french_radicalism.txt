@@ -27,7 +27,7 @@
 	
 	complete = {
 		custom_tooltip = {
-			text = je_kulturkampf_complete
+			text = je_fraraxd
 			scope:journal_entry = {
                 "scripted_bar_progress(frenchrad_core_progress_bar)" >= 200
             }

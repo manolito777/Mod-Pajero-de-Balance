@@ -1,9 +1,9 @@
 ﻿NMapName = {
 	NAME_DRAW_DISTANCE = 8000.0				# Remove names beyond this distance
 	NAME_FONT_NAME = "mapfont"		# Font used for drawing the map names
-	NAME_FONT_SIZE = 80						# Font size used for drawing the map names
+	NAME_FONT_SIZE = 83					# Font size used for drawing the map names
 	FADE_SPEED = 2.0						# How fast names fade in/out
-	MAX_OPACITY = 0.9
+	MAX_OPACITY = 1
 	MIN_OPACITY = 0.0						# minimum opacity. Names hidden by draw distance will still fade to 0
 	MIN_PROVINCES = 5						# minimum number of provinces for a name to be generated
 	ZOOM_STEPS_VISIBLE_SCALES = {	# Each map-name has a scale. This list contains min-max values for each zoom step. If a name's scale is outside that range it will not be visible
@@ -33,7 +33,7 @@ NJominiMapGraphics = {
 	MAP_OBJECT_FADE_SPEED = 5.0
 
 	COUNTRY_NAMES_TEST_LINES_SPACING = 3.0
-	COUNTRY_NAMES_SCALE = 0.6
+	COUNTRY_NAMES_SCALE = 0.8
 	COUNTRY_NAMES_SCALE_CAP_WIDTH = 0.7
 	COUNTRY_NAMES_SCALE_CAP_HEIGHT = 0.3
 	COUNTRY_NAMES_NUM_LINE_TESTS = 1

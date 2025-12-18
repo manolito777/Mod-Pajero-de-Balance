@@ -96,14 +96,7 @@ healthy_man_events.2 = { #####YOUNG TURKS
 			type = je_ytdream
 		}
 	}
-	option = {
-	name = healthy_man_events.2.b
-	activate_law = law_type:law_presidential_republic	
 
-	add_journal_entry = {
-			type = je_restoring_rome
-		}
-	}
 }
 healthy_man_events.3 = { #####MONARQUIST
 	type = country_event
