@@ -391,7 +391,9 @@ german_unification.4 = {
 	option = {
 		name = german_unification.4.a
 		default_option = yes
-		
+		trigger = {
+			has_law_or_variant = law_type:law_monarchy
+		}
 		
 			add_modifier = {
 				name = gerotierra
@@ -407,7 +409,9 @@ german_unification.4 = {
 	}
 	option = {
 		name = german_unification.4.b
-		
+		trigger = {
+           has_law_or_variant = law_type:law_monarchy
+		}
         add_modifier = {
 				name = germar
 				
@@ -418,6 +422,43 @@ german_unification.4 = {
 				is_decaying = yes
 		}
 		activate_law = law_type:law_Kaiserliche_Monarchie
+		add_primary_culture = cu:south_german
+	}
+
+    	option = {
+		name = german_unification.4.c
+		default_option = yes
+		trigger = {
+			NOT = { has_law_or_variant = law_type:law_monarchy }
+		}
+		
+			add_modifier = {
+				name = gerotierra
+			}
+		
+		add_modifier = {
+				name = ger_explosion_demografica
+				months = 120
+				is_decaying = yes
+		}
+		
+		add_primary_culture = cu:south_german
+	}
+	option = {
+		name = german_unification.4.j
+		trigger = {
+			NOT = { has_law_or_variant = law_type:law_monarchy }
+		}
+        add_modifier = {
+				name = germar
+				
+		}
+		add_modifier = {
+				name = ger_explosion_demografica
+				months = 120
+				is_decaying = yes
+		}
+	
 		add_primary_culture = cu:south_german
 	}
 }

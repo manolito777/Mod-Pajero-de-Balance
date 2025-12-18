@@ -50,6 +50,17 @@ REPLACE:GER = {
 	secondary_unit_color  = { 59 64 62 }
 	tertiary_unit_color = { 0 0 0 }
 }
+
+REPLACE:NGF = {
+	color = northgermanfederation
+	
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { north_german}
+	capital = STATE_BRANDENBURG
+}
 REPLACE:TUR = {
 	color = { 126  203  120 }
 	

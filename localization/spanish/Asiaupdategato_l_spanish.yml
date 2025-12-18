@@ -189,7 +189,7 @@
  pru_constitutional_crisis_fail: "For a period of 5 years:"
  modifier_roonsreform_gap_theory_ig: "Principled Opposition"
  je_constitutional_crisis_reason: "If the military’s influence over Prussian politics remains unchecked for at least five years, the introduction of mass conscription could have profound societal consequences. Without a deliberate effort to curb this dominance, the policy may lead to the militarization of Prussian society, embedding military values and priorities into its culture, governance, and public life."
- roonsreform_core_progress_bar_text_1: "Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('roons_reform_upper_bound')])"
+ roonsreform_core_progress_bar_text_1: "Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/)"
  roonsreform_core_progress_bar_name: "Stamping out militarism"
  roonsreform_gap_theory_button_name: "The Lückentheorie"
  roonsreform_gap_theory_button_desc: "The 'Gap Theory' asserts that any legal gap in our constitution can be filled by the "monarchical principle" allowing the King to circumvent our legeslative opposition and decide on constitutional matters."

@@ -45,3 +45,84 @@ INC = {
 			is_ai = no
 		}
 	}
+REPLACE:IBE = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.9
+
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = nationalism
+		trigger_if = {
+			limit = {
+				capital = {
+					is_in_geographic_region = geographic_region_iberia
+				}
+				any_country_in_iberia = {
+					is_subject_of = ROOT
+				}
+			}
+			custom_tooltip = {
+				text = all_iberian_subjects_below_75_ld_tt
+				any_country_in_iberia = {
+					filter = {
+						is_subject_of = ROOT
+					}
+					liberty_desire < 75
+					count = all
+				}
+			}
+		}
+	}
+}
+REPLACE:GER = {
+	geographic_region = geographic_region_greater_germany
+
+	is_major_formation = yes
+
+	unification_play = dp_unify_germany
+	leadership_play = dp_leadership_germany
+
+	required_states_fraction = 0.73
+
+	ai_will_do = { has_technology_researched = nationalism }
+
+	possible = {
+		OR = {
+			has_technology_researched = nationalism
+			custom_tooltip = {
+				text = je_german_unification_idea_trigger_desc
+				has_variable = je_german_unification_idea
+			}
+		}
+		custom_tooltip = {
+			text = no_confederation_of_the_rhine_tt
+			NOT = {
+				exists = c:RHN
+			}
+		}
+		custom_tooltip = {
+			text = no_dual_or_triple_monarchy_tt
+			NOR = {
+				has_government_type = gov_dual_monarchy
+				has_government_type = gov_triple_monarchy
+			}
+		}
+		NOT = {
+			c:KUK ?= this
+		}
+	}
+
+	max_num_formation_candidates = 3
+	can_be_formation_candidate = {
+		country_rank >= rank_value:major_power
+	}
+
+	can_be_unification_target = {
+		NOR = {
+			has_government_type = gov_dual_monarchy
+			has_government_type = gov_triple_monarchy
+		}
+	}
+}
