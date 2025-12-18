@@ -1,0 +1,164 @@
+﻿namespace = young_turks_events
+
+young_turks_events.1 = { #####Tensions in the Sasun Highlands
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = young_turks_events.1.t
+	desc = young_turks_events.1.d
+	flavor = young_turks_events.1.f
+
+	duration = 3
+	option = {
+	name = young_turks_events.1.a
+	default_option = yes
+	add_journal_entry = {
+			type = je_ytdream2
+		}
+	}
+}
+
+young_turks_events.3 = { #####purification 3
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_ottoman.dds"
+
+	title = young_turks_events.3.t
+	desc = young_turks_events.3.d
+	flavor = young_turks_events.3.f
+
+	duration = 3
+	option = {
+	name = young_turks_events.3.a
+	default_option = yes
+    s:STATE_KASTAMONU = {
+                add_homeland = cu:turkish
+               
+            }
+	s:STATE_ALBANIA = {
+                add_homeland = cu:turkish
+ 
+            }
+	s:STATE_THESSALIA = {
+                add_homeland = cu:turkish
+      
+            }
+	s:STATE_ATTICA = {
+                add_homeland = cu:turkish
+
+            }
+	s:STATE_PELOPONNESE = {
+                add_homeland = cu:turkish
+      
+            }
+	}
+}
+young_turks_events.4 = { #####purification 2
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_ottoman.dds"
+
+	title = young_turks_events.4.t
+	desc = young_turks_events.4.d
+	flavor = young_turks_events.4.f
+
+	duration = 3
+	option = {
+	name = young_turks_events.4.a
+	default_option = yes
+    s:STATE_EASTERN_SERBIA = {
+                add_homeland = cu:turkish
+               
+            }
+	s:STATE_WESTERN_SERBIA = {
+                add_homeland = cu:turkish
+ 
+            }
+	s:STATE_KOSOVO = {
+                add_homeland = cu:turkish
+      
+            }
+	s:STATE_MONTENEGRO = {
+                add_homeland = cu:turkish
+
+            }
+	s:STATE_BOSNIA = {
+                add_homeland = cu:turkish
+      
+            }
+	}
+}
+young_turks_events.5 = { #####purification 3
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_ottoman.dds"
+
+	title = young_turks_events.5.t
+	desc = young_turks_events.5.d
+	flavor = young_turks_events.5.f
+
+	duration = 3
+	option = {
+	name = young_turks_events.5.a
+	default_option = yes
+    s:STATE_WALLACHIA = {
+                add_homeland = cu:turkish
+               
+            }
+	s:STATE_MOLDAVIA = {
+                add_homeland = cu:turkish
+ 
+            }
+	}
+}
+young_turks_events.6 = { #####purification 3
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_ottoman.dds"
+
+	title = young_turks_events.6.t
+	desc = young_turks_events.6.d
+	flavor = young_turks_events.6.f
+
+	duration = 3
+	option = {
+	name = young_turks_events.6.a
+	default_option = yes
+}
+}

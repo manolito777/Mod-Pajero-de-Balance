@@ -1,4 +1,4 @@
-﻿REPLACE:invoke_doctrine_of_lapse = {
+﻿invoke_doctrine_of_lapse = {
 	groups = {
 		overlord
 	}

@@ -1,0 +1,92 @@
+﻿
+### Executives
+
+REPLACE:PRU_alfred_krupp = { # Alfred Krupp, Fried. Krupp AG
+	first_name = Alfred
+    last_name = Krupp
+    historical = yes
+    birth_date = 1812.4.26
+    dna = dna_alfred_krupp
+    culture = cu:north_german
+    interest_group = ig_industrialists
+    ideology = ideology_authoritarian
+    traits = {
+        basic_entrepreneur
+    }
+    executive_usage = {
+		country_trigger = {
+			has_dlc_feature = mp1_content
+		}
+		company_trigger = {
+			is_company_type = company_type:company_krupp
+		}
+	    earliest_usage_date = 1836.1.1
+	    latest_usage_date = 1887.1.1
+		chance = 100
+	}
+}
+
+REPLACE:usa_joshua_norton_character_template = {
+    first_name = Joshua
+	last_name = Norton
+	historical = yes
+	culture = cu:british
+	religion = rel:protestant
+	female = no
+    is_agitator = yes
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_reformer
+	birth_date = 1818.2.4
+	dna = dna_emperor_norton
+	traits = {
+		charismatic
+		honorable
+		ambitious
+	}
+}
+
+REPLACE:BRZ_emperor_pedro_02 = {
+	# Pedro II
+	first_name = "Pedro"
+	last_name = "de_Braganca"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1825.12.2
+	dna = dna_emperor_pedro_02
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	traits = {
+		meticulous
+		charismatic
+		honorable
+		ambitious
+		trait_child
+	}
+	on_created = {
+		set_variable = is_pedro
+		set_variable = house_braganca
+		set_character_immortal = yes
+	}
+	trait_generation = { }
+}
+REPLACE:BRZ_diogo_antonio_feijo = {
+	# Diogo Antônio Feijó, regent of Brazil from 1835 to 1837
+	first_name = Diogo_AntO_nio
+	last_name = FeijO_
+	historical = yes
+	culture = primary_culture
+	birth_date = 1784.8.17
+	dna = dna_diogo_antonio_feijo
+	ruler = yes
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	traits = {
+		reserved
+	}
+	on_created = {
+		set_variable = is_pedro
+		set_variable = house_braganca
+	}	
+	trait_generation = { }
+}

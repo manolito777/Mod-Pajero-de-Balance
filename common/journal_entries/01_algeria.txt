@@ -1,4 +1,4 @@
-﻿REPLACE:je_conquest_of_algeria = {
+﻿je_conquest_of_algeria = {
 	icon = "gfx/interface/icons/event_icons/war.dds"
 
 	group = je_group_france_expansion
@@ -68,8 +68,7 @@
 
 	weight = 5000
 }
-
-REPLACE:je_the_algerian_departements = {
+je_the_algerian_departements = {
 	icon = "gfx/interface/icons/event_icons/buro.dds"
 
 	group = je_group_france_expansion
@@ -195,7 +194,7 @@ REPLACE:je_the_algerian_departements = {
 	weight = 5000
 }
 
-REPLACE:je_reconquest_of_algeria = {
+je_reconquest_of_algeria = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	group = je_group_historical_content
@@ -234,7 +233,7 @@ REPLACE:je_reconquest_of_algeria = {
 	weight = 5000
 }
 
-REPLACE:je_french_foreign_legion = {
+je_french_foreign_legion = {
 	icon = "gfx/interface/icons/event_icons/ffl.dds"
 
 	group = je_group_france_expansion

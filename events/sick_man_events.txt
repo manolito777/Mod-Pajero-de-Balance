@@ -169,11 +169,12 @@ sick_man.2 = {
 			name = major_explosion_demografica
 			years = 20
 			is_decaying = yes
+			}
 			add_journal_entry = {
 				type = je_healthy_man
 			}
 		}
-	}
+	
 	option = {
 		name = sick_man.2.d
 		trigger = {
@@ -278,9 +279,7 @@ sick_man.3 = {
 				has_dlc_feature = ip3_content
 			}
 			show_as_tooltip = {
-				add_journal_entry = {
-					type = je_great_eastern_crisis
-				}
+				add_contextless_journal_entry = je_great_eastern_crisis
 			}
 		}
 	}

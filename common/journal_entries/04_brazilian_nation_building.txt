@@ -46,12 +46,16 @@
 		show_as_tooltip = {
 			add_modifier = {
 				name = brz_brasil_brasileiro1
-				months = 180
+				months = 240
 			}
 			add_modifier = {
 				name = bra_explosion_demografica
-				months = 180
+				months = 240
 				is_decaying = yes
+			}
+			add_modifier = {
+				name = brasil_brasileiro_mod
+				months = -1
 			}
 		}
 		if = {

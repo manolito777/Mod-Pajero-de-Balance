@@ -1,22 +1,22 @@
 ﻿
 ##################################BIENES DE PRESTIGIO MOD##############################################
 
-CREATE_OR_REPLACE:prestige_good_salitre = {
+prestige_good_salitre = {
 	base_good = sulfur
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_salitre.dds"
 }
-CREATE_OR_REPLACE:prestige_good_yogur_la_fageda = {
+prestige_good_yogur_la_fageda = {
 	base_good = groceries
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_yogurlf.dds"
 }
-CREATE_OR_REPLACE:prestige_good_peugeot_automobiles = {
+prestige_good_peugeot_automobiles = {
 	base_good = automobiles
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_peugeot.dds"
 }
-CREATE_OR_REPLACE:prestige_good_windjammers = {
+prestige_good_windjammers = {
 	base_good = merchant_marine
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_windjammer.dds"

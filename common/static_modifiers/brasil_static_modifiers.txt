@@ -5,14 +5,24 @@
 	state_migration_pull_mult = 0.25
 }
 
-modifier_agricultural_development_trade = {
+REPLACE:modifier_agricultural_development_trade = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	state_trade_advantage_mult = 0.35
 	building_group_bg_plantations_throughput_add = 0.1
 }
 
-modifier_agricultural_development_landowners = {
+REPLACE:modifier_agricultural_development_landowners = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	interest_group_ig_landowners_approval_add = 5
 	building_group_bg_plantations_throughput_add = 0.20
+}
+REPLACE:brazil_slaving_pariah_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_prestige_mult = -0.05
+	country_influence_mult = -0.05
+	state_slave_import_mult = 0.8
+}
+brasil_brasileiro_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
+	state_working_adult_ratio_add = 0.1
 }

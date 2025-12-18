@@ -1,0 +1,310 @@
+﻿je_restoring_rome = {
+    icon = "gfx/interface/icons/event_icons/event_hellenic.dds"
+    
+    group = je_group_internal_affairs
+	
+	scripted_progress_bar = rome_revolt_bar
+	
+	scripted_button = russian_support_but
+    scripted_button = greek_riot_but
+
+
+    complete = {
+		custom_tooltip = {
+			text = chimodwin
+			scope:journal_entry = {
+                "scripted_bar_progress(oto_bar)" >= 12
+            }
+		}
+	}
+	on_complete = {
+		trigger_event = { id = restoring_rome_events.4 }
+	}
+ 
+    weight = 10000000
+    should_be_pinned_by_default = yes
+}
+je_restoring_rome2 = {
+    icon = "gfx/interface/icons/event_icons/event_hellenic.dds"
+    
+    group = je_group_internal_affairs
+	
+
+
+    complete = {
+		c:BYZ = {
+				OR = {
+					country_or_subject_owns_entire_state_region = STATE_ANKARA
+				}
+			}
+	}
+	on_complete = {
+		trigger_event = { id = restoring_rome_events.1 }
+	}
+	on_timeout = {
+	}
+    
+    weight = 10000000
+    should_be_pinned_by_default = yes
+}
+je_defender_faith = {
+    icon = "gfx/interface/icons/event_icons/event_orthodox.dds"
+    
+    group = je_group_internal_affairs
+	modifiers_while_active = {
+		defenderofthefaith1_modifier
+	}
+
+    fail = {
+		OR = {
+				s:STATE_EASTERN_THRACE = {
+					NOT = {
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+										NOR = {
+											country_has_state_religion = rel:orthodox
+											
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				s:STATE_PALESTINE = {
+					NOT = {
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+										NOR = {
+											country_has_state_religion = rel:orthodox
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				s:STATE_ALEPPO = {
+					NOT = {
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+										NOR = {
+											country_has_state_religion = rel:orthodox
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+	}
+	on_fail = {
+		trigger_event = { id = restoring_rome_events.69 }
+	}
+    complete = {
+		
+				s:STATE_EASTERN_THRACE = {
+						any_scope_state = {
+							OR = {
+								
+									owner = {
+										
+											country_has_state_religion = rel:orthodox
+											
+										
+									}
+								
+							}
+						}
+					}
+				s:STATE_PALESTINE = {
+
+						any_scope_state = {
+							OR = {
+
+									owner = {
+
+											country_has_state_religion = rel:orthodox
+										}
+									
+								}
+							
+						}
+					
+				}
+				s:STATE_ALEPPO = {
+						any_scope_state = {
+							OR = {
+
+									owner = {
+
+											country_has_state_religion = rel:orthodox
+										}
+									}
+								
+							}
+						}
+				s:STATE_LAZIO = {
+						any_scope_state = {
+							OR = {
+
+									owner = {
+
+											country_has_state_religion = rel:orthodox
+										}
+									}
+								
+							}
+						}
+					
+				
+			
+	}
+	on_complete = {
+		trigger_event = { id = restoring_rome_events.67 }
+	}
+    weight = 10000000
+    should_be_pinned_by_default = yes
+}
+je_defender_faith2 = { ######mantener roma
+    icon = "gfx/interface/icons/event_icons/event_orthodox.dds"
+    
+    group = je_group_internal_affairs
+	modifiers_while_active = {
+		defenderofthefaith1_modifier2
+	}
+   
+    complete = {
+		OR = {
+				s:STATE_EASTERN_THRACE = {
+
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+	
+											country_has_state_religion = rel:orthodox
+											
+										}
+									
+								}
+							}
+						
+					}
+				}
+				s:STATE_PALESTINE = {
+
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+	
+											country_has_state_religion = rel:orthodox
+											
+										}
+									
+								}
+							}
+						
+					}
+				}
+				s:STATE_ALEPPO = {
+
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+	
+											country_has_state_religion = rel:orthodox
+											
+										}
+									
+								}
+							}
+						
+					}
+				}
+				s:STATE_LAZIO = {
+						any_scope_state = {
+							
+								
+									owner = {
+										NOT = {
+											country_has_state_religion = rel:orthodox
+											
+										}
+									}
+								
+							}
+						
+					}
+			}
+	}
+	on_complete = {
+		trigger_event = { id = restoring_rome_events.68 }
+	}
+
+    weight = 10000000
+    should_be_pinned_by_default = yes
+}
+je_defender_faith3 = { ######recuperar holly sites
+    icon = "gfx/interface/icons/event_icons/event_orthodox.dds"
+    
+    group = je_group_internal_affairs
+	
+
+    complete = {
+		
+				s:STATE_EASTERN_THRACE = {
+
+						any_scope_state = {
+					
+									owner = {
+							
+											country_has_state_religion = rel:orthodox
+											
+										}
+									}
+								}
+
+				
+				s:STATE_PALESTINE = {
+				
+						any_scope_state = {
+						
+									owner = {
+										
+											country_has_state_religion = rel:orthodox
+										}
+							
+						}
+					}
+				
+				s:STATE_ALEPPO = {
+					
+						any_scope_state = {
+							
+										
+									owner = {
+											country_has_state_religion = rel:orthodox
+										}
+									}
+								}
+					
+				
+			
+	}
+	on_complete = {
+		trigger_event = { id = restoring_rome_events.70 }
+	}
+
+    weight = 10000000
+    should_be_pinned_by_default = yes
+}

@@ -1,5 +1,5 @@
 ﻿# FRANCIA
-CREATE_OR_REPLACE:ig_trait_sacred_loans = {
+ig_trait_sacred_loans = {
 	icon = "gfx/interface/icons/ig_trait_icons/treasury_bonds.dds"
 	min_approval = loyal
 	
@@ -7,7 +7,7 @@ CREATE_OR_REPLACE:ig_trait_sacred_loans = {
 		country_loan_interest_rate_mult = -0.05
 	}
 }
-ig_trait_haute_finance = {
+REPLACE:ig_trait_haute_finance = {
 	icon = "gfx/interface/icons/ig_trait_icons/industrial_organizers.dds"
 	min_approval = happy
 

@@ -1,4 +1,4 @@
-﻿CREATE_OR_REPLACE:dec_drive_to_the_east = {
+﻿dec_drive_to_the_east = {
 
 	is_shown = {
 		exists = c:GER
@@ -135,7 +135,7 @@
 		value = 10
 	}
 }
-CREATE_OR_REPLACE:dec_german_colonies = {
+dec_german_colonies = {
 
 	is_shown = {
 		exists = c:GER

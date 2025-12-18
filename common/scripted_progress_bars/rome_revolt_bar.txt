@@ -1,0 +1,19 @@
+﻿rome_revolt_bar = {
+ 	name = "rome_revolt_bar_name"
+	desc = "rome_revolt_bar_text_1" #This will be printed on the left side of the progress bar
+	
+
+
+ 	default_bad = yes
+	start_value = 0
+	min_value = 0
+	max_value = 12
+	monthly_progress = {
+
+			add = {
+				desc = "ROME_PASSIVE_1"
+				value = 1
+			}
+		}
+		
+	}

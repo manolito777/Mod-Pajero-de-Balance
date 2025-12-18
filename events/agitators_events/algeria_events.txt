@@ -1114,7 +1114,7 @@ algeria_events.9 = {
 			limit = {
 				region = sr:region_north_africa
 				any_scope_building = {
-				 	is_building_type = building_barracks
+				 	is_building_type = building_barrack
 					level >= 20
 					occupancy >= 0.5
 				}
@@ -1122,7 +1122,7 @@ algeria_events.9 = {
 			save_scope_as = algeria_state_scope
 			random_scope_building = {
 				limit = {
-					is_building_type = building_barracks
+					is_building_type = building_barrack
 				}
 				save_scope_as = legion_barracks
 			}

@@ -1,2 +1,4 @@
-﻿CREATE_OR_REPLACE:je_group_ger_drive_to_the_east = {}
-CREATE_OR_REPLACE:je_group_ger_drive_to_the_east_rks = {}
+﻿je_group_ger_drive_to_the_east = {
+context = country}
+je_group_ger_drive_to_the_east_rks = {
+context = country}

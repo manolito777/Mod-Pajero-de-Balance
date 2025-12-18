@@ -1,0 +1,712 @@
+﻿namespace = restoring_rome_events
+
+#rome revolt
+restoring_rome_events.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = restoring_rome_events.4.t
+	desc = restoring_rome_events.4.d
+	flavor = restoring_rome_events.4.f
+
+	event_image = {
+		video = "unspecific_temperance_movement"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_hellenic.dds"
+
+	duration = 3
+
+	trigger = {
+
+	}
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_EASTERN_THRACE.region_state:TUR 
+			}
+			create_country = { #Rome
+				tag = BYZ
+				origin = this
+				state = s:STATE_EASTERN_THRACE.region_state:TUR
+				
+				on_created = {
+					
+					random_state = {
+						limit = {
+							state_region = s:STATE_WESTERN_THRACE
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_THESSALIA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_NORTHERN_THRACE
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_BULGARIA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_MONTENEGRO
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_WESTERN_SERBIA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_EASTERN_SERBIA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_KOSOVO
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_TRABZON
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_DOBRUDJA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_ALBANIA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_SKOPIA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_MACEDONIA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_PELOPONNESE
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_IONIAN_ISLANDS
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_ATTICA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_WALLACHIA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_BESSARABIA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+						set_state_type = incorporated
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_BOSNIA
+							c:TUR ?= owner
+						}
+						set_state_owner = c:BYZ
+						set_state_type = incorporated
+						set_state_type = incorporated
+					}
+				}
+			}
+		c:BYZ = { save_scope_as = rome_scope }
+	    }
+	}
+	option = {
+		name = restoring_rome_events.4.b
+		ai_chance = { base = 0 }
+			default_option = yes
+		c:BYZ ?= {
+			add_journal_entry = {
+				type = je_restoring_rome2
+			}
+			create_character = {
+				ig_leader = yes
+				interest_group = ig_intelligentsia
+				ideology = ideology_radical
+				on_created = {
+								set_character_as_ruler = yes
+							}
+			}
+		}
+        
+		scope:rome_scope = {
+			create_diplomatic_play = {
+				name = roman_rebellion
+				target_country = c:TUR
+				type = dp_annex_war
+				add_war_goal = {
+				holder = c:TUR
+				target_country = c:BYZ
+				type = annex_country
+			}
+			}
+		
+			
+			hidden_effect = {
+				change_infamy = -900
+			}
+		}
+		play_as = scope:rome_scope
+	}
+}
+restoring_rome_events.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = restoring_rome_events.1.t
+	desc = restoring_rome_events.1.d
+	flavor = restoring_rome_events.1.f
+
+	event_image = {
+		video = "unspecific_temperance_movement"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_hellenic.dds"
+
+	duration = 3
+    immediate = {
+	if = {
+			limit = {
+			c:BYZ ?= {
+			owns_entire_state_region = STATE_DOBRUDJA
+						}
+					}
+			    s:STATE_DOBRUDJA = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_EASTERN_THRACE
+						}
+					}
+			    s:STATE_EASTERN_THRACE = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_SKOPIA
+						}
+					}
+			    s:STATE_SKOPIA = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+			if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_MACEDONIA
+						}
+					}
+			    s:STATE_MACEDONIA = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_WESTERN_THRACE
+						}
+					}
+			    s:STATE_WESTERN_THRACE = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+           if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_NORTHERN_THRACE
+						}
+					}
+			    s:STATE_NORTHERN_THRACE = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+			if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_BULGARIA
+						}
+					}
+			    s:STATE_BULGARIA = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_ALEPPO
+						}
+					}
+			    s:STATE_ALEPPO = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_MOSUL
+						}
+					}
+			    s:STATE_MOSUL = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+			if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_HUDAVENDIGAR
+						}
+					}
+			    s:STATE_HUDAVEDINGAR = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_AYDIN
+						}
+					}
+			    s:STATE_AYDIN = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_KONYA
+						}
+					}
+			    s:STATE_KONYA = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+			if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_KASTAMONU
+						}
+					}
+			    s:STATE_KASTAMONU = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_CYPRUS
+						}
+					}
+			    s:STATE_CYPRUS = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_TRABZON
+						}
+					}
+			    s:STATE_TRABZON = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+			if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_ERZURUM
+						}
+					}
+			    s:STATE_ERZURUM = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_KARS
+						}
+					}
+			    s:STATE_KARS = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_CRETE
+						}
+					}
+			    s:STATE_CRETE = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+			if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_EAST_AEGEAN_ISLANDS
+						}
+					}
+			    s:STATE_EAST_AEGEAN_ISLANDS = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_ANKARA
+						}
+					}
+			    s:STATE_ANKARA = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+            if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_DIYARBAKIR
+						}
+					}
+			    s:STATE_DIYARBAKIR = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+		}
+			if = {
+					limit = {
+						c:BYZ ?= {
+							owns_entire_state_region = STATE_ADANA
+						}
+					}
+			    s:STATE_ADANA = {
+                add_homeland = cu:greek
+                remove_homeland = cu:turkish
+            }
+	    }
+	}
+	option = {
+		name = restoring_rome_events.1.a
+		ai_chance = { base = 0 }
+			default_option = yes
+		hidden_effect = {
+		every_scope_state = {
+					set_state_type = incorporated
+				}
+		}
+		add_modifier = {
+				name = turkish_assimilation
+				years= 8
+			}
+		  }
+		  
+}
+restoring_rome_events.2 = {
+	type = country_event
+	placement = root
+	
+	title = restoring_rome_events.2.t
+	desc =  restoring_rome_events.2.d
+	flavor = restoring_rome_events.2.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_hellenic.dds"
+	
+	duration = 3
+	
+	option = { 
+		name = restoring_rome_events.2.a
+		default_option = yes
+		hidden_effect = {
+			create_military_formation = {
+				type = army
+				hq_region = sr:region_balkans
+				name = "The Russian Expeditionary Force"
+	
+				combat_unit = {
+					type = unit_type:combat_unit_type_line_infantry
+					state_region = s:STATE_MACEDONIA
+					count = 30
+				}
+				combat_unit = {
+					type = unit_type:combat_unit_type_mobile_artillery
+					state_region = s:STATE_MACEDONIA
+					count = 13
+				}
+			}
+		}
+	}
+}
+
+#third invasion post-war support
+
+restoring_rome_events.67 = { #####Reparando el sisma
+	type = country_event
+	placement = root
+	
+	title = restoring_rome_events.67.t
+	desc =  restoring_rome_events.67.d
+	flavor = restoring_rome_events.67.f
+	
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_orthodox.dds"
+	
+	duration = 3
+	immediate = {
+	transfer_state = {
+				STATE = s:STATE_LAZIO
+				GIVER = c:RUS
+				TAKER = c:ITA
+			}
+	transfer_state = {
+				STATE = s:STATE_LAZIO
+				GIVER = c:BYZ
+				TAKER = c:ITA
+			}
+		
+	   every_state = {
+				limit = {
+					state_region = s:STATE_LAZIO
+				}
+				set_state_type = incorporated
+				
+			}
+						
+	}
+	option = { 
+		name = restoring_rome_events.67.a
+		default_option = yes
+		c:ITA ?= {
+				set_state_religion = rel:orthodox
+		}
+		c:BYZ ?= {
+				add_journal_entry = {
+			type = je_defender_faith2
+		}
+		}
+		c:RUS ?= {
+				add_journal_entry = {
+			type = je_defender_faith2
+		}
+		}
+
+	}
+}
+restoring_rome_events.68 = { #####perdio roma o mas
+	type = country_event
+	placement = root
+	
+	title = restoring_rome_events.68.t
+	desc =  restoring_rome_events.68.d
+	flavor = restoring_rome_events.68.f
+	
+	event_image = {
+		video = "unspecific_devastation"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_orthodox.dds"
+	
+	duration = 3
+	 
+	option = { 
+		name = restoring_rome_events.68.a
+		default_option = yes
+		c:ITA ?= {
+				set_state_religion = rel:catholic
+		}
+		c:BYZ ?= {
+				add_journal_entry = {
+			type = je_defender_faith
+		}
+		}
+		c:RUS ?= {
+				add_journal_entry = {
+			type = je_defender_faith
+		}
+		}
+	}
+}
+restoring_rome_events.69 = { #####perdio holly sites
+	type = country_event
+	placement = root
+	
+	title = restoring_rome_events.69.t
+	desc =  restoring_rome_events.69.d
+	flavor = restoring_rome_events.69.f
+	
+	event_image = {
+		video = "unspecific_devastation"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_orthodox.dds"
+	
+	duration = 3
+	 
+	option = { 
+		name = restoring_rome_events.69.a
+		default_option = yes
+		c:BYZ ?= {
+				add_journal_entry = {
+			type = je_defender_faith3
+		}
+		}
+		c:RUS ?= {
+				add_journal_entry = {
+			type = je_defender_faith3
+		}
+		}
+	}
+}
+restoring_rome_events.70 = { #####recupero holly sites
+	type = country_event
+	placement = root
+	
+	title = restoring_rome_events.70.t
+	desc =  restoring_rome_events.70.d
+	flavor = restoring_rome_events.70.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_orthodox.dds"
+	
+	duration = 3
+	 
+	option = { 
+		name = restoring_rome_events.70.a
+		default_option = yes
+		c:BYZ ?= {
+				add_journal_entry = {
+			type = je_defender_faith
+		}
+		}
+		c:RUS ?= {
+				add_journal_entry = {
+			type = je_defender_faith
+		}
+		}
+	}
+}

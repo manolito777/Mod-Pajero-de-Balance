@@ -1,6 +1,6 @@
 ﻿
 
-CREATE_OR_REPLACE:je_french_colonial_empire = {
+je_french_colonial_empire = {
 	icon = "gfx/interface/icons/event_icons/africa.dds"
 
 	group = je_group_france_expansion
@@ -47,7 +47,7 @@ CREATE_OR_REPLACE:je_french_colonial_empire = {
 	weight = 100
 	should_be_pinned_by_default = yes
 }
-CREATE_OR_REPLACE:je_french_colonial_empire2 = {
+je_french_colonial_empire2 = {
  icon = "gfx/interface/icons/event_icons/colony.dds"
  group = je_group_france_expansion
  modifiers_while_active = {

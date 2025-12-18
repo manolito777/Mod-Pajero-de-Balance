@@ -1,0 +1,98 @@
+﻿russian_support_but = {
+	name = "russian_support_but_name"
+	desc = "russian_support_but_desc"
+
+	possible = {
+		NOT = { has_modifier = russian_support_modifier }
+		c:RUS ?= {
+
+		}
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = russian_support_modifier
+			years = 5
+			
+		}
+     trigger_event = { id = restoring_rome_events.2 }
+	}
+
+}
+
+greek_riot_but = {
+	name = "greek_riot_but_name"
+	desc = "greek_riot_but_desc"
+
+	possible = {
+		NOT = { has_modifier = greek_riot_modif }
+	}
+	
+	effect = {
+		add_modifier = { 
+			name = greek_riot_modif
+			months = 90
+			
+		}
+	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_MACEDONIA
+				
+			}
+			add_modifier = {
+				name = greek_riot_modifstate
+				months = 90
+				is_decaying = yes
+			}
+			
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_NORTHERN_THRACE
+				
+			}
+			add_modifier = {
+				name = greek_riot_modifstate
+				months = 90
+				is_decaying = yes
+			}
+			
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_WESTERN_THRACE
+				
+			}
+			add_modifier = {
+				name = greek_riot_modifstate
+				months = 90
+				is_decaying = yes
+			}
+			
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_EASTERN_THRACE
+				
+			}
+			add_modifier = {
+				name = greek_riot_modifstate
+				months = 90
+				is_decaying = yes
+			}
+			
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_SKOPIA
+				
+			}
+			add_modifier = {
+				name = greek_riot_modifstate
+				months = 90
+				is_decaying = yes
+			}
+			
+		}
+}

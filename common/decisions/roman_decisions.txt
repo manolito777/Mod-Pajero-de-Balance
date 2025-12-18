@@ -1,0 +1,40 @@
+﻿
+roman_decision = {
+	is_shown = {
+		
+		OR = {
+			exists = c:BYZ
+		}
+		NOT = { has_variable = defenderfaithvar
+		}
+	}
+
+	possible = {
+	c:RUS ?= {
+								relations:root >= relations_threshold:amicable
+							}
+		any_scope_state = {
+			state_region = s:STATE_ALEPPO
+			is_incorporated = yes
+		}
+		any_scope_state = {
+			state_region = s:STATE_PALESTINE
+			is_incorporated = yes
+		}
+		any_scope_state = {
+			state_region = s:STATE_EASTERN_THRACE
+			is_incorporated = yes
+		}
+	}
+	    when_taken = {
+		add_journal_entry = {
+			type = je_defender_faith
+		}
+		c:RUS = {
+		add_journal_entry = {
+			type = je_defender_faith
+		}
+			}
+		set_variable = defenderfaithvar
+	}
+}

@@ -1,4 +1,4 @@
-﻿CREATE_OR_REPLACE:river_tigris = {
+﻿river_tigris = {
 	is_shown = {
 		owns_entire_state_region = STATE_BAGHDAD
 		owns_entire_state_region = STATE_DEIR_EZ_ZOR

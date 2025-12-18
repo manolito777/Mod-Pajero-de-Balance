@@ -1,12 +1,16 @@
 ﻿COUNTRIES = {
 	c:SWE ?= {		
-		effect_starting_technology_tier_1_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = dialectics
-		add_technology_researched = Swedish_efficiency
 		effect_starting_politics_conservative = yes
 		
 		add_taxed_goods = g:liquor
-	
+		
+		set_export_tariff_level = { 
+			goods = g:iron
+			level = no_tariffs_or_subventions
+		}
+		
 		# Laws 
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_oligarchy
@@ -16,23 +20,31 @@
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_no_workers_rights
 		activate_law = law_type:law_local_police
-		activate_law = law_type:law_racial_segregation # Swedish policies regarding the Sami were not terribly enlightened during this period
+		activate_law = law_type:law_national_supremacy # Swedish policies regarding the Sami were not terribly enlightened during this period
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_no_migration_controls
 		
 		set_institution_investment_level = {
 			institution = institution_schools
 			level = 3
-		}	
-        add_journal_entry = { type = switzerland_protection_je }
-		ig:ig_devout = {
+		}
+
+		active_law:lawgroup_education_system ?= { # Public Schools
+			add_amendment = {
+				type = amendment_prussian_education
+				sponsor = PREV.ig:ig_armed_forces
+			}
+		}
+        add_journal_entry = {
+			type = switzerland_protection_je
+		}
+		ig:ig_devout ?= {
 			add_ruling_interest_group = yes
 		}
 
-		ig:ig_landowners = {
+		ig:ig_landowners ?= {
 			add_ruling_interest_group = yes
 		}
 	}

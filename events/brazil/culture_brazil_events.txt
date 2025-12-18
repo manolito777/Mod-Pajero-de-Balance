@@ -301,6 +301,10 @@ culture_brazil.2 = {
 			months = 180
 			is_decaying = yes
 		}
+		add_modifier = {
+				name = brasil_brasileiro_mod
+				months = -1
+		}
 		every_country = {
 			limit = {
 				NOT = {

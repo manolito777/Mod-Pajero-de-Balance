@@ -1,6 +1,6 @@
 ﻿switzerland_pay_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_income_positive.dds
-	country_loan_interest_rate_mult = -0.025
+	country_loan_interest_rate_mult = -0.03
 }
 swissdebunked = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_income_negative.dds

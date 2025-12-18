@@ -1,20 +1,13 @@
-﻿CREATE_OR_REPLACE:switzerland_protection_je = {
+﻿switzerland_protection_je = {
     icon = "gfx/interface/icons/event_icons/money.dds"
     
-    group = je_group_internal_affairs
+    group = je_group_historical_content
 
-
-
-	possible = {
-	
-		OR = {
-	
-			exists = c:SWI
-		}
-	}
+ 
     modifiers_while_active = {
 		switzerland_pay_modifier
 	}
+	    
     complete = {		
 		 trigger_if = {
 				OR = {

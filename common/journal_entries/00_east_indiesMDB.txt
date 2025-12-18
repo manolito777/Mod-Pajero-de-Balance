@@ -1,2 +1,0 @@
-﻿REPLACE:je_consolidate_colonial_rule = {
-}

@@ -44,9 +44,10 @@
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_mercantilism # Corn Laws, babyyy
+		activate_law = law_type:law_protectionism # Corn Laws, babyyy
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_colonial_resettlement
 		activate_law = law_type:law_poor_laws
 		activate_law = law_type:law_charitable_health_system
@@ -70,9 +71,10 @@
 			institution = institution_police
 			level = 1
 		}
-
+        add_journal_entry = {
+			type = switzerland_protection_je
+		}
 		add_journal_entry = { type = je_victoria }
-		
 		if = {
 			limit = {
 				has_dlc_feature = rp1_content
@@ -84,13 +86,6 @@
 			name = brazilian_slave_trade_modifier
 			months = 600 # 50 Years
 		}
-
-	
-        add_journal_entry = { type = switzerland_protection_je }
-		
-
-
-
 
 		# Was historically around, but we've scrapped it so we can have the slots free for the big boys
 		# add_company = company_type:company_gwr
@@ -111,6 +106,13 @@
 			set_company_state_region = s:STATE_HOME_COUNTIES
 			add_owned_country = c:PEC #links the country to this company
 		}
-
+		
+		set_variable = free_elections_var
+		active_law:lawgroup_distribution_of_power ?= { # Wealth Voting - Reform Act
+			add_amendment = {
+				type = amendment_tradition_of_free_elections
+				sponsor = PREV.ig:ig_intelligentsia
+			}
+		}
 	}
 }

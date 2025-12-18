@@ -73,6 +73,16 @@
 			else_if = {
 				limit = {
 					owner = {
+						c:BYZ ?= this
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_materiel_waste
+				set_ig_trait = ig_trait:ig_erringdesempleado2
+				set_ig_trait = ig_trait:ig_trait_patriotic_fervor
+			}
+			else_if = {
+				limit = {
+					owner = {
 						any_primary_culture = {
 							has_discrimination_trait = language_hispanophone
 							has_discrimination_trait_group = heritage_group_european

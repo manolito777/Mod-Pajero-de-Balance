@@ -1,5 +1,5 @@
 ﻿
-outmoded_bureaucracy = {
+REPLACE:outmoded_bureaucracy = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	country_bureaucracy_mult = -0.05
 }
@@ -50,4 +50,50 @@ supress_monarquist_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_aristocrat_negative.dds
 	country_authority_add = -100
 	country_expenses_add = 1200
+}
+russian_support_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_aristocrat_positive.dds
+	country_expenses_add = 3000
+}
+turkish_assimilation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_protestant_positive.dds
+	state_assimilation_mult = 1
+	state_conversion_mult = 1
+}
+greek_riot_modif = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_cop_negative.dds
+	unit_offense_mult = -0.25
+	unit_defense_mult = -0.25
+}
+greek_riot_modifstate = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_cop_negative.dds
+	state_mortality_turmoil_mult = 0.15
+	state_turmoil_effects_mult = 0.2
+}
+defenderofthefaith1_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_clergy_positive.dds
+	country_authority_add = 100
+}
+defenderofthefaith1_modifier2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_clergy_positive.dds
+	country_authority_add = 250
+}
+greeceensuredmod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_manowar_positive.dds
+	unit_navy_offense_mult = 0.05
+	unit_navy_defense_mult = 0.05
+}
+egyptensuredmod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_trade_positive.dds
+	state_trade_capacity_mult = 0.2
+	state_trade_advantage_mult = 0.1
+}
+piracyensuredmod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_income_positive.dds
+	country_tax_income_add = 30000
+}
+balkansensuredmod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_soldier_positive.dds
+	unit_defense_mult = 0.05
+	unit_offense_mult = 0.05
 }

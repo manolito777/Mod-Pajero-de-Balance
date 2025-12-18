@@ -30,9 +30,6 @@
 			name = peru_bolivia_var
 			value = 0
 		}
-		add_journal_entry = {
-			type = je_peru_bolivia
-		}
 		add_journal_entry = { type = je_investigacion_peruana }
 		change_infamy = 50
 	}

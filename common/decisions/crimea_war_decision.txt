@@ -1,5 +1,5 @@
 ﻿
-CREATE_OR_REPLACE:crimea_war_decision = {
+crimea_war_decision = {
 	  is_shown = {
 		OR = {
 			c:RUS = THIS

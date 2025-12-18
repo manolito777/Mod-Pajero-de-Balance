@@ -1,5 +1,5 @@
 ﻿
-CREATE_OR_REPLACE:haussmanplan = {
+haussmanplan = {
 	is_shown = {
 		any_scope_state = {
 			state_region = s:STATE_ILE_DE_FRANCE

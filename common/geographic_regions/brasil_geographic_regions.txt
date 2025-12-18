@@ -1,0 +1,7 @@
+﻿geographic_region_slavery_brasil_region = {
+	short_key = "slavery_brasil_region"
+
+	strategic_regions = {
+		sr:region_brazil
+	}
+}

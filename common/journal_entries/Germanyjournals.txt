@@ -1,5 +1,5 @@
 ﻿
-CREATE_OR_REPLACE:je_kulturkampf = {
+je_kulturkampf = {
 	icon = "gfx/interface/icons/event_icons/kulturkampf.dds"
 	
 	group = je_group_historical_content
@@ -140,7 +140,7 @@ CREATE_OR_REPLACE:je_kulturkampf = {
 	should_be_pinned_by_default = yes
 	can_revolution_inherit = yes
 }
-CREATE_OR_REPLACE:je_constitutional_crisis = {
+je_constitutional_crisis = {
 	icon = "gfx/interface/icons/event_icons/pickelhaube.dds"
 	
 	group = je_group_historical_content

@@ -1,0 +1,67 @@
+﻿je_ytdream = {
+    icon = "gfx/interface/icons/event_icons/flag.dds"
+    
+    group = je_group_internal_affairs
+	
+
+    complete = {
+	OR = {
+		has_law = law_type:law_census_voting
+		
+		has_law = law_type:law_universal_suffrage
+		}
+		NOT = {
+			has_law = law_type:law_monarchy
+		}
+		OR = {
+		has_law = law_type:law_national_supremacy
+		
+		has_law = law_type:law_ethnostate
+		}
+		has_law = law_type:law_protected_speech
+		NOR = {
+		has_law = law_type:law_state_atheism
+		
+		has_law = law_type:law_total_separation
+		}
+	}
+	on_complete = {
+		trigger_event = { id = young_turks_events.1 }
+	}
+
+    weight = 100
+    should_be_pinned_by_default = yes
+}
+je_ytdream2 = {
+    icon = "gfx/interface/icons/event_icons/flag.dds"
+    
+    group = je_group_internal_affairs
+	scripted_button = purificate_but1
+    scripted_button = purificate_but2
+    scripted_button = purificate_but3
+
+    complete = {
+	has_variable = purification1
+	has_variable = purification2
+	has_variable = purification3
+	owns_entire_state_region = STATE_BOSNIA
+	owns_entire_state_region = STATE_MONTENEGRO
+	owns_entire_state_region = STATE_KOSOVO
+	owns_entire_state_region = STATE_WESTERN_SERBIA
+	owns_entire_state_region = STATE_EASTERN_SERBIA
+	owns_entire_state_region = STATE_WALLACHIA
+	owns_entire_state_region = STATE_MOLDAVIA
+	owns_entire_state_region = STATE_SKOPIA
+	owns_entire_state_region = STATE_ALBANIA
+	owns_entire_state_region = STATE_ATTICA
+	owns_entire_state_region = STATE_THESSALIA
+	owns_entire_state_region = STATE_PELOPONNESE
+	
+	}
+	on_complete = {
+		trigger_event = { id = young_turks_events.6 }
+	}
+
+    weight = 100
+    should_be_pinned_by_default = yes
+}

@@ -70,6 +70,75 @@ healthy_man_events.1 = { #####Tensions in the Sasun Highlands
 		}
 	}
 }
+healthy_man_events.2 = { #####YOUNG TURKS
+	type = country_event
+	placement = ROOT
 
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_ottoman.dds"
+
+	title = healthy_man_events.2.t
+	desc = healthy_man_events.2.d
+	flavor = healthy_man_events.2.f
+
+	duration = 3
+	option = {
+	name = healthy_man_events.2.a
+	default_option = yes
+	activate_law = law_type:law_presidential_republic
+
+	add_journal_entry = {
+			type = je_ytdream
+		}
+	}
+	option = {
+	name = healthy_man_events.2.b
+	activate_law = law_type:law_presidential_republic	
+
+	add_journal_entry = {
+			type = je_restoring_rome
+		}
+	}
+}
+healthy_man_events.3 = { #####MONARQUIST
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_ottoman.dds"
+
+	title = healthy_man_events.3.t
+	desc = healthy_man_events.3.d
+	flavor = healthy_man_events.3.f
+
+	duration = 3
+	option = {
+	name = healthy_man_events.3.a
+	default_option = yes
+	
+	add_journal_entry = {
+			type = ensure_egypt_je
+		}
+	add_journal_entry = {
+			type = ensure_piracy_je
+		}
+	add_journal_entry = {
+			type = ensure_greece_je
+		}
+	add_journal_entry = {
+			type = ensure_balkans_je
+		}
+	}
+}
 
 

@@ -3,7 +3,7 @@
 #Aqui es donde se crea el journal.
 
 #RIO AMARILLO
-CREATE_OR_REPLACE:je_five_year_plan_1 = {
+je_five_year_plan_1 = {
 	icon = "gfx/interface/icons/event_icons/china.dds"
 	
 	group = je_group_internal_affairs
@@ -124,58 +124,12 @@ CREATE_OR_REPLACE:je_five_year_plan_1 = {
 }
 
 #RIO YANGTZE
-CREATE_OR_REPLACE:je_five_year_plan_2 = {
+je_five_year_plan_2 = {
 	icon = "gfx/interface/icons/event_icons/china.dds"
 	
 	group = je_group_internal_affairs
 	
-	is_shown_when_active = {
-		
-		any_scope_state = {
-			state_region = s:STATE_SICHUAN
-			is_incorporated = yes
-		}
-		any_scope_state = {
-			state_region = s:STATE_YUNNAN
-			is_incorporated = yes
-		}
-		any_scope_state = {
-			state_region = s:STATE_CHONGQING
-			is_incorporated = yes
-		}
-		any_scope_state = {
-			state_region = s:STATE_NANJING
-			is_incorporated = yes
-		}
-		any_scope_state = {
-			state_region = s:STATE_JIANGXI
-			is_incorporated = yes
-		}
-		any_scope_state = {
-			state_region = s:STATE_SOUTHERN_ANHUI
-			is_incorporated = yes 
-		}
-		any_scope_state = {
-			state_region = s:STATE_WESTERN_HUBEI
-			is_incorporated = yes
-		}
-		any_scope_state = {
-			state_region = s:STATE_EASTERN_HUBEI
-			is_incorporated = yes
-		}
-		any_scope_state = {
-			state_region = s:STATE_HUNAN
-			is_incorporated = yes
-		}
-		any_scope_state = {
-			state_region = s:STATE_SUZHOU
-			is_incorporated = yes
-		}
-		hidden_trigger = {
-			NOT = {has_variable = five_year_plan_done_2 }
-		}
-	}
-	
+
 	complete = {
 		any_scope_state = {
 			state_region = s:STATE_SICHUAN
@@ -197,7 +151,7 @@ CREATE_OR_REPLACE:je_five_year_plan_2 = {
 			state_region = s:STATE_CHONGQING
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_tooling_workshops
+				is_building_type = building_tooling_workshop
 				level >= 20
 			}
 		}
@@ -221,7 +175,7 @@ CREATE_OR_REPLACE:je_five_year_plan_2 = {
 			state_region = s:STATE_SOUTHERN_ANHUI
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_tooling_workshops
+				is_building_type = building_tooling_workshop
 				level >= 5
 			}
 		}
@@ -237,7 +191,7 @@ CREATE_OR_REPLACE:je_five_year_plan_2 = {
 			state_region = s:STATE_EASTERN_HUBEI
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_tooling_workshops
+				is_building_type = building_tooling_workshop
 				level >= 15
 			}
 		}	
@@ -253,7 +207,7 @@ CREATE_OR_REPLACE:je_five_year_plan_2 = {
 			state_region = s:STATE_SUZHOU
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_furniture_manufacturies
+				is_building_type = building_furniture_manufactory
 				level >= 10
 			}
 		}

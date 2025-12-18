@@ -21,7 +21,13 @@
 		activate_law = law_type:law_national_guard
 		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_agrarianism
-	
+		
+		active_law:lawgroup_slavery ?= { # Legacy Slavery
+			add_amendment = {
+				type = amendment_brasil_slaves
+				sponsor = PREV.ig:ig_landowners
+			}
+		}
 
 		add_taxed_goods = g:liquor
 		

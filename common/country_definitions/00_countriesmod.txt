@@ -1,0 +1,206 @@
+﻿REPLACE:BYZ = {
+	color = { 102 45 145 }
+
+	valid_as_home_country_for_separatists = { always = no } # root = country to separate from
+
+	country_type = recognized
+
+	tier = empire
+
+	cultures = { greek }
+	capital = STATE_EASTERN_THRACE
+}
+INC = {
+	#Indochina
+	color = { 64 224 208 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = {
+		vietnamese
+		khmer
+		lao
+	}
+	capital = STATE_TONKIN
+}
+
+PEC = {
+	color ={ 87 35 100 }
+	
+	country_type = colonial
+	
+	tier = principality
+	social_hierarchy = british_indian_caste_system
+	
+	cultures = { british }
+	capital = STATE_SINDH
+}
+REPLACE:GER = {
+	color = german_gray
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { north_german south_german }
+	capital = STATE_BRANDENBURG
+	primary_unit_color = { 59 64 62 }
+	secondary_unit_color  = { 59 64 62 }
+	tertiary_unit_color = { 0 0 0 }
+}
+REPLACE:TUR = {
+	color = { 126  203  120 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { turkish }
+	capital = STATE_EASTERN_THRACE
+}
+REPLACE:AUS = {
+	color = { 211  220  240 }
+
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { south_german }
+	capital = STATE_AUSTRIA
+	primary_unit_color = { 251 251 243 }
+	secondary_unit_color  = { 251 251 243 }
+	tertiary_unit_color = { 0 0 0 }
+}
+REPLACE:SGF = {
+	color = southgermanfederation
+	
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { south_german}
+	capital = STATE_BAVARIA
+	primary_unit_color = { 251 251 243 }
+	secondary_unit_color  = { 54 102 174 }
+	tertiary_unit_color = { 0 0 0 }
+}
+REPLACE:KUK = {
+	color = { 124 40 30 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	capital = STATE_CENTRAL_HUNGARY
+	cultures = { south_german hungarian romanian croat czech slovak slovene }
+	primary_unit_color = { 17 25 35 }
+	secondary_unit_color  = { 52 86 114 }
+	tertiary_unit_color = { 0 0 0 }
+}
+REPLACE:PRU = {
+	color = { 0 15 30 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { north_german }
+	capital = STATE_BRANDENBURG
+	primary_unit_color = { 28 65 98 }
+	secondary_unit_color  = { 58 81 94 }
+	tertiary_unit_color = { 0 0 0 }
+}
+REPLACE:FRA = {
+	color = { 20  50  210 }
+
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { french }
+	capital = STATE_ILE_DE_FRANCE
+	primary_unit_color = { 1 55 90 }
+	secondary_unit_color  = { 191 15 26 }
+	tertiary_unit_color = { 191 15 26 }
+}
+
+REPLACE:GBR = {
+	color = { 153  0 0 }
+
+	country_type = recognized
+
+	tier = empire	
+	
+	cultures = { british scottish }
+	capital = STATE_HOME_COUNTIES
+	primary_unit_color = { 197 58 17 }
+	secondary_unit_color  = { 36 54 67 }
+	tertiary_unit_color = { 0 0 0 }
+}
+REPLACE:SAR = {
+	color = { 97 209 251 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+	is_named_from_capital = yes
+	primary_unit_color = { 18 6 4 }
+	secondary_unit_color  = { 148 158 148 }
+	tertiary_unit_color = { 18 6 4 }
+}
+
+REPLACE:SIC = {
+	color = { 160  30  154 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { south_italian }
+	capital = STATE_CAMPANIA
+	primary_unit_color = { 40 77 50 }
+    secondary_unit_color  = { 142 143 136 }
+    tertiary_unit_color = { 0 0 0 }
+}
+REPLACE:TUS = {
+	color = { 216 30 5 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	capital = STATE_TUSCANY
+	cultures = { north_italian }
+	is_named_from_capital = yes
+}
+REPLACE:PAP = {
+	color = { 229 150 87 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { south_italian north_italian }
+	capital = STATE_LAZIO
+	primary_unit_color = { 26 25 33 }
+    secondary_unit_color  = { 227 90 73 }
+    tertiary_unit_color = { 26 25 33 }
+}
+REPLACE:RUS = {
+	color = { 0 86 63 }
+
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { russian }
+	capital = STATE_INGRIA
+	primary_unit_color = { 34 90 65 }
+	secondary_unit_color  = { 189 185 186 }
+	tertiary_unit_color = { 0 0 0 }
+}

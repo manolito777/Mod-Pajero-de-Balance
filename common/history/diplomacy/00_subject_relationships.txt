@@ -7,6 +7,10 @@
 		create_diplomatic_pact = {
 			country = c:PHI
 			type = colony
+		}
+        create_diplomatic_pact = {
+			country = c:PCO
+			type = colony
 		}		
 	}
 	c:NET ?= {
@@ -120,7 +124,7 @@
 		}
 		create_diplomatic_pact = {
 			country = c:SIL
-			type = puppet
+			type = colony
 		}
 		create_diplomatic_pact = {
 			country = c:ORG

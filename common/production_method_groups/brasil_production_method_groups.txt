@@ -1,0 +1,12 @@
+﻿INJECT:pmg_equipment = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		slave_exploitation
+	}
+}
+INJECT:pmg_hardwood = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_charcoal_kiln_building_charcoal_burner
+	}
+}

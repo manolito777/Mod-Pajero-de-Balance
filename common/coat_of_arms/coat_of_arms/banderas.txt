@@ -1,3 +1,12 @@
+BYZ = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "byzcoa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
 BHT = {
 pattern = "pattern_border_outlined_thin.dds"
 	color1 = "white"
@@ -1707,7 +1716,7 @@ TUR_dictatorship = {
 	color1 = "white"
     color2 = "white"
     textured_emblem = {
-		texture = "turdiccoa.dds"
+		texture = "turdiccoa.png"
 		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
 	}		
 }

@@ -1,4 +1,4 @@
-﻿CREATE_OR_REPLACE:je_french_radicalism = {
+﻿je_french_radicalism = {
 	icon = "gfx/interface/icons/event_icons/phrygian.dds"
 	
 	group = je_group_historical_content

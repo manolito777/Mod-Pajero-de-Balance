@@ -1,5 +1,5 @@
 ﻿### Otomanos
-CREATE_OR_REPLACE:ig_erringdesempleado = { # Happy
+ig_erringdesempleado = { # Happy
 	icon = "gfx/interface/icons/ig_trait_icons/veteran_consultation.dds"
 	min_approval = happy
 
@@ -7,5 +7,15 @@ CREATE_OR_REPLACE:ig_erringdesempleado = { # Happy
 		state_radicals_from_political_movements_mult = -0.2
 		country_bureaucracy_mult = 0.1
 		state_education_access_add = 0.1
+	}
+}
+ig_erringdesempleado2 = { # Happy
+	icon = "gfx/interface/icons/ig_trait_icons/veteran_consultation.dds"
+	min_approval = happy
+
+	modifier = {
+		state_radicals_from_political_movements_mult = -0.25
+		country_bureaucracy_mult = 0.125
+		state_education_access_add = 0.15
 	}
 }

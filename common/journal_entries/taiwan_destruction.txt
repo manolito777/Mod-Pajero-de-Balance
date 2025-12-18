@@ -1,4 +1,4 @@
-﻿CREATE_OR_REPLACE:taiwan_destruction_je = {
+﻿taiwan_destruction_je = {
     icon = "gfx/interface/icons/event_icons/qing_breakup.dds"
     
     group = je_group_internal_affairs

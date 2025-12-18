@@ -1,5 +1,5 @@
 ﻿
-CREATE_OR_REPLACE:berlinreform = {
+berlinreform = {
 	is_shown = {
 		any_scope_state = {
 			state_region = s:STATE_BRANDENBURG

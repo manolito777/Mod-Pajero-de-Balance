@@ -1,4 +1,4 @@
-﻿CREATE_OR_REPLACE:crimea_war_je = {
+﻿crimea_war_je = {
     icon = "gfx/interface/icons/event_icons/ottoman_breakup.dds"
 
 	group = je_group_russia_expansion

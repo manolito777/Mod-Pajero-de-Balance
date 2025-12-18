@@ -1,4 +1,4 @@
-﻿CREATE_OR_REPLACE:je_healthy_man = {
+﻿je_healthy_man = {
     icon = "gfx/interface/icons/event_icons/event_ottoman.dds"
     
     group = je_group_internal_affairs
@@ -27,18 +27,22 @@
 		}
 	}
 	on_fail = {
-		trigger_event = { id = sigma_china_events.1 }
+		trigger_event = { id = healthy_man_events.2 }
+		ig:ig_intelligentsia = {
+		add_ideology = ideology_young_turk
+		remove_ideology = ideology_liberal
+     	}
 	}
     complete = {
 		custom_tooltip = {
 			text = chimodwin
 			scope:journal_entry = {
-                "scripted_bar_progress(oto_bar)" >= 400
+                "scripted_bar_progress(oto_bar)" >= 500
             }
 		}
 	}
 	on_complete = {
-		trigger_event = { id = sigma_china_events.2 }
+		trigger_event = { id = healthy_man_events.3 }
 	}
 
     weight = 100
