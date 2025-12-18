@@ -1,0 +1,194 @@
+namespace = vistula_river
+##agregarelJEdecontruirelpuente
+vistula_river.1 = {
+    type = country_event
+    placement = root
+    
+    title = vistula_river.1.t
+    desc = vistula_river.1.d
+    flavor = vistula_river.1.f
+
+    event_image = {
+        video = "gfx/event_pictures/unspecific_gears_pistons.bk2"
+    }
+    
+    icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+    on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    
+    duration = 3
+
+    fire_only_once = yes
+    trigger = {
+        has_technology_researched = modern_sewerage
+        any_scope_state = {
+			state_region = s:STATE_GREATER_POLAND
+			is_incorporated = yes
+		}
+		any_scope_state = {
+			state_region = s:STATE_LESSER_POLAND
+			is_incorporated = yes
+		}
+		# Prevent event if bridge building already exists
+		NOT = {
+			any_scope_state = {
+				state_region = s:STATE_GREATER_POLAND
+				any_scope_building = {
+					is_building_type = building_kierbedź_bridge
+				}
+			}
+		}
+    } 
+
+	immediate = {
+		# Mark that the event has been shown for this country so the monthly check won't re-fire it
+		set_variable = {
+			name = vistula_river_event_shown
+			value = yes
+		}
+	}
+
+    option = {
+        name = vistula_river.1.a
+        default_option = yes
+		set_variable = {
+			name = vistula_river_decision_unlocked
+			value = yes
+		}
+    }
+}
+###Construirelpuente
+vistula_river.2 = {
+	type = country_event
+	placement = root
+	
+	title = vistula_river.2.t
+	desc = vistula_river.2.d
+	flavor = vistula_river.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_gears_pistons.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	duration = 3
+
+    fire_only_once = yes
+
+	option = {
+		name = vistula_river.2.a
+		default_option = yes
+
+		s:STATE_LESSER_POLAND = {
+			remove_state_trait = state_trait_isolated_vistula_banks
+		}
+		s:STATE_GREATER_POLAND = {
+			remove_state_trait = state_trait_isolated_vistula_banks
+		}
+		s:STATE_LESSER_POLAND = {
+			add_state_trait = state_trait_bridged_banks
+		}
+		s:STATE_GREATER_POLAND = {
+			add_state_trait = state_trait_bridged_banks
+		}
+	}
+}
+
+# Event fired when bridge is destroyed during war
+vistula_river.3 = {
+	type = country_event
+	placement = root
+	
+	title = vistula_river.3.t
+	desc = vistula_river.3.d
+	flavor = vistula_river.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_explosions.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	duration = 3
+
+	fire_only_once = no
+
+	option = {
+		name = vistula_river.3.a
+		default_option = yes
+
+		# Remove the bridge building from the state
+
+		# Change the trait to exploded
+		s:STATE_LESSER_POLAND = {
+			remove_state_trait = state_trait_bridged_banks
+		}
+		s:STATE_GREATER_POLAND = {
+			remove_state_trait = state_trait_bridged_banks
+		}
+		s:STATE_LESSER_POLAND = {
+			add_state_trait = state_trait_exploded_kierbedź_bridge
+		}
+		s:STATE_GREATER_POLAND = {
+			add_state_trait = state_trait_exploded_kierbedź_bridge
+		}
+
+		# Mark bridge as destroyed
+		set_variable = {
+			name = vistula_bridge_destroyed
+			value = yes
+		}
+	}
+}
+
+# Event fired when bridge is rebuilt
+vistula_river.4 = {
+	type = country_event
+	placement = root
+	
+	title = vistula_river.4.t
+	desc = vistula_river.4.d
+	flavor = vistula_river.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_gears_pistons.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	duration = 3
+
+	fire_only_once = no
+
+	option = {
+		name = vistula_river.4.a
+		default_option = yes
+
+		# Restore the trait to bridged
+		s:STATE_LESSER_POLAND = {
+			remove_state_trait = state_trait_exploded_kierbedź_bridge
+		}
+		s:STATE_GREATER_POLAND = {
+			remove_state_trait = state_trait_exploded_kierbedź_bridge
+		}
+		s:STATE_LESSER_POLAND = {
+			add_state_trait = state_trait_bridged_banks
+		}
+		s:STATE_GREATER_POLAND = {
+			add_state_trait = state_trait_bridged_banks
+		}
+
+		# Clear the destroyed flag
+		set_variable = {
+			name = vistula_bridge_destroyed
+			value = no
+		}
+	}
+}
