@@ -97,3 +97,12 @@ balkansensuredmod = {
 	unit_defense_mult = 0.05
 	unit_offense_mult = 0.05
 }
+turkish_assimilation1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_protestant_positive.dds
+	state_assimilation_mult = 100
+	state_conversion_mult = 100
+}
+unification_prestige_oto = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_add = 25
+}
