@@ -173,6 +173,10 @@ sick_man.2 = {
 			add_journal_entry = {
 				type = je_healthy_man
 			}
+		add_modifier = {
+			name = unification_prestige_oto
+			years = -1
+		}
 		}
 	
 	option = {
@@ -192,6 +196,10 @@ sick_man.2 = {
 		add_journal_entry = {
 				type = je_healthy_man
 			}
+		add_modifier = {
+			name = unification_prestige_oto
+			years = -1
+		}
 	}
 	option = {
 		name = sick_man.2.e
@@ -210,6 +218,10 @@ sick_man.2 = {
 		add_journal_entry = {
 				type = je_healthy_man
 			}
+		add_modifier = {
+			name = unification_prestige_oto
+			years = -1
+		}
 	}
 }
 
@@ -253,22 +265,6 @@ sick_man.3 = {
 					}
 				}
 			}
-			every_subject_or_below = {
-				limit = {
-					NOT = { any_overlord_or_above = { NOT = { ROOT = this } } }
-					OR = {
-						NOT = {
-							is_country_type = unrecognized
-						}
-						is_subject_type = subject_type_protectorate
-						is_subject_type = subject_type_dominion
-						is_subject_type = subject_type_puppet
-						is_subject_type = subject_type_colony
-						is_subject_type = subject_type_chartered_company
-					}
-				}
-				make_independent = yes
-			}
 		}
 		set_country_type = unrecognized
 		ruler = {
@@ -281,6 +277,9 @@ sick_man.3 = {
 			show_as_tooltip = {
 				add_contextless_journal_entry = je_great_eastern_crisis
 			}
+		}
+		add_journal_entry = {
+			type = je_restoring_rome
 		}
 	}
 }

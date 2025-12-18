@@ -201,9 +201,17 @@ restoring_rome_events.4 = {
 				type = je_restoring_rome2
 			}
 			create_character = {
-				ig_leader = yes
-				interest_group = ig_intelligentsia
-				ideology = ideology_radical
+				last_name = Romanov
+				historical = yes
+				culture = cu:russian
+				heir = yes
+				birth_date = 1820.4.29
+				interest_group = ig_landowners
+				ideology = ideology_market_liberal
+				traits = {
+					meticulous
+					romantic
+				}
 				on_created = {
 								set_character_as_ruler = yes
 							}
@@ -502,7 +510,11 @@ restoring_rome_events.1 = {
 		}
 		add_modifier = {
 				name = turkish_assimilation
-				years= 8
+				years= -1
+			}
+		add_modifier = {
+				name = turkish_assimilation1
+				years= 1
 			}
 		  }
 		  
