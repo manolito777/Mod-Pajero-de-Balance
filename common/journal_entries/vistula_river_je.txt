@@ -1,0 +1,304 @@
+﻿#### Journal Entry: comienzo de la construcción del puente
+vistula_river_je_1 = {
+	icon = "gfx/interface/icons/event_icons/nbf.dds"
+
+	group = je_group_internal_affairs
+
+	# Increment the survey counter once per month (Suez-style)
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = survey_vistula_taken
+				add = 1
+			}
+		}
+	}
+
+	current_value = {
+		value = root.var:survey_vistula_taken
+	}
+
+	goal_add_value = {
+		value = 12
+	}
+
+	complete = {
+		scope:journal_entry = { is_goal_complete = yes }
+	}
+
+	on_complete = {
+		remove_modifier = modifier_surveying_vistula
+		# mark survey complete for this country
+		set_variable = {
+			name = survey_vistula_complete
+			value = yes
+		}
+		# Start the building phase by adding the build progress JE
+		add_journal_entry = { type = vistula_river_build_je }
+		# Also set a build-unlock variable for compatibility with other scripts
+		set_variable = {
+			name = vistula_river_build_unlocked
+			value = yes
+		}
+	}
+
+	invalid = {
+		OR = {
+			NOT = { has_variable = survey_vistula_taken }
+			s:STATE_GREATER_POLAND = {
+				any_scope_state = {
+					NOT = { owner = ROOT }
+				}
+			}
+		}
+	}
+
+	on_invalid = {
+		remove_variable = survey_vistula_taken
+		remove_modifier = modifier_surveying_vistula
+	}
+
+	progressbar = yes
+
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+### Build progress journal entry (bridge construction)
+vistula_river_build_je = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_internal_affairs
+
+	# Complete when the bridge reaches 90% occupancy
+	complete = {
+		s:STATE_GREATER_POLAND = {
+			any_scope_state = {
+				owner = root
+				any_scope_building = {
+					is_building_type = building_kierbedź_bridge
+					occupancy >= 0.9
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		set_variable = {
+			name = vistula_river_build_complete
+			value = yes
+		}
+		trigger_event = { id = vistula_river.2 days = 0 popup = yes }
+	}
+
+	invalid = {
+		OR = {
+			NOT = { has_variable = survey_vistula_complete }
+			s:STATE_GREATER_POLAND = {
+				any_scope_state = {
+					NOT = { owner = ROOT }
+				}
+			}
+		}
+	}
+
+
+	progressbar = yes
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+# Bridge destruction JE (30 days)
+vistula_river_destroy_je = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_internal_affairs
+
+	# Time-based destruction: 30 days
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = vistula_destroy_progress
+				add = 1
+			}
+		}
+	}
+
+	current_value = {
+		value = 0
+	}
+
+	goal_add_value = {
+		value = 1
+	}
+
+	complete = {
+		scope:journal_entry = { progress_through_date = 30 }
+	}
+
+	on_complete = {
+		# Remove the bridge building from the state
+		s:STATE_GREATER_POLAND = {
+			any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_kierbedź_bridge
+					remove_building = yes
+				}
+			}
+		}
+
+		# Change the trait to exploded
+		s:STATE_LESSER_POLAND = {
+			remove_state_trait = state_trait_bridged_banks
+		}
+		s:STATE_GREATER_POLAND = {
+			remove_state_trait = state_trait_bridged_banks
+		}
+		s:STATE_LESSER_POLAND = {
+			add_state_trait = state_trait_exploded_kierbedź_bridge
+		}
+		s:STATE_GREATER_POLAND = {
+			add_state_trait = state_trait_exploded_kierbedź_bridge
+		}
+
+		# Mark bridge as destroyed
+		set_variable = {
+			name = vistula_bridge_destroyed
+			value = yes
+		}
+
+		# Clear progress
+		set_variable = {
+			name = vistula_destroy_progress
+			value = 0
+		}
+
+		# Trigger destruction event
+		trigger_event = { id = vistula_river.3 days = 0 popup = yes }
+	}
+
+	invalid = {
+		OR = {
+			# If state is lost
+			s:STATE_GREATER_POLAND = {
+				any_scope_state = {
+					NOT = { owner = ROOT }
+				}
+			}
+			# If no longer at war
+			is_at_war = no
+		}
+	}
+
+	on_invalid = {
+		set_variable = {
+			name = vistula_destroy_progress
+			value = 0
+		}
+	}
+
+	progressbar = yes
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+# Rebuild progress journal entry (180 days / 6 months)
+vistula_river_rebuild_je = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_internal_affairs
+
+	# Time-based rebuild: 180 days
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = vistula_rebuild_progress
+				add = 1
+			}
+		}
+	}
+
+	current_value = {
+		value = root.var:vistula_rebuild_progress
+	}
+
+	goal_add_value = {
+		value = 6
+	}
+
+	complete = {
+		scope:journal_entry = { progress_through_date = 180 }
+	}
+
+	on_complete = {
+		# Rebuild complete - reconstruct the bridge building
+		s:STATE_GREATER_POLAND = {
+			add_building = {
+				building_type = building_kierbedź_bridge
+				level = 1
+			}
+		}
+
+		# Restore the trait to bridged
+		s:STATE_LESSER_POLAND = {
+			remove_state_trait = state_trait_exploded_kierbedź_bridge
+		}
+		s:STATE_GREATER_POLAND = {
+			remove_state_trait = state_trait_exploded_kierbedź_bridge
+		}
+		s:STATE_LESSER_POLAND = {
+			add_state_trait = state_trait_bridged_banks
+		}
+		s:STATE_GREATER_POLAND = {
+			add_state_trait = state_trait_bridged_banks
+		}
+
+		# Clear the destroyed flag
+		set_variable = {
+			name = vistula_bridge_destroyed
+			value = no
+		}
+
+		# Clear rebuild progress
+		set_variable = {
+			name = vistula_rebuild_progress
+			value = 0
+		}
+
+		# Trigger rebuild completion event
+		trigger_event = { id = vistula_river.4 days = 0 popup = yes }
+	}
+
+	invalid = {
+		OR = {
+			# If state is lost, cancel rebuild
+			s:STATE_GREATER_POLAND = {
+				any_scope_state = {
+					NOT = { owner = ROOT }
+				}
+			}
+			# If bridge somehow exists again, cancel
+			s:STATE_GREATER_POLAND = {
+				any_scope_state = {
+					any_scope_building = {
+						is_building_type = building_kierbedź_bridge
+					}
+				}
+			}
+		}
+	}
+
+	on_invalid = {
+		set_variable = {
+			name = vistula_rebuild_progress
+			value = 0
+		}
+	}
+
+	progressbar = yes
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+
+
