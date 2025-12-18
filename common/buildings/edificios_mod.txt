@@ -1,0 +1,34 @@
+﻿building_kierbedź_bridge = {
+    building_group = bg_monuments
+	icon = "gfx/interface/icons/building_icons/building_kierbedź_bridge.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+	
+	entity_not_constructed = { }
+	entity_constructed = { "wonder_kierbedź_bridge_entity" }
+
+	production_method_groups = {
+		pmg_base_building_kierbedź_bridge
+	}
+
+	required_construction = 2000
+
+	potential = {
+		state_region = s:STATE_GREATER_POLAND
+	}
+
+	# Bridge can only be built after the Vistula survey is complete
+	possible = {
+		owner = {
+			custom_tooltip = {
+				text = vistula_survey_complete_tooltip
+				has_variable = survey_vistula_complete
+			}
+		}
+	}
+    
+	ai_value = 10000
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
