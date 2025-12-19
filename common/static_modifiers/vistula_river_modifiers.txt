@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿ modifier_surveying_vistula = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_bureaucracy_add = -500
@@ -15,3 +16,22 @@ modifier_rebuilding_vistula = {
 	country_bureaucracy_add = -800
     country_expenses_add = 8000
 }
+=======
+ modifier_surveying_vistula = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_bureaucracy_add = -500
+    country_expenses_add = 5000
+}
+
+modifier_destroying_vistula = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_military.dds
+	country_bureaucracy_add = -300
+    country_expenses_add = 3000
+}
+
+modifier_rebuilding_vistula = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_bureaucracy_add = -800
+    country_expenses_add = 8000
+}
+>>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d

@@ -672,3 +672,7 @@
  vistula_river_destroy_je_reason: "As war threatens the heart of the region, the Kierbedź Bridge has become a strategic liability. What once served trade and unity may now serve the enemy"
  vistula_river_rebuild_je: "Restoring the Crossing"
  vistula_river_rebuild_je_reason: "With the guns fallen silent, attention turns to recovery. The ruins of the Kierbedź Bridge stand as a reminder of loss — and of what may yet be rebuilt."
+<<<<<<< HEAD
+=======
+ vistula_survey_complete_tooltip: "Has Completed the Vistula River Survey"
+>>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿REPLACE_OR_CREATE:state_trait_ardennes_forest = {
     icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
 
@@ -54,3 +55,61 @@ REPLACE_OR_CREATE:state_trait_exploded_kierbedz_bridge = {
 		battle_defense_owned_province_mult = 0.1
 	}
 }
+=======
+﻿REPLACE_OR_CREATE:state_trait_ardennes_forest = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.2
+        state_infrastructure_mult = -0.1
+	}
+}
+REPLACE_OR_CREATE:state_trait_wilhelmshaven = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+
+	modifier = {
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		building_port_throughput_add = 0.1
+		state_trade_capacity_mult = 0.15
+		state_building_naval_base_max_level_add = 10
+		state_market_access_price_impact = 0.05
+	}
+}
+REPLACE_OR_CREATE:state_trait_vistula_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+
+	modifier = {
+		state_market_access_price_impact = 0.05
+		state_infrastructure_add = 20
+	}
+}
+REPLACE_OR_CREATE:state_trait_isolated_vistula_banks = {
+	icon = "gfx/interface/icons/state_traits_icons_mod/isolated_vistula_banks.dds"
+
+	modifier = {
+		state_market_access_price_impact = -0.1
+		state_migration_pull_add = -20
+		state_infrastructure_add = -20
+		state_construction_mult = -0.10
+		battle_defense_owned_province_mult = 0.1
+	}
+}
+REPLACE_OR_CREATE:state_trait_bridged_banks = {
+	icon = "gfx/interface/icons/state_traits_icons_mod/bridged_banks.dds"
+
+	modifier = { 
+		state_construction_mult = 0.1
+		state_trade_capacity_mult = 0.1
+	}
+}
+REPLACE_OR_CREATE:state_trait_exploded_kierbedź_bridge = {
+	icon = "gfx/interface/icons/state_traits_icons_mod/exploded_kierbedź_bridge.dds"
+
+	modifier = { 
+		state_market_access_price_impact = -0.1
+		state_infrastructure_add = -20
+		battle_defense_owned_province_mult = 0.1
+	}
+}
+>>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d

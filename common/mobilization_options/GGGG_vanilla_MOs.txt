@@ -1,6 +1,10 @@
 ﻿# Overrides vanilla definitions
 
+<<<<<<< HEAD
 REPLACE:mobilization_option_basic_supplies = {
+=======
+mobilization_option_basic_supplies = {
+>>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d
 	texture = "gfx/interface/icons/mobilization_options/basic_supplies.dds"
 	can_be_turned_off = {
 		custom_tooltip = {
@@ -33,7 +37,11 @@ REPLACE:mobilization_option_basic_supplies = {
 	group = supplies
 }
 
+<<<<<<< HEAD
 REPLACE:mobilization_option_extra_supplies = {
+=======
+mobilization_option_extra_supplies = {
+>>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d
 	texture = "gfx/interface/icons/mobilization_options/extra_supplies.dds"
 
 	possible = {
@@ -86,7 +94,11 @@ REPLACE:mobilization_option_extra_supplies = {
 	group = supplies
 }
 
+<<<<<<< HEAD
 REPLACE:mobilization_option_luxurious_supplies = {
+=======
+mobilization_option_luxurious_supplies = {
+>>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d
 	texture = "gfx/interface/icons/mobilization_options/luxurious_supplies.dds"
 
 	possible = {

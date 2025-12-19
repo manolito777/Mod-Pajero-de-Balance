@@ -598,7 +598,11 @@ company_Phoenix_Porphyrogenitus = {
 	preferred_headquarters = { STATE_EASTERN_THRACE }
 	
 	possible_prestige_goods = {
+<<<<<<< HEAD
 		prestige_good_peugeot_automobiles
+=======
+		prestige_good_Phoenix_Porphyrogenitus_automobiles
+>>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d
 	}
 
 	building_types = { #13

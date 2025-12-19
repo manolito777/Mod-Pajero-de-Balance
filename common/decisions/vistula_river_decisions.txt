@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿vistula_river = {
     # Decision becomes visible only after the event sets the unlock variable
     is_shown = {
@@ -167,3 +168,174 @@ stop_vistula_rebuild = {
 	}
 }
 
+=======
+﻿vistula_river = {
+    # Decision becomes visible only after the event sets the unlock variable
+    is_shown = {
+        has_variable = vistula_river_decision_unlocked
+        NOT = { has_variable = vistula_river_decision_taken }
+    }
+
+    possible = {
+        # Optional: require the same tech as the event or leave empty
+    }
+
+    when_taken = {
+        # Mark the decision as taken so it won't show again
+        set_variable = {
+            name = vistula_river_decision_taken
+            value = yes
+        }
+
+        # Follow the Suez-style pattern: start a survey counter (local var) and add modifier
+        set_variable = {
+            name = survey_vistula_taken
+            value = 0
+        }
+
+        add_modifier = {
+            name = modifier_surveying_vistula
+        }
+
+        # Add the progress journal entry that increments the survey counter monthly
+        add_journal_entry = {
+            type = vistula_river_je_1
+        }
+    }
+
+    ai_chance = {
+        value = 5
+    }
+}
+
+# Decision to destroy/sabotage the bridge (only during war)
+vistula_bridge_sabotage = {
+    is_shown = {
+        # Bridge must exist and be built
+        any_scope_state = {
+            state_region = s:STATE_GREATER_POLAND
+            has_state_trait = state_trait_bridged_banks
+        }
+        any_scope_state = {
+            state_region = s:STATE_LESSER_POLAND
+            has_state_trait = state_trait_bridged_banks
+        }
+        # Must be at war
+        is_at_war = yes
+        # Must not already be destroyed or destroying
+        NOT = { has_journal_entry = vistula_river_destroy_je }
+        NOT = { has_variable = vistula_bridge_destroyed }
+    }
+
+    when_taken = {
+        # Add destruction cost modifier
+        add_modifier = {
+            name = modifier_destroying_vistula
+        }
+        # Start the destruction JE (30 days)
+        add_journal_entry = { type = vistula_river_destroy_je }
+    }
+
+    ai_chance = {
+        value = 50
+        if = {
+            limit = {
+                is_at_war = yes
+            }
+            multiply = 2
+        }
+    }
+}
+
+# Decision to rebuild the bridge after it's been destroyed
+vistula_bridge_rebuild = {
+    is_shown = {
+        # Bridge must be destroyed (global state, not country-specific)
+        any_scope_state = {
+            state_region = s:STATE_GREATER_POLAND
+            has_state_trait = state_trait_exploded_kierbedź_bridge
+        }
+        # Must own the state
+        any_scope_state = {
+            state_region = s:STATE_GREATER_POLAND
+            owner = ROOT
+        }
+        # Must not currently be rebuilding
+        NOT = { has_journal_entry = vistula_river_rebuild_je }
+    }
+
+
+    when_taken = {
+        # Add rebuild cost modifier
+        add_modifier = {
+            name = modifier_rebuilding_vistula
+        }
+        # Start the rebuild JE (180 days / 6 months)
+        add_journal_entry = { type = vistula_river_rebuild_je }
+    }
+
+    ai_chance = {
+        value = 75
+        if = {
+            limit = {
+                is_at_war = no
+            }
+            multiply = 1.5
+        }
+    }
+}
+
+# Stop survey decision
+stop_vistula_survey = {
+	is_shown = {
+		has_modifier = modifier_surveying_vistula
+	}
+	possible = {
+		has_modifier = modifier_surveying_vistula
+	}
+	when_taken = {
+		remove_variable = survey_vistula_taken
+		remove_modifier = modifier_surveying_vistula
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+
+# Stop destruction decision
+stop_vistula_destruction = {
+	is_shown = {
+		has_journal_entry = vistula_river_destroy_je
+	}
+	possible = {
+		has_modifier = modifier_destroying_vistula
+	}
+	when_taken = {
+		remove_variable = vistula_destroy_progress
+		remove_modifier = modifier_destroying_vistula
+		remove_journal_entry = vistula_river_destroy_je
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+
+# Stop rebuild decision
+stop_vistula_rebuild = {
+	is_shown = {
+		has_journal_entry = vistula_river_rebuild_je
+	}
+	possible = {
+		has_modifier = modifier_rebuilding_vistula
+	}
+	when_taken = {
+		remove_variable = vistula_rebuild_progress
+		remove_modifier = modifier_rebuilding_vistula
+		remove_journal_entry = vistula_river_rebuild_je
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+
+>>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d
