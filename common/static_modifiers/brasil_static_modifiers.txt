@@ -24,5 +24,5 @@ REPLACE:brazil_slaving_pariah_modifier = {
 }
 brasil_brasileiro_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
-	state_working_adult_ratio_add = 0.1
+	state_slave_import_mult = 0.1
 }
