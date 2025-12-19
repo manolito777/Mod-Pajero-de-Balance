@@ -13,7 +13,7 @@
 		custom_tooltip = {
 			text = chimodwin
 			scope:journal_entry = {
-                "scripted_bar_progress(oto_bar)" >= 12
+                "scripted_bar_progress(rome_revolt_bar)" >= 12
             }
 		}
 	}
