@@ -8,7 +8,8 @@ Swedish_efficiency = {
 	can_research = no
 	
 	modifier = {
-		state_working_adult_ratio_add = 0.05
+		state_working_adult_ratio_add = 0.1
+		battle_casualties_mult = -0.3
 	}
 	
 	ai_weight = {
