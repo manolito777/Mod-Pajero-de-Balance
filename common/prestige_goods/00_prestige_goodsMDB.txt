@@ -21,3 +21,8 @@ prestige_good_windjammers = {
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_windjammer.dds"
 }
+prestige_good_Phoenix_Porphyrogenitus_automobiles = {
+	base_good = automobiles
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_good_Phoenix_Porphyrogenitus.dds"
+}
