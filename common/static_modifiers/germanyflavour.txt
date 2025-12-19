@@ -79,7 +79,7 @@ kulloss = {
 ger_explosion_demografica = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
 
-	state_birth_rate_mult = 0.15
+	state_birth_rate_mult = 0.225
 }
 german_unifier_ruler = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds

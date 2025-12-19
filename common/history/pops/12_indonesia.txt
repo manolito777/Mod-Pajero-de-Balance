@@ -928,37 +928,25 @@
 	s:STATE_MINDANAO = {
 		region_state:PHI = {
 			create_pop = {
-				culture = moro
-				religion = sunni
-				size = 30321
-			}
-			create_pop = {
-				culture = bornean
-				religion = catholic
-				size = 4400
-			}
-			create_pop = {
-				culture = filipino
-				size = 235800
-			}
-			create_pop = {
-				culture = filipino
-				religion = animist
-				size = 18400
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = filipino
-				religion = animist
-				size = 20208
-			}
-			create_pop = {
-				culture = bornean
-				size = 24053
-			}
-			create_pop = {
 				culture = spanish
-				size = 604
+				size = 12
+			}
+			create_pop = {
+				culture = filipino_mestizo
+				size = 286
+			}
+			create_pop = {
+				culture = visayan
+				size = 50323
+			}
+			create_pop = {
+				culture = lumad
+				religion = catholic
+				size = 6002
+			}
+			create_pop = {
+				culture = lumad
+				size = 41463
 			}
 		}
 		region_state:MGD = {
@@ -967,23 +955,36 @@
 				size = 206000
 			}
 			create_pop = {
-				culture = filipino
-				size = 35800
+				culture = filipino_mestizo
+				size = 5800
 			}
 			create_pop = {
-				culture = filipino
-				religion = animist
-				size = 20311
+				culture = lumad
+				size = 50311
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = filipino
+				culture = lumad
 				religion = animist
-				size = 10000
+				size = 10020
 			}
 			create_pop = {
 				culture = bornean
 				size = 20004
+			}
+		}
+		region_state:MND = {
+			create_pop = {
+				culture = lumad
+				size = 451311
+			}
+			create_pop = {
+				culture = moro
+				size = 50123
+			}
+			create_pop = {
+				culture = visayan
+				size = 4801
 			}
 		}
 		region_state:SUL = {
@@ -997,14 +998,12 @@
 				size = 9600
 			}
 			create_pop = {
-				culture = filipino
-				religion = animist
+				culture = lumad
 				size = 17200
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = filipino
-				religion = animist
+				culture = lumad
 				size = 6300
 			}
 			create_pop = {

@@ -1,0 +1,9 @@
+﻿REPLACE:ig_trait_fazenda_ibicaba = {
+	icon = "gfx/interface/icons/ig_trait_icons/honest_work.dds"
+	min_approval = happy
+	
+	modifier = {
+		state_working_adult_ratio_add = 0.05
+		state_slave_import_mult = 0.35
+	}
+}

@@ -77,14 +77,16 @@ REPLACE:IBE = {
 	}
 }
 REPLACE:GER = {
-	geographic_region = geographic_region_greater_germany
+	states = {
+		STATE_BRANDENBURG STATE_BAVARIA STATE_WESTPHALIA STATE_MECKLENBURG STATE_ELBE STATE_SCHLESWIG_HOLSTEIN STATE_ANHALT STATE_RHINELAND STATE_NORTH_RHINE STATE_RUHR STATE_FRANCONIA STATE_BADEN STATE_HANNOVER STATE_AUSTRIA STATE_ALSACE_LORRAINE STATE_WURTTEMBERG STATE_HESSE STATE_BRUNSWICK STATE_SAXONY
+	}
 
 	is_major_formation = yes
 
 	unification_play = dp_unify_germany
 	leadership_play = dp_leadership_germany
 
-	required_states_fraction = 0.73
+	required_states_fraction = 0.95
 
 	ai_will_do = { has_technology_researched = nationalism }
 

@@ -124,3 +124,36 @@ ideology_young_turk = {
 		law_womens_suffrage = neutral
 	}
 }
+#####CHINA
+REPLACE:ideology_confucian = {
+	icon = "gfx/interface/icons/ideology_icons/confucian.dds"
+
+	lawgroup_church_and_state = {
+		law_state_religion = approve
+		law_freedom_of_conscience = approve
+		law_total_separation = disapprove
+		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_theocracy = neutral
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = neutral
+		law_council_republic = strongly_disapprove
+	}
+
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_approve
+		law_censorship = approve
+		law_right_of_assembly = neutral
+		law_protected_speech = disapprove
+	}
+	lawgroup_education_system = {
+		law_private_schools = approve
+		law_public_schools = disapprove
+		law_religious_schools = neutral
+		law_no_schools = disapprove
+	}
+}

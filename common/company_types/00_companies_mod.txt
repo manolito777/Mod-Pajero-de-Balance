@@ -361,3 +361,305 @@ company_nhm = {
 		value = 3 # Higher base value for flavored companies
 	}
 }
+
+# Sursock and Brothers
+company_Sursock = {
+	icon = "gfx/interface/icons/company_icons/basic_shipyards.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	preferred_headquarters = { STATE_LEBANON }
+	
+	possible_prestige_goods = {
+		prestige_good_generic_clothes
+	}
+
+	building_types = { #22
+		building_textile_mill
+		building_cotton_plantation
+		building_silk_plantation
+	}
+	
+	extension_building_types = {
+		building_dye_plantation
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_arabic
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_LEBANON
+			}		
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_LEBANON
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mill
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.24 #12
+		building_textile_mill_throughput_add = 0.1
+		building_cotton_plantation_throughput_add = 0.1
+	}	
+	
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_LEBANON
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_textile_mill = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_LEBANON
+			}
+		}
+	}
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+company_SarsilmazArms = {
+	icon = "gfx/interface/icons/company_icons/basic_metalworks.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	preferred_headquarters = { STATE_EASTERN_THRACE }
+
+	possible_prestige_goods = {
+		prestige_good_generic_small_arms
+	}
+	
+	building_types = { #27
+		building_arms_industry
+		building_munition_plant
+	}
+	
+	extension_building_types = {
+		building_artillery_foundry
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_anatolia
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_EASTERN_THRACE
+			}
+		}
+	}
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_EASTERN_THRACE
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_arms_industry
+					is_building_type = building_munition_plant
+				}
+				level >= 3
+			}
+		}
+		has_modifier = unification_prestige_oto
+	}
+	
+	prosperity_modifier = {
+		unit_army_offense_mult = 0.05 #16
+		unit_army_defense_mult = 0.05 #10
+		battle_casualties_mult = -0.1
+	}
+
+
+	ai_will_do = {
+		has_technology_researched = rifling
+		any_scope_state = {
+			state_region = s:STATE_EASTERN_THRACE
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_arms_industry = {
+			level = 3
+			state_trigger = {
+				state_region = s:STATE_EASTERN_THRACE
+			}
+		}
+		
+		building_munition_plant = {
+			level = 3
+			state_trigger = {
+				state_region = s:STATE_EASTERN_THRACE
+			}
+		}
+	}
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}
+
+# Saudi Binladin Group
+company_SaudiBinLadin = {
+	icon = "gfx/interface/icons/company_icons/Binladen.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	preferred_headquarters = { STATE_LEBANON }
+	
+	possible_prestige_goods = {
+		prestige_good_generic_explosives
+	}
+
+	building_types = { #13
+		building_steel_mill
+		building_tooling_workshop
+		building_explosives_factory
+	}
+	
+	extension_building_types = {
+		building_iron_mine
+		building_coal_mine
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_arabic
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_LEBANON
+			}	
+		}
+	}
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_LEBANON
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_steel_mill
+				level >= 3
+			}
+		}
+		has_modifier = unification_prestige_oto
+	}
+	
+	prosperity_modifier = {
+		building_construction_sector_throughput_add = 0.05
+		country_max_weekly_construction_progress_add = 10
+		building_explosives_factory_throughput_add = 0.1
+	}	
+	
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_LEBANON
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_steel_mill = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_LEBANON
+			}
+		}
+	}
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+company_Phoenix_Porphyrogenitus = {
+	icon = "gfx/interface/icons/company_icons/Phoenix_Porphyrogenitus.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	preferred_headquarters = { STATE_EASTERN_THRACE }
+	
+	possible_prestige_goods = {
+		prestige_good_peugeot_automobiles
+	}
+
+	building_types = { #13
+		building_iron_mine
+		building_steel_mill
+		building_tooling_workshop
+		building_coal_mine
+	}
+	
+	extension_building_types = {
+		building_automotive_industry
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_anatolia
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_EASTERN_THRACE
+			}	
+		}
+	}
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_EASTERN_THRACE
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_steel_mill
+				level >= 3
+			}
+		}
+		has_modifier = turkish_assimilation
+			
+	}
+	
+	prosperity_modifier = {
+		building_construction_sector_throughput_add = 0.1
+		country_max_weekly_construction_progress_add = 20
+		state_birth_rate_mult = 0.05
+	}	
+	
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_EASTERN_THRACE
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_steel_mill = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_EASTERN_THRACE
+			}
+		}
+	}
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}

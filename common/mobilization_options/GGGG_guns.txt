@@ -26,7 +26,7 @@ GGGG_mo_firearms = {
     on_activate = {
         if = { # Allow free changes during first week of game so AI can pick for themselves what they want
             limit = { # b/c otherwise we have to overwrite vanilla military formation histories
-              
+
             }
             custom_tooltip = {
                 text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
@@ -41,7 +41,7 @@ GGGG_mo_firearms = {
     on_deactivate = {
         if = { # Allow free changes during first week of game so AI can pick for themselves what they want
             limit = { # b/c otherwise we have to overwrite vanilla military formation histories
-              
+
             }
             custom_tooltip = {
                 text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
@@ -108,7 +108,7 @@ GGGG_mo_percussion_caps = {
     on_activate = {
         if = {
             limit = {
-            
+
             }
             custom_tooltip = {
                 text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
@@ -123,7 +123,7 @@ GGGG_mo_percussion_caps = {
     on_deactivate = {
         if = {
             limit = {
-             
+
             }
             custom_tooltip = {
                 text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
@@ -140,13 +140,13 @@ GGGG_mo_percussion_caps = {
     }
     
     upkeep_modifier = {
-        goods_input_ammunition_add = 0.5
+        goods_input_small_arms_add = 0.5
+        goods_input_ammunition_add = 1
     }
     
     unit_modifier = {
-        unit_offense_add   = 5
-        unit_defense_add   = 5
-        unit_kill_rate_add = 0.03
+        unit_offense_mult   = 0.05
+        unit_defense_mult   = 0.05
     }
     
     ai_weight = {
@@ -177,7 +177,7 @@ GGGG_mo_rifling = {
     on_activate = {
         if = {
             limit = {
-              
+
             }
             custom_tooltip = {
                 text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
@@ -192,7 +192,7 @@ GGGG_mo_rifling = {
     on_deactivate = {
         if = {
             limit = {
-                
+
             }
             custom_tooltip = {
                 text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
@@ -210,12 +210,12 @@ GGGG_mo_rifling = {
     
     upkeep_modifier_unscaled = {
         goods_input_small_arms_mult = 0.05
+        goods_input_ammunition_add = 0.5
     }
     
     unit_modifier = {
-        unit_offense_add   = 5
-        unit_defense_add   = 5
-        unit_kill_rate_add = 0.03
+        unit_offense_mult   = 0.05
+        unit_defense_mult   = 0.05
     }
     
     ai_weight = {
@@ -254,7 +254,7 @@ GGGG_mo_breechblocks = {
     on_activate = {
         if = {
             limit = {
-              
+
             }
             custom_tooltip = {
                 text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
@@ -269,7 +269,7 @@ GGGG_mo_breechblocks = {
     on_deactivate = {
         if = {
             limit = {
-               
+
             }
             custom_tooltip = {
                 text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
@@ -286,14 +286,14 @@ GGGG_mo_breechblocks = {
     }
     
     upkeep_modifier_unscaled = {
-        goods_input_small_arms_mult = 0.10
-        goods_input_ammunition_mult = 0.10
+        goods_input_small_arms_mult = 0.5
+        goods_input_ammunition_mult = 0.5
     }
     
     unit_modifier = {
-        unit_offense_add   = 10
-        unit_defense_add   = 10
-        unit_kill_rate_add = 0.05
+        unit_offense_mult   = 0.1
+        unit_defense_mult   = 0.1
+        unit_morale_damage_mult = 0.1
     }
     
     ai_weight = {
@@ -335,7 +335,7 @@ GGGG_mo_bolt_actions = {
     on_activate = {
         if = {
             limit = {
-            
+
             }
             custom_tooltip = {
                 text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
@@ -350,7 +350,7 @@ GGGG_mo_bolt_actions = {
     on_deactivate = {
         if = {
             limit = {
-            
+
             }
             custom_tooltip = {
                 text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
@@ -367,14 +367,15 @@ GGGG_mo_bolt_actions = {
     }
     
     upkeep_modifier_unscaled = {
-        goods_input_small_arms_mult = 0.10
-        goods_input_ammunition_mult = 0.10
+        goods_input_small_arms_mult = 0.6
+        goods_input_ammunition_mult = 0.6
+        goods_input_steel_add = 1
     }
     
     unit_modifier = {
-        unit_offense_add   = 10
-        unit_defense_add   = 10
-        unit_kill_rate_add = 0.05
+        unit_offense_mult   = 0.1
+        unit_defense_mult   = 0.1
+        unit_morale_damage_mult = 0.15
     }
     
     ai_weight = {

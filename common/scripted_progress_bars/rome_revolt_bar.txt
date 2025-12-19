@@ -12,8 +12,7 @@
 
 			add = {
 				desc = "ROME_PASSIVE_1"
-				value = 1
+				value = 4
 			}
 		}
-		
 	}
