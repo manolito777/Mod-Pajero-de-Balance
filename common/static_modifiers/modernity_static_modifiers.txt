@@ -5,7 +5,7 @@
 	country_prestige_mult = -0.3
 	country_loan_interest_rate_mult = 0.3
 	unit_offense_mult = -0.3
-	unit_defense_mult = -0.3
+
 	state_market_access_price_impact = -0.15
 	state_capitalists_investment_pool_efficiency_mult = -0.2
 	state_tax_waste_add = 0.2
@@ -17,7 +17,7 @@ modifier_towards_to_modernity2 = {
 	country_prestige_mult = -0.25
 	country_loan_interest_rate_mult = 0.25
 	unit_offense_mult = -0.25
-	unit_defense_mult = -0.25
+	
 	state_market_access_price_impact = -0.1
 	state_capitalists_investment_pool_efficiency_mult = -0.15
 		state_tax_waste_add = 0.15
@@ -29,7 +29,7 @@ modifier_towards_to_modernity3 = {
 	country_prestige_mult = -0.2
 	country_loan_interest_rate_mult = 0.2
 	unit_offense_mult = -0.2
-	unit_defense_mult = -0.2
+
 	state_market_access_price_impact = -0.05
 	state_capitalists_investment_pool_efficiency_mult = -0.1
 		state_tax_waste_add = 0.1
@@ -41,7 +41,7 @@ modifier_towards_to_modernity4 = {
 	country_prestige_mult = -0.15
 	country_loan_interest_rate_mult = 0.15
 	unit_offense_mult = -0.15
-	unit_defense_mult = -0.15
+
 	state_capitalists_investment_pool_efficiency_mult = -0.05
 		state_tax_waste_add = 0.05
 }
@@ -52,7 +52,7 @@ modifier_towards_to_modernity5 = {
 	country_prestige_mult = -0.1
 	country_loan_interest_rate_mult = 0.1
 	unit_offense_mult = -0.1
-	unit_defense_mult = -0.1
+
 	state_capitalists_investment_pool_efficiency_mult = -0.05
 }
 modifier_towards_to_modernity6 = {
@@ -62,5 +62,5 @@ modifier_towards_to_modernity6 = {
 	country_prestige_mult = -0.05
 	country_loan_interest_rate_mult = 0.05
 	unit_offense_mult = -0.05
-	unit_defense_mult = -0.05
+
 }

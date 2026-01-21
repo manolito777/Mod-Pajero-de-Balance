@@ -1,0 +1,659 @@
+﻿#######italy austrian path
+sigmasiccompromise = {
+	name = "sigmasiccompromise_button"
+	desc = "sigmasiccompromise_button_desc"
+
+	possible = {
+		NOT = { has_variable = sigmasiccompromisevar }
+	c:SIC ?= {
+		relations:root >= relations_threshold:amicable
+		}
+	exists = c:SIC
+	c:SIC = {
+	
+	is_subject = no
+		
+	}
+}	
+	effect = {
+		set_variable = sigmasiccompromisevar
+		trigger_event = { 
+		id = italy_events.3
+		}
+	}
+}
+letrantreaty = {
+	name = "letrantreaty_button"
+	desc = "letrantreaty_button_desc"
+
+	possible = {
+	c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_UMBRIA
+			country_or_subject_owns_entire_state_region = STATE_ROMAGNA
+			}
+	c:PAP ?= {
+		relations:root >= relations_threshold:cordial
+		}
+	NOT = { has_variable = letrantreatyvar
+            c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_LAZIO
+			}	
+		}
+	exists = c:PAP
+
+	}
+	
+	effect = {
+	
+		trigger_event = { 
+		id = italy_events.5
+		}
+	}
+}
+luccanquestion = {
+	name = "luccanquestion_button"
+	desc = "luccanquestion_button_desc"
+
+	possible = {
+	NOT = {
+	c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_EMILIA
+			}
+			has_variable = luccanquestionvar 
+     	}
+	exists = c:LUC
+	}
+	
+	effect = {
+    	set_variable = luccanquestionvar
+		trigger_event = { 
+		id = italy_events.6
+		}
+	}
+}
+venetialombardy = {
+	name = "venetialombardy_button"
+	desc = "venetialombardy_button_desc"
+
+	possible = {
+	NOT = {
+	c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_VENETIA
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+			}
+			has_variable = venetialombardydemandvar 
+		}
+			has_variable = sardiniaaustriavar 
+	c:AUS = {
+			country_or_subject_owns_entire_state_region = STATE_VENETIA
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+			}
+     	}
+	
+	
+	effect = {
+	c:AUS = {
+		trigger_event = { 
+		id = italy_events.7
+		    }
+		}
+	}
+}
+1000expedition = {
+	name = "1000expedition_button"
+	desc = "1000expedition_button_desc"
+
+	possible = {
+	NOT = {
+	c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_SICILY
+			country_or_subject_owns_entire_state_region = STATE_APULIA
+			country_or_subject_owns_entire_state_region = STATE_CAMPANIA
+			country_or_subject_owns_entire_state_region = STATE_ABRUZZO
+			country_or_subject_owns_entire_state_region = STATE_CALABRIA
+			}
+			has_variable = 1000expeditionvar 
+		}
+			exists = c:SIC
+     	}
+	
+	
+	effect = {
+        set_variable = 1000expeditionvar 
+		trigger_event = { 
+		id = italy_events.9
+		}
+	}
+}
+annexnorthducados = {
+	name = "annexnorthducados_button"
+	desc = "annexnorthducados_button_desc"
+
+	possible = {
+	NOT = {
+	c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_EMILIA
+			country_or_subject_owns_entire_state_region = STATE_TUSCANY
+			}
+			has_variable = annexnorthducadosvar 
+		}
+			exists = c:MOD
+			exists = c:TUS
+			exists = c:LUC
+			exists = c:PAR
+     	}
+	
+	
+	effect = {
+        set_variable = annexnorthducadosvar 
+		trigger_event = { 
+		id = italy_events.16
+		}
+	}
+}
+venetialombardyrevolt = {
+	name = "venetialombardyrevolt_button"
+	desc = "venetialombardyrevolt_button_desc"
+
+	possible = {
+	NOT = {
+	c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_VENETIA
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+			}
+			has_variable = venetialombardyrevoltvar 
+		}
+	c:AUS = {
+			country_or_subject_owns_entire_state_region = STATE_VENETIA
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+			
+     	
+		any_scope_state = {
+			state_region = s:STATE_VENETIA
+			state_region = s:STATE_LOMBARDY
+			turmoil > 0.2
+			
+		}
+	}
+}
+	effect = {
+        set_variable = venetialombardyrevoltvar 
+		trigger_event = { 
+		id = italy_events.17
+		}
+	}
+}
+venetialombardybought = {
+	name = "venetialombardybought_button"
+	desc = "venetialombardybought_button_desc"
+
+	possible = {
+	NOT = {
+	c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_VENETIA
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+			}
+			has_variable = venetialombardyboughtvar 
+		}
+	c:AUS = {
+			country_or_subject_owns_entire_state_region = STATE_VENETIA
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+			}
+     	}
+	
+	
+	effect = {
+        set_variable = venetialombardyboughtvar 
+		c:AUS = { 
+		 
+		trigger_event = { 
+		id = italy_events.18
+	    	}
+		}
+	}
+}
+somaliainmigration = {
+	name = "somaliainmigration_button"
+	desc = "somaliainmigration_button_desc"
+
+	possible = {
+	c:ITA = {
+			country_or_subject_owns_entire_state_region = STATE_ERITREA
+			country_or_subject_owns_entire_state_region = STATE_SOMALILAND
+			}
+		NOT = { has_modifier = somaliainmigrationexpenses }
+     	}
+	
+	
+	effect = {
+	random_state = {
+			limit = {
+				state_region = s:STATE_ERITREA
+				
+			}
+			add_modifier = {
+				name = somaliainmigration
+				months = 36
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_SOMALILAND
+				
+			}
+			add_modifier = {
+				name = somaliainmigration
+				months = 36
+			}
+			
+		}
+		c:ITA = { 
+		 
+		add_modifier = {
+				name = somaliainmigrationexpenses
+				months = 36
+			}
+		}
+	}
+}
+tripoliinmigration = {
+	name = "tripoliinmigration_button"
+	desc = "tripoliinmigration_button_desc"
+
+	possible = {
+	c:ITA = {
+			country_or_subject_owns_entire_state_region = STATE_LIBYA
+			country_or_subject_owns_entire_state_region = STATE_LIBYAN_DESERT
+			country_or_subject_owns_entire_state_region = STATE_TRIPOLI
+			}
+		NOT = { has_modifier = tripoliinmigrationexpenses }
+     	}
+	
+	
+	effect = {
+	random_state = {
+			limit = {
+				state_region = s:STATE_LIBYA
+				
+			}
+			add_modifier = {
+				name = tripoliinmigration
+				months = 36
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_LIBYAN_DESERT
+				
+			}
+			add_modifier = {
+				name = tripoliinmigration
+				months = 36
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_TRIPOLI
+				
+			}
+			add_modifier = {
+				name = tripoliinmigration
+				months = 36
+			}
+			
+		}
+		c:ITA = { 
+		 
+		add_modifier = {
+				name = tripoliinmigrationexpenses
+				months = 36
+			}
+		}
+	}
+}
+somaliawork = {
+	name = "somaliawork_button"
+	desc = "somaliawork_button_desc"
+
+	possible = {
+	c:ITA = {
+			country_or_subject_owns_entire_state_region = STATE_ERITREA
+			country_or_subject_owns_entire_state_region = STATE_SOMALILAND
+			}
+		NOT = {
+		any_scope_state = {
+			state_region = s:STATE_SOMALILAND
+			has_modifier = somaliawork
+			
+		    }
+     	}
+	
+	}
+	effect = {
+	random_state = {
+			limit = {
+				state_region = s:STATE_ERITREA
+				
+			}
+			add_modifier = {
+				name = somaliawork
+				months = 36
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_SOMALILAND
+				
+			}
+			add_modifier = {
+				name = somaliawork
+				months = 36
+			}
+			
+		}
+		change_infamy = 5
+	}
+}
+tripoliwork = {
+	name = "tripoliwork_button"
+	desc = "tripoliwork_button_desc"
+
+	possible = {
+	c:ITA = {
+			country_or_subject_owns_entire_state_region = STATE_LIBYA
+			country_or_subject_owns_entire_state_region = STATE_LIBYAN_DESERT
+			country_or_subject_owns_entire_state_region = STATE_TRIPOLI
+			}
+		NOT = {
+		any_scope_state = {
+			state_region = s:STATE_LIBYA
+			has_modifier = tripoliwork
+			
+		    }
+     	}
+	
+	}
+	effect = {
+	random_state = {
+			limit = {
+				state_region = s:STATE_LIBYA
+				
+			}
+			add_modifier = {
+				name = tripoliwork
+				months = 36
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_LIBYAN_DESERT
+				
+			}
+			add_modifier = {
+				name = tripoliwork
+				months = 36
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_TRIPOLI
+				
+			}
+			add_modifier = {
+				name = tripoliwork
+				months = 36
+			}
+			
+		}
+		change_infamy = 5
+	}
+}
+endthedevelop = {
+	name = "endthedevelop_button"
+	desc = "endthedevelop_button_desc"
+
+	possible = {
+	country_or_subject_owns_entire_state_region = STATE_TRIPOLI
+			country_or_subject_owns_entire_state_region = STATE_LIBYAN_DESERT
+			country_or_subject_owns_entire_state_region = STATE_LIBYA
+			country_or_subject_owns_entire_state_region = STATE_ERITREA
+			country_or_subject_owns_entire_state_region = STATE_SOMALILAND
+	any_state = {			
+		    state_region = s:STATE_SOMALILAND
+
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+	        
+			     }
+		    }
+		any_state = {			
+		    state_region = s:STATE_ERITREA
+
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+	        
+			}
+		}
+		any_state = {			
+		    state_region = s:STATE_LIBYA
+
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 9
+	        
+			}
+		}
+		any_state = {			
+		    state_region = s:STATE_LIBYAN_DESERT
+
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 3
+	        
+			     }
+		    }
+		any_state = {			
+		    state_region = s:STATE_TRIPOLI
+
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 8
+	        
+			}
+		}
+		
+	NOT = { has_variable = developended }
+    }
+	
+	
+	effect = {
+	set_variable = developended
+	    
+    }
+}
+ethiopiaexpansion = {
+	name = "ethiopiaexpansion_button"
+	desc = "ethiopiaexpansion_button_desc"
+
+	possible = {
+	c:ITA = {
+			country_or_subject_owns_entire_state_region = STATE_OROMIA
+			country_or_subject_owns_entire_state_region = STATE_AMHARA
+			country_or_subject_owns_entire_state_region = STATE_GONDER
+			}
+		NOT = { has_variable = italiaethipia }
+     	}
+	
+	
+	effect = {
+    add_journal_entry = {
+			type = italiaethipiaje
+		}
+	set_variable = italiaethipia
+	}
+}
+ethiopiainmigration = {
+	name = "ethiopiainmigration_button"
+	desc = "ethiopiainmigration_button_desc"
+
+	possible = {
+	c:ITA = {
+			country_or_subject_owns_entire_state_region = STATE_OROMIA
+			country_or_subject_owns_entire_state_region = STATE_AMHARA
+			country_or_subject_owns_entire_state_region = STATE_GONDER
+			}
+		NOT = { has_modifier = ethiopiainmigrationexpenses }
+     	}
+	
+	
+	effect = {
+	random_state = {
+			limit = {
+				state_region = s:STATE_GONDER
+				
+			}
+			add_modifier = {
+				name = ethiopiainmigration
+				months = 36
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_AMHARA
+				
+			}
+			add_modifier = {
+				name = ethiopiainmigration
+				months = 36
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_OROMIA
+				
+			}
+			add_modifier = {
+				name = ethiopiainmigration
+				months = 36
+			}
+			
+		}
+		c:ITA = { 
+		 
+		add_modifier = {
+				name = ethiopiainmigrationexpenses
+				months = 36
+			}
+		}
+	}
+}
+ethiopiaawork = {
+	name = "ethiopiaawork_button"
+	desc = "ethiopiaawork_button_desc"
+
+	possible = {
+	c:ITA = {
+			country_or_subject_owns_entire_state_region = STATE_OROMIA
+			country_or_subject_owns_entire_state_region = STATE_AMHARA
+			country_or_subject_owns_entire_state_region = STATE_GONDER
+			}
+		NOT = {
+		any_scope_state = {
+			state_region = s:STATE_GONDER
+			has_modifier = ethiopiaawork
+			
+		    }
+     	}
+	
+	}
+	effect = {
+	random_state = {
+			limit = {
+				state_region = s:STATE_OROMIA
+				
+			}
+			add_modifier = {
+				name = ethiopiaawork
+				months = 36
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_AMHARA
+				
+			}
+			add_modifier = {
+				name = ethiopiaawork
+				months = 36
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_GONDER
+				
+			}
+			add_modifier = {
+				name = ethiopiaawork
+				months = 36
+			}
+			
+		}
+		change_infamy = 5
+	}
+}
+endthedevelopeth = {
+	name = "endthedevelopeth_button"
+	desc = "endthedevelopeth_button_desc"
+
+	possible = {
+	country_or_subject_owns_entire_state_region = STATE_OROMIA
+			country_or_subject_owns_entire_state_region = STATE_AMHARA
+			country_or_subject_owns_entire_state_region = STATE_GONDER
+		any_state = {			
+		    state_region = s:STATE_OROMIA
+
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 15
+	        
+			     }
+		    }
+		any_state = {			
+		    state_region = s:STATE_AMHARA
+
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 15
+	        
+			}
+		}
+		any_state = {			
+		    state_region = s:STATE_GONDER
+
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 15
+	        
+			}
+		}
+	NOT = { has_variable = developended2 }
+    }
+	
+	
+	effect = {
+	set_variable = developended2
+	    
+    }
+}

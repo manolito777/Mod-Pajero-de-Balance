@@ -1,0 +1,206 @@
+﻿pm_charcoal_kiln_building_charcoal_burner = {
+	texture = "gfx/interface/icons/production_method_icons/charcoal_kiln.dds"
+	
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 25
+			
+			# output goods
+			goods_output_coal_add = 45
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 5000
+		}
+	}
+}
+
+pm_combustion_chamber_building_charcoal_burner = {
+	texture = "gfx/interface/icons/production_method_icons/combustion_chamber.dds"
+	
+
+
+	unlocking_technologies = {
+		mechanical_tools
+	}	
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 50
+			
+			# output goods
+			goods_output_coal_add = 70
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4500
+			building_employment_machinists_add = 500
+		}
+	}
+}
+
+pm_machine_coal_building_charcoal_burner = {
+	texture = "gfx/interface/icons/production_method_icons/machine_coal.dds"
+
+
+	unlocking_technologies = {
+		conveyors
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 61
+			goods_input_tools_add = 17
+			
+			# output goods
+			goods_output_coal_add = 100
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3500
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
+		}
+	}
+}
+
+
+pm_watertube_boiler_building_charcoal_burner = {
+	texture = "gfx/interface/icons/production_method_icons/watertube_boiler.dds"
+
+	unlocking_technologies = {
+		watertube_boiler
+	}
+
+	disallowing_laws = {
+		law_industry_banned
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5
+			goods_input_coal_add = 5
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1500
+		}
+	}
+}
+
+pm_rotary_valve_engine_building_charcoal_burner = {
+	texture = "gfx/interface/icons/production_method_icons/rotary_valve_engine.dds"
+
+	unlocking_technologies = {
+		rotary_valve_engine
+	}
+
+	disallowing_laws = {
+		law_industry_banned
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5
+			goods_input_coal_add = 10
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2000
+		}
+	}
+}
+
+pm_assembly_lines_building_charcoal_burner = {
+	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+
+	unlocking_technologies = {
+		conveyors
+	}
+
+	disallowing_laws = {
+		law_industry_banned
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5
+			goods_input_oil_add = 5
+			goods_input_electricity_add = 5
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -3000
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+pm_road_carts_building_charcoal_burner = {
+	texture = "gfx/interface/icons/production_method_icons/no_rail_transport.dds"
+}
+
+pm_rail_transport_building_charcoal_burner = {
+	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
+
+	unlocking_technologies = {
+		railways
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods
+			goods_input_transportation_add = 5
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+}
+
+pm_rail_bulk_freight_wagon_building_charcoal_burner = {
+	texture = "gfx/interface/icons/production_method_icons/bulk_freight_wagon.dds"
+
+	unlocking_technologies = {
+		electric_railway
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods
+			goods_input_transportation_add = 8
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1500
+		}
+	}
+}

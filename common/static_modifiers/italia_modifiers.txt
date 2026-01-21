@@ -1,0 +1,166 @@
+﻿piedmontreformmodifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_democracy_positive.dds
+        country_law_enactment_time_mult = -0.25
+		state_radicals_from_political_movements_mult = 0.15
+}
+vaticansecured = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_clergy_positive.dds
+        country_authority_add = 100
+}
+vaticansecured2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_clergy_positive.dds
+        country_authority_add = 100
+}
+treatyofletranmod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_clergy_negative.dds
+        country_authority_add = -75
+		interest_group_ig_devout_pol_str_mult = 0.25
+}
+treatyofletranmodexpenses = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_currency_negative.dds
+     country_expenses_add = 15000
+}
+sicilianwedding = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_aristocrat_positive.dds
+     country_expenses_add = 3000
+	 country_prestige_mult = 0.1
+}
+austriancuck_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue2_negative.dds
+	 country_prestige_mult = -0.2
+	 country_authority_mult = -0.15
+}
+austriancuck_modifier2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue2_positive.dds
+	 country_prestige_mult = 0.2
+	 country_authority_mult = 0.1
+}
+sanmarcobought = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_currency_negative.dds
+     country_expenses_add = 25000
+}
+sanmarcosell = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_currency_positive.dds
+     country_tax_income_add = 25000
+}
+italianfervormodifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_democracy_positive.dds
+        country_law_enactment_time_mult = -0.25
+        building_training_rate_mult = 0.25
+		unit_morale_recovery_mult = 0.1
+		country_prestige_mult = 0.1
+}
+mafiamodifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_protest_negative.dds
+       state_radicals_from_political_movements_mult = 0.2
+	   state_turmoil_effects_mult = 0.15
+	   state_tax_collection_mult = -0.1
+}
+mafiaerasedmodifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_authority_positive.dds
+       country_legitimacy_base_add = 5
+}
+mafiapresence = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_authority_negative.dds
+	 country_authority_mult = -0.05
+}
+southintegratedmodifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_framing_positive.dds
+	state_construction_mult = 0.15
+	state_loyalists_from_political_movements_mult = 0.1
+}
+industrialtrianglemodifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_urbanization_positive.dds
+	state_construction_mult = 0.05
+	building_group_bg_manufacturing_throughput_add = 0.1
+	state_pollution_reduction_health_mult = -0.05
+	state_infrastructure_mult = 0.1
+	state_migration_pull_mult = 0.1
+	state_market_access_price_impact = 0.05
+}
+somaliainmigration = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_colonization_positive.dds
+	state_migration_pull_mult = 0.8
+}
+tripoliinmigration = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_colonization_positive.dds
+	state_migration_pull_mult = 0.8
+}
+somaliainmigrationexpenses = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_income_negative.dds
+     country_expenses_add = 6000
+}
+tripoliinmigrationexpenses = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_income_negative.dds
+     country_expenses_add = 6000
+}
+somaliawork = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_industry_positive.dds
+	building_group_bg_plantations_laborers_mortality_mult = 0.05
+	building_group_bg_plantations_throughput_add = 0.2
+	building_group_bg_rubber_laborers_mortality_mult = 0.05
+	building_rubber_plantation_throughput_add = 0.20
+	building_group_bg_mining_laborers_mortality_mult = 0.1
+	building_group_bg_mining_machinists_mortality_mult = 0.05
+	building_group_bg_mining_engineers_mortality_mult = 0.02
+	building_group_bg_mining_throughput_add = 0.2
+}
+tripoliwork = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_industry_positive.dds
+	building_group_bg_oil_extraction_laborers_mortality_mult = 0.1
+	building_group_bg_oil_extraction_machinists_mortality_mult = 0.05
+	building_group_bg_oil_extraction_engineers_mortality_mult = 0.02
+	building_group_bg_oil_extraction_throughput_add = 0.2
+}
+tripolideveloped = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_industry_positive.dds
+	building_group_bg_oil_extraction_throughput_add = 0.1
+	state_infrastructure_mult = 0.1
+	state_migration_pull_mult = 0.1
+}
+somaliadeveloped = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_industry_positive.dds
+	building_rubber_plantation_throughput_add = 0.1
+	building_group_bg_mining_throughput_add = 0.1
+	state_infrastructure_mult = 0.1
+	state_migration_pull_mult = 0.1
+}
+italianconversion_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_officer_positive.dds
+	state_conversion_mult = 1
+	state_assimilation_mult = 1
+}
+ethiopiainmigration = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_colonization_positive.dds
+	state_migration_pull_mult = 0.8
+}
+ethiopiainmigrationexpenses = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_income_negative.dds
+     country_expenses_add = 6000
+}
+ethiopiaawork = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_industry_positive.dds
+	building_group_bg_plantations_laborers_mortality_mult = 0.05
+	building_group_bg_plantations_throughput_add = 0.2
+	building_group_bg_rubber_laborers_mortality_mult = 0.05
+	building_rubber_plantation_throughput_add = 0.20
+	building_group_bg_mining_laborers_mortality_mult = 0.1
+	building_group_bg_mining_machinists_mortality_mult = 0.05
+	building_group_bg_mining_engineers_mortality_mult = 0.02
+	building_group_bg_mining_throughput_add = 0.2
+}
+etiopiadevelopedmodifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_industry_positive.dds
+	building_rubber_plantation_throughput_add = 0.1
+	building_group_bg_mining_throughput_add = 0.1
+	state_infrastructure_mult = 0.1
+	state_migration_pull_mult = 0.1
+}
+italianempiremodifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag2_positive.dds
+	unit_army_offense_mult = 0.1
+    unit_navy_offense_mult = 0.1
+	unit_army_defense_mult = 0.1
+	unit_navy_defense_mult = 0.1
+	country_prestige_mult = 0.2
+}

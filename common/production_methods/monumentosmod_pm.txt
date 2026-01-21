@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿pm_default_building_kierbedz_bridge = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
@@ -15,22 +14,29 @@
 			building_employment_laborers_add = 1000
 		}
 	}
-=======
-REPLACE_OR_CREATE:pm_default_building_kierbedź_bridge = {
+}
+REPLACE:pm_default_building_statue_of_liberty = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
+	is_hidden_when_unavailable = yes
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 75
+		}
+	}
 	state_modifiers = {
-		workforce_scaled = { 
-			state_migration_pull_add = 20
-			state_loyalists_from_sol_change_mult = 0.05
-            state_infrastructure_add = 20
+		workforce_scaled = {
+			state_migration_pull_mult = 0.75
 		}
 	}
 
 	building_modifiers = {
+		#workforce_scaled = {
+		#}
+
 		level_scaled = {
-			building_employment_laborers_add = 1000
+			building_employment_bureaucrats_add = 100
 		}
 	}
->>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d
 }

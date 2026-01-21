@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿REPLACE_OR_CREATE:pmg_base_building_kierbedz_bridge = {
 
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
@@ -8,15 +7,4 @@
 	production_methods = {
 		pm_default_building_kierbedz_bridge 
 	}
-=======
-REPLACE_OR_CREATE:pmg_base_building_kierbedź_bridge = {
-
-    texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
-	is_hidden_when_unavailable = yes
-
-	production_methods = {
-		pm_default_building_kierbedź_bridge 
-	}
->>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d
 }

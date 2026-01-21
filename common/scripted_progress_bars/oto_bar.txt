@@ -123,7 +123,7 @@
 			}
 		}
         if = {
-		every_state = {
+		any_state = {
 		limit = {
                 state_region = s:STATE_ERZURUM 
 			}
