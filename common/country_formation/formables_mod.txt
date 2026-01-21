@@ -1,12 +1,12 @@
 ﻿REPLACE:SCA = {
-	geographic_region = geographic_region_scandinavia
+	geographic_region = geographic_region_scandinavia_mod
 	
 	is_major_formation = yes
 	
 	unification_play = dp_unify_scandinavia
 	leadership_play = dp_leadership_scandinavia
 
-	required_states_fraction = 0.65
+	required_states_fraction = 0.45	
 	
 	ai_will_do = { always = yes }
 
