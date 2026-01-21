@@ -15,7 +15,7 @@
 		# Laws 
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_appointed_bureaucrats
@@ -26,6 +26,8 @@
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_Offentlighetsprincipen
+		activate_law = law_type:law_no_migration_controls
 		
 		set_institution_investment_level = {
 			institution = institution_schools
