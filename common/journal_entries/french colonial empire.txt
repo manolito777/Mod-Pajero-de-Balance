@@ -12,7 +12,7 @@ je_french_colonial_empire = {
 	}
 
 	is_shown_when_inactive = {
-		
+		c:FRA = THIS
 		OR = {
 		    has_technology_researched = ironclad_tech
 		}

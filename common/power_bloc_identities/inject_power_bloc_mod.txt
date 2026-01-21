@@ -10,7 +10,7 @@
 	leader_modifier = {
 		state_trade_capacity_mult = -0.25
 	}
-	mandate_progress = 20
+
 }
 INJECT:identity_sovereign_empire = {
 	power_bloc_modifier = {
@@ -34,7 +34,6 @@ INJECT:identity_sovereign_empire = {
 		country_radicalism_increases_violent_hostility_mult = -0.1
 		country_radicalism_increases_cultural_erasure_mult = -0.15
 	}
-		mandate_progress = 20
 }
 INJECT:identity_ideological_union = {
 	power_bloc_modifier = {
@@ -62,7 +61,6 @@ INJECT:identity_ideological_union = {
 		country_loyalists_from_legitimacy_mult = 0.4
 
 	}
-		mandate_progress = 20
 
 		cohesion = {
 		add = {
@@ -83,10 +81,14 @@ INJECT:identity_military_treaty_organization = {
 		power_bloc_invite_acceptance_great_power_add = -15
 		power_bloc_cohesion_per_member_add = -2
 	}
+	leader_modifier = {
+		country_military_goods_cost_mult = -0.10
+	}
 	member_modifier = {
 		building_training_rate_mult = 0.05
+		battle_casualties_mult = -0.1
 	}
-	mandate_progress = 20
+
 }
 REPLACE:identity_religious = {
 	power_bloc_modifier = {
@@ -105,7 +107,6 @@ REPLACE:identity_religious = {
 		OR = {
 			has_law_or_variant = law_type:law_state_religion
 			has_law_or_variant = law_type:law_freedom_of_conscience
-			has_law_or_variant = law_type:law_total_separation
 		}
 	}
 
@@ -134,9 +135,9 @@ REPLACE:identity_religious = {
 		has_dlc_feature = power_bloc_features
 	}
 
-	mandate_progress = 20
-
 	on_created = { relations_hit_with_power_bloc_leaders = yes }
+    
+	mandate_progress = power_bloc_mandate_progress_by_rank
 
 	cohesion = {
 		add = {
@@ -285,5 +286,4 @@ INJECT:identity_cultural = {
 		power_bloc_mandate_progress_per_unrecognized_regional_power_member_add = -1
 		power_bloc_cohesion_per_member_add = -2
 	}
-	mandate_progress = 20
 }

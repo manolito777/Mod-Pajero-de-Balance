@@ -1,4 +1,13 @@
-﻿
+﻿INJECT:law_appointed_bureaucrats = {
+	 is_visible = {
+		NOR = {
+			c:PRU ?= this 
+			c:NGF ?= this 
+			c:GER ?= this 
+	
+		}
+	}
+}
 ########MOD##########
 law_beamtenstaat = {
 	group = lawgroup_bureaucracy

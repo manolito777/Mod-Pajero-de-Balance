@@ -145,8 +145,8 @@ GGGG_mo_percussion_caps = {
     }
     
     unit_modifier = {
-        unit_offense_mult   = 0.05
-        unit_defense_mult   = 0.05
+        unit_offense_mult   = 0.1
+        unit_defense_mult   = 0.1
     }
     
     ai_weight = {
@@ -214,8 +214,8 @@ GGGG_mo_rifling = {
     }
     
     unit_modifier = {
-        unit_offense_mult   = 0.05
-        unit_defense_mult   = 0.05
+        unit_offense_mult   = 0.1
+        unit_defense_mult   = 0.1
     }
     
     ai_weight = {
@@ -291,8 +291,8 @@ GGGG_mo_breechblocks = {
     }
     
     unit_modifier = {
-        unit_offense_mult   = 0.1
-        unit_defense_mult   = 0.1
+        unit_offense_mult   = 0.2
+        unit_defense_mult   = 0.2
         unit_morale_damage_mult = 0.1
     }
     
@@ -373,8 +373,8 @@ GGGG_mo_bolt_actions = {
     }
     
     unit_modifier = {
-        unit_offense_mult   = 0.1
-        unit_defense_mult   = 0.1
+        unit_offense_mult   = 0.2
+        unit_defense_mult   = 0.2
         unit_morale_damage_mult = 0.15
     }
     

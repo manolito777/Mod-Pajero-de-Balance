@@ -27,3 +27,338 @@ vistula_river_monthly_check = {
         vistula_river.1
     }
 }
+on_monthly_pulse_country = {
+    on_actions = { sigmaasutriasardinia }
+}
+sigmaasutriasardinia = {
+    #para ver si salta evento de sardinia austria
+  trigger = {
+  exists = c:SAR
+	c:SAR = { 
+    is_in_same_power_bloc = c:AUS
+	 NOT = { has_variable = sardiniaaustriavar }
+	    
+	}
+}
+	effect = {
+		if = {
+			limit = {
+				c:SAR ?= this
+			}
+			trigger_event = { 
+		id = italy_events.2
+		    }
+		}
+	}
+}
+on_monthly_pulse_country = {
+    on_actions = { sigmaasutriaitalia }
+}
+
+sigmaasutriaitalia = {
+    #para ver si salta evento de sardinia austria
+  trigger = {
+  exists = c:ITA
+	c:ITA = { 
+    is_in_same_power_bloc = c:AUS
+	 NOT = { has_variable = sardiniaaustriavar }
+	    
+	}
+}
+	effect = {
+		if = {
+			limit = {
+				c:ITA ?= this
+			}
+			trigger_event = { 
+		id = italy_events.2
+		    }
+		}
+	}
+}
+on_monthly_pulse_country = {
+    on_actions = { sigmaasutriasardinia2 }
+}
+sigmaasutriasardinia2 = {
+    #para ver si salta evento de sardinia austria
+  trigger = {
+ exists = c:SAR
+	c:SAR = { 
+     NOT = { is_in_same_power_bloc = c:AUS }
+	has_variable = sardiniaaustriavar 
+	    
+	    }
+	}
+
+	effect = {
+		if = {
+			limit = {
+				c:SAR ?= this
+				exists = c:SAR
+			}
+			trigger_event = { 
+		id = italy_events.10
+		}
+		}
+		if = {
+			limit = {
+				c:AUS ?= this
+			}
+			trigger_event = { 
+		id = italy_events.12
+		    }
+		}
+	}
+}
+on_monthly_pulse_country = {
+    on_actions = { sigmaasutriaitalia2 }
+}
+sigmaasutriaitalia2 = {
+    #para ver si salta evento de sardinia austria
+  trigger = {
+	exists = c:ITA
+	c:ITA = { 
+     NOT = { is_in_same_power_bloc = c:AUS }
+	has_variable = sardiniaaustriavar 
+	    }
+	}
+
+	effect = {
+		if = {
+			limit = {
+				c:AUS ?= this
+			}
+			trigger_event = { 
+		id = italy_events.12
+		}
+	}
+		if = {
+			limit = {
+				c:ITA ?= this
+				exists = c:ITA
+			}
+			trigger_event = { 
+		id = italy_events.10
+		    }
+		}
+	}
+}
+on_monthly_pulse_country = {
+    on_actions = { japanukbloc }
+}
+japanukbloc = {
+    #para ver si salta evento de area 11
+  trigger = {
+  exists = c:JAP
+	c:JAP = { 
+     is_in_same_power_bloc = c:GBR
+	 NOT = { has_variable = japanukbloc }
+	    
+	}
+}
+	effect = {
+		if = {
+			limit = {
+				c:GBR ?= this
+				exists = c:GBR
+				
+			}
+			trigger_event = { 
+		id = briannian_events.1
+		    }
+		}
+		if = {
+			limit = {
+				c:JAP ?= this
+				exists = c:JAP
+				
+			}
+			trigger_event = { 
+		id = briannian_events.2
+		    }
+		}
+	}
+}
+on_monthly_pulse_country = {
+    on_actions = { japanukbloc2 }
+}
+japanukbloc2 = {
+    #se sale area 11
+  trigger = {
+ exists = c:JAP
+	c:JAP = { 
+     NOT = { is_in_same_power_bloc = c:GBR }
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+
+	effect = {
+		if = {
+			limit = {
+				c:JAP ?= this
+				exists = c:JAP
+			}
+			trigger_event = { 
+		id = briannian_events.3
+		}
+		}
+		if = {
+			limit = {
+				c:GBR ?= this
+				exists = c:GBR
+			}
+			trigger_event = { 
+		id = briannian_events.4
+		    }
+		}
+	}
+}
+on_monthly_pulse_country = {
+    on_actions = { sardiniafrancia }
+}
+sardiniafrancia = {
+    #para ver si salta evento de sardinia francia
+  trigger = {
+  exists = c:SAR
+	c:SAR = { 
+    is_in_same_power_bloc = c:FRA
+	 NOT = { has_variable = sardiniafranciavar }
+	    
+	}
+}
+	effect = {
+		if = {
+			limit = {
+				c:SAR ?= this
+			}
+			trigger_event = { 
+		id = italy_events.13
+		    }
+		}
+	}
+}
+on_monthly_pulse_country = {
+    on_actions = { italiafrancia }
+}
+
+italiafrancia = {
+    #para ver si salta evento de italia francia
+  trigger = {
+  exists = c:ITA
+	c:ITA = { 
+    is_in_same_power_bloc = c:FRA
+	 NOT = { has_variable = sardiniafranciavar }
+	    
+	}
+}
+	effect = {
+		if = {
+			limit = {
+				c:ITA ?= this
+			}
+			trigger_event = { 
+		id = italy_events.13
+		    }
+		}
+	}
+}
+on_monthly_pulse_country = {
+    on_actions = { sardiniafrancia2 }
+}
+sardiniafrancia2 = {
+    #se va cerdeña fra
+  trigger = {
+ exists = c:SAR
+	c:SAR = { 
+     NOT = { is_in_same_power_bloc = c:FRA }
+	has_variable = sardiniafranciavar 
+	    
+	    }
+	}
+
+	effect = {
+		if = {
+			limit = {
+				c:SAR ?= this
+				exists = c:SAR
+			}
+			trigger_event = { 
+		id = italy_events.14
+		}
+		}
+		if = {
+			limit = {
+				c:FRA ?= this
+			}
+			trigger_event = { 
+		id = italy_events.15
+		    }
+		}
+	}
+}
+on_monthly_pulse_country = {
+    on_actions = { italiafrancia2 }
+}
+italiafrancia2 = {
+    #se va italia fra
+  trigger = {
+	exists = c:ITA
+	c:ITA = { 
+     NOT = { is_in_same_power_bloc = c:FRA }
+	has_variable = sardiniafranciavar 
+	    }
+	}
+
+	effect = {
+		if = {
+			limit = {
+				c:FRA ?= this
+			}
+			trigger_event = { 
+		id = italy_events.15
+		}
+	}
+		if = {
+			limit = {
+				c:ITA ?= this
+				exists = c:ITA
+			}
+			trigger_event = { 
+		id = italy_events.14
+		    }
+		}
+	}
+}
+on_monthly_pulse_country = {
+    on_actions = { mafiaitaly }
+}
+mafiaitaly = {
+    #se va italia fra
+  trigger = {
+	exists = c:ITA
+	c:ITA = { 
+     NOT = { 
+	 has_variable = mafiaitalyvar 
+	    }
+	        country_or_subject_owns_entire_state_region = STATE_CAMPANIA
+			country_or_subject_owns_entire_state_region = STATE_ABRUZZO
+			country_or_subject_owns_entire_state_region = STATE_CALABRIA
+			country_or_subject_owns_entire_state_region = STATE_APULIA
+			country_or_subject_owns_entire_state_region = STATE_SICILY
+	}
+}
+	effect = {
+		if = {
+			limit = {
+				c:ITA ?= this
+				exists = c:ITA
+			}
+			trigger_event = { 
+		id = italy_events.19
+		    }
+		}
+	}
+}
+
+

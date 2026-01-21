@@ -218,10 +218,7 @@ je_five_year_plan_2 = {
 			trigger_event = {
 				id = five_year_plan.2
 			}
-			set_variable = {
-				name = five_year_plan_done_2
-				value = yes
-			}
+			
 		}
 		
 		weight = 10000

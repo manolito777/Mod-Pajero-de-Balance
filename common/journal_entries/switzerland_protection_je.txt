@@ -1,5 +1,5 @@
 ﻿switzerland_protection_je = {
-    icon = "gfx/interface/icons/event_icons/money.dds"
+    icon = "gfx/interface/icons/event_icons/event_trade.dds"
     
     group = je_group_historical_content
 

@@ -1,0 +1,672 @@
+﻿piedmontese_pathje = {
+    icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+    
+    group = je_group_internal_affairs
+   is_shown_when_inactive = {
+     c:SAR ?= this
+	}
+     modifiers_while_active = {
+			piedmontreformmodifier
+		}
+	
+	complete = {
+		NOT = {
+			has_law = law_type:law_hereditary_bureaucrats
+		}
+        any_state = {			
+		    state_region = s:STATE_PIEDMONT
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+	        
+			}
+		}
+		GDP >= 5000000
+	}
+
+	on_complete = {
+		trigger_event = { 
+		id = italy_events.1 
+		}
+	c:FRA = {
+	trigger_event = { 
+		id = italy_events.4
+	    }
+	}
+}
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+radical_pathje = { ###va con francia
+    icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+    
+    group = je_group_internal_affairs
+
+     modifiers_while_active = {
+			piedmontreformmodifier
+		}
+	scripted_button = 1000expedition
+	scripted_button = annexnorthducados
+	scripted_button = letrantreaty
+	scripted_button = venetialombardybought
+	scripted_button = venetialombardyrevolt
+	complete = {
+		c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_EMILIA
+			country_or_subject_owns_entire_state_region = STATE_PIEDMONT
+			country_or_subject_owns_entire_state_region = STATE_SARDINIA
+			country_or_subject_owns_entire_state_region = STATE_UMBRIA
+			country_or_subject_owns_entire_state_region = STATE_SICILY
+			country_or_subject_owns_entire_state_region = STATE_TUSCANY
+			country_or_subject_owns_entire_state_region = STATE_ROMAGNA
+			country_or_subject_owns_entire_state_region = STATE_LAZIO
+			country_or_subject_owns_entire_state_region = STATE_CAMPANIA
+			country_or_subject_owns_entire_state_region = STATE_ABRUZZO
+			country_or_subject_owns_entire_state_region = STATE_CALABRIA
+			country_or_subject_owns_entire_state_region = STATE_APULIA
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+			}
+	}
+
+	on_complete = {
+		trigger_event = { 
+		id = italy_events.8 
+		}
+	}
+    fail = {
+	NOT = {
+	custom_tooltip = {
+				text = french_pathctdesc
+			    has_variable = sardiniafranciavar
+			}
+		}
+	}
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+moderate_pathje = {
+    icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+    
+    group = je_group_internal_affairs
+    scripted_button = annexnorthducados
+	scripted_button = letrantreaty
+	scripted_button = venetialombardybought
+	scripted_button = venetialombardyrevolt
+	scripted_button = 1000expedition
+	scripted_button = sigmasiccompromise
+	
+	modifiers_while_active = {
+			italianfervormodifier
+		}
+		complete = {
+		c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_EMILIA
+			country_or_subject_owns_entire_state_region = STATE_PIEDMONT
+			country_or_subject_owns_entire_state_region = STATE_SARDINIA
+			country_or_subject_owns_entire_state_region = STATE_UMBRIA
+			country_or_subject_owns_entire_state_region = STATE_SICILY
+			country_or_subject_owns_entire_state_region = STATE_TUSCANY
+			country_or_subject_owns_entire_state_region = STATE_ROMAGNA
+			country_or_subject_owns_entire_state_region = STATE_LAZIO
+			country_or_subject_owns_entire_state_region = STATE_CAMPANIA
+			country_or_subject_owns_entire_state_region = STATE_ABRUZZO
+			country_or_subject_owns_entire_state_region = STATE_CALABRIA
+			country_or_subject_owns_entire_state_region = STATE_APULIA
+			}
+	    }
+	
+
+	on_complete = {
+		trigger_event = { 
+		id = italy_events.8 
+		}
+	}
+    fail = {
+	OR = {
+	custom_tooltip = {
+				text = french_pathctdesc2
+			    has_variable = sardiniafranciavar
+			}
+	custom_tooltip = {
+				text = austrian_pathctdesc2
+			    has_variable = sardiniaaustriavar
+			}
+		}
+	}
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+austrian_pathje = {
+    icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+    
+    group = je_group_internal_affairs
+    scripted_button = sigmasiccompromise
+	scripted_button = letrantreaty
+	scripted_button = luccanquestion
+	scripted_button = venetialombardy
+	complete = {
+		c:SAR = {
+			country_or_subject_owns_entire_state_region = STATE_EMILIA
+			country_or_subject_owns_entire_state_region = STATE_PIEDMONT
+			country_or_subject_owns_entire_state_region = STATE_SARDINIA
+			country_or_subject_owns_entire_state_region = STATE_UMBRIA
+			country_or_subject_owns_entire_state_region = STATE_SICILY
+			country_or_subject_owns_entire_state_region = STATE_TUSCANY
+			country_or_subject_owns_entire_state_region = STATE_ROMAGNA
+			country_or_subject_owns_entire_state_region = STATE_LAZIO
+			country_or_subject_owns_entire_state_region = STATE_CAMPANIA
+			country_or_subject_owns_entire_state_region = STATE_ABRUZZO
+			country_or_subject_owns_entire_state_region = STATE_CALABRIA
+			country_or_subject_owns_entire_state_region = STATE_APULIA
+			country_or_subject_owns_entire_state_region = STATE_VENETIA
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+			}
+	}
+    
+	on_complete = {
+		trigger_event = { 
+		id = italy_events.8
+		}
+	}
+    fail = {
+	NOT = {
+	custom_tooltip = {
+				text = austrian_pathctdesc
+			    has_variable = sardiniaaustriavar
+			}
+		}
+	}
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+romeprotection_je = {
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    group = je_group_internal_affairs
+    modifiers_while_active = {
+			vaticansecured
+		}
+	fail = {
+		OR = {
+		NOT = {
+		c:PAP = {
+			owns_entire_state_region = STATE_LAZIO
+			}
+		}
+		c:PAP = {
+		is_subject = yes
+					}
+			}
+	}
+    complete = {
+		c:SAR = {
+		custom_tooltip = {
+				text = letrantreatyvar_desc
+			    has_variable = letrantreatyvar
+			}
+		
+		}
+	}
+	on_complete = {
+		c:FRA = { 
+		add_modifier = vaticansecured2 
+		}
+	}
+
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+italian_mafiaje = {
+    icon = "gfx/interface/icons/event_icons/event_raiding.dds"
+    
+    group = je_group_internal_affairs
+  
+	scripted_progress_bar = italy_mafia_bar
+	modifiers_while_active = {
+			mafiapresence
+		}
+    complete = {
+		custom_tooltip = {
+			text = mafiaitalydesc
+			scope:journal_entry = {
+                "scripted_bar_progress(italy_mafia_bar)" >= 150
+            }
+		}
+	}
+	
+	on_complete = {
+	trigger_event = { id = italy_events.20 }
+	}
+
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+integrate_southje = {
+    icon = "gfx/interface/icons/event_icons/event_industry.dds"
+    
+    group = je_group_internal_affairs
+  
+    complete = {
+			any_state = {			
+		    state_region = s:STATE_APULIA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 15
+	        
+			     }
+		    }
+			any_state = {			
+		    state_region = s:STATE_SICILY
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 15
+	        
+			}
+		}
+		any_state = {			
+		    state_region = s:STATE_CAMPANIA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 15
+	        
+			}
+		}
+		any_state = {			
+		    state_region = s:STATE_ABRUZZO
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 15
+	        
+			}
+		}
+		any_state = {			
+		    state_region = s:STATE_CALABRIA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 15
+	        
+			}
+		}
+	}
+	
+	on_complete = {
+	trigger_event = { id = italy_events.21 }
+	}
+    fail = {
+	 NOR = {
+			country_or_subject_owns_entire_state_region = STATE_SICILY
+			country_or_subject_owns_entire_state_region = STATE_CAMPANIA
+			country_or_subject_owns_entire_state_region = STATE_ABRUZZO
+			country_or_subject_owns_entire_state_region = STATE_CALABRIA
+			country_or_subject_owns_entire_state_region = STATE_APULIA
+	}
+	}
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+industrial_triangleje = {
+    icon = "gfx/interface/icons/event_icons/event_industry.dds"
+    
+    group = je_group_internal_affairs
+ 
+
+	is_shown_when_inactive = {
+	
+				c:ITA ?= root
+				has_technology_researched = steel_frame_buildings
+			
+		}
+    complete = {
+			any_state = {			
+		    state_region = s:STATE_PIEDMONT
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 100
+	        
+			     }
+		    }
+			any_state = {			
+		    state_region = s:STATE_LOMBARDY
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 100
+	        
+			}
+		}
+		any_state = {			
+		    state_region = s:STATE_TUSCANY
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 100
+	        
+			}
+		}
+	}
+	
+	on_complete = {
+	trigger_event = { id = italy_events.22 }
+	}
+    fail = {
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_TUSCANY
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+			country_or_subject_owns_entire_state_region = STATE_PIEDMONT
+	}
+	}
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+italy_coloniesje = {
+    icon = "gfx/interface/icons/event_icons/event_map.dds"
+    
+    group = je_group_internal_affairs
+   
+	complete = {
+			country_or_subject_owns_entire_state_region = STATE_TRIPOLI
+			country_or_subject_owns_entire_state_region = STATE_LIBYAN_DESERT
+			country_or_subject_owns_entire_state_region = STATE_LIBYA
+			country_or_subject_owns_entire_state_region = STATE_ERITREA
+			country_or_subject_owns_entire_state_region = STATE_SOMALILAND
+	}
+    
+	on_complete = {
+	add_journal_entry = {
+			type = italy_coloniesje2
+		}
+	}
+
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+italy_coloniesje2 = {
+    icon = "gfx/interface/icons/event_icons/event_map.dds"
+    
+    group = je_group_internal_affairs
+    scripted_button = somaliainmigration
+	scripted_button = tripoliinmigration
+	scripted_button = somaliawork
+	scripted_button = tripoliwork
+	scripted_button = ethiopiaexpansion
+	scripted_button = endthedevelop
+	complete = {
+	custom_tooltip = {
+	text = developendedtdesc
+	has_variable = developended 
+	}
+	 
+	}
+    
+	on_complete = {
+		trigger_event = { 
+		id = italy_events.23
+		}
+	}
+    fail = {
+		OR = {
+		NOT = {
+			country_or_subject_owns_entire_state_region = STATE_TRIPOLI
+			country_or_subject_owns_entire_state_region = STATE_LIBYAN_DESERT
+			country_or_subject_owns_entire_state_region = STATE_LIBYA
+			country_or_subject_owns_entire_state_region = STATE_ERITREA
+			country_or_subject_owns_entire_state_region = STATE_SOMALILAND
+			}
+	    }
+	}
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+italiaethipiaje= {
+    icon = "gfx/interface/icons/event_icons/event_map.dds"
+    
+    group = je_group_internal_affairs
+    scripted_button = ethiopiainmigration
+	scripted_button = ethiopiaawork
+	scripted_button = endthedevelopeth
+
+	complete = {
+	custom_tooltip = {
+	text = developendedtdesc
+	has_variable = developended2
+	}
+	}
+    
+	on_complete = {
+		trigger_event = { 
+		id = italy_events.24
+		}
+	}
+    fail = {
+		OR = {
+		NOT = {
+			country_or_subject_owns_entire_state_region = STATE_OROMIA
+			country_or_subject_owns_entire_state_region = STATE_AMHARA
+			country_or_subject_owns_entire_state_region = STATE_GONDER
+			}
+	    }
+	}
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+catholicinfluenceje = {
+    icon = "gfx/interface/icons/event_icons/spain_breakup.dds"
+    
+    group = je_group_internal_affairs
+ 
+
+	is_shown_when_inactive = {
+		c:ITA ?= root
+		has_variable = letrantreatyvar
+		any_interest_group = {
+			leader = {
+				OR = {
+					has_ideology = ideology:ideology_vanguardist
+					has_ideology = ideology:ideology_communist
+					has_ideology = ideology:ideology_anarchist
+					has_ideology = ideology:ideology_positivist
+				}
+			}
+		}
+	}
+  scripted_progress_bar = catholicinfluence_core_progress_bar
+	
+	
+	complete = {
+		custom_tooltip = {
+			text = catholicinfluenceje_complete
+			scope:journal_entry = {
+                "scripted_bar_progress(catholicinfluence_core_progress_bar)" >= 300
+            }
+		}
+	}
+	
+	on_complete = {
+	
+		  remove_modifier = treatyofletranmod
+	}
+	
+	fail = {
+		custom_tooltip = {
+			text = catholicinfluenceje_fail
+			scope:journal_entry = {
+                "scripted_bar_progress(catholicinfluence_core_progress_bar)" <= 0
+            }
+		}
+	}
+
+	
+	weight = 10000
+	should_be_pinned_by_default = yes
+	can_revolution_inherit = yes
+}
+italian_empireje = {
+    icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+    
+    group = je_group_internal_affairs
+
+		complete = {
+
+			country_or_subject_owns_entire_state_region = STATE_EMILIA
+			country_or_subject_owns_entire_state_region = STATE_PIEDMONT
+			country_or_subject_owns_entire_state_region = STATE_SARDINIA
+			country_or_subject_owns_entire_state_region = STATE_UMBRIA
+			country_or_subject_owns_entire_state_region = STATE_SICILY
+			country_or_subject_owns_entire_state_region = STATE_TUSCANY
+			country_or_subject_owns_entire_state_region = STATE_ROMAGNA
+			country_or_subject_owns_entire_state_region = STATE_LAZIO
+			country_or_subject_owns_entire_state_region = STATE_CAMPANIA
+			country_or_subject_owns_entire_state_region = STATE_ABRUZZO
+			country_or_subject_owns_entire_state_region = STATE_CALABRIA
+			country_or_subject_owns_entire_state_region = STATE_APULIA
+			country_or_subject_owns_entire_state_region = STATE_TRIPOLI
+			country_or_subject_owns_entire_state_region = STATE_LIBYAN_DESERT
+			country_or_subject_owns_entire_state_region = STATE_LIBYA
+			country_or_subject_owns_entire_state_region = STATE_ERITREA
+			country_or_subject_owns_entire_state_region = STATE_SOMALILAND
+			country_or_subject_owns_entire_state_region = STATE_OROMIA
+			country_or_subject_owns_entire_state_region = STATE_AMHARA
+			country_or_subject_owns_entire_state_region = STATE_GONDER
+			country_or_subject_owns_entire_state_region = STATE_VENETIA
+			country_or_subject_owns_entire_state_region = STATE_SOUTH_TYROL
+			country_or_subject_owns_entire_state_region = STATE_ALBANIA
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+			country_or_subject_owns_entire_state_region = STATE_CORSICA
+			
+	    }
+	
+
+	on_complete = {
+		trigger_event = { 
+		id = italy_events.25 
+		}
+	}
+    fail = {
+	
+	custom_tooltip = {
+				text = austrian_pathctdesc2
+			    has_variable = sardiniaaustriavar
+		}
+	}
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}
+italian_empireje2 = {
+    icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+    
+    group = je_group_internal_affairs
+    modifiers_while_active = {
+			italianempiremodifier
+		}
+		complete = {
+        OR = {
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_EMILIA
+			}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_PIEDMONT
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_SARDINIA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_UMBRIA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_SICILY
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_TUSCANY
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_ROMAGNA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_LAZIO
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_CAMPANIA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_CALABRIA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_APULIA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_TRIPOLI
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_LIBYA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_LIBYAN_DESERT
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_ERITREA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_OROMIA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_SOMALILAND
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_AMHARA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_GONDER
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_VENETIA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_SOUTH_TYROL
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_ALBANIA
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_CORSICA
+		}	
+	}
+}
+
+	on_complete = {
+		trigger_event = { 
+		id = italy_events.26 
+		}
+	}
+    fail = {
+	
+	custom_tooltip = {
+				text = austrian_pathctdesc2
+			    has_variable = sardiniaaustriavar
+		}
+	}
+	weight = 1000000
+
+	should_be_pinned_by_default = yes
+}

@@ -1,4 +1,13 @@
-﻿#######MOD#######
+﻿INJECT:law_protectionism = {
+is_visible = {
+		NOR = {
+			c:PRU ?= this
+			c:NGF ?= this
+			c:GER ?= this
+		}
+	}
+}
+#######MOD#######
 law_Industrieschutzgesetz = {
 	group = lawgroup_trade_policy
     parent = law_protectionism # Inherits ideological stances from parent
