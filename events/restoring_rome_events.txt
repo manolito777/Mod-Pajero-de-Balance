@@ -176,7 +176,7 @@ restoring_rome_events.4 = {
 						}
 						set_state_owner = c:BYZ
 						set_state_type = incorporated
-						set_state_type = incorporated
+					
 					}
 					random_state = {
 						limit = {
@@ -185,7 +185,7 @@ restoring_rome_events.4 = {
 						}
 						set_state_owner = c:BYZ
 						set_state_type = incorporated
-						set_state_type = incorporated
+						
 					}
 				}
 			}
@@ -361,8 +361,8 @@ restoring_rome_events.1 = {
 							owns_entire_state_region = STATE_HUDAVENDIGAR
 						}
 					}
-			    s:STATE_HUDAVEDINGAR = {
-                add_homeland = cu:greek
+			    s:STATE_HUDAVENDIGAR = {
+                
                 remove_homeland = cu:turkish
             }
 		}

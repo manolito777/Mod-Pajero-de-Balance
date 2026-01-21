@@ -1,0 +1,1598 @@
+﻿namespace = italy_events
+
+italy_events.1 = { #####completa el piadmontese path
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+
+	title = italy_events.1.t
+	desc = italy_events.1.d
+	flavor = italy_events.1.f
+    immediate = {
+	set_variable = piedmontesepathdone
+	}
+	duration = 3
+	option = {
+	name = italy_events.1.a
+	trigger = {
+	has_variable = sardiniafranciavar
+	}
+	add_journal_entry = {
+			type = radical_pathje
+		}
+	
+	}
+	option = {
+		name = italy_events.1.b
+			default_option = yes
+		trigger = {
+	NOT = {
+		has_variable = sardiniaaustriavar
+		}
+	NOT = {
+		has_variable = sardiniafranciavar
+		}
+	}
+		add_journal_entry = {
+			type = moderate_pathje
+		}
+	}
+	option = {
+		name = italy_events.1.c
+		trigger = {
+		has_variable = sardiniaaustriavar
+		}
+		add_journal_entry = {
+			type = austrian_pathje
+		}
+	}
+}
+italy_events.2 = { #####cerdeña se mete en bloque austriaco
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+
+	title = italy_events.2.t
+	desc = italy_events.2.d
+	flavor = italy_events.2.f
+ 
+	duration = 3
+	
+	immediate = {
+		set_variable = sardiniaaustriavar
+			activate_law = law_type:law_monarchy
+		transfer_state = {
+				STATE = s:STATE_EMILIA
+				GIVER = c:PAR
+				TAKER = c:SAR
+			}
+		
+		transfer_state = {
+				STATE = s:STATE_EMILIA
+				GIVER = c:MOD
+				TAKER = c:SAR
+			}
+		transfer_state = {
+				STATE = s:STATE_TUSCANY
+				GIVER = c:TUS
+				TAKER = c:SAR
+			}
+		random_state = {
+						limit = {
+							state_region = s:STATE_EMILIA
+							c:SAR ?= owner
+						}
+						set_state_type = incorporated
+					}
+		random_state = {
+						limit = {
+							state_region = s:STATE_TUSCANY
+							c:SAR ?= owner
+						}
+						set_state_type = incorporated
+					}
+		
+		add_modifier = {
+				name = austriancuck_modifier
+			}
+	 
+		c:AUS = {
+		add_modifier = {
+				name = austriancuck_modifier2
+			
+		    }
+		}
+	}
+	option = {
+	name = italy_events.2.a
+	default_option = yes
+
+	create_character = {
+				
+				last_name = von_Habsburg_Lothringen
+				historical = yes
+				culture = cu:south_german
+				heir = yes
+				birth_date = 1814.8.12
+				interest_group = ig_landowners
+				ideology = ideology_moderate
+				traits = {
+				charismatic
+		        honorable
+				}
+				on_created = {
+				set_character_as_ruler = yes
+				}
+			}
+	}
+}
+italy_events.3 = { #####boda sicilia piamonte camino austria
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+
+	title = italy_events.3.t
+	desc = italy_events.3.d
+	flavor = italy_events.3.f
+ 
+	duration = 3
+	
+	option = {
+	name = italy_events.3.a
+    default_option = yes
+	create_diplomatic_pact = {
+	country = c:SIC
+	type = personal_union
+		}
+	add_modifier = {
+	name = sicilianwedding
+	years = 3
+			}
+	}
+}
+italy_events.4 = { #####francia protege al vaticano
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = italy_events.4.t
+	desc = italy_events.4.d
+	flavor = italy_events.4.f
+ 
+	duration = 3
+
+	option = {
+	name = italy_events.4.a
+	default_option = yes
+	add_journal_entry = {
+	type = romeprotection_je
+		}
+	}
+
+	option = {
+	name = italy_events.4.b
+	
+	}
+}
+italy_events.5 = { #####tratado de letran
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = italy_events.5.t
+	desc = italy_events.5.d
+	flavor = italy_events.5.f
+ 
+	duration = 3
+
+	option = {
+	name = italy_events.5.a
+	default_option = yes
+		set_variable = letrantreatyvar
+		add_modifier = {
+				name = treatyofletranmod
+			}
+		add_modifier = {
+				name = treatyofletranmodexpenses
+				years = 7
+			}
+		transfer_state = {
+				STATE = s:STATE_LAZIO
+				GIVER = c:PAP
+				TAKER = c:SAR
+			}
+	}
+
+	option = {
+	name = italy_events.5.b
+	
+	}
+	option = {
+	name = italy_events.5.c
+	
+		trigger = {
+	has_variable = sardiniafranciavar
+	}
+	default_option = yes
+	transfer_state = {
+				STATE = s:STATE_LAZIO
+				GIVER = c:PAP
+				TAKER = c:SAR
+			}
+	}
+}
+italy_events.6 = { #####ultimatum a lucca
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = italy_events.6.t
+	desc = italy_events.6.d
+	flavor = italy_events.6.f
+ 
+	duration = 3
+
+	option = {
+	name = italy_events.6.a
+	default_option = yes
+		transfer_state = {
+				STATE = s:STATE_EMILIA
+				GIVER = c:LUC
+				TAKER = c:SAR
+			}
+		change_infamy = 10
+	}
+}
+italy_events.7 = { #####austria da cores
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = italy_events.7.t
+	desc = italy_events.7.d
+	flavor = italy_events.7.f
+ 
+	duration = 3
+
+	option = {
+	name = italy_events.7.a
+	default_option = yes
+		set_variable = venetialombardydemandvar
+		transfer_state = {
+				STATE = s:STATE_VENETIA
+				GIVER = c:AUS
+				TAKER = c:SAR
+			}
+		transfer_state = {
+				STATE = s:STATE_LOMBARDY
+				GIVER = c:AUS
+				TAKER = c:SAR
+			}
+	}
+	option = {
+	name = italy_events.7.b
+	default_option = yes
+	set_variable = venetialombardydemandvar
+	}
+}
+italy_events.8 = { ####completa journal de unificacion del mod
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+
+	title = italy_events.8.t
+	desc = italy_events.8.d
+	flavor = italy_events.8.f
+ 
+	duration = 3
+
+	option = {
+	name = italy_events.8.a
+	default_option = yes
+		set_variable = sigmaitaliaunifier
+	}
+}
+italy_events.9 = { ####1000 expedition
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = italy_events.9.t
+	desc = italy_events.9.d
+	flavor = italy_events.9.f
+ 
+	duration = 3
+    immediate = {
+		if = {
+			limit = { exists = s:STATE_SICILY.region_state:SIC 
+			}
+			create_country = { #SICILY
+				tag = SKI
+				origin = this
+				state = s:STATE_SICILY.region_state:SIC
+			}
+		}
+		c:SKI ?= {
+		create_character = {
+				ig_leader = yes
+				interest_group = ig_intelligentsia
+				ideology = ideology_radical
+				on_created = {
+				set_character_as_ruler = yes
+				}
+			}
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_right_of_assembly
+		}
+	}
+	option = {
+	name = italy_events.9.a
+	default_option = yes
+		c:SKI ?= {
+			create_diplomatic_play = {
+				name = thousand_expedition
+				target_country = c:SIC
+				type = dp_annex_war
+				add_war_goal = {
+				holder = c:SIC
+				target_country = c:SKI
+				type = annex_country
+			    }
+			}
+		}
+	create_diplomatic_pact = {
+	country = c:SKI
+	type = puppet
+		}
+	}
+}
+italy_events.10 = { #####cerdeña se va del bloque austriaco
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+
+	title = italy_events.10.t
+	desc = italy_events.10.d
+	flavor = italy_events.10.f
+ 
+	duration = 3
+	
+	immediate = {
+		remove_variable = sardiniaaustriavar
+		create_character = {
+				ig_leader = yes
+				interest_group = ig_landowners
+				ideology = ideology_moderate
+				on_created = {
+				set_character_as_ruler = yes
+				}
+			}
+	}
+	option = {
+	name = italy_events.10.a
+	trigger = {
+	NOT = {
+		has_variable = sigmaitaliaunifier
+		}
+	has_variable = piedmontesepathdone 
+	has_variable = sardiniafranciavar
+	}
+	add_journal_entry = {
+			type = radical_pathje
+		}
+	 
+			remove_modifier = austriancuck_modifier
+		
+	}
+	option = {
+		name = italy_events.10.b
+			default_option = yes
+		trigger = {
+	NOT = {
+		has_variable = sigmaitaliaunifier
+		}
+	has_variable = piedmontesepathdone
+	}
+		add_journal_entry = {
+			type = moderate_pathje
+		}
+		remove_modifier = austriancuck_modifier
+			
+	}
+	option = {
+		name = italy_events.10.c
+		trigger = {
+		has_variable = sigmaitaliaunifier
+		}
+	 remove_modifier = austriancuck_modifier
+			
+	}
+	option = {
+		name = italy_events.10.e
+		trigger = {
+		NOT = { has_variable = piedmontesepathdone
+		    }
+		}
+		remove_modifier = austriancuck_modifier
+			
+	    }
+    }
+italy_events.12 = { #####evento que le sale a austria si se va italia
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+
+	title = italy_events.12.t
+	desc = italy_events.12.d
+	flavor = italy_events.12.f
+ 
+	duration = 3
+	
+	option = {
+	name = italy_events.12.a
+	remove_modifier = austriancuck_modifier2		
+	}
+}
+italy_events.13 = { #####cerdeña se mete en bloque frances
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+
+	title = italy_events.13.t
+	desc = italy_events.13.d
+	flavor = italy_events.13.f
+ 
+	duration = 3
+	
+	immediate = {
+		set_variable = sardiniafranciavar
+	}
+	option = {
+	name = italy_events.13.a
+	default_option = yes
+
+	}
+}
+italy_events.14 = { #####cerdeña se va del bloque frances
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+
+	title = italy_events.14.t
+	desc = italy_events.14.d
+	flavor = italy_events.14.f
+ 
+	duration = 3
+	
+	immediate = {
+	remove_variable = sardiniafranciavar
+	}
+	option = {
+		name = italy_events.14.a
+			default_option = yes
+		trigger = {
+	NOT = {
+		has_variable = sigmaitaliaunifier
+		}
+	has_variable = piedmontesepathdone
+	}
+		add_journal_entry = {
+			type = moderate_pathje
+		}
+			
+	}
+	option = {
+		name = italy_events.14.b
+		trigger = {
+		has_variable = sigmaitaliaunifier
+		}		
+	}
+	option = {
+		name = italy_events.14.c
+		trigger = {
+		NOT = { has_variable = piedmontesepathdone
+		    }
+		}
+	    }
+	option = {
+		name = italy_events.14.e
+			default_option = yes
+		trigger = {
+	NOT = {
+		has_variable = sigmaitaliaunifier
+		}
+	has_variable = piedmontesepathdone
+	has_variable = sardiniaaustriavar
+	}
+		add_journal_entry = {
+			type = austrian_pathje
+		}
+			
+	}
+}
+italy_events.15 = { #####cerdeña se va del bloque frances perspectiva francia
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+
+	title = italy_events.15.t
+	desc = italy_events.15.d
+	flavor = italy_events.15.f
+ 
+	duration = 3
+
+	option = {
+		name = italy_events.15.a
+			default_option = yes
+
+	}
+}
+italy_events.16 = { ####anexionar los ducados del norte
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = italy_events.16.t
+	desc = italy_events.16.d
+	flavor = italy_events.16.f
+ 
+	duration = 3
+
+	option = {
+	name = italy_events.16.a
+	default_option = yes
+		c:SAR ?= {
+			create_diplomatic_play = {
+				name = annex_war
+				target_country = c:PAR
+				type = dp_annex_war
+	
+			}
+			create_diplomatic_play = {
+				name = annex_war
+				target_country = c:LUC
+				type = dp_annex_war
+	
+			}
+			create_diplomatic_play = {
+				name = annex_war
+				target_country = c:MOD
+				type = dp_annex_war
+	
+			}
+			create_diplomatic_play = {
+				name = annex_war
+				target_country = c:TUS
+				type = dp_annex_war
+	
+			}
+		}
+	}
+}
+italy_events.17 = { ####SANMARCO
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = italy_events.17.t
+	desc = italy_events.17.d
+	flavor = italy_events.17.f
+ 
+	duration = 3
+    immediate = {
+		if = {
+			limit = { exists = s:STATE_LOMBARDY.region_state:AUS 
+			}
+			create_country = { #SANMARCO
+				tag = RSM
+				origin = this
+				state = s:STATE_LOMBARDY.region_state:AUS
+			}
+		}
+		random_state = {
+						limit = {
+							state_region = s:STATE_VENETIA
+							c:AUS ?= owner
+						}
+						set_state_owner = c:RSM
+						set_state_type = incorporated
+					}
+		c:RSM ?= {
+		create_character = {
+				ig_leader = yes
+				interest_group = ig_intelligentsia
+				ideology = ideology_radical
+				on_created = {
+				set_character_as_ruler = yes
+				}
+			}
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_right_of_assembly
+		}
+	}
+	option = {
+	name = italy_events.17.a
+	c:AUS ?= {
+			create_diplomatic_play = {
+				name = annex_war
+				type = dp_annex_war
+				target_state = c:RSM.capital
+
+				add_war_goal = {
+					holder = c:RSM
+					type = independence
+					target_country = c:RSM
+					primary_demand = yes
+				}
+			}
+		}
+	create_diplomatic_pact = {
+	country = c:RSM
+	type = puppet
+		}
+	}
+}
+italy_events.18 = { ####SANMARCOBOUGHT
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	title = italy_events.18.t
+	desc = italy_events.18.d
+	flavor = italy_events.18.f
+ 
+	duration = 3
+
+	option = {
+	name = italy_events.18.a
+	default_option = yes
+    random_state = {
+						limit = {
+							state_region = s:STATE_VENETIA
+							c:AUS ?= owner
+						}
+						set_state_owner = c:SAR
+						set_state_type = incorporated
+					
+					}
+					random_state = {
+						limit = {
+							state_region = s:STATE_LOMBARDY
+							c:AUS ?= owner
+						}
+						set_state_owner = c:SAR
+						set_state_type = incorporated
+						
+	}
+	c:AUS = { 
+		add_modifier = {
+					name = sanmarcosell
+					years = 10
+				}
+		} 
+	c:SAR = { 
+		add_modifier = {
+					name = sanmarcobought
+					years = 10
+				}
+		}
+
+}	
+option = {
+	name = italy_events.18.b
+
+   }
+}
+italy_events.19 = { ####MAFIAAPPEAR
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_raiding.dds"
+
+	title = italy_events.19.t
+	desc = italy_events.19.d
+	flavor = italy_events.19.f
+ 
+	duration = 3
+    immediate = {
+	set_variable = mafiaitalyvar
+	}
+	option = {
+	name = italy_events.19.a
+	default_option = yes
+    random_state = {
+	limit = {
+	state_region = s:STATE_CAMPANIA
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = mafiamodifier
+			}
+        }
+	random_state = {
+	limit = {
+	state_region = s:STATE_ABRUZZO
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = mafiamodifier
+			}
+        }
+		random_state = {
+	limit = {
+	state_region = s:STATE_CALABRIA
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = mafiamodifier
+			}
+        }
+		random_state = {
+	limit = {
+	state_region = s:STATE_APULIA
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = mafiamodifier
+			}
+        }
+		random_state = {
+	limit = {
+	state_region = s:STATE_SICILY
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = mafiamodifier
+			}
+        }
+		add_journal_entry = {
+			type = italian_mafiaje
+		}
+
+    }	
+
+}
+italy_events.20 = { ####MAFIAGOES
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	title = italy_events.20.t
+	desc = italy_events.20.d
+	flavor = italy_events.20.f
+ 
+	duration = 3
+    immediate = {
+	set_variable = mafiaitalyvar
+	}
+	option = {
+	name = italy_events.20.a
+	default_option = yes
+    every_scope_state = {
+			limit = {
+				has_modifier = mafiamodifier
+			}
+			remove_modifier = mafiamodifier
+		}
+		add_journal_entry = {
+			type = integrate_southje
+		}
+
+    
+    add_loyalists = {
+			strata = upper
+			value = very_large_radicals
+		}
+	add_loyalists = {
+			value = medium_radicals
+			strata = middle
+		}
+	add_loyalists = {
+			value = medium_radicals
+			strata = lower
+		}
+        add_modifier = {
+				name = mafiaerasedmodifier
+			}
+     activate_law = law_type:law_siracuzza			
+    }
+}
+italy_events.21 = { ####SURINTEGRADO
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	title = italy_events.21.t
+	desc = italy_events.21.d
+	flavor = italy_events.21.f
+ 
+	duration = 3
+    immediate = {
+	set_variable = mafiaitalyvar
+	}
+	option = {
+	name = italy_events.21.a
+	default_option = yes
+    random_state = {
+	limit = {
+	state_region = s:STATE_CAMPANIA
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = southintegratedmodifier
+			}
+        }
+	random_state = {
+	limit = {
+	state_region = s:STATE_ABRUZZO
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = southintegratedmodifier
+			}
+        }
+		random_state = {
+	limit = {
+	state_region = s:STATE_CALABRIA
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = southintegratedmodifier
+			}
+        }
+		random_state = {
+	limit = {
+	state_region = s:STATE_APULIA
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = southintegratedmodifier
+			}
+        }
+		random_state = {
+	limit = {
+	state_region = s:STATE_SICILY
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = southintegratedmodifier
+			}
+        }
+    }	
+
+}
+italy_events.22 = { ####TRIANGULOINDUSTRIAL
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	title = italy_events.22.t
+	desc = italy_events.22.d
+	flavor = italy_events.22.f
+ 
+	duration = 3
+    immediate = {
+	set_variable = mafiaitalyvar
+	}
+	option = {
+	name = italy_events.22.a
+	default_option = yes
+    
+		random_state = {
+	limit = {
+	state_region = s:STATE_PIEDMONT
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = industrialtrianglemodifier
+			}
+        }
+		random_state = {
+	limit = {
+	state_region = s:STATE_LOMBARDY
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = industrialtrianglemodifier
+			}
+        }
+		random_state = {
+	limit = {
+	state_region = s:STATE_TUSCANY
+	c:ITA ?= owner
+		    }
+			add_modifier = {
+				name = industrialtrianglemodifier
+			}
+        }
+    }	
+
+}
+italy_events.23 = { ####DESARROLLOSOMYTRIFINALIZADO
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "africa_construction_colony"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = italy_events.23.t
+	desc = italy_events.23.d
+	flavor = italy_events.23.f
+ 
+	duration = 3
+    immediate = {
+	random_state = {
+			limit = {
+				state_region = s:STATE_TRIPOLI
+				state_region = s:STATE_LIBYAN_DESERT
+				state_region = s:STATE_LIBYA
+				
+			}
+			add_modifier = {
+				name = tripolideveloped
+			}
+		}
+	random_state = {
+			limit = {
+				state_region = s:STATE_ERITREA
+				state_region = s:STATE_SOMALILAND	
+			}
+			add_modifier = {
+				name = somaliadeveloped
+			}
+		}
+	}
+	option = { ###aceptarlos
+	name = italy_events.23.a
+	default_option = yes
+    
+	random_state = {
+			limit = {
+			state_region = s:STATE_TRIPOLI
+				}
+			
+			add_acceptance = {
+				
+				target = cu:berber
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_TRIPOLI
+				}
+			
+			add_acceptance = {
+				
+				target = cu:maghrebi
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_TRIPOLI
+				}
+			
+			add_acceptance = {
+				
+				target = cu:bedouin
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_LIBYAN_DESERT
+				}
+			
+			add_acceptance = {
+				
+				target = cu:teda
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_LIBYAN_DESERT
+				}
+			
+			add_acceptance = {
+				
+				target = cu:tuareg
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_LIBYAN_DESERT
+				}
+			
+			add_acceptance = {
+				
+				target = cu:bedouin
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_LIBYA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:maghrebi
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_LIBYA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:teda
+				value = 40
+		    }
+	    }
+    random_state = {
+			limit = {
+			state_region = s:STATE_LIBYA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:bedouin
+				value = 40
+		    }
+	    }
+    random_state = {
+			limit = {
+			state_region = s:STATE_ERITREA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:tigray
+				value = 40
+		    }
+	    }
+	random_state = {
+			limit = {
+			state_region = s:STATE_ERITREA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:afar
+				value = 40
+		    }
+	    }
+    random_state = {
+			limit = {
+			state_region = s:STATE_SOMALILAND
+				}
+			
+			add_acceptance = {
+				
+				target = cu:somali
+				value = 40
+		    }
+	    }		
+    }
+option = { # italy homelands
+		name = italy_events.23.b
+		ai_chance = {
+			base = 1
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_LIBYA
+				
+			}
+			add_modifier = {
+				name = italianconversion_modifier
+				days = long_modifier_time
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_SOMALILAND
+			
+			}
+			add_modifier = {
+				name = italianconversion_modifier
+				days = long_modifier_time
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_ERITREA
+				
+			}
+			add_modifier = {
+				name = italianconversion_modifier
+				days = long_modifier_time
+			}
+		
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_TRIPOLI
+			
+			}
+			add_modifier = {
+				name = italianconversion_modifier
+				days = long_modifier_time
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_LIBYAN_DESERT
+				
+			}
+			add_modifier = {
+				name = italianconversion_modifier
+				days = long_modifier_time
+			}
+		
+		}
+		s:STATE_LIBYA = {
+			add_homeland = cu:north_italian
+			add_homeland = cu:south_italian
+				remove_homeland = cu:teda
+				remove_homeland = cu:maghrebi
+				remove_homeland = cu:bedouin
+		}	
+		s:STATE_TRIPOLI = {
+		add_homeland = cu:north_italian
+		add_homeland = cu:south_italian
+				remove_homeland = cu:maghrebi
+				remove_homeland = cu:berber
+				remove_homeland = cu:bedouin
+		}	
+		s:STATE_LIBYAN_DESERT = {
+		add_homeland = cu:north_italian
+		add_homeland = cu:south_italian
+				remove_homeland = cu:teda
+				remove_homeland = cu:tuareg
+				remove_homeland = cu:bedouin
+		}
+        s:STATE_ERITREA = {
+		add_homeland = cu:north_italian
+		add_homeland = cu:south_italian
+				remove_homeland = cu:tigray
+				remove_homeland = cu:afar
+		}
+        s:STATE_SOMALILAND = {
+		add_homeland = cu:north_italian
+		add_homeland = cu:south_italian
+				remove_homeland = cu:somali
+		}		
+	change_infamy = 15	
+	}	
+}
+italy_events.24 = { ####DESARROLL ETIOPIA HECHO
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "africa_construction_colony"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	title = italy_events.24.t
+	desc = italy_events.24.d
+	flavor = italy_events.24.f
+ 
+	duration = 3
+    immediate = {
+	random_state = {
+			limit = {
+				state_region = s:STATE_OROMIA
+				state_region = s:STATE_AMHARA
+				state_region = s:STATE_GONDER
+				
+			}
+			add_modifier = {
+				name = etiopiadevelopedmodifier
+			}
+		}
+	}
+	option = { ###aceptarlos
+	name = italy_events.24.a
+	default_option = yes
+    
+	random_state = {
+			limit = {
+			state_region = s:STATE_OROMIA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:oromo
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_OROMIA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:amhara
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_OROMIA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:somali
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_AMHARA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:oromo
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_AMHARA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:amhara
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_AMHARA
+				}
+			
+			add_acceptance = {
+				
+				target = cu:sidama
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_GONDER
+				}
+			
+			add_acceptance = {
+				
+				target = cu:oromo
+				value = 40
+		}
+	}
+	random_state = {
+			limit = {
+			state_region = s:STATE_GONDER
+				}
+			
+			add_acceptance = {
+				
+				target = cu:amhara
+				value = 40
+		    }
+	    }
+    random_state = {
+			limit = {
+			state_region = s:STATE_GONDER
+				}
+			
+			add_acceptance = {
+				
+				target = cu:tigray
+				value = 40
+		    }
+	    }
+    random_state = {
+			limit = {
+			state_region = s:STATE_GONDER
+				}
+			
+			add_acceptance = {
+				
+				target = cu:afar
+				value = 40
+		    }
+	    }	
+    }
+option = { # italy homelands
+		name = italy_events.24.b
+		ai_chance = {
+			base = 1
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_GONDER
+				
+			}
+			add_modifier = {
+				name = italianconversion_modifier
+				days = long_modifier_time
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_AMHARA
+			
+			}
+			add_modifier = {
+				name = italianconversion_modifier
+				days = long_modifier_time
+			}
+			
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_OROMIA
+				
+			}
+			add_modifier = {
+				name = italianconversion_modifier
+				days = long_modifier_time
+			}
+		
+		}
+		s:STATE_GONDER = {
+			add_homeland = cu:north_italian
+			add_homeland = cu:south_italian
+				remove_homeland = cu:oromo
+				remove_homeland = cu:amhara
+				remove_homeland = cu:tigray
+				remove_homeland = cu:afar
+		}	
+		s:STATE_AMHARA = {
+		add_homeland = cu:north_italian
+		add_homeland = cu:south_italian
+				remove_homeland = cu:oromo
+				remove_homeland = cu:amhara
+				remove_homeland = cu:sidama
+		}	
+		s:STATE_OROMIA = {
+		add_homeland = cu:north_italian
+		add_homeland = cu:south_italian
+				remove_homeland = cu:oromo
+				remove_homeland = cu:amhara
+				remove_homeland = cu:somali
+		}
+	change_infamy = 15	
+	}	
+}
+italy_events.25 = { #####proclama el imperio italiano
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/risorgimento.dds"
+
+	title = italy_events.25.t
+	desc = italy_events.25.d
+	flavor = italy_events.25.f
+ 
+	duration = 3
+	
+	immediate = {
+		set_variable = italianempireproclaimed
+	}
+	option = {
+	name = italy_events.25.a
+	default_option = yes
+    add_journal_entry = {
+			type = italian_empireje2
+		}
+	}
+}
+italy_events.26 = { #####cae el imperio italiano
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "southamerica_war_civilians"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_raiding.dds"
+
+	title = italy_events.26.t
+	desc = italy_events.26.d
+	flavor = italy_events.26.f
+ 
+	duration = 3
+	
+	immediate = {
+		remove_variable = italianempireproclaimed
+	}
+	option = {
+	name = italy_events.26.a
+	default_option = yes
+    add_journal_entry = {
+			type = italian_empireje
+		}
+	}
+	option = {
+	name = italy_events.26.b
+	}
+}

@@ -253,7 +253,7 @@ sick_man.3 = {
 		}
 	}
 
-	option = {
+  option = {
 		name = sick_man.3.a
 		if = {
 			limit = {
@@ -264,6 +264,22 @@ sick_man.3 = {
 						is_country_type = unrecognized
 					}
 				}
+			}
+			every_subject_or_below = {
+				limit = {
+					NOT = { any_overlord_or_above = { NOT = { ROOT = this } } }
+					OR = {
+						NOT = {
+							is_country_type = unrecognized
+						}
+						is_subject_type = subject_type_protectorate
+						is_subject_type = subject_type_dominion
+						is_subject_type = subject_type_puppet
+						is_subject_type = subject_type_colony
+						is_subject_type = subject_type_chartered_company
+					}
+				}
+				make_independent = yes
 			}
 		}
 		set_country_type = unrecognized
@@ -279,7 +295,9 @@ sick_man.3 = {
 			}
 		}
 		add_journal_entry = {
-			type = je_restoring_rome
-		}
+				type = je_restoring_rome
+			}			   
+						   
+   
 	}
 }
