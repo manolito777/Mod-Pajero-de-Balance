@@ -1,0 +1,20 @@
+﻿l_english:
+building_charcoal_burner: "Charcoal Burner"
+building_charocal_burner_option: "Expand $building_charcoal_burner$"
+
+pmg_base_building_charcoal_burner: "Base"
+pm_charcoal_kiln_building_charcoal_burner: "Charcoal Kiln"
+pm_combustion_chamber_building_charcoal_burner: "Combustion Chamber"
+pm_machine_coal_building_charcoal_burner: "Machine Coal"
+
+pmg_automation_building_charcoal_burner: "Automation"
+pm_watertube_boiler_building_charcoal_burner: "Watertube Boiler"
+pm_rotary_valve_engine_building_charcoal_burner: "Rotary Valve Engine"
+pm_assembly_lines_building_charcoal_burner: "Assembly Lines"
+
+
+pmg_transportation_building_charcoal_burner: "Transportation"
+pm_road_carts_building_charcoal_burner: "Road Carts"
+pm_rail_transport_building_charcoal_burner: "$pm_rail_transport$"
+pm_rail_bulk_freight_wagon_building_charcoal_burner: "Bulk Freight Wagon"
+

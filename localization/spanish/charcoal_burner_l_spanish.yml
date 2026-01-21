@@ -1,0 +1,20 @@
+﻿l_spanish:
+building_charcoal_burner: "Carbonería"
+building_charocal_burner_option: "ampliar $building_charcoal_burner$"
+
+pmg_base_building_charcoal_burner: "Base"
+pm_charcoal_kiln_building_charcoal_burner: "Horno de carbón"
+pm_combustion_chamber_building_charcoal_burner: "Cámara de combustión"
+pm_machine_coal_building_charcoal_burner: "Carbón para maquinaria"
+
+pmg_automation_building_charcoal_burner: "Automatización"
+pm_watertube_boiler_building_charcoal_burner: "Caldera acuotubular"
+pm_rotary_valve_engine_building_charcoal_burner: "Motor de válvulas rotativas"
+pm_assembly_lines_building_charcoal_burner: "Líneas de montaje"
+
+
+pmg_transportation_building_charcoal_burner: "Transporte"
+pm_road_carts_building_charcoal_burner: "Carretas para caminos"
+pm_rail_transport_building_charcoal_burner: "$pm_rail_transport$"
+pm_rail_bulk_freight_wagon_building_charcoal_burner: "Vagones de carga a granel"
+
