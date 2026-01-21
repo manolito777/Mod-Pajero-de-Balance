@@ -1,0 +1,76 @@
+﻿namespace = valfardsstaten_event
+
+# CORRECCIÓN 1: Añadido ".1" al ID del evento
+valfardsstaten_event.1 = {
+    # CORRECCIÓN 2: Cambiado a country_event porque lo activa un país (Suecia)
+    type = country_event 
+    placement = root
+
+    title = valfardsstaten_event.t
+    desc = valfardsstaten_event.d
+    flavor = valfardsstaten_event.f
+
+    event_image = {
+        video = "europenorthamerica_london_center"
+    }
+
+    icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+    # duration = 3  <-- Esta línea no se usa en eventos normales, la he quitado.
+
+    option = { 
+        name = valfardsstaten_event.a
+        default_option = yes
+        ai_chance = {
+            base = 1
+        }
+
+        # EFECTO PARA SVEALAND
+        random_scope_state = {
+            limit = {
+                state_region = s:STATE_SVEALAND
+                owner = root  # CORRECCIÓN 3: Solo estados que YO poseo
+            }
+            add_modifier = {
+                name = swe_migration
+                days = -1 # He puesto 10 años, asegúrate que "long_modifier_time" exista si usas ese.
+            }
+        }
+
+        # EFECTO PARA GOTALAND
+        random_scope_state = {
+            limit = {
+                state_region = s:STATE_GOTALAND
+                owner = root
+            }
+            add_modifier = {
+                name = swe_migration
+                days = -1
+            }
+        }
+
+        # EFECTO PARA ESCANIA
+        random_scope_state = {
+            limit = {
+                state_region = s:STATE_SCANIA
+                owner = root
+            }
+            add_modifier = {
+                name = swe_migration
+                days = -1
+            }
+        }
+
+        # EFECTO PARA NORRLAND
+        random_scope_state = {
+            limit = {
+                state_region = s:STATE_NORRLAND
+                owner = root
+            }
+            add_modifier = {
+                name = swe_migration
+                days = -1
+            }
+        }
+    }
+}

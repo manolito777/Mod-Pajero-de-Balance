@@ -1,0 +1,27 @@
+﻿namespace = reform_riksdag_event
+
+reform_riksdag_event.1 = {
+    # CORRECCIÓN 2: Cambiado a country_event porque lo activa un país (Suecia)
+    type = country_event 
+    placement = root
+
+    title = reform_riksdag_event.t
+    desc = reform_riksdag_event.d
+    flavor = reform_riksdag_event.f
+
+    event_image = {
+        video = "europenorthamerica_london_center"
+    }
+
+    icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+    option = { 
+		name = reform_riksdag_event.1.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+	activate_law = law_type:law_riksdag
+	activate_law = law_type:law_Monarchia
+		}
+}

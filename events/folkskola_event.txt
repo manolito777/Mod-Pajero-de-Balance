@@ -1,0 +1,26 @@
+﻿namespace = folkskola_event
+
+folkskola_event.1 = {
+    # CORRECCIÓN 2: Cambiado a country_event porque lo activa un país (Suecia)
+    type = country_event 
+    placement = root
+
+    title = folkskola_event.t
+    desc = folkskola_event.d
+    flavor = folkskola_event.f
+
+    event_image = {
+        video = "europenorthamerica_london_center"
+    }
+
+    icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+    option = { 
+		name = folkskola_event.1.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+	activate_law = law_type:law_folkskola
+		}
+}
