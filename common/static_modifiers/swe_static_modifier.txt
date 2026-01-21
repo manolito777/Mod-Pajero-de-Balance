@@ -1,0 +1,5 @@
+﻿swe_migration = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_migration_quota_mult = 0.25
+	state_migration_pull_add = 10
+}
