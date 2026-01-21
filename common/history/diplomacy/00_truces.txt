@@ -42,3 +42,1721 @@ DIPLOMACY = {
 		}
 	}
 }
+######TREGUAS 4 AÑOS INICIO
+
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:FRA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:SPA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:RUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:USA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:MEX
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:CLM
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:BRZ
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:BOL
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+##2
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:PRU
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:FRA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:SPA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:RUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:USA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:MEX
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:CLM
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:BRZ
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:BOL
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PRU ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+##3
+
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:SPA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:RUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:USA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:MEX
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:CLM
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:BRZ
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:BOL
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:FRA ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+###########4
+
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:RUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:USA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:MEX
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:CLM
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:BRZ
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:BOL
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SPA ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+###########5
+
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:USA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:MEX
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:CLM
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:BRZ
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:BOL
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:RUS ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+###########6
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:USA
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:MEX
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:CLM
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:BRZ
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:BOL
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:GBR ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+###########7
+
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:MEX
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:CLM
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:BRZ
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:BOL
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:USA ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+######################8
+
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:CLM
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:BRZ
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:BOL
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MEX ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+###############8
+
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:BRZ
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:BOL
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CLM ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+###########9
+
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:BOL
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BRZ ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+##############10
+
+DIPLOMACY = {
+	c:BOL ?= {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BOL ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BOL ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BOL ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BOL ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BOL ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BOL ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BOL ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BOL ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:BOL ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+###########11
+
+DIPLOMACY = {
+	c:ARG ?= {
+		create_bidirectional_truce = {
+			country = c:SAR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:ARG ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:ARG ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:ARG ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:ARG ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:ARG ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:ARG ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:ARG ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:ARG ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+##############12
+
+DIPLOMACY = {
+	c:SAR ?= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SAR ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SAR ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SAR ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SAR ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SAR ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SAR ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SAR ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+###########13
+
+DIPLOMACY = {
+	c:TUR ?= {
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:TUR ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:TUR ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:TUR ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:TUR ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:TUR ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:TUR ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+############14
+
+DIPLOMACY = {
+	c:PER ?= {
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PER ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PER ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PER ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PER ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:PER ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+#############15
+
+DIPLOMACY = {
+	c:CHI ?= {
+		create_bidirectional_truce = {
+			country = c:MUG
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CHI ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CHI ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CHI ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:CHI ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+############16
+
+DIPLOMACY = {
+	c:MUG ?= {
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MUG ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MUG ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:MUG ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+###########17
+
+DIPLOMACY = {
+	c:AUS ?= {
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:AUS ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:AUS ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+#############18
+
+DIPLOMACY = {
+	c:SWE ?= {
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 48
+		}
+	}
+}
+DIPLOMACY = {
+	c:SWE ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}
+###########19
+
+DIPLOMACY = {
+	c:JAP ?= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 48
+		}
+	}
+}

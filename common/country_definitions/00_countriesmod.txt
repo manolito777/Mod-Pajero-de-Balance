@@ -25,7 +25,19 @@ INC = {
 	}
 	capital = STATE_TONKIN
 }
+SKI = {
+	#SICILY REBEL
+	color = { 87 35 100 }
+	
+	country_type = recognized
 
+	tier = principality
+	
+	cultures = {
+		south_italian
+	}
+	capital = STATE_SICILY
+}
 PEC = {
 	color ={ 87 35 100 }
 	
@@ -36,6 +48,62 @@ PEC = {
 	
 	cultures = { british }
 	capital = STATE_SINDH
+}
+REPLACE:TRM = { # Turkmenia
+	color = { 156 74 74 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { turkmen }
+
+	capital = STATE_TURKMENIA
+}
+REPLACE:DGR = {
+	color = { 235 222 52 }
+
+	country_type = unrecognized
+
+	religion = animist
+
+	tier = principality
+
+	cultures = { champa }
+	capital = STATE_ANNAM
+}
+REPLACE:KLO = {
+	color = { 3 165 252 }
+
+	country_type = unrecognized
+
+	religion = animist
+
+	tier = principality
+
+	cultures = { khmer }
+	capital = STATE_CAMBODIA
+}
+REPLACE:SCT = {
+	color = { 50 162 210 }
+
+	country_type = unrecognized
+
+	religion = animist
+
+	tier = principality
+
+	cultures = { lao }
+	capital = STATE_TONKIN
+}
+REPLACE:KKI = { # Kuki / Lushai
+	color = { 190 190 190 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { lushai }
+	capital = STATE_ASSAM
 }
 REPLACE:GER = {
 	color = german_gray

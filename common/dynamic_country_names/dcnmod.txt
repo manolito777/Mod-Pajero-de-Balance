@@ -1,0 +1,304 @@
+﻿SAR = {
+	dynamic_country_name = { # CERDEÑA ESTA CON AUSTRIA
+		name = dyn_c_sardini_aus
+		adjective = dyn_c_sardini_aus_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+				has_variable = sardiniaaustriavar
+			}
+		}
+	}
+}
+INJECT:ITA = {
+	dynamic_country_name = { # ITALIA ESTA CON AUSTRIA
+		name = dyn_c_ita_aus
+		adjective = dyn_c_ita_aus_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+				ruler = {
+			 has_culture = cu:south_german
+		}
+			}
+		}
+	}
+}
+INJECT:ITA = {
+	dynamic_country_name = { # ITALIA 1ER IMPERIO
+		name = dyn_c_ita_empire
+		adjective = dyn_c_ita_aus_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+				has_variable = italianempireproclaimed
+			}
+		}
+	}
+}
+INJECT:JAP = {
+	dynamic_country_name = { # AREA11
+		name = dyn_c_jap_uk
+		adjective = dyn_c_jap_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			has_variable = japanukbloc	
+			}
+		}
+	}
+}
+INJECT:GBR = {
+	dynamic_country_name = { # BRITANNIA
+		name = dyn_c_jap2_uk
+		adjective = dyn_c_jap2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			has_variable = japanukbloc	
+			}
+		}
+	}
+}
+REPLACE_OR_CREATE:MEX = {
+	dynamic_country_name = { # AREA 1
+		name = dyn_c_mex2_uk
+		adjective = dyn_c_mex2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+			c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}
+REPLACE_OR_CREATE:CLM = {
+	dynamic_country_name = { # AREA 2
+		name = dyn_c_clm2_uk
+		adjective = dyn_c_clm2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+				c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}
+REPLACE_OR_CREATE:GCO = {
+	dynamic_country_name = { # AREA 2
+		name = dyn_c_clm2_uk
+		adjective = dyn_c_clm2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+				c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}
+REPLACE_OR_CREATE:BOL = {
+	dynamic_country_name = { # AREA 3
+		name = dyn_c_per2_uk
+		adjective = dyn_c_per2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+				c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}
+REPLACE_OR_CREATE:PBC = {
+	dynamic_country_name = { # AREA 3
+		name = dyn_c_per2_uk
+		adjective = dyn_c_per2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+				c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}
+REPLACE_OR_CREATE:FND = {
+	dynamic_country_name = { # AREA 3
+		name = dyn_c_per2_uk
+		adjective = dyn_c_per2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+				c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}
+REPLACE_OR_CREATE:PLT = {
+	dynamic_country_name = { # AREA 4
+		name = dyn_c_arg2_uk
+		adjective = dyn_c_arg2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+				c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}
+REPLACE_OR_CREATE:ARG = {
+	dynamic_country_name = { # AREA 4
+		name = dyn_c_arg2_uk
+		adjective = dyn_c_arg2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+				c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}
+REPLACE_OR_CREATE:BRZ = {
+	dynamic_country_name = { # AREA 5
+		name = dyn_c_brz2_uk
+		adjective = dyn_c_brz2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+				c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}
+REPLACE_OR_CREATE:DAI = {
+	dynamic_country_name = { # AREA 10
+		name = dyn_c_dai2_uk
+		adjective = dyn_c_dai2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+				c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}
+REPLACE_OR_CREATE:INC = {
+	dynamic_country_name = { # AREA 10
+		name = dyn_c_dai2_uk
+		adjective = dyn_c_dai2_uk_adj
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+		  exists = scope:actor
+			scope:actor ?= {
+			is_in_same_power_bloc = c:GBR
+			}
+				c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+		}
+	}
+}

@@ -1,3 +1,84 @@
+SKI = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "itarepcoa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
+GBR_BRI = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "gbrbricoa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
+AR1 = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "ar1coa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
+AR2 = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "ar2coa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
+AR3 = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "ar3coa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
+AR4 = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "ar4coa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
+SHBE = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "ar5coa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
+AR10 = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "ar10coa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
+JAP_11 = {
+pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "jap11coa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }
+	}
+}
 BYZ = {
 pattern = "pattern_border_outlined_thin.dds"
 	color1 = "white"
@@ -1322,6 +1403,15 @@ ITA = { # Italy
 		instance = { scale = { 1 1 } position = { 0.5 0.50 } }	
 	}	
 }
+ITA_AUS = { # ItalyAUSTRIA
+	pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "itaauscoa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }	
+	}	
+}
 ITA_republic = {
 	pattern = "pattern_border_outlined_thin.dds"
 	color1 = "white"
@@ -1364,6 +1454,15 @@ SAR = {
     color2 = "white"
     textured_emblem = {
 		texture = "sarcoa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }	
+	}	
+}
+SAR_austria = {
+	pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "sarauscoa.dds"
 		instance = { scale = { 1 1 } position = { 0.5 0.50 } }	
 	}	
 }
@@ -2205,6 +2304,15 @@ SGF_fascist = {
 	}			
 }
 GER = {
+	pattern = "pattern_border_outlined_thin.dds"
+	color1 = "white"
+    color2 = "white"
+    textured_emblem = {
+		texture = "ngfcoa.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.50 } }	
+	}
+}
+GERCOAMOD = {
 	pattern = "pattern_border_outlined_thin.dds"
 	color1 = "white"
     color2 = "white"

@@ -1,10 +1,8 @@
 ﻿
 roman_decision = {
 	is_shown = {
-		
-		OR = {
-			exists = c:BYZ
-		}
+		exists = c:BYZ
+		c:BYZ = ROOT
 		NOT = { has_variable = defenderfaithvar
 		}
 	}

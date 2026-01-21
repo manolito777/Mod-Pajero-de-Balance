@@ -35,7 +35,7 @@
 		power_bloc = {
 			leverage_advantage = {
 				target = scope:target_country
-				value >= 50
+				value >= 20
 			}
 
 			NOT = {

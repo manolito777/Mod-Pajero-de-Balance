@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ﻿building_kierbedz_bridge = {
-=======
-﻿building_kierbedź_bridge = {
->>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d
     building_group = bg_monuments
 	icon = "gfx/interface/icons/building_icons/building_kierbedź_bridge.dds"
 	expandable = no
@@ -10,17 +6,10 @@
 	unique = yes
 	
 	entity_not_constructed = { }
-<<<<<<< HEAD
 	entity_constructed = { "wonder_kierbedz_bridge_entity" }
 
 	production_method_groups = {
 		pmg_base_building_kierbedz_bridge
-=======
-	entity_constructed = { "wonder_kierbedź_bridge_entity" }
-
-	production_method_groups = {
-		pmg_base_building_kierbedź_bridge
->>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d
 	}
 
 	required_construction = 2000
@@ -32,16 +21,9 @@
 	# Bridge can only be built after the Vistula survey is complete
 	possible = {
 		owner = {
-<<<<<<< HEAD
 		
 				has_variable = survey_vistula_complete
 			
-=======
-			custom_tooltip = {
-				text = vistula_survey_complete_tooltip
-				has_variable = survey_vistula_complete
-			}
->>>>>>> c3d9a4d198984e229af8e5d6905b1f30fbadf54d
 		}
 	}
     

@@ -26,6 +26,8 @@ berlinreform = {
 				level >= 50
 	        }
 	    }
+		NOT = { has_variable = berlinreformvar
+		}
 	}
 	    when_taken = {
 
@@ -42,5 +44,6 @@ berlinreform = {
 			name = BerlinRenovation
 			years = 2
 		}
+		set_variable = berlinreformvar
 	}
 }

@@ -1124,6 +1124,17 @@
 				size = 360
 			}
 		}
+		region_state:PHI = {
+			create_pop = {
+				culture = micronesian
+				size = 5000
+			}
+			create_pop = {
+				culture = spanish
+				size = 796
+			}
+			
+		}
 	}
 	s:STATE_SOLOMON_ISLANDS = {
 		region_state:BLA = {

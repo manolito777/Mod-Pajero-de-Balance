@@ -6,6 +6,7 @@ crimea_war_decision = {
 		}
 		NOT = { has_variable = crime_war_var
 		}
+		exists = c:TUR
 	}
     possible = {
         has_technology_researched = nationalism

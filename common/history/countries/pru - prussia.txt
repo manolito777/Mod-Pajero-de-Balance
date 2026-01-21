@@ -22,7 +22,7 @@
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_censorship
-		activate_law = law_type:law_combination_acts
+		activate_law = law_type:Norddeutsche_Gewerbeordnung
 
 		active_law:lawgroup_education_system ?= { # Public Schools
 			add_amendment = {

@@ -1,0 +1,89 @@
+﻿dec_italianempire = {
+
+	is_shown = {
+		exists = c:ITA
+		c:ITA = ROOT
+		
+		NOT = { has_variable = italianempire
+		}
+		NOT = { 
+		custom_tooltip = {
+				text = italianempiredectext2
+			    has_variable = sardiniaaustriavar
+			}
+		
+		}
+		custom_tooltip = {
+				text = italianempiredectext
+			    has_variable = began_drive_to_tripoli
+			}
+		
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		
+		
+	}
+
+	when_taken = {
+		
+		add_journal_entry = {
+			type = italian_empireje
+		}
+		# Add Claims
+		s:STATE_VENETIA = {
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_SOUTH_TYROL = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_ALBANIA = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		s:STATE_LOMBARDY = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+		set_variable = italianempire
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}

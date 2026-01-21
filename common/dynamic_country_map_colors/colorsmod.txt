@@ -1,0 +1,221 @@
+﻿
+#####MOD
+REPLACE_OR_CREATE:austriansar = {
+    color = { 245 245 220 }
+	possible = {
+		exists = c:SAR
+		THIS = c:SAR
+		ruler = {
+			has_culture = cu:south_german
+		}
+	}
+}
+REPLACE_OR_CREATE:austrianita = {
+    color = { 245 245 220 }
+	possible = {
+		exists = c:ITA
+		THIS = c:ITA
+		ruler = {
+			has_culture = cu:south_german
+		}
+	}
+}
+REPLACE_OR_CREATE:frenchsar = {
+    color = { 60 179 113 }
+	possible = {
+		exists = c:SAR
+		THIS = c:SAR
+		has_variable = sardiniafranciavar
+	}
+}
+REPLACE_OR_CREATE:frenchita = {
+    color = { 60 179 113 }
+	possible = {
+		exists = c:ITA
+		THIS = c:ITA
+		has_variable = sardiniafranciavar
+	}
+}
+REPLACE_OR_CREATE:area11 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:JAP
+		c:JAP ?= THIS
+		has_variable = japanukbloc
+	}
+}
+REPLACE_OR_CREATE:britanniaempire = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:GBR
+		c:GBR ?= THIS
+		has_variable = japanukbloc
+	}
+}
+REPLACE_OR_CREATE:itaempire = {
+    color = { 36 72 44 }
+	possible = {
+		exists = c:ITA
+		THIS = c:ITA
+		has_variable = italianempireproclaimed
+	}
+}
+REPLACE:japanese_shogunate = {
+	color = "tokugawa_green"
+	possible = {
+		exists = c:JAP
+		c:JAP ?= THIS
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = meiji_var }
+		NOT = { has_variable = japanukbloc }
+			
+	}
+}
+REPLACE:imperial_japan = {
+	color = "white"
+
+	possible = {
+		exists = c:JAP
+		c:JAP ?= THIS
+		has_global_variable = meiji_restoration_complete
+		NOT = { has_variable = japanukbloc }
+		OR = {
+			coa_absolute_monarchy_trigger = yes
+			coa_dictatorship_trigger = yes
+			coa_fascist_trigger = yes
+			coa_military_trigger = yes
+		}
+	}
+}
+REPLACE_OR_CREATE:SHBE = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:BRZ
+		THIS = c:BRZ
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
+REPLACE_OR_CREATE:AREA1 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:MEX
+		THIS = c:MEX
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
+REPLACE_OR_CREATE:AREA2 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:CLM
+		THIS = c:CLM
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
+REPLACE_OR_CREATE:AREA22 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:GCO
+		THIS = c:GCO
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
+REPLACE_OR_CREATE:AREA3 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:BOL
+		THIS = c:BOL
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
+REPLACE_OR_CREATE:AREA33 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:PBC
+		THIS = c:PBC
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
+REPLACE_OR_CREATE:AREA333 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:FND
+		THIS = c:FND
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
+REPLACE_OR_CREATE:AREA4 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:ARG
+		THIS = c:ARG
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
+REPLACE_OR_CREATE:AREA44 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:PLT
+		THIS = c:PLT
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
+REPLACE_OR_CREATE:AREA10 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:DAI
+		THIS = c:DAI
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
+REPLACE_OR_CREATE:AREA101 = {
+    color = { 191 0 57 }
+	possible = {
+		exists = c:INC
+		THIS = c:INC
+			is_in_same_power_bloc = c:GBR
+	c:JAP = { 
+	has_variable = japanukbloc 
+	    
+	    }
+	}
+}
