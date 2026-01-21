@@ -1179,9 +1179,9 @@ NPowerBlocs = {
 	MAX_MANDATE_PROGRESS = 80			# When mandate progress reaches this value, the power bloc gains one mandate
 	MAX_MANDATES = 3					# This is the maximum number of mandates that can be accumulated at once
 	PRINCIPLE_SELECTION_COOLDOWN_DAYS = 90	# Once a principle is selected, it cannot be changed for this many days. Upgrading is unaffected by the cooldown, but resets it.
-	POWER_STRUGGLE_PRESTIGE_THRESHOLD_START = 1.2 	# If a power bloc member has more prestige than leader's prestige X this - power struggle starts with the member becoming contender
+	POWER_STRUGGLE_PRESTIGE_THRESHOLD_START = 2 	# If a power bloc member has more prestige than leader's prestige X this - power struggle starts with the member becoming contender
 	POWER_STRUGGLE_PRESTIGE_THRESHOLD_FAIL = 1.15 	# If a contender has less prestige than leader's prestige X this - power struggle fails
-	POWER_STRUGGLE_DURATION_SUCCESS_MONTHS = 60 	# Power struggle succeeds after this months
+	POWER_STRUGGLE_DURATION_SUCCESS_MONTHS = 120 	# Power struggle succeeds after this months
 	POWER_STRUGGLE_DURATION_FACTOR_FOR_FOUNDER = 0.75 	# Power struggle succeeds after this X POWER_STRUGGLE_DURATION_SUCCESS_MONTHS if the contender is the founder of the power bloc
 	COHESION_WEEKLY_DRIFT_MAX = 1		# At most, Cohesion will drift by +/- this value each week
 	COHESION_TARGET_MAX = 100			# The highest value Cohesion can reach
@@ -1241,7 +1241,7 @@ NPops = {
 
 	ASSIMILATION_RATE = 0.002					# Percentage of pops who will Assimilate into a different Culture each month, if eligible
 	MIN_ASSIMILATION = 1						# If there is any assmiliation at least this many people will assimilate
-	ASSIMILATION_IN_HOMELAND_MULT = 0.75		# Assimilation rate is multiplied by this in homelands
+	ASSIMILATION_IN_HOMELAND_MULT = 0.85		# Assimilation rate is multiplied by this in homelands
 
 	CONVERSION_RATE = 0.002						# Percentage of pops who will Convert into a different Religion each month, if eligible
 	CONVERSION_UNINCORPORATED_MULT = 0.1 		# CONVERSION_RATE is multiplied by this in unincorporated states
@@ -1253,9 +1253,9 @@ NPops = {
 	MIN_SUPPLY_LEVEL_FOR_NEW_OBSESSION = 0.5	# Supply needs to be at least this times the demand
 	MIN_DEMAND_VALUE_FOR_NEW_OBSESSION = 500	# At this amount of (number of units * goods base price) needs to be demanded in a market to create a new obsession
 	MAX_NUM_OBSESSIONS = 3						# A culture can only have this number of obsessions at the same time
-	OBSESSION_SPAWN_CHANCE = 0.5				# Per year (1.0 = 1%), multiplied by goods supply and market size mult
+	OBSESSION_SPAWN_CHANCE = 2.5				# Per year (1.0 = 1%), multiplied by goods supply and market size mult
 	OBSESSION_SPAWN_CHANCE_MAX_SUPPLY_MULT = 3.0		# Supply relative to demand above this isn't factored into spawn chance
-	OBSESSION_SPAWN_CHANCE_PRESTIGE_GOODS_MULT = 4.0	# Chance for a new obsession to spawn is multiplied by 1 + this, scaled by fraction of the goods supply that is prestige goods
+	OBSESSION_SPAWN_CHANCE_PRESTIGE_GOODS_MULT = 8.0	# Chance for a new obsession to spawn is multiplied by 1 + this, scaled by fraction of the goods supply that is prestige goods
 	TABOO_DEMAND_MULT = 0.5						# Demand of a taboo is multiplied by this
 	DEFAULT_PRESTIGE_GOODS_DEMAND_INCREASE = 0.5	# Demand for goods is multiplied by ( 1 + this ), scaled by how much of the local supply is prestige goods, can be overriden in pop need
 	MAX_DEMAND_ADJUSTMENT_BASE_AMOUNT = 0.01	# Controls how much a pop can change demand of a substituable goods in a single update (base)
@@ -1761,11 +1761,11 @@ NWar = {
 
 	STATE_CONQUEST_HOMELAND_AND_CLAIM_RADICALIZATION = 0.01
 	STATE_CONQUEST_HOMELAND_AND_CLAIM_DEMILITARIZATION = 0.25
-	STATE_CONQUEST_HOMELAND_OR_CLAIM_RADICALIZATION = 0.3
+	STATE_CONQUEST_HOMELAND_OR_CLAIM_RADICALIZATION = 0.05
 	STATE_CONQUEST_HOMELAND_OR_CLAIM_DEMILITARIZATION = 0.5
-	STATE_CONQUEST_DEFAULT_RADICALIZATION = 0.5
+	STATE_CONQUEST_DEFAULT_RADICALIZATION = 0.1
 	STATE_CONQUEST_DEFAULT_DEMILITARIZATION = 0.75
-	STATE_PEACEFUL_ANNEXATION_RADICALIZATION_FACTOR = 0.25	# If the state was annexed due to an accepted diplomatic demand by the overlord, multiply by this
+	STATE_PEACEFUL_ANNEXATION_RADICALIZATION_FACTOR = 0.01	# If the state was annexed due to an accepted diplomatic demand by the overlord, multiply by this
 	STATE_CONQUEST_KEEP_ALL = 0.0
 
 	NUM_PROVINCES_FOR_ADVANCEMENT_SELECTION = 5		# After having computed weights for possible advancement provinces using front_battle_province_weight, filter out all but the X top weighted provinces. This is done to prevent randomly selecting an element that had a low weight.
