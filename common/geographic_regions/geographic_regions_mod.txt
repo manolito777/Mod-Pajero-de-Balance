@@ -1,0 +1,14 @@
+﻿geographic_region_scandinavia_mod = {
+	short_key = "region_scandinavia_mod"
+
+	strategic_regions = {
+		sr:region_baltic_states
+		sr:region_finland
+		sr:region_baltic
+	}
+	state_regions = {
+		STATE_ICELAND
+		STATE_GREENLAND
+	}
+}
+
