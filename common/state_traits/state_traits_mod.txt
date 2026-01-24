@@ -54,3 +54,11 @@ REPLACE_OR_CREATE:state_trait_exploded_kierbedz_bridge = {
 		battle_defense_owned_province_mult = 0.1
 	}
 }
+REPLACE_OR_CREATE:state_trait_exploded_indochinese_forest = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.2
+		state_construction_mult = 0.05
+	}
+}
