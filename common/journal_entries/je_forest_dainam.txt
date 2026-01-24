@@ -1,0 +1,73 @@
+je_forest_dainam = {
+	icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+	group = je_group_technology
+
+	is_shown_when_inactive = {
+	    owns_entire_state_region = STATE_MEKONG
+		owns_entire_state_region = STATE_LAOS
+		owns_entire_state_region = STATE_NAKHON_RATCHASIMA
+		owns_entire_state_region = STATE_CAMBODIA
+		owns_entire_state_region = STATE_TONKIN
+		owns_entire_state_region = STATE_ANNAM
+	}
+
+	possible = {
+	}
+
+	complete = {
+		s:STATE_MEKONG = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_logging_camp
+					level >= 28
+				}
+			}
+		}
+		s:STATE_LAOS = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_logging_camp
+					level >= 23
+				}
+			}
+		}
+		s:STATE_NAKHON_RATCHASIMA = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_logging_camp
+					level >= 25
+				}
+			}
+		}
+		s:STATE_CAMBODIA = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_logging_camp
+					level >= 20
+				}
+			}
+		}
+		s:STATE_TONKIN = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_logging_camp
+					level >= 36
+				}
+			}
+		}
+		s:STATE_ANNAM = {
+		    any_scope_state = {
+				any_scope_building = {
+					is_building_type = building_logging_camp
+					level >= 24
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = forest_dainam.1 }
+	}
+	weight = 50
+	should_be_pinned_by_default = yes
+}
