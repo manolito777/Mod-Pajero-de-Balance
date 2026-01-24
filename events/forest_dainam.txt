@@ -1,0 +1,61 @@
+namespace = forest_dainam
+
+forest_dainam.1 = {
+    # CORRECCIÓN 2: Cambiado a country_event porque lo activa un país (Suecia)
+    type = country_event 
+    placement = root
+
+    title = forest_dainam.t
+    desc = forest_dainam.d
+    flavor = forest_dainam.f
+
+    event_image = {
+        video = "europenorthamerica_london_center"
+    }
+
+    icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+    option = { 
+		name = forest_dainam.1.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+	s:STATE_MEKONG = {
+			remove_state_trait = state_trait_indochinese_forest
+		}
+	s:STATE_MEKONG = {
+			add_state_trait = state_trait_exploded_indochinese_forest
+		}
+	s:STATE_LAOS = {
+			remove_state_trait = state_trait_indochinese_forest
+		}
+	s:STATE_LAOS = {
+			add_state_trait = state_trait_exploded_indochinese_forest
+		}
+	s:STATE_NAKHON_RATCHASIMA = {
+			remove_state_trait = state_trait_indochinese_forest
+		}
+	s:STATE_NAKHON_RATCHASIMA = {
+			add_state_trait = state_trait_exploded_indochinese_forest
+		}
+	s:STATE_CAMBODIA = {
+			remove_state_trait = state_trait_indochinese_forest
+		}
+	s:STATE_CAMBODIA = {
+			add_state_trait = state_trait_exploded_indochinese_forest
+		}
+	s:STATE_TONKIN = {
+			remove_state_trait = state_trait_indochinese_forest
+		}
+	s:STATE_TONKIN = {
+			add_state_trait = state_trait_exploded_indochinese_forest
+		}
+	s:STATE_ANNAM = {
+			remove_state_trait = state_trait_indochinese_forest
+		}	
+	s:STATE_ANNAM = {
+			add_state_trait = state_trait_exploded_indochinese_forest
+		}
+	}
+}

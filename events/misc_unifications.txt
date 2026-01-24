@@ -1163,6 +1163,60 @@ formation.17 = {
 		ai_chance = {
 			factor = 1
 		}
+		add_modifier = {
+			name = sca_explosion_demografica
+			years = 20
+			is_decaying = yes
+		}
+		add_primary_culture = cu:khmer
+		add_primary_culture = cu:champa
+		add_primary_culture = cu:vietnamese
+		add_primary_culture = cu:zhuang
+		add_primary_culture = cu:lao
+		add_primary_culture = cu:khmu
+		add_primary_culture = cu:thai
+		add_primary_culture = cu:shan
+		add_primary_culture = cu:malay
+		add_primary_culture = cu:burmese
+		add_primary_culture = cu:karen
+		add_primary_culture = cu:kachin
+		add_primary_culture = cu:mon
+		add_primary_culture = cu:lushai
+	}
+	option = {
+		name = formation.80.a
+		trigger = {
+			owns_entire_state_region = STATE_YUNNAN
+		}
+		default_option = yes
+		add_modifier = {
+			name = unification_prestige
+			days = very_long_modifier_time
+		}
+		unification_claims_effect = yes
+		ai_chance = {
+			factor = 1
+		}
+		add_modifier = {
+			name = sca_explosion_demografica
+			years = 20
+			is_decaying = yes
+		}
+		add_primary_culture = cu:khmer
+		add_primary_culture = cu:champa
+		add_primary_culture = cu:vietnamese
+		add_primary_culture = cu:zhuang
+		add_primary_culture = cu:lao
+		add_primary_culture = cu:khmu
+		add_primary_culture = cu:thai
+		add_primary_culture = cu:shan
+		add_primary_culture = cu:malay
+		add_primary_culture = cu:burmese
+		add_primary_culture = cu:karen
+		add_primary_culture = cu:kachin
+		add_primary_culture = cu:mon
+		add_primary_culture = cu:lushai
+		add_primary_culture = cu:yi
 	}
 }
 
