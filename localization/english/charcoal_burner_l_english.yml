@@ -61,3 +61,11 @@ company_paradox2: "John Paradox & Company"
 
 building_charcoal_burner_throughput_add:0 "$building_charcoal_burner$ building [concept_throughput]"
 building_charcoal_burner_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_charcoal_burner$"
+
+je_forest_dainam:0 "Exploitation of the Dai Nam Forests"
+je_forest_dainam_reason:0 "The dense and ancient jungles of our highlands have long been an obstacle to travel. However, for an industrializing nation, they represent a priceless resource. We must organize the logging of these forests to fuel our construction sectors and shipyards."
+forest_dainam.t:0 "The Conquered Wilderness"
+forest_dainam.d:0 "The once-impenetrable canopy of Dai Nam is no more. Through the relentless effort of our loggers, the ancient forests have been cleared, leaving behind vast stockpiles of timber and open land ready for development. The wild has been tamed, and its resources now fuel the fires of our industry."
+forest_dainam.f:0 "Civilization is built upon the stumps of the wild."
+forest_dainam.1.a:0 "A necessary sacrifice for progress."
+state_trait_exploded_indochinese_forest:0 "Exploited Indochinese Forests"
