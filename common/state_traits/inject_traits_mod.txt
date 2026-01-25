@@ -12,3 +12,18 @@ INJECT:state_trait_venetian_lagoon = {
 		state_market_access_price_impact = 0.05
 	}
 }
+INJECT:state_trait_scanian_soils = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		building_group_bg_plantations_throughput_add = 0.15
+		building_group_bg_agriculture_throughput_add = 0.05
+	}
+}
+state_trait_livonia = {
+	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
+
+	modifier = {
+        building_group_bg_ranching_throughput_add = 0.1
+	}
+}
