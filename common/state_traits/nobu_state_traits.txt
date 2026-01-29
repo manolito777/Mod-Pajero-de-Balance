@@ -1,0 +1,145 @@
+﻿state_trait_great_middle_plain = {
+	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.05
+		building_group_bg_plantations_throughput_add = 0.05
+		state_infrastructure_mult = 0.05
+	}
+}
+
+state_trait_mexico_basin = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.05
+		building_group_bg_plantations_throughput_add = 0.05
+		state_construction_mult = 0.05
+		state_infrastructure_mult = 0.05
+	}
+}
+
+state_trait_valleys_of_jalisco = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+		state_construction_mult = 0.05
+	}
+}
+
+state_trait_pastoreo_norte = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_grazing.dds"
+
+	modifier = {
+		building_livestock_ranch_throughput_add = 0.1
+	}
+}
+
+state_trait_clima_caribeno = {
+	icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+
+	modifier = {
+	    building_tobacco_plantation_throughput_add = 0.1
+		building_coffee_plantation_throughput_add = 0.1
+		building_sugar_plantation_throughput_add = 0.1
+		state_infrastructure_mult = 0.05
+	}
+}
+
+state_trait_black_soil_mex = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.1
+	}
+}
+
+state_trait_cortes_sea = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_whales.dds"
+
+	modifier = {
+		building_group_bg_whaling_throughput_add = 0.15
+		building_group_bg_fishing_throughput_add = 0.15
+	}
+}
+
+state_trait_zacatecas_mines = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+
+	modifier = {
+		building_gold_mine_throughput_add = 0.3
+	}
+}
+
+state_trait_selva_centroamericana = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+
+	modifier = {
+		state_infrastructure_mult = -0.10
+		building_group_bg_logging_throughput_add = 0.1
+		building_group_bg_rubber_throughput_add = 0.1
+	}
+}
+
+state_trait_chiapas_coffe = {
+    icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		building_coffee_plantation_throughput_add = 0.2
+	}
+}
+
+state_trait_veracruz_port = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+
+	modifier = {
+		building_shipyard_throughput_add = 0.1
+		building_military_shipyard_throughput_add = 0.1
+		state_trade_advantage_mult = 0.10
+		state_building_naval_base_max_level_add = 20
+	}
+}
+
+state_trait_manzanillo_port = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+
+	modifier = {
+		building_shipyard_throughput_add = 0.05
+		building_military_shipyard_throughput_add = 0.05
+		state_trade_advantage_mult = 0.05
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_acapulco_port = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+
+	modifier = {
+		building_shipyard_throughput_add = 0.02
+		building_military_shipyard_throughput_add = 0.02
+		state_building_naval_base_max_level_add = 5
+	}
+}
+
+state_trait_sierra_madre_occidental_mex = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+
+	modifier = {
+		state_construction_mult = -0.1
+		state_infrastructure_mult = -0.10
+		building_group_bg_mining_throughput_add = 0.1
+	}
+}
+
+state_trait_sierra_madre_oriental_mex = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+
+	modifier = {
+		state_construction_mult = -0.1
+		state_infrastructure_mult = -0.1
+		building_group_bg_mining_throughput_add = 0.1
+	}
+}
