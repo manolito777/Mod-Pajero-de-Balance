@@ -1,0 +1,19 @@
+﻿porfirato_completion_trigger = {
+	AND = {
+		government_legitimacy >= 50
+		has_insurrectionary_interest_groups = no
+		is_at_war = no
+	}
+}
+
+contrareforma_completion_trigger = {
+	AND = {
+		government_legitimacy >= 30
+		has_insurrectionary_interest_groups = no
+		is_at_war = no
+		ig:ig_devout = {
+    		ig_clout < 0.3
+			is_in_government = no
+		}
+	}
+}
