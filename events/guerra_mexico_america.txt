@@ -1,0 +1,207 @@
+﻿namespace = guer_mex_amer
+
+# guerra
+guer_mex_amer.1 = {
+	type = country_event
+
+	title = guer_mex_amer.1.t
+	desc = guer_mex_amer.1.d
+	flavor = guer_mex_amer.1.f
+
+	event_image = {
+		texture = "gfx/event_pictures/mex_usa_war.dds"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	trigger = { 
+		c:MEX ?= this
+		NOT = { has_variable = guer_mex_amer }
+		is_diplomatic_play_enemy_of = c:USA
+	}
+
+	immediate = { 
+		set_variable = guer_mex_amer
+	}
+
+	option = { 
+		name = guer_mex_amer.1.a
+		custom_tooltip = sin_ayuda_tt
+		add_modifier = {
+			name = national_pride
+			days = long_modifier_time
+		}
+		s:STATE_FLORIDA = {
+			add_claim = root
+		}
+		s:STATE_COLORADO = {
+			add_claim = root
+		}
+		s:STATE_WYOMING = {
+			add_claim = root
+		}
+		s:STATE_MONTANA = {
+			add_claim = root
+		}
+		s:STATE_OKLAHOMA = {
+			add_claim = root
+		}
+		s:STATE_KANSAS = {
+			add_claim = root
+		}
+		s:STATE_NEBRASKA = {
+			add_claim = root
+		}
+		s:STATE_SOUTH_DAKOTA = {
+			add_claim = root
+		}
+		s:STATE_NORTH_DAKOTA = {
+			add_claim = root
+		}
+		s:STATE_MINNESOTA = {
+			add_claim = root
+		}
+		s:STATE_IOWA = {
+			add_claim = root
+		}
+		s:STATE_MISSOURI = {
+			add_claim = root
+		}
+		s:STATE_ARKANSAS = {
+			add_claim = root
+		}
+		s:STATE_LOUISIANA = {
+			add_claim = root
+		}
+	}
+
+	option = { 
+		name = guer_mex_amer.1.b
+		custom_tooltip = pedir_ayuda_tt
+		default_option = yes
+		c:MEX = {
+			change_relations = {
+				country = c:GBR
+				value = 30
+			}
+		}
+		c:MEX = {
+			change_relations = {
+				country = c:FRA
+				value = 20
+			}
+		}
+		c:USA = {
+			change_relations = {
+				country = c:GBR
+				value = -80
+			}
+		}
+		c:USA = {
+			change_relations = {
+				country = c:FRA
+				value = -40
+			}
+		}
+		if = {
+			limit = { is_diplomatic_play_initiator = yes }
+			every_diplomatic_play = {
+				limit = { 
+					exists = c:USA
+  					exists = c:MEX
+  					initiator = c:MEX
+				}
+				add_initiator_backers = {
+					c:GBR
+					c:FRA
+				}
+			}
+		}	
+		else = {
+			every_diplomatic_play = {
+				limit = { 
+					exists = c:USA
+  					exists = c:MEX
+  					initiator = c:USA
+  					target = c:MEX
+				}
+				add_target_backers = {
+					c:GBR
+					c:FRA
+				}
+			}
+		}
+		create_treaty = {
+    		name = treaty_mexico_france_defense_investment
+    		first_country = c:MEX
+    		second_country = c:FRA
+    		is_draft = no
+			binding_period = {		
+				years = 20
+			}  
+    		articles_to_create = {
+    		    { 
+    		        article = defensive_pact 
+    		    }
+    		    { 
+    		        article = foreign_investment_rights
+    		        source_country = c:MEX      
+    		        target_country = c:FRA      
+    		    }
+    		}
+		}	
+		create_treaty = {
+    		name = treaty_mexico_britain_defense_investment
+    		first_country = c:MEX
+    		second_country = c:GBR
+    		is_draft = no
+			binding_period = {		
+				years = 20
+			}  
+    		articles_to_create = {
+    		    { 
+    		        article = defensive_pact 
+    		    }
+    		    { 
+    		        article = foreign_investment_rights
+    		        source_country = c:MEX     
+    		        target_country = c:GBR      
+    		    }
+    		}
+		}	
+	}
+}
+
+# America destruida
+guer_mex_amer.2 = {
+	type = country_event
+
+	title = guer_mex_amer.2.t
+	desc = guer_mex_amer.2.d
+	flavor = guer_mex_amer.2.f
+
+	event_image = {
+		texture = "gfx/event_pictures/mex_heg.dds"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	trigger = { }
+
+	immediate = { }
+
+	option = { 
+		name = guer_mex_amer.2.a
+		add_modifier = {
+			name = hegemon_mex
+		}
+	}
+}
