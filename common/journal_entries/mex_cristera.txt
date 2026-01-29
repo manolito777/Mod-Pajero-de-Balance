@@ -1,0 +1,95 @@
+﻿je_group_guercrist_contrarreforma  = {
+	#debuff del cambio
+	icon = "gfx/interface/icons/event_icons/cruz.dds"
+	
+	group = je_group_guercrist
+
+	should_be_pinned_by_default = yes
+
+	is_shown_when_inactive = {
+		is_player = yes
+        has_variable = buff_estado_laico
+	}
+	
+	possible = {
+        has_variable = buff_estado_laico
+        NOT = { has_variable = contrareforma_var }
+	}
+
+	immediate = {
+		set_variable = {
+			name = contrareforma_var
+			value = 0
+		}
+        trigger_event = { id = guer_crist.4 popup = yes }
+    }
+
+	is_progressing = {
+		contrareforma_completion_trigger = yes
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					contrareforma_completion_trigger = yes
+				}
+				change_variable = {
+					name = contrareforma_var
+					add = 1
+				}
+			}
+			if = {
+			    limit = {
+			        var:contrareforma_var >= 60
+			        NOT = { has_variable = puntomedio }
+			    }
+			    trigger_event = {
+			        id    = guer_crist.7
+			        popup = yes
+			    }
+			    set_variable = puntomedio
+			}
+		}
+	}
+
+    complete = {
+		# If-else clause to avoid errors because of missing variable before JE activates
+		trigger_if = {
+			limit = { exists = var:contrareforma_var }
+			scope:journal_entry = { is_goal_complete = yes }
+			contrareforma_completion_trigger = yes
+		}
+		trigger_else = {
+			scope:journal_entry = { is_goal_complete = yes }
+			contrareforma_completion_trigger = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = guer_crist.6
+		}
+	}
+
+	fail = {
+        OR = {
+		    has_law = law_type:law_state_religion
+        }
+	}
+
+	on_fail = {
+		trigger_event = guer_crist.5
+	}
+
+	current_value = {
+		value = root.var:contrareforma_var
+	}
+
+	goal_add_value = {
+		value = 120
+	}
+
+	progressbar = yes
+}
+
