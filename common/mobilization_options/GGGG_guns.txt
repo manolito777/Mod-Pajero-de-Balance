@@ -62,9 +62,8 @@ GGGG_mo_firearms = {
     }
     
     unit_modifier = { # Cancel out effects of melee weapons
-        unit_offense_mult  = 0.25
-        unit_defense_mult  = 0.25
-        unit_kill_rate_add = 0.10
+        unit_offense_mult  = 0.05
+        unit_defense_mult  = 0.05
     }
     
     ai_weight = {
@@ -140,13 +139,13 @@ GGGG_mo_percussion_caps = {
     }
     
     upkeep_modifier = {
-        goods_input_small_arms_add = 0.5
-        goods_input_ammunition_add = 1
+        goods_input_small_arms_add = 0.25
+        goods_input_ammunition_add = 0.5
     }
     
     unit_modifier = {
-        unit_offense_mult   = 0.1
-        unit_defense_mult   = 0.1
+        unit_offense_mult   = 0.05
+        unit_defense_mult   = 0.05
     }
     
     ai_weight = {
@@ -210,12 +209,12 @@ GGGG_mo_rifling = {
     
     upkeep_modifier_unscaled = {
         goods_input_small_arms_mult = 0.05
-        goods_input_ammunition_add = 0.5
+        goods_input_ammunition_add = 0.25
     }
     
     unit_modifier = {
-        unit_offense_mult   = 0.1
-        unit_defense_mult   = 0.1
+        unit_offense_mult   = 0.05
+        unit_defense_mult   = 0.05
     }
     
     ai_weight = {
@@ -291,8 +290,8 @@ GGGG_mo_breechblocks = {
     }
     
     unit_modifier = {
-        unit_offense_mult   = 0.2
-        unit_defense_mult   = 0.2
+        unit_offense_mult   = 0.1
+        unit_defense_mult   = 0.1
         unit_morale_damage_mult = 0.1
     }
     
@@ -373,8 +372,8 @@ GGGG_mo_bolt_actions = {
     }
     
     unit_modifier = {
-        unit_offense_mult   = 0.2
-        unit_defense_mult   = 0.2
+        unit_offense_mult   = 0.1
+        unit_defense_mult   = 0.1
         unit_morale_damage_mult = 0.15
     }
     

@@ -55,7 +55,7 @@ GGGG_mo_full_dress = {
     }
     
     unit_modifier = {
-        unit_recovery_rate_add = 0.2
+        unit_recovery_rate_add = 0.1
         unit_morale_loss_mult = -0.05
         military_formation_attrition_risk_mult = -0.1
     }
@@ -105,7 +105,7 @@ GGGG_mo_modern_uniform = {
 
     unit_modifier = {
         unit_morale_loss_mult = -0.1
-        unit_recovery_rate_add = 0.3
+        unit_recovery_rate_add = 0.1
         military_formation_attrition_risk_mult = -0.4
     }
     
