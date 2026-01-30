@@ -473,7 +473,9 @@ principle_defensive_cooperation_3 = {
 		country_join_power_bloc_member_in_defensive_plays_bool = yes
 				state_conscription_rate_add = 0.01
 				unit_defense_mult = 0.05
-				country_military_tech_spread_mult = 0.1
+				country_military_tech_spread_mult = 0.25
+				military_formation_attrition_risk_mult = -0.2
+				unit_morale_recovery_mult = 0.2
 	}
 
 	power_bloc_modifier = {
@@ -562,7 +564,11 @@ principle_aggressive_coordination_3 = {
         country_initiator_war_goal_maneuver_cost_mult = -0.25
 		country_war_exhaustion_casualties_mult = -0.25
 		country_military_tech_spread_mult = 0.15
-		unit_offense_mult = 0.05
+		military_formation_organization_gain_mult = 0.3
+		unit_occupation_mult = 0.5
+		military_formation_movement_speed_mult = 0.2
+		military_formation_mobilization_speed_mult = 0.3
+		country_infamy_generation_mult = -0.2
 
 		# Countries forced to join diplomatic plays of members, other countries are not happy about this threat
 		country_join_power_bloc_member_in_plays_bool = yes
@@ -1803,7 +1809,7 @@ principle_shared_canon_3 = {
 	member_modifier = {
 		# Modifiers from previous level(s)
 		country_society_tech_spread_mult = 0.25
-		state_assimilation_mult = 2
+		state_assimilation_mult = 0.25
 
 		# Adds full acceptance radicalism decrease
 		country_radicalism_increases_full_acceptance_mult = -0.15
