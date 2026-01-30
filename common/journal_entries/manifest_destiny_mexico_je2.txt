@@ -1,0 +1,24 @@
+﻿je_manifest_destiny_pov_mexico1 = {
+	icon = "gfx/interface/icons/event_icons/mex.dds"
+
+	group = je_group_foreign_affairs
+
+	# note that if you change this, also update the decision
+	complete = {
+		owns_entire_state_region = STATE_HONDURAS
+		owns_entire_state_region = STATE_NICARAGUA
+		owns_entire_state_region = STATE_COSTA_RICA
+		owns_entire_state_region = STATE_SAN_SALVADOR
+		owns_entire_state_region = STATE_YUCATAN
+		owns_entire_state_region = STATE_CHIAPAS
+		owns_entire_state_region = STATE_GUATEMALA
+	}
+
+	on_complete = {
+		trigger_event = { id = manifest_destiny_mexico.2 }
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
