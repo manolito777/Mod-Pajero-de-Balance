@@ -197,3 +197,17 @@ REPLACE:ITA = {
 		}
 	}
 }
+
+MIX = {
+	geographic_region = geographic_region_great_mex
+		
+	required_states_fraction = 0.75
+
+	ai_will_do = { always = no }
+	
+	possible = {
+			NOT = { exists = c:MIX }
+			has_technology_researched = nationalism
+			is_ai = no
+		}
+	}
