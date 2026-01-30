@@ -5389,7 +5389,7 @@ ai_strategy_default = {
 					limit = {
 						is_in_same_power_bloc = scope:target_country
 					}
-					multiply = 1.5
+					multiply = 500
 				}
 
 				if = {
@@ -5616,7 +5616,7 @@ ai_strategy_default = {
 					limit = {
 						is_in_same_power_bloc = scope:target_country
 					}
-					multiply = 5
+					multiply = 500
 				}
 			}
 		}
@@ -5803,7 +5803,7 @@ ai_strategy_default = {
 					limit = {
 						is_in_same_power_bloc = scope:target_country
 					}
-					multiply = 2.5
+					multiply = 500
 				}
 			}
 		}
@@ -6022,7 +6022,7 @@ ai_strategy_default = {
 					limit = {
 						country_is_power_struggle_rival = { TARGET = scope:target_country }
 					}
-					multiply = 2
+					multiply = 1
 				}
 			}
 		}
@@ -7581,7 +7581,7 @@ ai_strategy_default = {
 		}
 
 		leave_power_bloc = {
-			value = 50
+			value = 0
 
 			if = {
 				limit = {
