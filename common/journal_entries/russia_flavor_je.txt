@@ -1,0 +1,358 @@
+﻿
+
+rus_rev_0 = {
+	icon = "gfx/interface/icons/event_icons/diplo.dds"
+
+	group = je_group_internal_affairs
+	
+	is_shown_when_inactive = {
+		is_player = yes
+		root = c:RUS
+		
+	}
+
+	complete = {
+		OR = {
+		has_law = law_type:law_tenant_farmers
+		has_law = law_type:law_homesteading
+		}
+		has_law =law_type:law_no_womens_rights
+	}
+
+	on_complete = {
+		trigger_event = {
+		id = revrusa.11
+	}
+	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}
+
+rus_rev_main = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	group = je_group_internal_affairs
+
+	timeout = 1095
+
+	on_timeout = {
+	trigger_event = {
+		id = revrusa.1
+	}
+}
+	weight = 10000
+
+	should_be_pinned_by_default = yes
+}
+
+#Asegurar circulo externo de Moscú
+rus_rev_1 = {
+	icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+	group = je_group_technology
+	
+	complete = {
+		any_scope_state = {
+			state_region = s:STATE_RYAZAN
+		any_scope_building = {
+			is_building_type = building_barrack
+			level <= 2
+		}
+	}
+		any_scope_state = {
+			state_region = s:STATE_SMOLENSK
+		any_scope_building = {
+			is_building_type = building_barrack
+			level <= 2
+		}
+	}
+		any_scope_state = {
+			state_region = s:STATE_INGRIA
+		any_scope_building = {
+			is_building_type = building_barrack
+			level <= 2
+		}
+	}
+		any_scope_state = {
+		state_region = s:STATE_ORYOL
+		any_scope_building = {
+			is_building_type = building_barrack
+			level <= 2
+		}	
+	}
+		any_scope_state = {
+		state_region = s:STATE_NOVGOROD
+		any_scope_building = {
+			is_building_type = building_barrack
+			level <= 2
+		}	
+	}
+}
+	on_complete = {
+		trigger_event = {
+			id = revrusa.2
+		}
+
+		add_journal_entry = {
+			type = rus_rev_2
+		}
+	}
+	
+	weight = 10000
+	should_be_pinned_by_default = yes
+    }
+
+#AsegurarMoscú
+rus_rev_2 = {
+			icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+			group = je_group_technology			
+			
+		
+	complete = {
+		any_scope_state = {
+			state_region = s:STATE_MOSCOW
+		any_scope_building = {
+			is_building_type = building_barrack
+			level <= 2
+		}
+		any_scope_building = {
+			is_building_type = building_government_administration
+			level >= 15
+	}
+  }
+}
+	on_complete = {
+		trigger_event = {
+			id = revrusa.3
+		}
+		
+		add_journal_entry = {
+			type = rus_rev_3
+		}
+		add_journal_entry = {
+		    type = rus_rev_4
+		}
+    }
+	weight = 10000
+	should_be_pinned_by_default = yes
+    }
+#AsegurarUcrania	
+rus_rev_3 = {
+		icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+		group = je_group_technology
+		
+		scripted_button = ukranian_subsidies_but
+		complete = {
+			any_scope_state = {
+				state_region = s:STATE_KHARKOV
+				has_modifier = subsidios_a_ucrania
+			}
+
+		}
+	
+	on_complete = {
+		trigger_event = {
+			id = revrusa.4
+		}
+		
+		add_journal_entry = {
+			type = rus_rev_6
+	}
+}
+	
+	fail = {
+		any_scope_state = {
+				state_region = s:STATE_MINSK
+				has_modifier = estado_asegurado
+			}
+		}
+	weight = 10000
+	should_be_pinned_by_default = yes
+    }
+#asegurarBielorrusia	
+rus_rev_4 = {
+		icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+		group = je_group_technology
+		
+		complete = {
+			any_scope_state = {
+				state_region = s:STATE_ORYOL
+				any_scope_building = {
+				is_building_type = building_logging_camp
+				level >= 20
+			}
+		}
+			any_scope_state = {
+				state_region = s:STATE_MINSK
+				any_scope_building = {
+				is_building_type = building_logging_camp
+				level >= 17
+			}
+		}
+			any_scope_state = {
+				state_region = s:STATE_SMOLENSK
+				any_scope_building = {
+				is_building_type = building_logging_camp
+				level >= 10
+			}
+		}
+			any_scope_state = {
+				state_region = s:STATE_VITEBSK
+				any_scope_building = {
+				is_building_type = building_logging_camp
+				level >= 8
+			}
+		}
+}
+	on_complete = {
+		trigger_event = {
+			id = revrusa.5
+		}
+		
+		add_journal_entry = {
+			type = rus_rev_5
+		}
+		add_journal_entry = {
+			type = rus_rev_6
+	}
+}
+	
+	fail = {
+		any_scope_state = {
+			state_region = s:STATE_KHARKOV
+			has_modifier = estado_asegurado
+		}
+	}	
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+#AsegurarPolonia
+rus_rev_5 = {
+		icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+		group = je_group_technology
+		
+		complete = {
+		s:STATE_GREATER_POLAND = {
+			any_scope_state = {
+				owner = root
+				any_scope_building = {
+					is_building_type = building_kierbedz_bridge
+					occupancy >= 0.9
+				}
+			}
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = revrusa.6
+		}
+    }
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+#Asegurarelcaucaso
+rus_rev_6 = {
+    icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+    group = je_group_technology
+
+    complete = {
+        country_or_subject_owns_entire_state_region = STATE_KUBAN
+        country_or_subject_owns_entire_state_region = STATE_NORTH_CAUCASUS
+    }
+
+    on_complete = {
+        trigger_event = { id = revrusa.7 }
+        add_journal_entry = { type = rus_rev_7 }
+    }
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+
+# Asegurar los Urales
+rus_rev_7 = {
+    icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+    group = je_group_technology
+
+    complete = {
+        country_or_subject_owns_entire_state_region = STATE_URALSK
+        country_or_subject_owns_entire_state_region = STATE_AKTOBE
+        country_or_subject_owns_entire_state_region = STATE_AKMOLINSK
+        country_or_subject_owns_entire_state_region = STATE_SEMIRECHE
+        country_or_subject_owns_entire_state_region = STATE_SYRDARYA
+    }
+
+    on_complete = {
+        trigger_event = { id = revrusa.8 }
+
+        add_journal_entry = { type = rus_rev_8 }
+        add_journal_entry = { type = rus_rev_9 }
+    }
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+#siberiadeadentro
+rus_rev_8 = {
+    icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+    group = je_group_technology
+
+    # opcional: solo para un país con cultura primaria rusa
+    possible = {
+        country_has_primary_culture = cu:russian
+    }
+
+    immediate = {
+        random_scope_state = {
+            limit = { state_region = s:STATE_OB }
+            save_scope_as = je_ob_state
+        }
+        random_scope_state = {
+            limit = { state_region = s:STATE_SURGUT }
+            save_scope_as = je_surgut_state
+        }
+        cu:russian = { save_scope_as = je_russian_culture }
+    }
+
+    complete = {
+            any_scope_state = {
+                state_region = s:STATE_OB
+                culture_percent_state = {
+                    target = cu:russian
+                    value >= 0.5
+                }
+            }
+            any_scope_state = {
+                state_region = s:STATE_SURGUT
+                culture_percent_state = {
+                    target = cu:russian
+                    value >= 0.5
+                }
+            }
+        }
+
+    on_complete = {
+        trigger_event = { id = revrusa.9 }
+    }
+
+    weight = 999
+    should_be_pinned_by_default = yes
+}
+# siberia / outer manchuria
+rus_rev_9 = {
+    icon = "gfx/interface/icons/invention_icons/urbanization.dds"
+    group = je_group_technology
+
+    complete = {
+        country_or_subject_owns_entire_state_region = STATE_AMUR
+        country_or_subject_owns_entire_state_region = STATE_OUTER_MANCHURIA
+    }
+
+    on_complete = {
+        trigger_event = { id = revrusa.10 }
+    }
+
+    weight = 999
+    should_be_pinned_by_default = yes
+}
+		
