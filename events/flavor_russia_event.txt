@@ -1,0 +1,752 @@
+﻿namespace = revrusa
+
+revrusa.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.1.t
+	desc = revrusa.1.d
+	flavor = revrusa.1.f
+
+	event_image = {
+		video = "unspecific_temperance_movement"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_hellenic.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				owner = ROOT
+				is_incorporated = yes
+				NOT = { has_modifier = estado_asegurado }
+				NOT = { is_capital = yes }
+			}
+			save_scope_as = revrusa_spawn_state
+		}
+
+		create_country = {
+			tag = WTH
+			origin = ROOT
+			state = scope:revrusa_spawn_state
+		}
+		
+		c:WTH = { 
+			save_scope_as = wth_scope 
+			# Limpiamos diplomacia para asegurar que pueda iniciar la guerra
+			diplomacy_cleanup = yes
+		}
+
+		every_scope_state = {
+			limit = {
+				owner = ROOT
+				NOT = { has_modifier = estado_asegurado }
+				NOT = { is_capital = yes }
+				NOT = { state_region = scope:revrusa_spawn_state.state_region }
+			}
+			set_state_owner = c:WTH
+			set_state_type = incorporated
+		}
+	}
+
+option = {
+		name = revrusa.1.a
+		default_option = yes
+		
+		c:RUS ?= {
+				create_character = {
+				last_name = Lenin
+				historical = yes
+				culture = cu:russian
+				birth_date = 1815.4.29
+				interest_group = ig_trade_unions
+				ideology = moderate
+				traits = {
+					meticulous
+					romantic
+					imperious
+				}
+				on_created = {
+								set_character_as_ruler = yes
+							}
+			}
+}
+		
+		activate_law = law_type:law_soviet_economy
+		activate_law = law_type:law_supreme_soviet
+		activate_law = law_type:law_council_of_ministers
+		
+		ig:ig_devout ?= {
+			remove_ideology = ideology_moralist 
+			add_ideology = ideology_moralist_socialism
+		}
+		ig:ig_trade_unions ?= {
+			remove_ideology = ideology_populist
+			add_ideology = ideology_stalinismo
+			remove_ideology = ideology_egalitarian
+			add_ideology = ideology_KGB
+		}
+		ig:ig_armed_forces ?= {
+			add_ideology = ideology_socialist
+		}
+		scope:wth_scope = {
+			change_infamy = -500 
+			
+			create_diplomatic_play = {
+				name = russia_rebellion
+				target_country = ROOT
+				type = dp_annex_war
+				add_war_goal = {
+					holder = c:RUS
+					target_country = c:WTH
+					type = annex_country
+				}
+			}
+		}
+		
+	}
+}  
+		
+revrusa.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.2.t
+	desc = revrusa.2.d
+	flavor = revrusa.2.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/industry.dds"
+
+	duration = 3
+
+	option = {
+		name = revrusa.2.a
+		default_option = yes
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_NOVGOROD
+			}
+			add_modifier = {
+				name = estado_asegurado
+				days = 9000
+			}
+		}
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TVER
+			}
+			add_modifier = {
+				name = estado_asegurado
+				days = 9000
+			}
+		}
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_YAROSLAVL
+			}
+			add_modifier = {
+				name = estado_asegurado
+				days = 9000
+			}
+		}
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_RYAZAN
+			}
+			add_modifier = {
+				name = estado_asegurado
+				days = 9000
+			}
+		}
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_PSKOV
+			}
+			add_modifier = {
+				name = estado_asegurado
+				days = 9000
+			}
+		}
+	}
+}
+
+revrusa.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.3.t
+	desc = revrusa.3.d
+	flavor = revrusa.3.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = revrusa.3.a
+		default_option = yes
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_MOSCOW
+			}
+			add_modifier = {
+				name = estado_asegurado
+				days = 9000
+			}
+		}
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TAMBOV
+			}
+			add_modifier = {
+				name = estado_asegurado
+				days = 9000
+			}
+		}
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_NIZHNY_NOVGOROD
+			}
+			add_modifier = {
+				name = estado_asegurado
+				days = 9000
+			}
+		}
+
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CHUVASHIA
+			}
+			add_modifier = {
+				name = estado_asegurado
+				days = 9000
+			}
+		}
+	}
+}
+revrusa.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.4.t
+	desc = revrusa.4.d
+	flavor = revrusa.4.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = revrusa.4.a
+		default_option = yes
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_BESSARABIA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+			add_modifier = { name = subsidios_a_ucrania2 days = 900 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_CHERSON }
+			add_modifier = { name = estado_asegurado days = 9000 }
+			add_modifier = { name = subsidios_a_ucrania2 days = 900 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_KIEV }
+			add_modifier = { name = estado_asegurado days = 9000 }
+			add_modifier = { name = subsidios_a_ucrania2 days = 900 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_CHERNIHIV }
+			add_modifier = { name = estado_asegurado days = 9000 }
+			add_modifier = { name = subsidios_a_ucrania2 days = 900 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_KHARKOV }
+			add_modifier = { name = estado_asegurado days = 9000 }
+			add_modifier = { name = subsidios_a_ucrania2 days = 900 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_KURSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+			add_modifier = { name = subsidios_a_ucrania2 days = 900 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_TAURIDA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+			add_modifier = { name = subsidios_a_ucrania2 days = 900 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_CRIMEA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+			add_modifier = { name = subsidios_a_ucrania2 days = 900 }
+		}
+	}
+}
+revrusa.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.5.t
+	desc = revrusa.5.d
+	flavor = revrusa.5.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = revrusa.5.a
+		default_option = yes
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_MINSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_MOGILEV }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_SMOLENSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_ORYOL }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_VITEBSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+	}
+}
+
+revrusa.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.6.t
+	desc = revrusa.6.d
+	flavor = revrusa.6.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = revrusa.6.a
+		default_option = yes
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_GREATER_POLAND }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_LESSER_POLAND }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_MAZOVIA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_VOLHYNIA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_BREST }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_VILNIUS }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_KAUNAS }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+	}
+}
+
+revrusa.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.7.t
+	desc = revrusa.7.d
+	flavor = revrusa.7.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = revrusa.7.a
+		default_option = yes
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_ROSTOV }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_ASTRAKHAN }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_KALMYKIA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_KUBAN }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_STAVROPOL }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_DAGESTAN }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_NORTH_CAUCASUS }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_GREATER_CAUCASUS }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_AZERBAIJAN }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_ELIZAVETPOL }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_ARMENIA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+	}
+}
+
+revrusa.8 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.8.t
+	desc = revrusa.8.d
+	flavor = revrusa.8.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = revrusa.8.a
+		default_option = yes
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_SAMARA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_TARTARIA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_KAZAN }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_VYATKA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_UFA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_GALICH }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_PERM }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_CHELYABINSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_URAL }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+	}
+}
+
+revrusa.9 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.9.t
+	desc = revrusa.9.d
+	flavor = revrusa.9.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = revrusa.9.a
+		default_option = yes
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_SURGUT }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_TOBOLSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_OB }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_UPPER_YENISEYSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_TOMSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_KRASNOYARSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+	}
+}
+revrusa.10 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.10.t
+	desc = revrusa.10.d
+	flavor = revrusa.10.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = revrusa.10.a
+		default_option = yes
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_IRKUTSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_BURYATIA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_TRANS_BAIKAL }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_YAKUTSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_OKHOTSK }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_KOLYMA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_CHUKOTKA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+
+		random_scope_state = {
+			limit = { state_region = s:STATE_KAMCHATKA }
+			add_modifier = { name = estado_asegurado days = 9000 }
+		}
+	}
+}
+revrusa.11 = {
+	type = country_event
+	placement = ROOT
+
+	title = revrusa.11.t
+	desc = revrusa.11.d
+	flavor = revrusa.11.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+	
+	option = {
+		name = revrusa.11.a
+		default_option = yes
+		
+		add_journal_entry = {
+			type = rus_rev_main
+		}
+		add_journal_entry = {
+			type = rus_rev_1
+		}
+	}
+}
+		
