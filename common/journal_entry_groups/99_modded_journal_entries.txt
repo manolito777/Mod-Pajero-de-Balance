@@ -2,19 +2,3 @@
 context = country}
 je_group_ger_drive_to_the_east_rks = {
 context = country}
-
-je_group_porfiriato = {
-    context = country
-}
-
-je_group_mexlibi = {
-    context = country
-}
-
-je_group_monarquiamex = {
-    context = country
-}
-
-je_group_guercrist = {
-    context = country
-}
