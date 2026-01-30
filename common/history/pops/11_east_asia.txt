@@ -1044,7 +1044,7 @@
 		}
 	}
 	s:STATE_KIRGHIZIA = {
-		region_state:XIN = {
+		region_state:KOK = {
 			create_pop = {
 				culture = kirgiz
 				size = 182150
