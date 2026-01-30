@@ -284,7 +284,7 @@ REPLACE:RUS = {
 	tertiary_unit_color = { 0 0 0 }
 }
 WTH = {
-	color = { 0 86 64 }
+	color = { 225 220 215 } # Blanco hueso suave, menos brillante
 	
 	country_type = recognized
 	
@@ -292,7 +292,8 @@ WTH = {
 	
 	cultures = { russian }
 	capital = STATE_INGRIA
-	primary_unit_color = { 34 91 65 }
-	secondary_unit_color  = { 189 184 186 }
+	
+	primary_unit_color = { 225 220 215 }
+	secondary_unit_color  = { 60 60 60 }   # Gris oscuro para contraste
 	tertiary_unit_color = { 0 0 0 }
 }
