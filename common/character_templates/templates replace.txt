@@ -24,26 +24,6 @@ REPLACE:PRU_alfred_krupp = { # Alfred Krupp, Fried. Krupp AG
 		chance = 100
 	}
 }
-
-REPLACE:usa_joshua_norton_character_template = {
-    first_name = Joshua
-	last_name = Norton
-	historical = yes
-	culture = cu:british
-	religion = rel:protestant
-	female = no
-    is_agitator = yes
-	interest_group = ig_petty_bourgeoisie
-	ideology = ideology_reformer
-	birth_date = 1818.2.4
-	dna = dna_emperor_norton
-	traits = {
-		charismatic
-		honorable
-		ambitious
-	}
-}
-
 REPLACE:BRZ_emperor_pedro_02 = {
 	# Pedro II
 	first_name = "Pedro"
@@ -88,18 +68,4 @@ REPLACE:BRZ_diogo_antonio_feijo = {
 		set_variable = house_braganca
 	}	
 	trait_generation = { }
-}
-REPLACE:RUS_sergei_uvarov = {
-    # Sergey Uvarov, the creator of the Tsarist doctrine of Orthodoxy, Autocracy, and Nationality
-    first_name = Sergei
-    last_name = Uvarov
-    historical = yes
-    culture = primary_culture
-    birth_date = 1800.9.5
-    ig_leader = yes
-    interest_group = ig_landowners
-    ideology = ideology_jingoist_leader
-    traits = {
-        meticulous
-    }
 }
