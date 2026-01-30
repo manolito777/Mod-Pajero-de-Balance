@@ -283,3 +283,16 @@ REPLACE:RUS = {
 	secondary_unit_color  = { 189 185 186 }
 	tertiary_unit_color = { 0 0 0 }
 }
+WTH = {
+	color = { 0 86 64 }
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { russian }
+	capital = STATE_INGRIA
+	primary_unit_color = { 34 91 65 }
+	secondary_unit_color  = { 189 184 186 }
+	tertiary_unit_color = { 0 0 0 }
+}
