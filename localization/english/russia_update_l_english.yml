@@ -1,0 +1,94 @@
+﻿l_english:
+  
+ 
+  rus_rev_1: "Secure the Outer Ring of Moscow"
+  rus_rev_1_reason: "The outer regions surrounding Moscow are still under Tsarist military control. By demilitarizing these areas, we can weaken the Tsar’s grip and prepare the ground for revolutionary influence."
+
+  rus_rev_2: "Secure Moscow"
+  rus_rev_2_reason: "The Nihilist circles of Moscow demand the removal of Tsarist forces from the capital and the placement of loyal revolutionaries in key government positions."
+
+  rus_rev_3: "Secure Ukraine"
+  rus_rev_3_reason: "Ukraine stands at the crossroads of revolution and reaction. Its fertile lands feed the workers and peasants of the empire, yet its people remain divided between nationalist dreams and socialist destiny. Only through subsidies, collectivized aid, and the visible hand of the revolution can we prove that communism is not a promise, but a material reality. #R The Party warns that committing the full strength of the revolution to Ukraine will reshape the struggle across the western provinces#!. The liberation of Ukraine will determine the #R fate of Belarus and Poland.#!"
+
+  rus_rev_4: "Secure Belarus"
+  rus_rev_4_reason: "Belarus requires economic development to abandon Tsarist loyalty. Expanding the timber industry will demonstrate the material benefits of the new order. Party theorists argue that #R stabilizing Belarus#! will #R inevitably postpone#! revolutionary ambitions in #R Ukraine#!. One frontier of revolution must take precedence over the other."
+
+  rus_rev_5: "Secure Poland"
+  rus_rev_5_reason: "Poland stands divided between resistance and cooperation. The construction of the Kierdbez Bridge will symbolize unity and revolutionary commitment."
+
+  rus_rev_6: "Secure the Caucasus"
+  rus_rev_6_reason: "Endless wars in the Caucasus drain the revolution’s strength. Only by resolving the Chechen conflicts can the region be stabilized under communist authority."
+
+  rus_rev_7: "Secure the Urals"
+  rus_rev_7_reason: "The Urals are threatened by Kazakh incursions and instability. Stopping the nomadic hordes will secure the industrial heart of the revolution."
+  
+rus_rev_8: "Secure Western Siberia"
+rus_rev_8_reason: "In Western Siberia, local elites remain loyal to the Tsar and resist the revolutionary cause. Only by establishing a clear Russian proletarian majority and breaking the power of reactionary notables can the revolution take root across the Siberian frontier."
+
+rus_rev_9: "Secure The Far East"
+rus_rev_9_reason: "Outer Manchuria stands as a legacy of imperial ambition and military expansion. The revolution must transform this borderland from a Tsarist outpost into a bastion of socialist order, linking the workers of Siberia with the wider struggle against reaction in Asia."
+
+  # ---Guerra Civil Rusa---
+
+  revrusa.1.t: "The Russian Civil War"
+  revrusa.1.d: "The empire fractures into revolution and reaction."
+  revrusa.1.f: "The fragile unity of Russia collapses under the weight of ideology and hunger. Revolutionary councils rise against generals and loyalists, and the vast territories of the empire become a battlefield of competing futures. What began as dissent now becomes destiny."
+  revrusa.1.a: "The struggle begins."
+  revrusa.2.t: "The Outer Ring Secured"
+  revrusa.2.d: "The Tsar’s garrisons around Moscow have been neutralized."
+  revrusa.2.f: "The military cordon that once shielded imperial authority has dissolved. Barracks fall silent or fly red banners, and the road to the capital lies open. Power no longer rests in rifles alone, but in the loyalty of the people."
+  revrusa.2.a: "The capital stands exposed."
+  revrusa.3.t: "Red Moscow"
+  revrusa.3.d: "The capital is brought under revolutionary control."
+  revrusa.3.f: "With the old guard removed and loyal revolutionaries placed in key offices, Moscow becomes the nerve center of the new order. Factories, councils, and ministries now speak with one voice, and the symbol of empire is reborn as the symbol of the people."
+  revrusa.3.a: "Moscow belongs to the revolution."
+  revrusa.4.t: "Ukraine Secured"
+  revrusa.4.d: "Economic support binds Ukraine to the revolutionary cause."
+  revrusa.4.f: "Subsidies and collective aid turn uncertainty into loyalty. The promise of socialism takes tangible form in bread, tools, and security. Nationalist doubt fades as the Ukrainian worker and peasant are drawn into the greater struggle of international revolution."
+  revrusa.4.a: "The fields march with us."
+  revrusa.5.t: "Belarus Integrated"
+  revrusa.5.d: "Industry replaces old loyalties in Belarus."
+  revrusa.5.f: "The forests of Belarus are reshaped into engines of revolutionary production. Timber and labor bind the region to the new order, proving that material progress can succeed where imperial force once failed."
+  revrusa.5.a: "Production secures allegiance."
+  revrusa.6.t: "Bridges of Unity"
+  revrusa.6.d: "Infrastructure unites Poland with the revolution."
+  revrusa.6.f: "The Kierdbez Bridge rises not only as a feat of engineering, but as a symbol of political will. Steel and stone connect lands long divided by empire, drawing Poland into the orbit of socialist transformation."
+  revrusa.6.a: "Let the bridge stand."
+  revrusa.7.t: "The Caucasus Pacified"
+  revrusa.7.d: "War gives way to revolutionary order in the mountains."
+  revrusa.7.f: "Endless campaigns and bloodshed recede as councils replace generals. Where imperial wars once burned villages, a fragile stability now takes root under revolutionary administration."
+  revrusa.7.a: "Peace through authority."
+  revrusa.8.t: "The Urals Defended"
+  revrusa.8.d: "The industrial heartland is secured from chaos."
+  revrusa.8.f: "By halting nomadic incursions and restoring control, the revolution safeguards its furnaces and railways. The factories of the Urals become pillars of survival in the storm of civil war."
+  revrusa.8.a: "Industry must endure."
+  revrusa.9.t: "Western Siberia Reorganized"
+  revrusa.9.d: "Reactionary elites lose their grip on Siberia."
+  revrusa.9.f: "Old loyalties crumble as a new social order takes hold across the frontier. Demography and administration reshape the land, turning a Tsarist periphery into a loyal foundation of revolutionary power."
+  revrusa.9.a: "The frontier is remade."
+  revrusa.10.t: "A Red Horizon"
+  revrusa.10.d: "The eastern frontier is claimed for socialism."
+  revrusa.10.f: "Outer Manchuria ceases to be an imperial outpost and becomes a revolutionary borderland. From the forests to the Pacific coast, the banners of reaction are replaced by those of a new international order."
+  revrusa.10.a: "The revolution reaches the East."
+  
+  revrusa.11.t: "The Revolutionary Mandate"
+  revrusa.11.d: "The conditions for open confrontation have been met."
+  revrusa.11.f: "The old order has tightened its grip for too long, but the empire is hollowed by hunger, fear, and contradiction. With the necessary reforms forced into law, the regime has exposed its weakness—and the revolution its path. #rThe struggle now becomes organized. The Revolution Journal has begun#!."
+  revrusa.11.a: "Set the plan in motion."
+
+  rus_rev_0: "A Fault Line in the Empire"
+  rus_rev_0_reason: "The state clings to the countryside through backward land relations, while half-measures and repression keep society in check. If the old agrarian order is broken—and reactionary policies are entrenched—the contradictions will sharpen into crisis. #yellow Complete this to formalize the conditions that ignite the revolutionary program#!."
+
+  rus_rev_main: "The Revolutionary Countdown"
+  rus_rev_main_reason: "The empire is entering its final phase. Organization, consolidation, and decisive strikes must follow—or the revolution will be strangled in its cradle. #r If we fail to act in time, the Tsarist forces will control Russia’s fate#!."
+  
+  estado_asegurado: "Secured State"
+  subsidios_a_ucrania: "Payments to Ukraine"
+  subsidios_a_ucrania2: "Subsidies to Ukraine"
+  law_council_of_ministers: "Council of Ministers"
+  law_soviet_economy: "Soviet Economy"
+  law_supreme_soviet: "Supreme Soviet"
+  ideology_moralist_socialism: "Moralist Socialism"
+  ideology_stalinismo: "Stalinism"
+  ideology_KGB: "KGB"
+  ukranian_subsidies_but_name: "Give Subsidies to Ukraine"
