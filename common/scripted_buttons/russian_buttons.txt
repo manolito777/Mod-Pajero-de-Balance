@@ -1,0 +1,24 @@
+﻿ukranian_subsidies_but = {
+	name = "ukranian_subsidies_but_name"
+	desc = "ukranian_subsidies_but_desc"
+
+	effect = {
+		add_modifier = { 
+			name = subsidios_a_ucrania
+			days = short_modifier_time
+			multiplier = money_amount_multiplier_more_large
+			
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_KHARKOV
+				
+			}
+			add_modifier = {
+				name = subsidios_a_ucrania
+			}
+			
+		}
+
+    }
+}
