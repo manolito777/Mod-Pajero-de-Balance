@@ -1,4 +1,4 @@
-﻿namespace = vistula_river
+namespace = vistula_river
 ##agregarelJEdecontruirelpuente
 vistula_river.1 = {
     type = country_event
@@ -20,16 +20,16 @@ vistula_river.1 = {
 
   
     trigger = {
-        has_technology_researched = modern_sewerage
+        has_technology_researched = empiricism
+
         any_scope_state = {
-			state_region = s:STATE_GREATER_POLAND
-			is_incorporated = yes
-		}
-		any_scope_state = {
-			state_region = s:STATE_LESSER_POLAND
-			is_incorporated = yes
-		}
-		# Prevent event if bridge building already exists
+            state_region = s:STATE_GREATER_POLAND
+        }
+
+        any_scope_state = {
+            state_region = s:STATE_LESSER_POLAND
+        }
+		
 		NOT = {
 			any_scope_state = {
 				state_region = s:STATE_GREATER_POLAND
@@ -191,4 +191,5 @@ vistula_river.4 = {
 			value = no
 		}
 	}
+
 }
