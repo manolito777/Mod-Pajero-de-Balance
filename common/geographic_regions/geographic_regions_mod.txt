@@ -11,12 +11,4 @@
 		STATE_GREENLAND
 	}
 }
-﻿geographic_region_great_mex = {
-	short_key = "region_great_mex"
-
-	strategic_regions = {
-		sr:region_mexico
-		sr:region_central_america
-	}
-}
 
