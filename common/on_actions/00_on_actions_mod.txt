@@ -8,16 +8,14 @@ on_monthly_pulse_country = {
 vistula_river_monthly_check = {
     # solo se lanza cuando se tiene la tech y los estados incorporados
     trigger = {
-        has_technology_researched = modern_sewerage
+        has_technology_researched = empiricism
 
         any_scope_state = {
             state_region = s:STATE_GREATER_POLAND
-            is_incorporated = yes
         }
 
         any_scope_state = {
             state_region = s:STATE_LESSER_POLAND
-            is_incorporated = yes
         }
         # Don't attempt to fire the event again for this country if it already showed
         NOT = { has_variable = vistula_river_event_shown }
