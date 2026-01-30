@@ -1,6 +1,6 @@
 ﻿POPS = {
 	s:STATE_ULIASTAI = {
-		region_state:CHI = {
+		region_state:MGL = {
 			#Duplicado las minorías de Qing. 2/1 mongol; 4/1 kazak.
 			create_pop = {
 				culture = mongol
@@ -21,7 +21,7 @@
 		}
 	}
 	s:STATE_URGA = {
-		region_state:CHI = {
+		region_state:MGL = {
 			#Duplicado las minorías de Qing. 2/1 mongol.
 			create_pop = {
 				culture = mongol
@@ -38,7 +38,7 @@
 		}
 	}
 	s:STATE_DZUNGARIA = {
-		region_state:CHI = {
+		region_state:XIN = {
 			#Editado 1/3 del original para Han
 			# Based off estimates by James Millward and Wang Xilong
 			# Northern Xinjiang excluding Turfan and the Khumul Khanate
@@ -101,7 +101,7 @@
 		}
 	}
 	s:STATE_TIANSHAN = {
-		region_state:CHI = {
+		region_state:XIN = {
 			# Based off estimates by James Millward and Wang Xilong
 			# Only some 'hundreds' Chinese merchants were settled in the Tarim Basis
 			create_pop = {
@@ -240,7 +240,7 @@
 		}
 	}
 	s:STATE_ALXA = {
-		region_state:CHI = {
+		region_state:MGL = {
 			# Alasha Ööled and Ejine Torghuud banner. Could not find accurate population data, but should be relatively low
 			create_pop = {
 				culture = mongol
@@ -258,7 +258,7 @@
 	}
 	# Renamed Monan
 	s:STATE_HINGGAN = {
-		region_state:CHI = {
+		region_state:MGL = {
 			#Editado 1/3 del original para Han; 5/1 para Han sunni; 3/2 para mongol.
 			create_pop = {
 				culture = mongol
@@ -325,7 +325,7 @@
 		}
 	}
 	s:STATE_SHENGJING = {
-		region_state:CHI = {
+		region_state:MCH = {
 			#Editado 1/3 del original para Han, +200k de Henan; 4/1 para Han sunni.
 			#+400k han; +200k manchu
 			#+600k han.
@@ -345,7 +345,7 @@
 		}
 	}
 	s:STATE_SOUTHERN_MANCHURIA = {
-		region_state:CHI = {
+		region_state:MCH = {
 			#Editado 1/3 del original para Han. 300k redistribuidos por china; -400k para manchu.
 			create_pop = {
 				culture = manchu
@@ -367,7 +367,7 @@
 	}
 	s:STATE_NORTHERN_MANCHURIA = {
 		#100k redistribuidos por china; -200k para Manchu.
-		region_state:CHI = {
+		region_state:MCH = {
 			create_pop = {
 				culture = manchu
 				size = 2421200
@@ -1028,7 +1028,7 @@
 		}
 	}
 	s:STATE_JETISY = { #DONE
-		region_state:CHI = {
+		region_state:XIN = {
 			create_pop = {
 				culture = kazak
 				size = 100642
@@ -1044,7 +1044,7 @@
 		}
 	}
 	s:STATE_KIRGHIZIA = {
-		region_state:KOK = {
+		region_state:XIN = {
 			create_pop = {
 				culture = kirgiz
 				size = 182150
@@ -1086,7 +1086,7 @@
 				size = 8000
 			}
 		}
-		region_state:CHI = {
+		region_state:XIN = {
 			# +150k kirgiz; +50k uzbek
 			create_pop = {
 				culture = kirgiz
@@ -1112,7 +1112,7 @@
 		}
 	}
 	s:STATE_ALTAI = { #DONE
-		region_state:CHI = {
+		region_state:MGL = {
 			#+10k mongol; +30k tatar
 			create_pop = { #Altaians
 				culture = mongol
